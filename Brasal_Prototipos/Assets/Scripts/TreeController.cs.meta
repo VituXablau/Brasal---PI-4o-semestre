@@ -3,7 +3,12 @@ guid: 0b570d675efc11f4b86a0712ae60c8b6
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
+  - fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  - burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  - satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

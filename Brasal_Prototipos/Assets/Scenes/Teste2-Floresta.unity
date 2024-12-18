@@ -243,12 +243,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &42790076
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,12 +375,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &54239772
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,12 +507,288 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
+--- !u!1 &86984515
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 86984516}
+  - component: {fileID: 86984518}
+  - component: {fileID: 86984517}
+  m_Layer: 5
+  m_Name: Preservation (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &86984516
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86984515}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 231899471}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -425, y: -90}
+  m_SizeDelta: {x: 750, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &86984517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86984515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: " Preserva\xE7\xE3o = 100%"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 45
+  m_fontSizeBase: 45
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 4
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &86984518
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86984515}
+  m_CullTransparentMesh: 1
+--- !u!1 &166329910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 166329911}
+  m_Layer: 0
+  m_Name: ---Managers---
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &166329911
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166329910}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 588942803}
+  - {fileID: 624984186}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &231899470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 231899471}
+  - component: {fileID: 231899474}
+  - component: {fileID: 231899473}
+  - component: {fileID: 231899472}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &231899471
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231899470}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 86984516}
+  - {fileID: 1855478711}
+  m_Father: {fileID: 1979951851}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &231899472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231899470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &231899473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231899470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &231899474
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231899470}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &233522754
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,7 +813,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 233522754}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -584,7 +872,7 @@ Transform:
   - {fileID: 1946475498}
   - {fileID: 972708891}
   - {fileID: 694687293}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2071405122}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &280593433
 GameObject:
@@ -706,12 +994,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &287111813
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,12 +1126,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &309698000
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,12 +1258,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &348115143
 GameObject:
   m_ObjectHideFlags: 0
@@ -1084,12 +1390,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &356241583
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,12 +1522,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &379909892
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,12 +1654,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &459273683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1462,12 +1786,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &459663363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1588,12 +1918,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &561853529
 GameObject:
   m_ObjectHideFlags: 0
@@ -1714,12 +2050,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 1
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &588942802
 GameObject:
   m_ObjectHideFlags: 0
@@ -1745,12 +2087,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588942802}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 166329911}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &588942804
 MonoBehaviour:
@@ -1819,6 +2161,10 @@ MonoBehaviour:
   - {fileID: 1946475497}
   - {fileID: 972708890}
   - {fileID: 694687292}
+  cur_treesObjLength: 0
+  spawnFireTime: 10
+  percentage_text: {fileID: 86984517}
+  timer_text: {fileID: 1855478712}
 --- !u!1 &624984185
 GameObject:
   m_ObjectHideFlags: 0
@@ -1844,12 +2190,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624984185}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 166329911}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &624984187
 MonoBehaviour:
@@ -2002,12 +2348,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &694687292
 GameObject:
   m_ObjectHideFlags: 0
@@ -2128,12 +2480,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &712778931
 GameObject:
   m_ObjectHideFlags: 0
@@ -2254,12 +2612,86 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
+--- !u!1 &718435240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 718435241}
+  - component: {fileID: 718435243}
+  - component: {fileID: 718435242}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &718435241
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718435240}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1979951851}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &718435242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718435240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &718435243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718435240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1 &776446055
 GameObject:
   m_ObjectHideFlags: 0
@@ -2380,12 +2812,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &794567814
 GameObject:
   m_ObjectHideFlags: 0
@@ -2506,12 +2944,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &809315153
 GameObject:
   m_ObjectHideFlags: 0
@@ -2632,12 +3076,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &821070982
 GameObject:
   m_ObjectHideFlags: 0
@@ -2758,12 +3208,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &839016608
 GameObject:
   m_ObjectHideFlags: 0
@@ -2884,12 +3340,123 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
+--- !u!1 &861271519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 861271520}
+  - component: {fileID: 861271521}
+  m_Layer: 0
+  m_Name: Satellite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &861271520
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861271519}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2071405122}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &861271521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861271519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 987687f13af5eda45a8c8fc8c587715e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treesObj:
+  - {fileID: 561853529}
+  - {fileID: 839016608}
+  - {fileID: 2007179919}
+  - {fileID: 1052300208}
+  - {fileID: 1965697050}
+  - {fileID: 1491316979}
+  - {fileID: 1332790348}
+  - {fileID: 712778931}
+  - {fileID: 1784215442}
+  - {fileID: 1590241720}
+  - {fileID: 42790076}
+  - {fileID: 1907763776}
+  - {fileID: 459663363}
+  - {fileID: 280593433}
+  - {fileID: 1225218507}
+  - {fileID: 348115143}
+  - {fileID: 2141100340}
+  - {fileID: 809315153}
+  - {fileID: 2100616469}
+  - {fileID: 1021516369}
+  - {fileID: 1484164577}
+  - {fileID: 776446055}
+  - {fileID: 1352803982}
+  - {fileID: 459273683}
+  - {fileID: 628783025}
+  - {fileID: 2015414122}
+  - {fileID: 1283520192}
+  - {fileID: 309698000}
+  - {fileID: 1493209335}
+  - {fileID: 821070982}
+  - {fileID: 54239772}
+  - {fileID: 356241583}
+  - {fileID: 1510372348}
+  - {fileID: 1527582379}
+  - {fileID: 967177842}
+  - {fileID: 1810141897}
+  - {fileID: 1617706202}
+  - {fileID: 1642100056}
+  - {fileID: 1720095421}
+  - {fileID: 2102315439}
+  - {fileID: 1993271398}
+  - {fileID: 7402047}
+  - {fileID: 1760458668}
+  - {fileID: 1596621876}
+  - {fileID: 287111813}
+  - {fileID: 1191571040}
+  - {fileID: 1990732646}
+  - {fileID: 794567814}
+  - {fileID: 2111140678}
+  - {fileID: 379909892}
+  - {fileID: 2140460860}
+  - {fileID: 1946475497}
+  - {fileID: 972708890}
+  - {fileID: 694687292}
+--- !u!4 &943933265 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6693561762865211027, guid: 875c7c61ba1c0ef478cea510185d0c80,
+    type: 3}
+  m_PrefabInstance: {fileID: 1308306060}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &967177842
 GameObject:
   m_ObjectHideFlags: 0
@@ -3010,12 +3577,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &972708890
 GameObject:
   m_ObjectHideFlags: 0
@@ -3136,12 +3709,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &1021516369
 GameObject:
   m_ObjectHideFlags: 0
@@ -3262,12 +3841,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &1052300208
 GameObject:
   m_ObjectHideFlags: 0
@@ -3388,12 +3973,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &1191571040
 GameObject:
   m_ObjectHideFlags: 0
@@ -3514,12 +4105,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &1225218507
 GameObject:
   m_ObjectHideFlags: 0
@@ -3640,12 +4237,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &1265362284
 GameObject:
   m_ObjectHideFlags: 0
@@ -3737,7 +4340,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1979951851}
   m_LocalEulerAnglesHint: {x: 71.622, y: 0, z: 0}
 --- !u!114 &1265362288
 MonoBehaviour:
@@ -3903,25 +4506,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1001 &1308306060
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 2071405122}
     m_Modifications:
     - target: {fileID: 5366273323367700153, guid: 875c7c61ba1c0ef478cea510185d0c80,
         type: 3}
       propertyPath: cam
       value: 
       objectReference: {fileID: 1265362286}
+    - target: {fileID: 5366273323367700153, guid: 875c7c61ba1c0ef478cea510185d0c80,
+        type: 3}
+      propertyPath: drone_Pref
+      value: 
+      objectReference: {fileID: 3021130001005683737, guid: 6bcfa29d011a3f24496f4e324815128d,
+        type: 3}
+    - target: {fileID: 5366273323367700153, guid: 875c7c61ba1c0ef478cea510185d0c80,
+        type: 3}
+      propertyPath: satellite_Obj
+      value: 
+      objectReference: {fileID: 861271519}
+    - target: {fileID: 5366273323367700153, guid: 875c7c61ba1c0ef478cea510185d0c80,
+        type: 3}
+      propertyPath: sprinkler_Pref
+      value: 
+      objectReference: {fileID: 1127465008206716358, guid: 501d72c2785f8c847a34e4bdd3f15987,
+        type: 3}
+    - target: {fileID: 5366273323367700153, guid: 875c7c61ba1c0ef478cea510185d0c80,
+        type: 3}
+      propertyPath: waterBomber_Pref
+      value: 
+      objectReference: {fileID: 5445170896778144976, guid: 66b035e1252578747ad40657b7339340,
+        type: 3}
     - target: {fileID: 6693561762865211027, guid: 875c7c61ba1c0ef478cea510185d0c80,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3945,17 +4577,17 @@ PrefabInstance:
     - target: {fileID: 6693561762865211027, guid: 875c7c61ba1c0ef478cea510185d0c80,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6693561762865211027, guid: 875c7c61ba1c0ef478cea510185d0c80,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6693561762865211027, guid: 875c7c61ba1c0ef478cea510185d0c80,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6693561762865211027, guid: 875c7c61ba1c0ef478cea510185d0c80,
         type: 3}
@@ -4102,12 +4734,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
+--- !u!1 &1333120927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1333120928}
+  m_Layer: 0
+  m_Name: ---Ligths---
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1333120928
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333120927}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1897663506}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1352803982
 GameObject:
   m_ObjectHideFlags: 0
@@ -4228,12 +4898,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &1484164577
 GameObject:
   m_ObjectHideFlags: 0
@@ -4354,12 +5030,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &1491316979
 GameObject:
   m_ObjectHideFlags: 0
@@ -4480,12 +5162,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &1493209335
 GameObject:
   m_ObjectHideFlags: 0
@@ -4606,12 +5294,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &1510372348
 GameObject:
   m_ObjectHideFlags: 0
@@ -4732,12 +5426,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &1527582379
 GameObject:
   m_ObjectHideFlags: 0
@@ -4858,12 +5558,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &1590241720
 GameObject:
   m_ObjectHideFlags: 0
@@ -4984,12 +5690,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &1596621876
 GameObject:
   m_ObjectHideFlags: 0
@@ -5110,12 +5822,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &1605867289
 GameObject:
   m_ObjectHideFlags: 0
@@ -5215,12 +5933,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1605867289}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2071405122}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1617706202
 GameObject:
@@ -5342,12 +6060,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &1642100056
 GameObject:
   m_ObjectHideFlags: 0
@@ -5468,12 +6192,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &1720095421
 GameObject:
   m_ObjectHideFlags: 0
@@ -5594,12 +6324,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &1760458668
 GameObject:
   m_ObjectHideFlags: 0
@@ -5720,12 +6456,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &1784215442
 GameObject:
   m_ObjectHideFlags: 0
@@ -5846,12 +6588,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 1
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &1810141897
 GameObject:
   m_ObjectHideFlags: 0
@@ -5972,12 +6720,152 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
+--- !u!1 &1855478710
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1855478711}
+  - component: {fileID: 1855478713}
+  - component: {fileID: 1855478712}
+  m_Layer: 5
+  m_Name: Timer (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1855478711
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855478710}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 231899471}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -90}
+  m_SizeDelta: {x: 750, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1855478712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855478710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 2:00
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 60
+  m_fontSizeBase: 60
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1855478713
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855478710}
+  m_CullTransparentMesh: 1
 --- !u!1 &1897663504
 GameObject:
   m_ObjectHideFlags: 0
@@ -6071,7 +6959,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1333120928}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &1897663507
 MonoBehaviour:
@@ -6216,12 +7104,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &1946475497
 GameObject:
   m_ObjectHideFlags: 0
@@ -6342,12 +7236,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &1965697050
 GameObject:
   m_ObjectHideFlags: 0
@@ -6468,12 +7368,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
+--- !u!1 &1979951850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1979951851}
+  m_Layer: 0
+  m_Name: ---Camera & UI---
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1979951851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979951850}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1265362287}
+  - {fileID: 231899471}
+  - {fileID: 718435241}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1990732646
 GameObject:
   m_ObjectHideFlags: 0
@@ -6594,12 +7534,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &1993271398
 GameObject:
   m_ObjectHideFlags: 0
@@ -6720,12 +7666,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &2007179919
 GameObject:
   m_ObjectHideFlags: 0
@@ -6846,12 +7798,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &2015414122
 GameObject:
   m_ObjectHideFlags: 0
@@ -6972,12 +7930,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
+--- !u!1 &2071405121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2071405122}
+  m_Layer: 0
+  m_Name: ---Objects---
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2071405122
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071405121}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 861271520}
+  - {fileID: 233522755}
+  - {fileID: 943933265}
+  - {fileID: 1605867293}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2100616469
 GameObject:
   m_ObjectHideFlags: 0
@@ -7098,12 +8097,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &2102315439
 GameObject:
   m_ObjectHideFlags: 0
@@ -7224,12 +8229,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &2111140678
 GameObject:
   m_ObjectHideFlags: 0
@@ -7350,12 +8361,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &2140460860
 GameObject:
   m_ObjectHideFlags: 0
@@ -7476,12 +8493,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1 &2141100340
 GameObject:
   m_ObjectHideFlags: 0
@@ -7602,20 +8625,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   treeMaterial: {fileID: 2100000, guid: 4f39f56bbb1d95742bd469e3b77d0cbb, type: 2}
   fireMaterial: {fileID: 2100000, guid: 70430f8fe34e2f54fb3517ade3e7ca69, type: 2}
+  burnedMaterial: {fileID: 2100000, guid: 384d04aecd4174545a326ad21ef35184, type: 2}
+  satelliteViewMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab,
+    type: 2}
   treeLayer:
     serializedVersion: 2
     m_Bits: 256
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
+  burned: 0
+  minTime: 5
+  maxTime: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 588942803}
-  - {fileID: 624984186}
-  - {fileID: 1265362287}
-  - {fileID: 1897663506}
-  - {fileID: 1605867293}
-  - {fileID: 233522755}
-  - {fileID: 1308306060}
+  - {fileID: 166329911}
+  - {fileID: 1979951851}
+  - {fileID: 1333120928}
+  - {fileID: 2071405122}

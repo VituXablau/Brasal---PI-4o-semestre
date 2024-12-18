@@ -1,9 +1,11 @@
 using System.Collections;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
+    //Sistema de movimentação e interacao com o fogo
     [SerializeField] private Camera cam;
     [SerializeField] private NavMeshAgent agent;
 
@@ -12,11 +14,33 @@ public class PlayerController : MonoBehaviour
     private Coroutine putOutFire;
     private bool isExtinguishing = false;
 
-    void FixedUpdate()
+    //Sistema de itens
+    private enum itens { none, drone, satellite, sprinkler, waterBomber }
+    private string itemName = "none";
+
+    [SerializeField]
+    private GameObject drone_Pref, satellite_Obj, sprinkler_Pref, waterBomber_Pref;
+
+    void Update()
     {
         InteractOrMove();
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+            SetItens(itens.drone);
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+            SetItens(itens.satellite);
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+            SetItens(itens.sprinkler);
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+            SetItens(itens.waterBomber);
+
+        if (Input.GetMouseButton(1))
+        {
+            SpawnItens();
+        }
     }
 
+    #region Sistema de movimentacao e interacao com o fogo
     //Método que recebe o input de movimentação/interação do personagem
     void InteractOrMove()
     {
@@ -85,4 +109,45 @@ public class PlayerController : MonoBehaviour
         objectBurning.GetComponent<TreeController>().StopBurn();
         isExtinguishing = false;
     }
+    #endregion
+
+    #region Sistema dos itens
+    void SetItens(itens item)
+    {
+        itemName = item.ToString();
+    }
+
+    void SpawnItens()
+    {
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            Vector3 itemPos;
+            itemPos = hit.point;
+
+            switch (itemName)
+            {
+                case "drone":
+                    GameObject drone_Obj = Instantiate(drone_Pref, new Vector3(transform.position.x, drone_Pref.transform.position.y, transform.position.z), quaternion.identity);
+                    drone_Obj.GetComponent<DroneController>().targetPos = itemPos;
+                    itemName = itens.none.ToString();
+                    break;
+                case "satellite":
+                    satellite_Obj.GetComponent<SatelliteController>().ActivateSatellite();
+                    itemName = itens.none.ToString();
+                    break;
+                case "sprinkler":
+                    Instantiate(sprinkler_Pref, new Vector3(itemPos.x, sprinkler_Pref.transform.position.y, itemPos.z), quaternion.identity);
+                    itemName = itens.none.ToString();
+                    break;
+                case "waterBomber":
+                    Instantiate(waterBomber_Pref, new Vector3(itemPos.x, waterBomber_Pref.transform.position.y, itemPos.z), quaternion.identity);
+                    itemName = itens.none.ToString();
+                    break;
+            }
+        }
+    }
+    #endregion
 }
