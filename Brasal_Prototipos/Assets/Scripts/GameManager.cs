@@ -17,7 +17,10 @@ public class GameManager : MonoBehaviour
     private int levelCurTime_Min = 2, levelCurTime_Sec;
     private Coroutine timer;
 
-    [SerializeField] private TextMeshProUGUI percentage_text, timer_text;
+    [SerializeField] private TextMeshProUGUI percentage_text, timer_text, congratulations_text;
+    private float percentage;
+
+    private bool endGame = false;
 
     private void Awake()
     {
@@ -35,15 +38,23 @@ public class GameManager : MonoBehaviour
         CheckPercentage();
     }
 
+    private void Update()
+    {
+        if (endGame && Input.GetKey(KeyCode.R))
+            SceneManager.LoadScene(0);
+    }
+
     public void CheckPercentage()
     {
-        float x;
-        x = (100 * cur_treesObjLength) / init_treesObjLength;
+        percentage = (100 * cur_treesObjLength) / init_treesObjLength;
 
-        if (x < 50)
-            SceneManager.LoadScene(0);
+        if (percentage < 50)
+        {
+            congratulations_text.text = "Você perdeu!";
+            endGame = true;
+        }
 
-        percentage_text.text = "Preservação = " + x + "%";
+        percentage_text.text = "Preservação = " + percentage + "%";
     }
 
     IEnumerator Timer()
@@ -60,9 +71,14 @@ public class GameManager : MonoBehaviour
                 levelCurTime_Sec = 59;
             }
 
-            if (levelCurTime_Min == 0)
+            if (levelCurTime_Min == 0 && levelCurTime_Sec == 0)
             {
-                Debug.Log("Venceu");
+                if (percentage >= 75)
+                    congratulations_text.text = "Parabéns, você conseguiu duas medalhas!";
+                else
+                    congratulations_text.text = "Parabéns, você conseguiu uma medalha!";
+
+                endGame = true;
                 StopCoroutine(timer);
             }
 

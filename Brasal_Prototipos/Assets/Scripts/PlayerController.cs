@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Camera cam;
     [SerializeField] private NavMeshAgent agent;
 
+    private Animator animator;
+
     [SerializeField] private LayerMask layerFire;
 
     private Coroutine putOutFire;
@@ -20,6 +22,11 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     private GameObject drone_Pref, satellite_Obj, sprinkler_Pref, waterBomber_Pref;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -38,6 +45,9 @@ public class PlayerController : MonoBehaviour
         {
             SpawnItens();
         }
+
+        if (HasAgentStopped())
+            animator.SetBool("Walking", false);
     }
 
     #region Sistema de movimentacao e interacao com o fogo
@@ -58,12 +68,16 @@ public class PlayerController : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, lengthOfRay, fireLayer))
         {
             Move(false, hit);
+            animator.SetBool("Walking", false);
             ExtinguishFire(hit.collider.gameObject);
+            animator.SetBool("Extinguish", true);
         }
         else
         {
             Move(true, hit);
+            animator.SetBool("Walking", true);
             ExtinguishFire(null);
+            animator.SetBool("Extinguish", false);
         }
     }
 
@@ -84,6 +98,11 @@ public class PlayerController : MonoBehaviour
         {
             agent.SetDestination(this.transform.position);
         }
+    }
+
+    bool HasAgentStopped()
+    {
+        return !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance;
     }
 
     //Método que apaga o fogo que o personagem está vendo

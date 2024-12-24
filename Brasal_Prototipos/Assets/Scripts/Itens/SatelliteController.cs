@@ -8,7 +8,7 @@ public class SatelliteController : MonoBehaviour
     {
         foreach (GameObject tree in treesObj)
         {
-            if (tree.GetComponent<TreeController>().isNextToBurn == true)
+            if (tree.GetComponent<TreeController>().isNextToBurn == true && tree.gameObject != null)
             {
                 tree.GetComponent<TreeController>().ShowNextToBurn();
             }

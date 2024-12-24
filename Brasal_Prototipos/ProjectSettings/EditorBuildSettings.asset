@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 1ee6f15e05bc7fb4d83b279560f90e55
+  - enabled: 1
     path: Assets/Scenes/Teste2-Floresta.unity
     guid: 705cee6799d2eec459f91221dbf9708c
   m_configObjects: {}

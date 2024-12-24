@@ -3,9 +3,8 @@ using UnityEngine;
 
 public class TreeController : MonoBehaviour
 {
-    MeshRenderer meshRenderer;
-
-    [SerializeField] Material treeMaterial, fireMaterial, burnedMaterial, satelliteViewMaterial;
+    Animator animator;
+    [SerializeField] Animator animator_children;
 
     [SerializeField] LayerMask treeLayer;
 
@@ -20,9 +19,11 @@ public class TreeController : MonoBehaviour
 
     [SerializeField] private int minTime, maxTime;
 
+    [SerializeField] private GameObject burnedTree_Pref;
+
     void Start()
     {
-        meshRenderer = GetComponent<MeshRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -49,7 +50,11 @@ public class TreeController : MonoBehaviour
     IEnumerator Burn(int minTime, int maxTime)
     {
         gameObject.layer = 7;
-        meshRenderer.material = fireMaterial;
+        animator.SetBool("Burning", true);
+        animator_children.SetBool("Burning", true);
+
+        animator.SetBool("Satellite", false);
+        animator_children.SetBool("Satellite", false);
         isNextToBurn = false;
         burnImmediately = false;
 
@@ -58,11 +63,11 @@ public class TreeController : MonoBehaviour
 
         yield return new WaitForSeconds(randomTime);
 
-        Collider[] hitColliders = Physics.OverlapSphere(transform.position, 3, treeLayer);
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, 5, treeLayer);
         foreach (var hitCollider in hitColliders)
         {
             int random;
-            random = Random.Range(0, 2);
+            random = Random.Range(0, 3);
 
             if (random != 0)
                 hitCollider.gameObject.GetComponent<TreeController>().burnImmediately = true;
@@ -77,7 +82,8 @@ public class TreeController : MonoBehaviour
     public void StopBurn()
     {
         gameObject.layer = 8;
-        meshRenderer.material = treeMaterial;
+        animator.SetBool("Burning", false);
+        animator_children.SetBool("Burning", false);
         isBurning = false;
 
         StopCoroutine(burning);
@@ -86,10 +92,8 @@ public class TreeController : MonoBehaviour
     //Método que destrói a árvore depois que ela queima
     void Burned()
     {
-        gameObject.layer = 8;
-        isBurning = false;
-        burned = true;
-        meshRenderer.material = burnedMaterial;
+        Destroy(gameObject);
+        Instantiate(burnedTree_Pref, transform.position, transform.rotation);
 
         GameManager.Instance.cur_treesObjLength--;
         GameManager.Instance.CheckPercentage();
@@ -97,6 +101,7 @@ public class TreeController : MonoBehaviour
 
     public void ShowNextToBurn()
     {
-        meshRenderer.material = satelliteViewMaterial;
+        animator.SetBool("Satellite", true);
+        animator_children.SetBool("Satellite", true);
     }
 }
