@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class TreeController : MonoBehaviour
@@ -13,8 +14,6 @@ public class TreeController : MonoBehaviour
     //Bool que retorna se a árvore está queimando
     public bool burnImmediately = false, isBurning = false;
 
-    [HideInInspector] public bool burned = false;
-
     private Coroutine burning;
 
     [SerializeField] private int minTime, maxTime;
@@ -28,11 +27,11 @@ public class TreeController : MonoBehaviour
 
     void Update()
     {
-        if (burnImmediately && !isBurning && !burned)
-            burning = StartCoroutine(Burn(minTime, maxTime));
+        if (burnImmediately && !isBurning)
+            burning = StartCoroutine(Burn());
 
         //Fazendo a árvore queimar quando ela for a próxima a queimar, mas ainda não estiver queimando
-        if (isNextToBurn && !isBurning && !burned)
+        if (isNextToBurn && !isBurning)
             StartCoroutine(StartBurn(5));
     }
 
@@ -43,11 +42,11 @@ public class TreeController : MonoBehaviour
 
         yield return new WaitForSeconds(waitTime);
 
-        burning = StartCoroutine(Burn(minTime, maxTime));
+        burning = StartCoroutine(Burn());
     }
 
     //Coroutine que faz a árvore queimar
-    IEnumerator Burn(int minTime, int maxTime)
+    IEnumerator Burn()
     {
         gameObject.layer = 7;
         animator.SetBool("Burning", true);
@@ -58,24 +57,32 @@ public class TreeController : MonoBehaviour
         isNextToBurn = false;
         burnImmediately = false;
 
-        int randomTime;
-        randomTime = Random.Range(minTime, maxTime);
+        StartCoroutine(SpreadFire());
+
+        yield return new WaitForSeconds(7.5f);
+
+        Burned();
+    }
+
+    IEnumerator SpreadFire()
+    {
+        int randomTime = Random.Range(minTime, maxTime);
 
         yield return new WaitForSeconds(randomTime);
 
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, 5, treeLayer);
         foreach (var hitCollider in hitColliders)
         {
-            int random;
-            random = Random.Range(0, 3);
+            if (hitCollider != null)
+            {
+                TreeController tree = hitCollider.gameObject.GetComponent<TreeController>();
 
-            if (random != 0)
-                hitCollider.gameObject.GetComponent<TreeController>().burnImmediately = true;
+                int random = Random.Range(0, 3);
+
+                if (random != 0)
+                    tree.burnImmediately = true;
+            }
         }
-
-        yield return new WaitForSeconds(7.5f);
-
-        Burned();
     }
 
     //Método que faz a árvore parar de queimar
@@ -92,11 +99,23 @@ public class TreeController : MonoBehaviour
     //Método que destrói a árvore depois que ela queima
     void Burned()
     {
-        Destroy(gameObject);
-        Instantiate(burnedTree_Pref, transform.position, transform.rotation);
+        foreach (GameObject tree in GameManager.Instance.treesObj)
+        {
+            if (tree == gameObject)
+            {
+                List<GameObject> list = new List<GameObject>(GameManager.Instance.treesObj);
 
-        GameManager.Instance.cur_treesObjLength--;
-        GameManager.Instance.CheckPercentage();
+                list.Remove(tree);
+
+                GameManager.Instance.treesObj = list.ToArray();
+
+                Destroy(gameObject);
+                Instantiate(burnedTree_Pref, transform.position, transform.rotation);
+
+                GameManager.Instance.cur_treesObjLength--;
+                GameManager.Instance.CheckPercentage();
+            }
+        }
     }
 
     public void ShowNextToBurn()

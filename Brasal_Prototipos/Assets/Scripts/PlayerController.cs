@@ -1,5 +1,6 @@
 using System.Collections;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -13,8 +14,11 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private LayerMask layerFire;
 
-    private Coroutine putOutFire;
+    private Coroutine putOutFire, interactWithAnimal;
+
     private bool isExtinguishing = false;
+
+    private bool isInteractingWithSomething = false;
 
     //Sistema de itens
     private enum itens { none, drone, satellite, sprinkler, waterBomber }
@@ -26,6 +30,8 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+
+        agent.updateRotation = false;
     }
 
     void Update()
@@ -56,35 +62,87 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            DetectingFire(2.5f, layerFire);
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hitMouse;
+
+            if (Physics.Raycast(ray, out hitMouse))
+            {
+                Vector3 dir = (hitMouse.point - transform.position).normalized;
+                dir.y = 0;
+                RaycastHit hit;
+
+                //Verificando se a layer que o raio colidiu
+                if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y + 0.75f, transform.position.z), dir, out hit, 2.5f))
+                {
+                    //Layer do fogo
+                    if (hit.collider.gameObject.layer == 7)
+                    {
+                        Move(dir);
+
+                        ExtinguishFire(hit.collider.gameObject);
+                        animator.SetBool("Extinguish", true);
+                    }
+                    //Layer do animal assustado
+                    else if (hit.collider.gameObject.layer == 10)
+                    {
+                        Move(dir);
+
+                        interactWithAnimal = StartCoroutine(InteractWithAnimal(hit.collider.gameObject));
+
+                        ExtinguishFire(null);
+                        animator.SetBool("Extinguish", false);
+                    }
+                    //Qualquer outra layer
+                    else
+                    {
+                        Move(dir);
+
+                        ExtinguishFire(null);
+                        animator.SetBool("Extinguish", false);
+                    }
+                }
+                //Não colidiu com nada
+                else
+                {
+                    Move(dir);
+
+                    ExtinguishFire(null);
+                    animator.SetBool("Extinguish", false);
+                }
+            }
         }
+
+        if (Input.GetMouseButtonUp(0) && putOutFire != null)
+            StopCoroutine(putOutFire);
     }
 
-    //Método que verifica se existe fogo na frente do personagem
-    void DetectingFire(float lengthOfRay, LayerMask fireLayer)
+    void OnDrawGizmos()
     {
-        RaycastHit hit;
+        if (Input.GetMouseButton(0))
+        {
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hitMouse;
 
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, lengthOfRay, fireLayer))
-        {
-            Move(false, hit);
-            animator.SetBool("Walking", false);
-            ExtinguishFire(hit.collider.gameObject);
-            animator.SetBool("Extinguish", true);
-        }
-        else
-        {
-            Move(true, hit);
-            animator.SetBool("Walking", true);
-            ExtinguishFire(null);
-            animator.SetBool("Extinguish", false);
+            if (Physics.Raycast(ray, out hitMouse))
+            {
+                Vector3 origin = new Vector3(transform.position.x, transform.position.y + 0.75f, transform.position.z);
+
+                Vector3 dir = (hitMouse.point - transform.position).normalized;
+                dir.y = 0;
+
+                Gizmos.color = Color.red;
+
+                Gizmos.DrawLine(origin, origin + dir * 2.5f);
+            }
         }
     }
 
     //Método que movimenta o personagem
-    void Move(bool move, RaycastHit hitDetectingFire)
+    void Move(Vector3 direction)
     {
-        if (move)
+        transform.rotation = Quaternion.LookRotation(direction);
+
+        if (!isInteractingWithSomething)
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
@@ -93,10 +151,13 @@ public class PlayerController : MonoBehaviour
             {
                 agent.SetDestination(hit.point);
             }
+
+            animator.SetBool("Walking", true);
         }
         else
         {
             agent.SetDestination(this.transform.position);
+            animator.SetBool("Walking", false);
         }
     }
 
@@ -108,25 +169,42 @@ public class PlayerController : MonoBehaviour
     //Método que apaga o fogo que o personagem está vendo
     void ExtinguishFire(GameObject objectBurning)
     {
+        //Iniciando a coroutine que apaga o fogo
         if (objectBurning != null && !isExtinguishing)
         {
             putOutFire = StartCoroutine(PutOutFire(2.5f, objectBurning));
         }
+        //Parando a coroutine antes dela ser finalizada, caso o objeto não esteja mais ao alcance do jogador
         else if (objectBurning == null && isExtinguishing)
         {
             StopCoroutine(putOutFire);
             isExtinguishing = false;
+            isInteractingWithSomething = false;
         }
     }
 
     IEnumerator PutOutFire(float waitSeconds, GameObject objectBurning)
     {
         isExtinguishing = true;
+        isInteractingWithSomething = true;
 
         yield return new WaitForSeconds(waitSeconds);
 
         objectBurning.GetComponent<TreeController>().StopBurn();
         isExtinguishing = false;
+        isInteractingWithSomething = false;
+    }
+
+    IEnumerator InteractWithAnimal(GameObject animal)
+    {
+        isInteractingWithSomething = true;
+        animal.GetComponent<AnimalsController>().Interacting();
+
+        yield return new WaitForSeconds(1);
+
+        isInteractingWithSomething = false;
+        interactWithAnimal = null;
+        animal.GetComponent<AnimalsController>().RunAway();
     }
     #endregion
 

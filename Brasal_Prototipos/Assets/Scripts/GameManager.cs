@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(SpawnFire(spawnFireTime));
+        StartCoroutine(PrepareNextToBurn(spawnFireTime));
         timer = StartCoroutine(Timer());
 
         init_treesObjLength = treesObj.Length;
@@ -89,35 +89,29 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    IEnumerator SpawnFire(float waitTime)
+    IEnumerator PrepareNextToBurn(float waitTime)
     {
         while (true)
         {
             // Seleciona uma árvore aleatória
             int indexTree = Random.Range(0, treesObj.Length);
-            if (treesObj[indexTree] == null)
-            {
-                yield return null;
-                continue;
-            }
 
             var tree = treesObj[indexTree].GetComponent<TreeController>();
 
             // Verifica se a árvore é válida e não está queimando se prestes a queimar ou se já queimou
-            if (tree == null || tree.isBurning || tree.isNextToBurn || tree.burned)
+            if (!tree.isBurning && !tree.isNextToBurn)
             {
-                yield return null;
-                continue;
+                yield return new WaitForSeconds(waitTime);
+
+                // Marca a árvore como próxima a queimar, se ela ainda existir
+                if (tree != null)
+                {
+                    tree.isNextToBurn = true;
+                }
             }
 
             // Aguarda o tempo definido
-            yield return new WaitForSeconds(waitTime);
 
-            // Marca a árvore como próxima a queimar, se ela ainda existir
-            if (tree != null)
-            {
-                tree.isNextToBurn = true;
-            }
         }
     }
 }
