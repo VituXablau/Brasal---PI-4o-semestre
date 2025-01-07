@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: CodeCrusaders
   productName: Brasal_Prototipos
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -834,8 +834,8 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Brasal_Prototipos
-  metroPackageVersion: 
+  metroPackageName: BrasalPrototipos
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -843,7 +843,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Brasal_Prototipos
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Brasal_Prototipos
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
