@@ -242,6 +242,33 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &327300135 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 05bf26e195d761246b4c9932fecfba2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 667649508}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &327300139
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327300135}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 411b9ffcb08213744a2756c857e8a094, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &361998215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -303,7 +330,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5a91f6ef2d4740b4c9315bd865d8de88,
         type: 3}
       propertyPath: m_Name
-      value: modelo_item_sinalizador
+      value: Item Sinalizador
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -312,7 +339,11 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1027929738}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5a91f6ef2d4740b4c9315bd865d8de88,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 491565691}
   m_SourcePrefab: {fileID: 100100000, guid: 5a91f6ef2d4740b4c9315bd865d8de88, type: 3}
 --- !u!4 &361998216 stripped
 Transform:
@@ -320,6 +351,33 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 361998215}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &491565688 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5a91f6ef2d4740b4c9315bd865d8de88,
+    type: 3}
+  m_PrefabInstance: {fileID: 361998215}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &491565691
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491565688}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3410f33e50e18774a83ff0c712dccd75, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &667649508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -378,15 +436,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 05bf26e195d761246b4c9932fecfba2d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 05bf26e195d761246b4c9932fecfba2d,
         type: 3}
       propertyPath: m_Name
-      value: modelo_item_aviao
+      value: "Item Avi\xE3o"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 05bf26e195d761246b4c9932fecfba2d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 327300139}
   m_SourcePrefab: {fileID: 100100000, guid: 05bf26e195d761246b4c9932fecfba2d, type: 3}
 --- !u!1 &1027929737
 GameObject:
@@ -399,7 +466,7 @@ GameObject:
   - component: {fileID: 1027929738}
   - component: {fileID: 1027929739}
   m_Layer: 0
-  m_Name: Laser
+  m_Name: Item Sinalizador Laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -415,7 +482,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 25}
+  m_LocalScale: {x: 1, y: 1, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 361998216}
@@ -585,13 +652,44 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ca044e9b8ee158c4f8515eed29f2a44a,
         type: 3}
       propertyPath: m_Name
-      value: modelo_item_aspersor
+      value: Item Aspersor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ca044e9b8ee158c4f8515eed29f2a44a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1326960052}
   m_SourcePrefab: {fileID: 100100000, guid: ca044e9b8ee158c4f8515eed29f2a44a, type: 3}
+--- !u!1 &1326960048 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ca044e9b8ee158c4f8515eed29f2a44a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1281973124}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1326960052
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326960048}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e81d714195c4730429c4ddccef05f2bd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1341417488
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -653,13 +751,44 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 928053b3f99bd434d929b7fd58a91557,
         type: 3}
       propertyPath: m_Name
-      value: modelo_item_drone
+      value: Item Drone
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 928053b3f99bd434d929b7fd58a91557,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1419968997}
   m_SourcePrefab: {fileID: 100100000, guid: 928053b3f99bd434d929b7fd58a91557, type: 3}
+--- !u!1 &1419968993 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 928053b3f99bd434d929b7fd58a91557,
+    type: 3}
+  m_PrefabInstance: {fileID: 1341417488}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1419968997
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419968993}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cc6862659af169c40b88215cafc39116, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1562725957
 GameObject:
   m_ObjectHideFlags: 0
