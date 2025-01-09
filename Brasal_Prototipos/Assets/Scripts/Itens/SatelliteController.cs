@@ -2,11 +2,9 @@ using UnityEngine;
 
 public class SatelliteController : MonoBehaviour
 {
-    [SerializeField] private GameObject[] treesObj;
-
     public void ActivateSatellite()
     {
-        foreach (GameObject tree in treesObj)
+        foreach (GameObject tree in GameManager.Instance.treesObj)
         {
             if (tree.GetComponent<TreeController>().isNextToBurn == true && tree.gameObject != null)
             {

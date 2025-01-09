@@ -284,7 +284,6 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  burned: 0
   minTime: 5
   maxTime: 10
   burnedTree_Pref: {fileID: 6222908601876555122, guid: 836689c3ac15dfb4b95a041c05a1d5c3,
@@ -834,6 +833,151 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1061174508}
   m_SourcePrefab: {fileID: 100100000, guid: d4bbe893340da2c43b65cb44d12c30f0, type: 3}
+--- !u!1 &137623649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 137623650}
+  - component: {fileID: 137623655}
+  - component: {fileID: 137623654}
+  - component: {fileID: 137623653}
+  - component: {fileID: 137623652}
+  - component: {fileID: 137623651}
+  m_Layer: 10
+  m_Name: Animal (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &137623650
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137623649}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.7, y: 1, z: -3.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2071405122}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &137623651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137623649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4433d2107ee379540858cc43bf802b56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 137623652}
+  targetPos: {fileID: 473519208}
+--- !u!195 &137623652
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137623649}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!136 &137623653
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137623649}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &137623654
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137623649}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &137623655
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137623649}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &165697781
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,7 +1172,6 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  burned: 0
   minTime: 5
   maxTime: 10
   burnedTree_Pref: {fileID: 4693248463570839120, guid: 30edf9dc843e3414aa3951894847081f,
@@ -1157,6 +1300,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 86984516}
+  - {fileID: 1525767026}
   - {fileID: 2101852734}
   - {fileID: 1855478711}
   m_Father: {fileID: 1979951851}
@@ -1495,7 +1639,6 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  burned: 0
   minTime: 5
   maxTime: 10
   burnedTree_Pref: {fileID: 440267294442201845, guid: 687a150b77c59614c90721cca09c08ba,
@@ -1698,7 +1841,6 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  burned: 0
   minTime: 5
   maxTime: 10
   burnedTree_Pref: {fileID: 440267294442201845, guid: 687a150b77c59614c90721cca09c08ba,
@@ -1770,7 +1912,7 @@ Transform:
   m_GameObject: {fileID: 473519207}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.8, y: 0, z: -4.6}
+  m_LocalPosition: {x: 11.8, y: 0, z: -16.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2042,7 +2184,6 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  burned: 0
   minTime: 5
   maxTime: 10
   burnedTree_Pref: {fileID: 6222908601876555122, guid: 836689c3ac15dfb4b95a041c05a1d5c3,
@@ -2203,9 +2344,15 @@ MonoBehaviour:
   - {fileID: 210112526}
   - {fileID: 1379457187}
   - {fileID: 1436687248}
+  animalsObj:
+  - {fileID: 1633368044}
+  - {fileID: 922735995}
+  - {fileID: 137623649}
   cur_treesObjLength: 0
+  savedAnimalsObj: 0
   spawnFireTime: 10
   percentage_text: {fileID: 86984517}
+  numAnimals_text: {fileID: 1525767027}
   timer_text: {fileID: 1855478712}
   congratulations_text: {fileID: 2101852735}
 --- !u!1 &590718955
@@ -2369,7 +2516,6 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  burned: 0
   minTime: 5
   maxTime: 10
   burnedTree_Pref: {fileID: 6222908601876555122, guid: 836689c3ac15dfb4b95a041c05a1d5c3,
@@ -2585,7 +2731,6 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  burned: 0
   minTime: 5
   maxTime: 10
   burnedTree_Pref: {fileID: 6222908601876555122, guid: 836689c3ac15dfb4b95a041c05a1d5c3,
@@ -2788,7 +2933,6 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  burned: 0
   minTime: 5
   maxTime: 10
   burnedTree_Pref: {fileID: 6222908601876555122, guid: 836689c3ac15dfb4b95a041c05a1d5c3,
@@ -3052,26 +3196,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 987687f13af5eda45a8c8fc8c587715e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treesObj:
-  - {fileID: 437176472}
-  - {fileID: 1059350495}
-  - {fileID: 1251573959}
-  - {fileID: 363546135}
-  - {fileID: 894195654}
-  - {fileID: 1331468182}
-  - {fileID: 671819508}
-  - {fileID: 596215131}
-  - {fileID: 40105417}
-  - {fileID: 1666839600}
-  - {fileID: 1782739488}
-  - {fileID: 638268906}
-  - {fileID: 519644935}
-  - {fileID: 1967753596}
-  - {fileID: 1925639250}
-  - {fileID: 1753624109}
-  - {fileID: 210112526}
-  - {fileID: 1379457187}
-  - {fileID: 1436687248}
 --- !u!1 &894195654
 GameObject:
   m_ObjectHideFlags: 0
@@ -3128,7 +3252,6 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  burned: 0
   minTime: 5
   maxTime: 10
   burnedTree_Pref: {fileID: 440267294442201845, guid: 687a150b77c59614c90721cca09c08ba,
@@ -3225,6 +3348,151 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894195654}
   m_Mesh: {fileID: -798365914255834390, guid: cbebc07e88809fb449f92cf70390e14a, type: 3}
+--- !u!1 &922735995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 922735996}
+  - component: {fileID: 922736001}
+  - component: {fileID: 922736000}
+  - component: {fileID: 922735999}
+  - component: {fileID: 922735998}
+  - component: {fileID: 922735997}
+  m_Layer: 10
+  m_Name: Animal (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &922735996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922735995}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.4, y: 1, z: -8.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2071405122}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &922735997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922735995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4433d2107ee379540858cc43bf802b56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 922735998}
+  targetPos: {fileID: 473519208}
+--- !u!195 &922735998
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922735995}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!136 &922735999
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922735995}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &922736000
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922735995}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &922736001
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922735995}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1028963218
 GameObject:
   m_ObjectHideFlags: 0
@@ -3596,7 +3864,6 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  burned: 0
   minTime: 5
   maxTime: 10
   burnedTree_Pref: {fileID: 440267294442201845, guid: 687a150b77c59614c90721cca09c08ba,
@@ -3737,9 +4004,9 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
-  m_Acceleration: 8
+  m_Acceleration: 10000
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 10000
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -4006,7 +4273,6 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  burned: 0
   minTime: 5
   maxTime: 10
   burnedTree_Pref: {fileID: 440267294442201845, guid: 687a150b77c59614c90721cca09c08ba,
@@ -4401,7 +4667,6 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  burned: 0
   minTime: 5
   maxTime: 10
   burnedTree_Pref: {fileID: 440267294442201845, guid: 687a150b77c59614c90721cca09c08ba,
@@ -4586,7 +4851,6 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  burned: 0
   minTime: 5
   maxTime: 10
   burnedTree_Pref: {fileID: 4693248463570839120, guid: 30edf9dc843e3414aa3951894847081f,
@@ -4739,7 +5003,6 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  burned: 0
   minTime: 5
   maxTime: 10
   burnedTree_Pref: {fileID: 4693248463570839120, guid: 30edf9dc843e3414aa3951894847081f,
@@ -5046,6 +5309,140 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1525767025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1525767026}
+  - component: {fileID: 1525767028}
+  - component: {fileID: 1525767027}
+  m_Layer: 5
+  m_Name: Animals (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1525767026
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525767025}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 231899471}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 425, y: -90}
+  m_SizeDelta: {x: 750, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1525767027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525767025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Animais salvos: 0'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 45
+  m_fontSizeBase: 45
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1525767028
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525767025}
+  m_CullTransparentMesh: 1
 --- !u!1 &1605867289
 GameObject:
   m_ObjectHideFlags: 0
@@ -5182,7 +5579,7 @@ Transform:
   m_GameObject: {fileID: 1633368044}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: -13.8, y: 1, z: 7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5285,7 +5682,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -5353,7 +5750,6 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  burned: 0
   minTime: 5
   maxTime: 10
   burnedTree_Pref: {fileID: 6222908601876555122, guid: 836689c3ac15dfb4b95a041c05a1d5c3,
@@ -5506,7 +5902,6 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  burned: 0
   minTime: 5
   maxTime: 10
   burnedTree_Pref: {fileID: 4693248463570839120, guid: 30edf9dc843e3414aa3951894847081f,
@@ -5659,7 +6054,6 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  burned: 0
   minTime: 5
   maxTime: 10
   burnedTree_Pref: {fileID: 6222908601876555122, guid: 836689c3ac15dfb4b95a041c05a1d5c3,
@@ -6169,7 +6563,6 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  burned: 0
   minTime: 5
   maxTime: 10
   burnedTree_Pref: {fileID: 4693248463570839120, guid: 30edf9dc843e3414aa3951894847081f,
@@ -6372,7 +6765,6 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  burned: 0
   minTime: 5
   maxTime: 10
   burnedTree_Pref: {fileID: 4693248463570839120, guid: 30edf9dc843e3414aa3951894847081f,
@@ -6488,6 +6880,8 @@ Transform:
   - {fileID: 1088492682}
   - {fileID: 1061174505}
   - {fileID: 1633368045}
+  - {fileID: 922735996}
+  - {fileID: 137623650}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2076789730

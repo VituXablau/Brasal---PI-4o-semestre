@@ -14,7 +14,7 @@ public class TreeController : MonoBehaviour
     //Bool que retorna se a árvore está queimando
     public bool burnImmediately = false, isBurning = false;
 
-    private Coroutine burning;
+    private Coroutine burning, spreadFire;
 
     [SerializeField] private int minTime, maxTime;
 
@@ -57,7 +57,7 @@ public class TreeController : MonoBehaviour
         isNextToBurn = false;
         burnImmediately = false;
 
-        StartCoroutine(SpreadFire());
+        spreadFire = StartCoroutine(SpreadFire());
 
         yield return new WaitForSeconds(7.5f);
 
@@ -94,6 +94,7 @@ public class TreeController : MonoBehaviour
         isBurning = false;
 
         StopCoroutine(burning);
+        StopCoroutine(spreadFire);
     }
 
     //Método que destrói a árvore depois que ela queima

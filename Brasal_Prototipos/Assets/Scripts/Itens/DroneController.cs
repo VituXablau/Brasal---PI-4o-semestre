@@ -72,7 +72,8 @@ public class DroneController : MonoBehaviour
     {
         yield return new WaitForSeconds(waitSeconds);
 
-        objectBurning.GetComponent<TreeController>().StopBurn();
+        if (objectBurning != null)
+            objectBurning.GetComponent<TreeController>().StopBurn();
 
         yield return new WaitForSeconds(1);
 

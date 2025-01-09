@@ -7,7 +7,7 @@ public class AnimalsController : MonoBehaviour
 
     [SerializeField] Transform targetPos;
 
-    private bool scared = true;
+    private bool scared = true, running = false;
 
     void Update()
     {
@@ -40,8 +40,13 @@ public class AnimalsController : MonoBehaviour
 
     public void RunAway()
     {
-        gameObject.layer = 9;
-        agent.SetDestination(targetPos.position);
+        if (!running)
+        {
+            gameObject.layer = 9;
+            GameManager.Instance.UpdateAnimals();
+            agent.SetDestination(targetPos.position);
+            running = true;
+        }
     }
 
     bool HasAgentStopped()

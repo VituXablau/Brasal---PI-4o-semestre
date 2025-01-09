@@ -30,8 +30,6 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
-
-        agent.updateRotation = false;
     }
 
     void Update()
@@ -67,8 +65,7 @@ public class PlayerController : MonoBehaviour
 
             if (Physics.Raycast(ray, out hitMouse))
             {
-                Vector3 dir = (hitMouse.point - transform.position).normalized;
-                dir.y = 0;
+                Vector3 dir = transform.forward;
                 RaycastHit hit;
 
                 //Verificando se a layer que o raio colidiu
@@ -77,7 +74,7 @@ public class PlayerController : MonoBehaviour
                     //Layer do fogo
                     if (hit.collider.gameObject.layer == 7)
                     {
-                        Move(dir);
+                        Move();
 
                         ExtinguishFire(hit.collider.gameObject);
                         animator.SetBool("Extinguish", true);
@@ -85,7 +82,7 @@ public class PlayerController : MonoBehaviour
                     //Layer do animal assustado
                     else if (hit.collider.gameObject.layer == 10)
                     {
-                        Move(dir);
+                        Move();
 
                         interactWithAnimal = StartCoroutine(InteractWithAnimal(hit.collider.gameObject));
 
@@ -95,7 +92,7 @@ public class PlayerController : MonoBehaviour
                     //Qualquer outra layer
                     else
                     {
-                        Move(dir);
+                        Move();
 
                         ExtinguishFire(null);
                         animator.SetBool("Extinguish", false);
@@ -104,7 +101,7 @@ public class PlayerController : MonoBehaviour
                 //Não colidiu com nada
                 else
                 {
-                    Move(dir);
+                    Move();
 
                     ExtinguishFire(null);
                     animator.SetBool("Extinguish", false);
@@ -116,32 +113,9 @@ public class PlayerController : MonoBehaviour
             StopCoroutine(putOutFire);
     }
 
-    void OnDrawGizmos()
-    {
-        if (Input.GetMouseButton(0))
-        {
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hitMouse;
-
-            if (Physics.Raycast(ray, out hitMouse))
-            {
-                Vector3 origin = new Vector3(transform.position.x, transform.position.y + 0.75f, transform.position.z);
-
-                Vector3 dir = (hitMouse.point - transform.position).normalized;
-                dir.y = 0;
-
-                Gizmos.color = Color.red;
-
-                Gizmos.DrawLine(origin, origin + dir * 2.5f);
-            }
-        }
-    }
-
     //Método que movimenta o personagem
-    void Move(Vector3 direction)
+    void Move()
     {
-        transform.rotation = Quaternion.LookRotation(direction);
-
         if (!isInteractingWithSomething)
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
