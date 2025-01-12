@@ -3,7 +3,72 @@ guid: d4bbe893340da2c43b65cb44d12c30f0
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: item_bomba_1_mat
+    second: {fileID: 2100000, guid: feb9a8b116d0cf748b70f98b93782022, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: item_bomba_2_mat
+    second: {fileID: 2100000, guid: 9125f5a4941e7e84da9b68e1be2efd40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: item_bomba_3_mat
+    second: {fileID: 2100000, guid: ed27250d1555b63459c99c9b32536f3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: personagem_capacete_2_mat
+    second: {fileID: 2100000, guid: cec0d83bc2c569840a16b19f5eb205c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: personagem_capacete_cinza_mat
+    second: {fileID: 2100000, guid: 76840af2c483b8847beb5b302f16c8c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: personagem_cinza_cabelo_mat
+    second: {fileID: 2100000, guid: 007280d050e10eb43b3d78cd12253a7f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: personagem_cinza_pele_mat
+    second: {fileID: 2100000, guid: fe01e8a4d511e904d9935da6fd85e565, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: personagem_corpo_1_mat
+    second: {fileID: 2100000, guid: 4a4a23a35765fb24fb2b8a0a5c7ece19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: personagem_corpo_2_mat
+    second: {fileID: 2100000, guid: 746d6b47a4af747459e26ecfa80e7ecf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: personagem_corpo_3_mat
+    second: {fileID: 2100000, guid: e9976de540e8d674db9e71bf75642745, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: personagem_corpo_4_mat
+    second: {fileID: 2100000, guid: 6d5acbac8c28c1740a65bb7bc06f88b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: personagem_face_mat
+    second: {fileID: 2100000, guid: c2c8d36c9bd79a245a2fd39e97b8700a, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: face_uv_neutral_v2
+    second: {fileID: 2800000, guid: 81b8de523cedbac4393a42c31c2b824e, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -33,9 +98,9 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: personagem_apagarfogo
-      takeName: personagem_apagarfogo
-      internalID: -3785883265515448672
+      name: personagem_apagandofogo
+      takeName: personagem_apagandofogo
+      internalID: -1242003504988958198
       firstFrame: 0
       lastFrame: 90
       wrapMode: 0
@@ -44,7 +109,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -62,9 +127,9 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: personagem_andar
-      takeName: personagem_andar
-      internalID: 3739989280311113502
+      name: personagem_andando
+      takeName: personagem_andando
+      internalID: -1747282296469971842
       firstFrame: 0
       lastFrame: 60
       wrapMode: 0
@@ -120,9 +185,9 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Personagem Cinza Rig|personagem_andar
-      takeName: Personagem Cinza Rig|personagem_andar
-      internalID: 5701431306645414661
+      name: Personagem Cinza Rig|personagem_andando
+      takeName: Personagem Cinza Rig|personagem_andando
+      internalID: 4653686290557104521
       firstFrame: 0
       lastFrame: 60
       wrapMode: 0
@@ -131,7 +196,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -149,9 +214,9 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Personagem Cinza Rig|personagem_apagarfogo
-      takeName: Personagem Cinza Rig|personagem_apagarfogo
-      internalID: 5508512434909629141
+      name: Personagem Cinza Rig|personagem_apagandofogo
+      takeName: Personagem Cinza Rig|personagem_apagandofogo
+      internalID: 6269684949356130834
       firstFrame: 0
       lastFrame: 90
       wrapMode: 0
@@ -160,7 +225,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -189,7 +254,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

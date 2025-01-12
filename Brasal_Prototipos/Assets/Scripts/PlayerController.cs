@@ -1,14 +1,13 @@
 using System.Collections;
 using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
     //Sistema de movimentação e interacao com o fogo
-    [SerializeField] private Camera cam;
-    [SerializeField] private NavMeshAgent agent;
+    private Camera cam;
+    private NavMeshAgent agent;
 
     private Animator animator;
 
@@ -29,7 +28,9 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        cam = Camera.main;
         animator = GetComponent<Animator>();
+        agent = GetComponent<NavMeshAgent>();
     }
 
     void Update()
@@ -77,7 +78,6 @@ public class PlayerController : MonoBehaviour
                         Move();
 
                         ExtinguishFire(hit.collider.gameObject);
-                        animator.SetBool("Extinguish", true);
                     }
                     //Layer do animal assustado
                     else if (hit.collider.gameObject.layer == 10)
@@ -87,7 +87,6 @@ public class PlayerController : MonoBehaviour
                         interactWithAnimal = StartCoroutine(InteractWithAnimal(hit.collider.gameObject));
 
                         ExtinguishFire(null);
-                        animator.SetBool("Extinguish", false);
                     }
                     //Qualquer outra layer
                     else
@@ -95,7 +94,6 @@ public class PlayerController : MonoBehaviour
                         Move();
 
                         ExtinguishFire(null);
-                        animator.SetBool("Extinguish", false);
                     }
                 }
                 //Não colidiu com nada
@@ -104,7 +102,6 @@ public class PlayerController : MonoBehaviour
                     Move();
 
                     ExtinguishFire(null);
-                    animator.SetBool("Extinguish", false);
                 }
             }
         }
@@ -154,6 +151,7 @@ public class PlayerController : MonoBehaviour
             StopCoroutine(putOutFire);
             isExtinguishing = false;
             isInteractingWithSomething = false;
+            animator.SetBool("Extinguish", false);
         }
     }
 
@@ -161,12 +159,14 @@ public class PlayerController : MonoBehaviour
     {
         isExtinguishing = true;
         isInteractingWithSomething = true;
+        animator.SetBool("Extinguish", true);
 
         yield return new WaitForSeconds(waitSeconds);
 
         objectBurning.GetComponent<TreeController>().StopBurn();
         isExtinguishing = false;
         isInteractingWithSomething = false;
+        animator.SetBool("Extinguish", false);
     }
 
     IEnumerator InteractWithAnimal(GameObject animal)
