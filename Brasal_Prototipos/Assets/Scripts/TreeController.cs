@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class TreeController : MonoBehaviour
 {
-    Animator animator;
-    [SerializeField] Animator animator_children;
+    //Animator animator;
+    //[SerializeField] Animator animator_children;
 
     [SerializeField] LayerMask treeLayer;
 
@@ -22,7 +22,7 @@ public class TreeController : MonoBehaviour
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -49,11 +49,11 @@ public class TreeController : MonoBehaviour
     IEnumerator Burn()
     {
         gameObject.layer = 7;
-        animator.SetBool("Burning", true);
-        animator_children.SetBool("Burning", true);
+        //animator.SetBool("Burning", true);
+        //animator_children.SetBool("Burning", true);
 
-        animator.SetBool("Satellite", false);
-        animator_children.SetBool("Satellite", false);
+        //animator.SetBool("Satellite", false);
+        //animator_children.SetBool("Satellite", false);
         isNextToBurn = false;
         burnImmediately = false;
 
@@ -89,8 +89,8 @@ public class TreeController : MonoBehaviour
     public void StopBurn()
     {
         gameObject.layer = 8;
-        animator.SetBool("Burning", false);
-        animator_children.SetBool("Burning", false);
+        //animator.SetBool("Burning", false);
+        //animator_children.SetBool("Burning", false);
         isBurning = false;
 
         StopCoroutine(burning);
@@ -121,7 +121,7 @@ public class TreeController : MonoBehaviour
 
     public void ShowNextToBurn()
     {
-        animator.SetBool("Satellite", true);
-        animator_children.SetBool("Satellite", true);
+        //animator.SetBool("Satellite", true);
+        //animator_children.SetBool("Satellite", true);
     }
 }
