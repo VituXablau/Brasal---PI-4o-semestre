@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class TreeController : MonoBehaviour
 {
-    //Animator animator;
-    //[SerializeField] Animator animator_children;
-
     [SerializeField] LayerMask treeLayer;
 
     //Bool que retorna se a árvore é a próxima a queimar
@@ -18,11 +15,13 @@ public class TreeController : MonoBehaviour
 
     [SerializeField] private int minTime, maxTime;
 
-    [SerializeField] private GameObject burnedTree_Pref;
+    [SerializeField] private GameObject burnedTree_Pref, fireEffect_Pref;
+    private GameObject fireEffect_Obj, objChild;
 
     void Start()
     {
-        //animator = GetComponent<Animator>();
+        if (gameObject.transform.childCount > 0)
+            objChild = gameObject.transform.GetChild(0).gameObject;
     }
 
     void Update()
@@ -49,11 +48,8 @@ public class TreeController : MonoBehaviour
     IEnumerator Burn()
     {
         gameObject.layer = 7;
-        //animator.SetBool("Burning", true);
-        //animator_children.SetBool("Burning", true);
+        fireEffect_Obj = Instantiate(fireEffect_Pref, transform.position, Quaternion.identity);
 
-        //animator.SetBool("Satellite", false);
-        //animator_children.SetBool("Satellite", false);
         isNextToBurn = false;
         burnImmediately = false;
 
@@ -89,8 +85,8 @@ public class TreeController : MonoBehaviour
     public void StopBurn()
     {
         gameObject.layer = 8;
-        //animator.SetBool("Burning", false);
-        //animator_children.SetBool("Burning", false);
+        Destroy(fireEffect_Obj);
+
         isBurning = false;
 
         StopCoroutine(burning);
@@ -111,6 +107,9 @@ public class TreeController : MonoBehaviour
                 GameManager.Instance.treesObj = list.ToArray();
 
                 Destroy(gameObject);
+                Destroy(fireEffect_Obj);
+                Destroy(objChild);
+
                 Instantiate(burnedTree_Pref, transform.position, transform.rotation);
 
                 GameManager.Instance.cur_treesObjLength--;

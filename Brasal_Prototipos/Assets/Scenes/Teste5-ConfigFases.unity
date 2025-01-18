@@ -708,6 +708,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cenario Amazonia
       objectReference: {fileID: 0}
+    - target: {fileID: 6938834750683139657, guid: af076f576d4298b498a31b8d5ec23573,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7134207620422553096, guid: af076f576d4298b498a31b8d5ec23573,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -779,7 +784,7 @@ PrefabInstance:
     - target: {fileID: 1686115254691928014, guid: fbf6c30b175a4c44581bdb0d02405095,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5961581512150370247, guid: fbf6c30b175a4c44581bdb0d02405095,
         type: 3}

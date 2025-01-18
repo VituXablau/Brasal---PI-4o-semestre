@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 3319605630628196689}
   - component: {fileID: 1698869751235781003}
   - component: {fileID: 648020482204771078}
+  - component: {fileID: 4949978118154888463}
   m_Layer: 8
   m_Name: Amazonia Arvore 2 .010
   m_TagString: Untagged
@@ -272,7 +273,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 6968250953220099797, guid: 659419c50033f0d4d8b08253b79d19e1,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &648020482204771078
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -289,6 +293,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 10.92, z: -162.23201}
   m_TimeToStationary: 0.5
+--- !u!65 &4949978118154888463
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169418539453607887}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 324.902}
+  m_Center: {x: 0, y: 10.92, z: -162.232}
 --- !u!1 &177132412848749523
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,6 +427,7 @@ GameObject:
   - component: {fileID: 2218077952537786675}
   - component: {fileID: 2753245834971753975}
   - component: {fileID: 4311900131440881274}
+  - component: {fileID: 7625755633377052445}
   m_Layer: 8
   m_Name: Amazonia Arbusto 1.001
   m_TagString: Untagged
@@ -495,7 +521,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8069283595409817985, guid: 6d2ab8de7559494449cfa669e391f9bb,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &4311900131440881274
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -512,6 +541,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -1.2340001, y: -0.998, z: -0.508}
   m_TimeToStationary: 0.5
+--- !u!65 &7625755633377052445
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270164620726089811}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 98.39762, y: 145.28674, z: 110.78122}
+  m_Center: {x: -1.2342949, y: -0.99777985, z: -0.50824547}
 --- !u!1 &294899668844272428
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,6 +1006,7 @@ GameObject:
   - component: {fileID: 1534492532418469236}
   - component: {fileID: 5688580484907410178}
   - component: {fileID: 1064162392716503007}
+  - component: {fileID: 8654151384526642747}
   m_Layer: 8
   m_Name: Amazonia Arbusto 2.003
   m_TagString: Untagged
@@ -1049,7 +1100,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &1064162392716503007
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1066,6 +1120,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 2.085, y: 0.22900002, z: 3.4970002}
   m_TimeToStationary: 0.5
+--- !u!65 &8654151384526642747
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580807381018039468}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 166.21677, y: 236.17578, z: 159.2185}
+  m_Center: {x: 2.0849915, y: 0.22908396, z: 3.4973068}
 --- !u!1 &617889850515371985
 GameObject:
   m_ObjectHideFlags: 0
@@ -1162,6 +1237,7 @@ GameObject:
   - component: {fileID: 4966648212464906610}
   - component: {fileID: 3267573648420078647}
   - component: {fileID: 1432473503837183776}
+  - component: {fileID: 6265467274643692107}
   m_Layer: 8
   m_Name: Amazonia Arvore 2 .002
   m_TagString: Untagged
@@ -1255,7 +1331,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 6968250953220099797, guid: 659419c50033f0d4d8b08253b79d19e1,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &1432473503837183776
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1272,6 +1351,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 10.92, z: -162.23201}
   m_TimeToStationary: 0.5
+--- !u!65 &6265467274643692107
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768679837232260349}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 324.902}
+  m_Center: {x: 0, y: 10.92, z: -162.232}
 --- !u!1 &813872666147951651
 GameObject:
   m_ObjectHideFlags: 0
@@ -1877,6 +1977,7 @@ GameObject:
   - component: {fileID: 1715164519152822657}
   - component: {fileID: 8058321121312388005}
   - component: {fileID: 973681014534843561}
+  - component: {fileID: 7260845093888802026}
   m_Layer: 8
   m_Name: Amazonia Arbusto 2.004
   m_TagString: Untagged
@@ -1970,7 +2071,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &973681014534843561
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1987,6 +2091,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 2.085, y: 0.22900002, z: 3.4970002}
   m_TimeToStationary: 0.5
+--- !u!65 &7260845093888802026
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777864858647275151}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 166.21678, y: 236.17586, z: 159.21854}
+  m_Center: {x: 2.0850525, y: 0.22908418, z: 3.497315}
 --- !u!1 &1962074688987197265
 GameObject:
   m_ObjectHideFlags: 0
@@ -2000,6 +2125,7 @@ GameObject:
   - component: {fileID: 5890043213997691987}
   - component: {fileID: 2103171342443717119}
   - component: {fileID: 6681771197693691528}
+  - component: {fileID: 1948905128188819519}
   m_Layer: 8
   m_Name: Amazonia Arbusto 2.005
   m_TagString: Untagged
@@ -2093,7 +2219,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &6681771197693691528
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2110,6 +2239,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 2.085, y: 0.22900002, z: 3.4970002}
   m_TimeToStationary: 0.5
+--- !u!65 &1948905128188819519
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962074688987197265}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 166.21681, y: 236.17589, z: 159.21855}
+  m_Center: {x: 2.0849915, y: 0.22908433, z: 3.4973073}
 --- !u!1 &1997665123272043054
 GameObject:
   m_ObjectHideFlags: 0
@@ -2323,6 +2473,7 @@ GameObject:
   - component: {fileID: 316365293590949722}
   - component: {fileID: 6802219754129735314}
   - component: {fileID: 4238003494063455046}
+  - component: {fileID: 2937469392430582402}
   m_Layer: 8
   m_Name: Amazonia Arvore 2 .007
   m_TagString: Untagged
@@ -2416,7 +2567,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 6968250953220099797, guid: 659419c50033f0d4d8b08253b79d19e1,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &4238003494063455046
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2433,6 +2587,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 10.92, z: -162.23201}
   m_TimeToStationary: 0.5
+--- !u!65 &2937469392430582402
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2181357840548081921}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 324.902}
+  m_Center: {x: 0, y: 10.92, z: -162.232}
 --- !u!1 &2447450462927548531
 GameObject:
   m_ObjectHideFlags: 0
@@ -2632,6 +2807,7 @@ GameObject:
   - component: {fileID: 3392405247966124697}
   - component: {fileID: 8908220885512467734}
   - component: {fileID: 2000075203434481151}
+  - component: {fileID: 3595279967864781982}
   m_Layer: 8
   m_Name: Amazonia Arvore 2 .006
   m_TagString: Untagged
@@ -2725,7 +2901,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 6968250953220099797, guid: 659419c50033f0d4d8b08253b79d19e1,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &2000075203434481151
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2742,6 +2921,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 10.92, z: -162.23201}
   m_TimeToStationary: 0.5
+--- !u!65 &3595279967864781982
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2500571322502196457}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 324.902}
+  m_Center: {x: 0, y: 10.92, z: -162.232}
 --- !u!1 &2573186389271850990
 GameObject:
   m_ObjectHideFlags: 0
@@ -2755,6 +2955,7 @@ GameObject:
   - component: {fileID: 7538986534856737574}
   - component: {fileID: 8986328080519792905}
   - component: {fileID: 354608661294395130}
+  - component: {fileID: 2339266747961619699}
   m_Layer: 8
   m_Name: Amazonia Arvore 1.009
   m_TagString: Untagged
@@ -2848,7 +3049,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -1384943753020533813, guid: 659419c50033f0d4d8b08253b79d19e1,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &354608661294395130
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2865,6 +3069,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 5, z: -188.25201}
   m_TimeToStationary: 0.5
+--- !u!65 &2339266747961619699
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2573186389271850990}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 376.762}
+  m_Center: {x: 0, y: 5, z: -188.252}
 --- !u!1 &2658593246576729942
 GameObject:
   m_ObjectHideFlags: 0
@@ -3061,6 +3286,7 @@ GameObject:
   - component: {fileID: 1160346254491625016}
   - component: {fileID: 8018508009887693605}
   - component: {fileID: 6243586774608616861}
+  - component: {fileID: 6349805648435749417}
   m_Layer: 8
   m_Name: Amazonia Arvore 2 .005
   m_TagString: Untagged
@@ -3154,7 +3380,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 6968250953220099797, guid: 659419c50033f0d4d8b08253b79d19e1,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &6243586774608616861
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3171,6 +3400,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 10.92, z: -162.23201}
   m_TimeToStationary: 0.5
+--- !u!65 &6349805648435749417
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2819661243525395261}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 324.902}
+  m_Center: {x: 0, y: 10.92, z: -162.232}
 --- !u!1 &2868236500237369245
 GameObject:
   m_ObjectHideFlags: 0
@@ -3659,6 +3909,7 @@ GameObject:
   - component: {fileID: 8141150366230422283}
   - component: {fileID: 5114213260222926272}
   - component: {fileID: 41744262467393997}
+  - component: {fileID: 9060033679385698767}
   m_Layer: 8
   m_Name: Amazonia Arbusto 2.011
   m_TagString: Untagged
@@ -3752,7 +4003,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &41744262467393997
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3769,6 +4023,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 2.085, y: 0.22900002, z: 3.4970002}
   m_TimeToStationary: 0.5
+--- !u!65 &9060033679385698767
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3440029813346346566}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 166.21687, y: 236.17589, z: 159.21858}
+  m_Center: {x: 2.0849915, y: 0.22908464, z: 3.4973073}
 --- !u!1 &3475407656614468721
 GameObject:
   m_ObjectHideFlags: 0
@@ -3782,6 +4057,7 @@ GameObject:
   - component: {fileID: 3314660479399085885}
   - component: {fileID: 6990215619739736423}
   - component: {fileID: 3136232493499525812}
+  - component: {fileID: 6115634737915662401}
   m_Layer: 8
   m_Name: Amazonia Arbusto 2.009
   m_TagString: Untagged
@@ -3875,7 +4151,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &3136232493499525812
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3892,6 +4171,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 2.085, y: 0.22900002, z: 3.4970002}
   m_TimeToStationary: 0.5
+--- !u!65 &6115634737915662401
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3475407656614468721}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 166.21678, y: 236.17584, z: 159.21852}
+  m_Center: {x: 2.0849915, y: 0.22914517, z: 3.4973092}
 --- !u!1 &3635378599786600237
 GameObject:
   m_ObjectHideFlags: 0
@@ -4294,6 +4594,7 @@ GameObject:
   - component: {fileID: 1472158843098022251}
   - component: {fileID: 2999792748490426715}
   - component: {fileID: 1215642301881289426}
+  - component: {fileID: 3023458300713879225}
   m_Layer: 8
   m_Name: Amazonia Arvore 2 .004
   m_TagString: Untagged
@@ -4387,7 +4688,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 6968250953220099797, guid: 659419c50033f0d4d8b08253b79d19e1,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &1215642301881289426
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4404,6 +4708,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 10.92, z: -162.23201}
   m_TimeToStationary: 0.5
+--- !u!65 &3023458300713879225
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4108756272504338966}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 324.902}
+  m_Center: {x: 0, y: 10.92, z: -162.232}
 --- !u!1 &4120208981941940153
 GameObject:
   m_ObjectHideFlags: 0
@@ -4500,6 +4825,7 @@ GameObject:
   - component: {fileID: 7958498325827155333}
   - component: {fileID: 8225273438257254017}
   - component: {fileID: 2876106684742625647}
+  - component: {fileID: 400179917123400106}
   m_Layer: 8
   m_Name: Amazonia Arvore 1.007
   m_TagString: Untagged
@@ -4593,7 +4919,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -1384943753020533813, guid: 659419c50033f0d4d8b08253b79d19e1,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &2876106684742625647
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4610,6 +4939,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 5, z: -188.25201}
   m_TimeToStationary: 0.5
+--- !u!65 &400179917123400106
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4174355143983160626}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 376.762}
+  m_Center: {x: 0, y: 5, z: -188.252}
 --- !u!1 &4210656572657948782
 GameObject:
   m_ObjectHideFlags: 0
@@ -5012,6 +5362,7 @@ GameObject:
   - component: {fileID: 6512860274177047910}
   - component: {fileID: 5101132190617252400}
   - component: {fileID: 448351170964060399}
+  - component: {fileID: 8157213099014089870}
   m_Layer: 8
   m_Name: Amazonia Arvore 2 .001
   m_TagString: Untagged
@@ -5105,7 +5456,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 6968250953220099797, guid: 659419c50033f0d4d8b08253b79d19e1,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &448351170964060399
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5122,6 +5476,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 10.92, z: -162.23201}
   m_TimeToStationary: 0.5
+--- !u!65 &8157213099014089870
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4638777172157090179}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 324.902}
+  m_Center: {x: 0, y: 10.92, z: -162.232}
 --- !u!1 &4737736087335263426
 GameObject:
   m_ObjectHideFlags: 0
@@ -5321,6 +5696,7 @@ GameObject:
   - component: {fileID: 7251520356147144627}
   - component: {fileID: 5674627039477991023}
   - component: {fileID: 7503443442192261894}
+  - component: {fileID: 4264785953669594298}
   m_Layer: 8
   m_Name: Amazonia Arbusto 2.002
   m_TagString: Untagged
@@ -5414,7 +5790,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &7503443442192261894
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5431,6 +5810,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 2.085, y: 0.22900002, z: 3.4970002}
   m_TimeToStationary: 0.5
+--- !u!65 &4264785953669594298
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5034979106529391749}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 166.21677, y: 236.17578, z: 159.2185}
+  m_Center: {x: 2.0849915, y: 0.22920603, z: 3.4973068}
 --- !u!1 &5085057171637621830
 GameObject:
   m_ObjectHideFlags: 0
@@ -5444,6 +5844,7 @@ GameObject:
   - component: {fileID: 9086304738599163035}
   - component: {fileID: 6851966856118660197}
   - component: {fileID: 5858202064655554307}
+  - component: {fileID: 3976317595006546818}
   m_Layer: 8
   m_Name: Amazonia Arvore 1.002
   m_TagString: Untagged
@@ -5537,7 +5938,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -1384943753020533813, guid: 659419c50033f0d4d8b08253b79d19e1,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &5858202064655554307
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5554,6 +5958,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 5, z: -188.25201}
   m_TimeToStationary: 0.5
+--- !u!65 &3976317595006546818
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5085057171637621830}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 376.762}
+  m_Center: {x: 0, y: 5, z: -188.252}
 --- !u!1 &5603793311813983498
 GameObject:
   m_ObjectHideFlags: 0
@@ -5567,6 +5992,7 @@ GameObject:
   - component: {fileID: 567408123520695473}
   - component: {fileID: 1973878078754030085}
   - component: {fileID: 7711108483770027818}
+  - component: {fileID: 6233382635853995898}
   m_Layer: 8
   m_Name: Amazonia Arbusto 2.008
   m_TagString: Untagged
@@ -5660,7 +6086,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &7711108483770027818
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5677,6 +6106,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 2.085, y: 0.22900002, z: 3.4970002}
   m_TimeToStationary: 0.5
+--- !u!65 &6233382635853995898
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5603793311813983498}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 166.21683, y: 236.17587, z: 159.21857}
+  m_Center: {x: 2.084992, y: 0.22908457, z: 3.4973073}
 --- !u!1 &5691267661737610998
 GameObject:
   m_ObjectHideFlags: 0
@@ -5893,6 +6343,7 @@ GameObject:
   - component: {fileID: 6935404969293044833}
   - component: {fileID: 8848246429613211317}
   - component: {fileID: 8504351883690807183}
+  - component: {fileID: 7170774096618336036}
   m_Layer: 8
   m_Name: Amazonia Arvore 2 .011
   m_TagString: Untagged
@@ -5986,7 +6437,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 6968250953220099797, guid: 659419c50033f0d4d8b08253b79d19e1,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &8504351883690807183
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6003,6 +6457,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 10.92, z: -162.23201}
   m_TimeToStationary: 0.5
+--- !u!65 &7170774096618336036
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5796076544206245371}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 324.902}
+  m_Center: {x: 0, y: 10.92, z: -162.232}
 --- !u!1 &5796873840913972646
 GameObject:
   m_ObjectHideFlags: 0
@@ -6099,6 +6574,7 @@ GameObject:
   - component: {fileID: 4571315716375506645}
   - component: {fileID: 1744547943055564731}
   - component: {fileID: 5487365436808403165}
+  - component: {fileID: 4869530781004055570}
   m_Layer: 8
   m_Name: Amazonia Arvore 2 .008
   m_TagString: Untagged
@@ -6192,7 +6668,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 6968250953220099797, guid: 659419c50033f0d4d8b08253b79d19e1,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &5487365436808403165
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6209,6 +6688,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 10.92, z: -162.23201}
   m_TimeToStationary: 0.5
+--- !u!65 &4869530781004055570
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5843041580251986685}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 324.902}
+  m_Center: {x: 0, y: 10.92, z: -162.232}
 --- !u!1 &5866512117486273883
 GameObject:
   m_ObjectHideFlags: 0
@@ -6428,6 +6928,7 @@ GameObject:
   - component: {fileID: 702475256058092345}
   - component: {fileID: 1399163380873919382}
   - component: {fileID: 9187018775386064355}
+  - component: {fileID: 5847044424609619386}
   m_Layer: 8
   m_Name: Amazonia Arbusto 1.003
   m_TagString: Untagged
@@ -6521,7 +7022,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8069283595409817985, guid: 6d2ab8de7559494449cfa669e391f9bb,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &9187018775386064355
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6538,6 +7042,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -1.2340001, y: -0.998, z: -0.508}
   m_TimeToStationary: 0.5
+--- !u!65 &5847044424609619386
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6130417250843590378}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 98.39761, y: 145.28674, z: 110.78123}
+  m_Center: {x: -1.2343558, y: -0.9977798, z: -0.5082455}
 --- !u!1 &6158873308124014114
 GameObject:
   m_ObjectHideFlags: 0
@@ -6654,6 +7179,7 @@ GameObject:
   - component: {fileID: 2492110116961841126}
   - component: {fileID: 2883411214693124730}
   - component: {fileID: 375920814771639138}
+  - component: {fileID: 1421523243295812394}
   m_Layer: 8
   m_Name: Amazonia Arbusto 2.006
   m_TagString: Untagged
@@ -6747,7 +7273,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &375920814771639138
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6764,6 +7293,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 2.085, y: 0.22900002, z: 3.4970002}
   m_TimeToStationary: 0.5
+--- !u!65 &1421523243295812394
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6236633745384637998}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 166.21675, y: 236.1758, z: 159.21852}
+  m_Center: {x: 2.0849912, y: 0.22908379, z: 3.4973068}
 --- !u!1 &6295090677458353991
 GameObject:
   m_ObjectHideFlags: 0
@@ -6777,6 +7327,7 @@ GameObject:
   - component: {fileID: 1366620078740014787}
   - component: {fileID: 3601791793431041223}
   - component: {fileID: 4156375784053240105}
+  - component: {fileID: 8310045019937392527}
   m_Layer: 8
   m_Name: Amazonia Arvore 1.008
   m_TagString: Untagged
@@ -6870,7 +7421,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -1384943753020533813, guid: 659419c50033f0d4d8b08253b79d19e1,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &4156375784053240105
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6887,6 +7441,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 5, z: -188.25201}
   m_TimeToStationary: 0.5
+--- !u!65 &8310045019937392527
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6295090677458353991}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 376.762}
+  m_Center: {x: 0, y: 5, z: -188.252}
 --- !u!1 &6324000580685697429
 GameObject:
   m_ObjectHideFlags: 0
@@ -7306,6 +7881,7 @@ GameObject:
   - component: {fileID: 5783983540998540838}
   - component: {fileID: 4518020312043145878}
   - component: {fileID: 4455733869925619322}
+  - component: {fileID: 6192968187687199084}
   m_Layer: 8
   m_Name: Amazonia Arbusto 2.001
   m_TagString: Untagged
@@ -7399,7 +7975,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &4455733869925619322
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -7416,6 +7995,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 2.085, y: 0.22900002, z: 3.4970002}
   m_TimeToStationary: 0.5
+--- !u!65 &6192968187687199084
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6554078097024140006}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 166.21677, y: 236.17578, z: 159.2185}
+  m_Center: {x: 2.0849915, y: 0.22911447, z: 3.4973068}
 --- !u!1 &6938834750683139657
 GameObject:
   m_ObjectHideFlags: 0
@@ -7563,6 +8163,7 @@ GameObject:
   - component: {fileID: 4701788984280351177}
   - component: {fileID: 4616957117888386261}
   - component: {fileID: 4256533749802769926}
+  - component: {fileID: 4576172811422643653}
   m_Layer: 8
   m_Name: Amazonia Arvore 2 .009
   m_TagString: Untagged
@@ -7656,7 +8257,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 6968250953220099797, guid: 659419c50033f0d4d8b08253b79d19e1,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &4256533749802769926
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -7673,6 +8277,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 10.92, z: -162.23201}
   m_TimeToStationary: 0.5
+--- !u!65 &4576172811422643653
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7015672561591274749}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 324.902}
+  m_Center: {x: 0, y: 10.92, z: -162.232}
 --- !u!1 &7099191573682936904
 GameObject:
   m_ObjectHideFlags: 0
@@ -7869,6 +8494,7 @@ GameObject:
   - component: {fileID: 8234362351154854170}
   - component: {fileID: 776078162767622633}
   - component: {fileID: 7571238260157084292}
+  - component: {fileID: 7080468119485270682}
   m_Layer: 8
   m_Name: Amazonia Arvore 1.003
   m_TagString: Untagged
@@ -7962,7 +8588,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -1384943753020533813, guid: 659419c50033f0d4d8b08253b79d19e1,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &7571238260157084292
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -7979,6 +8608,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 5, z: -188.25201}
   m_TimeToStationary: 0.5
+--- !u!65 &7080468119485270682
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7227761541716791697}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 376.762}
+  m_Center: {x: 0, y: 5, z: -188.252}
 --- !u!1 &7300777926656234979
 GameObject:
   m_ObjectHideFlags: 0
@@ -8453,6 +9103,7 @@ GameObject:
   - component: {fileID: 6318939647206080809}
   - component: {fileID: 2509308871813547035}
   - component: {fileID: 2040718137997413503}
+  - component: {fileID: 7149378098502206023}
   m_Layer: 8
   m_Name: Amazonia Arvore 1.004
   m_TagString: Untagged
@@ -8546,7 +9197,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -1384943753020533813, guid: 659419c50033f0d4d8b08253b79d19e1,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &2040718137997413503
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -8563,6 +9217,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 5, z: -188.25201}
   m_TimeToStationary: 0.5
+--- !u!65 &7149378098502206023
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7709655758557976412}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 376.762}
+  m_Center: {x: 0, y: 5, z: -188.252}
 --- !u!1 &7747355076255685357
 GameObject:
   m_ObjectHideFlags: 0
@@ -8576,6 +9251,7 @@ GameObject:
   - component: {fileID: 8044451739699521978}
   - component: {fileID: 5307464614901584636}
   - component: {fileID: 534499159711144073}
+  - component: {fileID: 4006576222819695293}
   m_Layer: 8
   m_Name: Amazonia Arvore 1.001
   m_TagString: Untagged
@@ -8669,7 +9345,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -1384943753020533813, guid: 659419c50033f0d4d8b08253b79d19e1,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &534499159711144073
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -8686,6 +9365,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 5, z: -188.25201}
   m_TimeToStationary: 0.5
+--- !u!65 &4006576222819695293
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7747355076255685357}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 376.762}
+  m_Center: {x: 0, y: 5, z: -188.252}
 --- !u!1 &7782756202978257166
 GameObject:
   m_ObjectHideFlags: 0
@@ -8699,6 +9399,7 @@ GameObject:
   - component: {fileID: 1269474921818181357}
   - component: {fileID: 450043575903697889}
   - component: {fileID: 1366036129856576522}
+  - component: {fileID: 4341411484568622028}
   m_Layer: 8
   m_Name: Amazonia Arbusto 2.010
   m_TagString: Untagged
@@ -8792,7 +9493,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &1366036129856576522
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -8809,6 +9513,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 2.085, y: 0.22900002, z: 3.4970002}
   m_TimeToStationary: 0.5
+--- !u!65 &4341411484568622028
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7782756202978257166}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 166.21677, y: 236.17578, z: 159.2185}
+  m_Center: {x: 2.0849915, y: 0.22908399, z: 3.4973068}
 --- !u!1 &7805242765102609420
 GameObject:
   m_ObjectHideFlags: 0
@@ -9225,6 +9950,7 @@ GameObject:
   - component: {fileID: 6617389606330664757}
   - component: {fileID: 5759116742088065998}
   - component: {fileID: 436768874864575265}
+  - component: {fileID: 643148000369174461}
   m_Layer: 8
   m_Name: Amazonia Arvore 2 .003
   m_TagString: Untagged
@@ -9318,7 +10044,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 6968250953220099797, guid: 659419c50033f0d4d8b08253b79d19e1,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &436768874864575265
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -9335,6 +10064,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 10.92, z: -162.23201}
   m_TimeToStationary: 0.5
+--- !u!65 &643148000369174461
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7901616664264456420}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 324.902}
+  m_Center: {x: 0, y: 10.92, z: -162.232}
 --- !u!1 &7940599737118206338
 GameObject:
   m_ObjectHideFlags: 0
@@ -9451,6 +10201,7 @@ GameObject:
   - component: {fileID: 1248436360803345406}
   - component: {fileID: 8416223125190794600}
   - component: {fileID: 6054642860498461303}
+  - component: {fileID: 4712958255187439988}
   m_Layer: 8
   m_Name: Amazonia Arbusto 1.006
   m_TagString: Untagged
@@ -9544,7 +10295,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8069283595409817985, guid: 6d2ab8de7559494449cfa669e391f9bb,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &6054642860498461303
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -9561,6 +10315,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -1.2340001, y: -0.998, z: -0.508}
   m_TimeToStationary: 0.5
+--- !u!65 &4712958255187439988
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8046466978486492396}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 98.39763, y: 145.28674, z: 110.78123}
+  m_Center: {x: -1.2342949, y: -0.9977799, z: -0.5082455}
 --- !u!1 &8066263962668595733
 GameObject:
   m_ObjectHideFlags: 0
@@ -9760,6 +10535,7 @@ GameObject:
   - component: {fileID: 5831263459992684567}
   - component: {fileID: 4244771127223423911}
   - component: {fileID: 62803344340368307}
+  - component: {fileID: 8919370694999859116}
   m_Layer: 8
   m_Name: Amazonia Arbusto 1.005
   m_TagString: Untagged
@@ -9853,7 +10629,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8069283595409817985, guid: 6d2ab8de7559494449cfa669e391f9bb,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &62803344340368307
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -9870,6 +10649,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -1.2340001, y: -0.998, z: -0.508}
   m_TimeToStationary: 0.5
+--- !u!65 &8919370694999859116
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8259731750395560938}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 98.39761, y: 145.28673, z: 110.781235}
+  m_Center: {x: -1.2342947, y: -0.99777955, z: -0.5082454}
 --- !u!1 &8294641321076142075
 GameObject:
   m_ObjectHideFlags: 0
@@ -9883,6 +10683,7 @@ GameObject:
   - component: {fileID: 5120408465525206153}
   - component: {fileID: 2783096946960477629}
   - component: {fileID: 4502992880312129352}
+  - component: {fileID: 6517960251170653985}
   m_Layer: 8
   m_Name: Amazonia Arbusto 2.012
   m_TagString: Untagged
@@ -9976,7 +10777,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &4502992880312129352
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -9993,6 +10797,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 2.085, y: 0.22900002, z: 3.4970002}
   m_TimeToStationary: 0.5
+--- !u!65 &6517960251170653985
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8294641321076142075}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 166.21684, y: 236.1759, z: 159.2186}
+  m_Center: {x: 2.0849314, y: 0.22908476, z: 3.497323}
 --- !u!1 &8299772104880774614
 GameObject:
   m_ObjectHideFlags: 0
@@ -10089,6 +10914,7 @@ GameObject:
   - component: {fileID: 7288754364059538803}
   - component: {fileID: 448073875751907664}
   - component: {fileID: 3962564639154041706}
+  - component: {fileID: 8134485696860930503}
   m_Layer: 8
   m_Name: Amazonia Arbusto 2.007
   m_TagString: Untagged
@@ -10182,7 +11008,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &3962564639154041706
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -10199,6 +11028,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 2.085, y: 0.22900002, z: 3.4970002}
   m_TimeToStationary: 0.5
+--- !u!65 &8134485696860930503
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8353833130239932517}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 166.21677, y: 236.17578, z: 159.2185}
+  m_Center: {x: 2.0849915, y: 0.22908396, z: 3.4973068}
 --- !u!1 &8373653697337202120
 GameObject:
   m_ObjectHideFlags: 0
@@ -10212,6 +11062,7 @@ GameObject:
   - component: {fileID: 279438529518031804}
   - component: {fileID: 8154716577755113714}
   - component: {fileID: 1760598145771712813}
+  - component: {fileID: 7944020173092743779}
   m_Layer: 8
   m_Name: Amazonia Arbusto 1.002
   m_TagString: Untagged
@@ -10305,7 +11156,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8069283595409817985, guid: 6d2ab8de7559494449cfa669e391f9bb,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &1760598145771712813
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -10322,6 +11176,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -1.2340001, y: -0.998, z: -0.508}
   m_TimeToStationary: 0.5
+--- !u!65 &7944020173092743779
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8373653697337202120}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 98.39763, y: 145.28674, z: 110.78123}
+  m_Center: {x: -1.2342949, y: -0.9977799, z: -0.50824547}
 --- !u!1 &8536832128791069568
 GameObject:
   m_ObjectHideFlags: 0
@@ -10538,6 +11413,7 @@ GameObject:
   - component: {fileID: 3901383873877394381}
   - component: {fileID: 5011641434670484250}
   - component: {fileID: 7703337647067041404}
+  - component: {fileID: 4774930448875612996}
   m_Layer: 8
   m_Name: Amazonia Arvore 1.006
   m_TagString: Untagged
@@ -10631,7 +11507,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -1384943753020533813, guid: 659419c50033f0d4d8b08253b79d19e1,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &7703337647067041404
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -10648,6 +11527,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 5, z: -188.25201}
   m_TimeToStationary: 0.5
+--- !u!65 &4774930448875612996
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8825140304108543727}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 376.762}
+  m_Center: {x: 0, y: 5, z: -188.252}
 --- !u!1 &8925116695863913294
 GameObject:
   m_ObjectHideFlags: 0
@@ -10844,6 +11744,7 @@ GameObject:
   - component: {fileID: 6883803771692678785}
   - component: {fileID: 2826720710566053614}
   - component: {fileID: 7415500798633804933}
+  - component: {fileID: 1412095873422654532}
   m_Layer: 8
   m_Name: Amazonia Arvore 1.005
   m_TagString: Untagged
@@ -10937,7 +11838,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -1384943753020533813, guid: 659419c50033f0d4d8b08253b79d19e1,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &7415500798633804933
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -10954,6 +11858,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 5, z: -188.25201}
   m_TimeToStationary: 0.5
+--- !u!65 &1412095873422654532
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9066083180342760385}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 376.762}
+  m_Center: {x: 0, y: 5, z: -188.252}
 --- !u!1 &9071245406371151335
 GameObject:
   m_ObjectHideFlags: 0
@@ -11070,6 +11995,7 @@ GameObject:
   - component: {fileID: 7741410911880950445}
   - component: {fileID: 1645830249419582489}
   - component: {fileID: 4819630774340283404}
+  - component: {fileID: 4777367461570518461}
   m_Layer: 8
   m_Name: Amazonia Arbusto 1.004
   m_TagString: Untagged
@@ -11163,7 +12089,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 0
   maxTime: 0
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8069283595409817985, guid: 6d2ab8de7559494449cfa669e391f9bb,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &4819630774340283404
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -11180,6 +12109,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -1.2340001, y: -0.998, z: -0.508}
   m_TimeToStationary: 0.5
+--- !u!65 &4777367461570518461
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9117896544583739157}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 98.39764, y: 145.28674, z: 110.78124}
+  m_Center: {x: -1.2343254, y: -0.9977799, z: -0.50824547}
 --- !u!1 &9198218400126679435
 GameObject:
   m_ObjectHideFlags: 0

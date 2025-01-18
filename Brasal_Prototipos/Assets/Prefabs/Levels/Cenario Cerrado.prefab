@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3861580193752925075}
   - component: {fileID: 4769514820480872738}
   - component: {fileID: 2024024338663985187}
+  - component: {fileID: 7058636114405455964}
   m_Layer: 8
   m_Name: Cerrado Arbusto 2.003
   m_TagString: Untagged
@@ -105,7 +106,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7416928385415127445, guid: 6310319172df5a44c879ee5f94d0d1df,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &2024024338663985187
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -122,6 +126,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.397, y: -0.24400002, z: -42.442}
   m_TimeToStationary: 0.5
+--- !u!65 &7058636114405455964
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128032898476811726}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 119.44205, y: 238.0822, z: 84.17807}
+  m_Center: {x: -0.39682543, y: -0.24387735, z: -42.441563}
 --- !u!1 &176232505339132889
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,6 +243,7 @@ GameObject:
   - component: {fileID: 6361398692281524002}
   - component: {fileID: 10606142559251217}
   - component: {fileID: 7362424376489045022}
+  - component: {fileID: 8807912459611837647}
   m_Layer: 8
   m_Name: Cerrado Arbusto 1.002
   m_TagString: Untagged
@@ -310,7 +336,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7507668886134787028, guid: 6310319172df5a44c879ee5f94d0d1df,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &7362424376489045022
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -327,6 +356,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.42200002, y: 0.165, z: -50.593002}
   m_TimeToStationary: 0.5
+--- !u!65 &8807912459611837647
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256083766729526420}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 97.23284, y: 154.9546, z: 101.2242}
+  m_Center: {x: 0.4224248, y: 0.16502288, z: -50.59344}
 --- !u!1 &285944394951858041
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,6 +390,7 @@ GameObject:
   - component: {fileID: 6886382283933745669}
   - component: {fileID: 136163856412799005}
   - component: {fileID: 89766849290021489}
+  - component: {fileID: 111951032921806841}
   m_Layer: 8
   m_Name: Cerrado Arvore 1.003
   m_TagString: Untagged
@@ -433,7 +484,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -6661467069709916204, guid: 23b6e408b3ca9884581644d97076c8c8,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &89766849290021489
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -450,6 +504,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -7.5, y: 5.16, z: -104.76201}
   m_TimeToStationary: 0.5
+--- !u!65 &111951032921806841
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285944394951858041}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 25, y: 25, z: 210.82}
+  m_Center: {x: -7.5, y: 5.16, z: -104.762}
 --- !u!1 &323448769203807864
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,6 +721,7 @@ GameObject:
   - component: {fileID: 2171114514901883945}
   - component: {fileID: 8257944735246762799}
   - component: {fileID: 7155169352548570697}
+  - component: {fileID: 9044965551518328353}
   m_Layer: 8
   m_Name: Cerrado Arvore 3.002
   m_TagString: Untagged
@@ -739,7 +815,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -4422166478597958710, guid: 23b6e408b3ca9884581644d97076c8c8,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &7155169352548570697
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -756,6 +835,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -143.384}
   m_TimeToStationary: 0.5
+--- !u!65 &9044965551518328353
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478952664763922648}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 45, y: 45, z: 286.768}
+  m_Center: {x: 0, y: 0, z: -143.384}
 --- !u!1 &560448506485411295
 GameObject:
   m_ObjectHideFlags: 0
@@ -1101,6 +1201,7 @@ GameObject:
   - component: {fileID: 6669971611798577268}
   - component: {fileID: 4801112616201473548}
   - component: {fileID: 8134753229886738078}
+  - component: {fileID: 3363765085425766484}
   m_Layer: 8
   m_Name: Cerrado Arvore 3.003
   m_TagString: Untagged
@@ -1194,7 +1295,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -4422166478597958710, guid: 23b6e408b3ca9884581644d97076c8c8,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &8134753229886738078
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1211,6 +1315,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -143.384}
   m_TimeToStationary: 0.5
+--- !u!65 &3363765085425766484
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349057569663391627}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 45, y: 45, z: 286.768}
+  m_Center: {x: 0, y: 0, z: -143.384}
 --- !u!1 &1374038417385647594
 GameObject:
   m_ObjectHideFlags: 0
@@ -2754,6 +2879,7 @@ GameObject:
   - component: {fileID: 652674141783669004}
   - component: {fileID: 6617262038940906669}
   - component: {fileID: 4599121580982584090}
+  - component: {fileID: 8403489728136849363}
   m_Layer: 8
   m_Name: Cerrado Arbusto 1.001
   m_TagString: Untagged
@@ -2846,7 +2972,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7507668886134787028, guid: 6310319172df5a44c879ee5f94d0d1df,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &4599121580982584090
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2863,6 +2992,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.42200002, y: 0.165, z: -50.593002}
   m_TimeToStationary: 0.5
+--- !u!65 &8403489728136849363
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3006236963928314265}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 97.232864, y: 154.95457, z: 101.224174}
+  m_Center: {x: 0.42242214, y: 0.16502072, z: -50.59343}
 --- !u!1 &3027028405742706684
 GameObject:
   m_ObjectHideFlags: 0
@@ -2959,6 +3109,7 @@ GameObject:
   - component: {fileID: 3195359239233734116}
   - component: {fileID: 2517476138094074086}
   - component: {fileID: 8122544616872107421}
+  - component: {fileID: 4323804920740565029}
   m_Layer: 8
   m_Name: Cerrado Arvore 3.004
   m_TagString: Untagged
@@ -3052,7 +3203,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -4422166478597958710, guid: 23b6e408b3ca9884581644d97076c8c8,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &8122544616872107421
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3069,6 +3223,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -143.384}
   m_TimeToStationary: 0.5
+--- !u!65 &4323804920740565029
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3130214189738692839}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 45, y: 45, z: 286.768}
+  m_Center: {x: 0, y: 0, z: -143.384}
 --- !u!1 &3160641532008059194
 GameObject:
   m_ObjectHideFlags: 0
@@ -3765,6 +3940,7 @@ GameObject:
   - component: {fileID: 5011995102589397683}
   - component: {fileID: 4020666284435341320}
   - component: {fileID: 6405704951135864875}
+  - component: {fileID: 2717112282662741932}
   m_Layer: 8
   m_Name: Cerrado Arbusto 2.002
   m_TagString: Untagged
@@ -3857,7 +4033,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7416928385415127445, guid: 6310319172df5a44c879ee5f94d0d1df,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &6405704951135864875
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3874,6 +4053,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.397, y: -0.24400002, z: -42.442}
   m_TimeToStationary: 0.5
+--- !u!65 &2717112282662741932
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3788769610151098565}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 119.442055, y: 238.0822, z: 84.17807}
+  m_Center: {x: -0.39682338, y: -0.24387677, z: -42.441563}
 --- !u!1 &3862914000543035711
 GameObject:
   m_ObjectHideFlags: 0
@@ -3970,6 +4170,7 @@ GameObject:
   - component: {fileID: 8664683417668467072}
   - component: {fileID: 1121475559681017596}
   - component: {fileID: 7400122118954988083}
+  - component: {fileID: 3336787553128508825}
   m_Layer: 8
   m_Name: Cerrado Arvore 2.003
   m_TagString: Untagged
@@ -4063,7 +4264,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -6662420888661320771, guid: 23b6e408b3ca9884581644d97076c8c8,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &7400122118954988083
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4080,6 +4284,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -7.5, y: 5, z: -94.69401}
   m_TimeToStationary: 0.5
+--- !u!65 &3336787553128508825
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3887063967193319290}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 190.792}
+  m_Center: {x: -7.5, y: 5, z: -94.69401}
 --- !u!1 &3891480342088761477
 GameObject:
   m_ObjectHideFlags: 0
@@ -4556,6 +4781,7 @@ GameObject:
   - component: {fileID: 2222941885629959929}
   - component: {fileID: 7562370280816000505}
   - component: {fileID: 6755578312091617193}
+  - component: {fileID: 4138891397050000538}
   m_Layer: 8
   m_Name: Cerrado Arvore 2.004
   m_TagString: Untagged
@@ -4649,7 +4875,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -6662420888661320771, guid: 23b6e408b3ca9884581644d97076c8c8,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &6755578312091617193
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4666,6 +4895,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -7.5, y: 5, z: -94.69401}
   m_TimeToStationary: 0.5
+--- !u!65 &4138891397050000538
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4643665630799960067}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 190.792}
+  m_Center: {x: -7.5, y: 5, z: -94.69401}
 --- !u!1 &4740989757712247912
 GameObject:
   m_ObjectHideFlags: 0
@@ -4845,6 +5095,7 @@ GameObject:
   - component: {fileID: 2781785545424992912}
   - component: {fileID: 5688816996453726775}
   - component: {fileID: 1776387899145227551}
+  - component: {fileID: 4251300674891324611}
   m_Layer: 8
   m_Name: Cerrado Arbusto 2.001
   m_TagString: Untagged
@@ -4937,7 +5188,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7416928385415127445, guid: 6310319172df5a44c879ee5f94d0d1df,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &1776387899145227551
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4954,6 +5208,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.397, y: -0.24400002, z: -42.442}
   m_TimeToStationary: 0.5
+--- !u!65 &4251300674891324611
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4879451817350350359}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 119.44206, y: 238.08221, z: 84.178085}
+  m_Center: {x: -0.3968256, y: -0.24388024, z: -42.441563}
 --- !u!1 &5178333534198905251
 GameObject:
   m_ObjectHideFlags: 0
@@ -5133,6 +5408,7 @@ GameObject:
   - component: {fileID: 5243218574201955486}
   - component: {fileID: 2671939642104166529}
   - component: {fileID: 8740762443642178498}
+  - component: {fileID: 6386378113549921905}
   m_Layer: 8
   m_Name: Cerrado Arvore 1.001
   m_TagString: Untagged
@@ -5226,7 +5502,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -6661467069709916204, guid: 23b6e408b3ca9884581644d97076c8c8,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &8740762443642178498
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5243,6 +5522,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -7.5, y: 5.16, z: -104.76201}
   m_TimeToStationary: 0.5
+--- !u!65 &6386378113549921905
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5619122476976126627}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 25, y: 25, z: 210.82}
+  m_Center: {x: -7.5, y: 5.16, z: -104.762}
 --- !u!1 &5644775392010164713
 GameObject:
   m_ObjectHideFlags: 0
@@ -5256,6 +5556,7 @@ GameObject:
   - component: {fileID: 5760701936745532577}
   - component: {fileID: 3579774472086091144}
   - component: {fileID: 2837813649307163251}
+  - component: {fileID: 5957618903894169191}
   m_Layer: 8
   m_Name: Cerrado Arvore 2.001
   m_TagString: Untagged
@@ -5349,7 +5650,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -6662420888661320771, guid: 23b6e408b3ca9884581644d97076c8c8,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &2837813649307163251
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5366,6 +5670,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -7.5, y: 5, z: -94.69401}
   m_TimeToStationary: 0.5
+--- !u!65 &5957618903894169191
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5644775392010164713}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 190.792}
+  m_Center: {x: -7.5, y: 5, z: -94.69401}
 --- !u!1 &5661207966502646382
 GameObject:
   m_ObjectHideFlags: 0
@@ -6593,6 +6918,7 @@ GameObject:
   - component: {fileID: 3005198581216527980}
   - component: {fileID: 5918896450093264928}
   - component: {fileID: 4573836084894727690}
+  - component: {fileID: 3650212475931633818}
   m_Layer: 8
   m_Name: Cerrado Arvore 1.004
   m_TagString: Untagged
@@ -6686,7 +7012,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -6661467069709916204, guid: 23b6e408b3ca9884581644d97076c8c8,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &4573836084894727690
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6703,6 +7032,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -7.5, y: 5.16, z: -104.76201}
   m_TimeToStationary: 0.5
+--- !u!65 &3650212475931633818
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6640123817157712018}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 25, y: 25, z: 210.82}
+  m_Center: {x: -7.5, y: 5.16, z: -104.762}
 --- !u!1 &6668338014800572929
 GameObject:
   m_ObjectHideFlags: 0
@@ -7082,6 +7432,7 @@ GameObject:
   - component: {fileID: 8239755143789222639}
   - component: {fileID: 5123520373637750394}
   - component: {fileID: 7433882014402026534}
+  - component: {fileID: 2789117744909584677}
   m_Layer: 8
   m_Name: Cerrado Arvore 3.001
   m_TagString: Untagged
@@ -7175,7 +7526,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -4422166478597958710, guid: 23b6e408b3ca9884581644d97076c8c8,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &7433882014402026534
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -7192,6 +7546,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -143.384}
   m_TimeToStationary: 0.5
+--- !u!65 &2789117744909584677
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7204694062053516697}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 45, y: 45, z: 286.768}
+  m_Center: {x: 0, y: 0, z: -143.384}
 --- !u!1 &7308959366942543487
 GameObject:
   m_ObjectHideFlags: 0
@@ -8010,6 +8385,7 @@ GameObject:
   - component: {fileID: 2118879006728814163}
   - component: {fileID: 1012398114994893643}
   - component: {fileID: 2082632896227304124}
+  - component: {fileID: 8817785147818162550}
   m_Layer: 8
   m_Name: Cerrado Arvore 2.002
   m_TagString: Untagged
@@ -8103,7 +8479,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -6662420888661320771, guid: 23b6e408b3ca9884581644d97076c8c8,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &2082632896227304124
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -8120,6 +8499,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -7.5, y: 5, z: -94.69401}
   m_TimeToStationary: 0.5
+--- !u!65 &8817785147818162550
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8121372706020982268}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 190.792}
+  m_Center: {x: -7.5, y: 5, z: -94.69401}
 --- !u!1 &8132159284472472293
 GameObject:
   m_ObjectHideFlags: 0
@@ -8299,6 +8699,7 @@ GameObject:
   - component: {fileID: 6988762501317814381}
   - component: {fileID: 1114815067385831453}
   - component: {fileID: 4120779336611997873}
+  - component: {fileID: 56289789275160735}
   m_Layer: 8
   m_Name: Cerrado Arvore 1.002
   m_TagString: Untagged
@@ -8392,7 +8793,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -6661467069709916204, guid: 23b6e408b3ca9884581644d97076c8c8,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &4120779336611997873
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -8409,6 +8813,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -7.5, y: 5.16, z: -104.76201}
   m_TimeToStationary: 0.5
+--- !u!65 &56289789275160735
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8240741524047537476}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 25, y: 25, z: 210.82}
+  m_Center: {x: -7.5, y: 5.16, z: -104.762}
 --- !u!1 &8252155494882745875
 GameObject:
   m_ObjectHideFlags: 0

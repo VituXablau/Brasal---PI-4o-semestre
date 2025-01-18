@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7825867377877694920}
   - component: {fileID: 8973514531516367572}
   - component: {fileID: 107691410849204442}
+  - component: {fileID: 2147608403220130608}
   m_Layer: 8
   m_Name: Caatinga Arvore 2.007
   m_TagString: Untagged
@@ -105,7 +106,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8629254945320541750, guid: 1128228d79164114fa744a46d27493ae,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &107691410849204442
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -122,6 +126,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 5, y: -2.5, z: -124.84501}
   m_TimeToStationary: 0.5
+--- !u!65 &2147608403220130608
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50268305531913353}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 30, y: 30, z: 249.88}
+  m_Center: {x: 5, y: -2.5, z: -124.845}
 --- !u!1 &127323862752400816
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,6 +243,7 @@ GameObject:
   - component: {fileID: 3928353294776576267}
   - component: {fileID: 3680570138606937568}
   - component: {fileID: 8505023091981757002}
+  - component: {fileID: 2327371178516294971}
   m_Layer: 8
   m_Name: Caatinga Cacto 1.018
   m_TagString: Untagged
@@ -311,7 +337,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 3785681777516943384, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &8505023091981757002
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -328,6 +357,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -81.568}
   m_TimeToStationary: 0.5
+--- !u!65 &2327371178516294971
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242697727857434559}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 167.246}
+  m_Center: {x: 0, y: 0, z: -81.568}
 --- !u!1 &245465740646260959
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,6 +391,7 @@ GameObject:
   - component: {fileID: 3117176483516148674}
   - component: {fileID: 5005788346327947254}
   - component: {fileID: 1381316919317128631}
+  - component: {fileID: 6126766087234113618}
   m_Layer: 8
   m_Name: Caatinga Arvore 2.001
   m_TagString: Untagged
@@ -433,7 +484,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8629254945320541750, guid: 1128228d79164114fa744a46d27493ae,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &1381316919317128631
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -450,6 +504,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 5, y: -2.5, z: -124.84501}
   m_TimeToStationary: 0.5
+--- !u!65 &6126766087234113618
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245465740646260959}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 30, y: 30, z: 249.88}
+  m_Center: {x: 5, y: -2.5, z: -124.845}
 --- !u!1 &266327632047265374
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,6 +538,7 @@ GameObject:
   - component: {fileID: 8030994379200820298}
   - component: {fileID: 2224064757191505659}
   - component: {fileID: 56839752319042819}
+  - component: {fileID: 350870754325812241}
   m_Layer: 8
   m_Name: Caatinga Cacto 1.006
   m_TagString: Untagged
@@ -556,7 +632,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 3785681777516943384, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &56839752319042819
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -573,6 +652,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -81.568}
   m_TimeToStationary: 0.5
+--- !u!65 &350870754325812241
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266327632047265374}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 167.246}
+  m_Center: {x: 0, y: 0, z: -81.568}
 --- !u!1 &540831326700747758
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,6 +769,7 @@ GameObject:
   - component: {fileID: 7175835285309014310}
   - component: {fileID: 6958997048281099973}
   - component: {fileID: 2383450664896939317}
+  - component: {fileID: 4463498465564488004}
   m_Layer: 8
   m_Name: Caatinga Cacto 1.020
   m_TagString: Untagged
@@ -762,7 +863,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 3785681777516943384, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &2383450664896939317
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -779,6 +883,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -81.568}
   m_TimeToStationary: 0.5
+--- !u!65 &4463498465564488004
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680521513710211058}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 167.246}
+  m_Center: {x: 0, y: 0, z: -81.568}
 --- !u!1 &736960585623182529
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,6 +1083,7 @@ GameObject:
   - component: {fileID: 4287934743230527951}
   - component: {fileID: 3538556345532142347}
   - component: {fileID: 4359081453111531261}
+  - component: {fileID: 3073504123866699917}
   m_Layer: 8
   m_Name: Caatinga Arvore 2.004
   m_TagString: Untagged
@@ -1050,7 +1176,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8629254945320541750, guid: 1128228d79164114fa744a46d27493ae,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &4359081453111531261
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1067,6 +1196,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 5, y: -2.5, z: -124.84501}
   m_TimeToStationary: 0.5
+--- !u!65 &3073504123866699917
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798950329737442875}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 30, y: 30, z: 249.88}
+  m_Center: {x: 5, y: -2.5, z: -124.845}
 --- !u!1 &910891379994273130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1180,6 +1330,7 @@ GameObject:
   - component: {fileID: 2690955995207554438}
   - component: {fileID: 3885566644691035657}
   - component: {fileID: 3731029148817196325}
+  - component: {fileID: 6728489136990627334}
   m_Layer: 8
   m_Name: Caatinga Cacto 1.001
   m_TagString: Untagged
@@ -1273,7 +1424,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 3785681777516943384, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &3731029148817196325
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1290,6 +1444,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -81.568}
   m_TimeToStationary: 0.5
+--- !u!65 &6728489136990627334
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231950970873899548}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 167.246}
+  m_Center: {x: 0, y: 0, z: -81.568}
 --- !u!1 &1274374986690451388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1486,6 +1661,7 @@ GameObject:
   - component: {fileID: 2864678438721754897}
   - component: {fileID: 6497736853472239039}
   - component: {fileID: 5714522050348620512}
+  - component: {fileID: 4433650593341456196}
   m_Layer: 8
   m_Name: Caatinga Cacto 1.008
   m_TagString: Untagged
@@ -1579,7 +1755,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 3785681777516943384, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &5714522050348620512
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1596,6 +1775,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -81.568}
   m_TimeToStationary: 0.5
+--- !u!65 &4433650593341456196
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474358031417920968}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 167.246}
+  m_Center: {x: 0, y: 0, z: -81.568}
 --- !u!1 &1561009054269973493
 GameObject:
   m_ObjectHideFlags: 0
@@ -1609,6 +1809,7 @@ GameObject:
   - component: {fileID: 4535703234035038762}
   - component: {fileID: 3435575341668272792}
   - component: {fileID: 3573180821972090868}
+  - component: {fileID: 3150163515594701926}
   m_Layer: 8
   m_Name: Caatinga Cacto 1.011
   m_TagString: Untagged
@@ -1702,7 +1903,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 3785681777516943384, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &3573180821972090868
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1719,6 +1923,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -81.568}
   m_TimeToStationary: 0.5
+--- !u!65 &3150163515594701926
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561009054269973493}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 167.246}
+  m_Center: {x: 0, y: 0, z: -81.568}
 --- !u!1 &1596905297692512893
 GameObject:
   m_ObjectHideFlags: 0
@@ -1832,6 +2057,7 @@ GameObject:
   - component: {fileID: 3928884658506675437}
   - component: {fileID: 8195949972870781202}
   - component: {fileID: 1029877240376353820}
+  - component: {fileID: 182305032239634817}
   m_Layer: 8
   m_Name: Caatinga Cacto 2.001
   m_TagString: Untagged
@@ -1926,7 +2152,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -6573972315983291418, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &1029877240376353820
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1943,6 +2172,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.112, y: 1.7080001, z: 0.143}
   m_TimeToStationary: 0.5
+--- !u!65 &182305032239634817
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632298153430281682}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 86.133026, y: 80.9476, z: 62.36471}
+  m_Center: {x: 0.1123447, y: 1.7078152, z: 0.14271446}
 --- !u!1 &1653115361378724973
 GameObject:
   m_ObjectHideFlags: 0
@@ -1956,6 +2206,7 @@ GameObject:
   - component: {fileID: 1580314676966466065}
   - component: {fileID: 2050947261716794644}
   - component: {fileID: 7856146157107607637}
+  - component: {fileID: 4868581219428406747}
   m_Layer: 8
   m_Name: Caatinga Cacto 1.009
   m_TagString: Untagged
@@ -2049,7 +2300,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 3785681777516943384, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &7856146157107607637
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2066,6 +2320,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -81.568}
   m_TimeToStationary: 0.5
+--- !u!65 &4868581219428406747
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653115361378724973}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 167.246}
+  m_Center: {x: 0, y: 0, z: -81.568}
 --- !u!1 &1724863198024402146
 GameObject:
   m_ObjectHideFlags: 0
@@ -2179,6 +2454,7 @@ GameObject:
   - component: {fileID: 4488520259550764188}
   - component: {fileID: 5094989575253093843}
   - component: {fileID: 6488296297215719162}
+  - component: {fileID: 3181197256433902659}
   m_Layer: 8
   m_Name: Caatinga Arvore 2.005
   m_TagString: Untagged
@@ -2271,7 +2547,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8629254945320541750, guid: 1128228d79164114fa744a46d27493ae,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &6488296297215719162
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2288,6 +2567,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 5, y: -2.5, z: -124.84501}
   m_TimeToStationary: 0.5
+--- !u!65 &3181197256433902659
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131487635993965956}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 30, y: 30, z: 249.88}
+  m_Center: {x: 5, y: -2.5, z: -124.845}
 --- !u!1 &2160848485580495366
 GameObject:
   m_ObjectHideFlags: 0
@@ -2301,6 +2601,7 @@ GameObject:
   - component: {fileID: 6371744713611732772}
   - component: {fileID: 2130302167505119353}
   - component: {fileID: 7624649382286892526}
+  - component: {fileID: 3380731299247702129}
   m_Layer: 8
   m_Name: Caatinga Arvore 1.007
   m_TagString: Untagged
@@ -2393,7 +2694,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -295855599453590448, guid: 1128228d79164114fa744a46d27493ae,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &7624649382286892526
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2410,6 +2714,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 5, y: 0, z: -147.69301}
   m_TimeToStationary: 0.5
+--- !u!65 &3380731299247702129
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2160848485580495366}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 30, y: 30, z: 295.598}
+  m_Center: {x: 5, y: 0, z: -147.693}
 --- !u!1 &2261002783945477553
 GameObject:
   m_ObjectHideFlags: 0
@@ -2558,6 +2883,7 @@ GameObject:
   - component: {fileID: 8220137442851452361}
   - component: {fileID: 620868333526869466}
   - component: {fileID: 6092360942177483930}
+  - component: {fileID: 8068002543490061905}
   m_Layer: 8
   m_Name: Caatinga Cacto 2.009
   m_TagString: Untagged
@@ -2652,7 +2978,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -6573972315983291418, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &6092360942177483930
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2669,6 +2998,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.112, y: 1.7080001, z: 0.143}
   m_TimeToStationary: 0.5
+--- !u!65 &8068002543490061905
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2548166478102966585}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 86.133026, y: 80.9476, z: 62.36471}
+  m_Center: {x: 0.11234088, y: 1.7078152, z: 0.14271446}
 --- !u!1 &2563064622638739012
 GameObject:
   m_ObjectHideFlags: 0
@@ -2682,6 +3032,7 @@ GameObject:
   - component: {fileID: 8233347388371657271}
   - component: {fileID: 6052906915836607253}
   - component: {fileID: 6276206958208817655}
+  - component: {fileID: 8825429964136321647}
   m_Layer: 8
   m_Name: Caatinga Arvore 1.006
   m_TagString: Untagged
@@ -2774,7 +3125,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -295855599453590448, guid: 1128228d79164114fa744a46d27493ae,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &6276206958208817655
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2791,6 +3145,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 5, y: 0, z: -147.69301}
   m_TimeToStationary: 0.5
+--- !u!65 &8825429964136321647
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2563064622638739012}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 30, y: 30, z: 295.598}
+  m_Center: {x: 5, y: 0, z: -147.693}
 --- !u!1 &2610531133069121170
 GameObject:
   m_ObjectHideFlags: 0
@@ -2887,6 +3262,7 @@ GameObject:
   - component: {fileID: 3271929237751683587}
   - component: {fileID: 7761365801285510739}
   - component: {fileID: 5272047172732190364}
+  - component: {fileID: 813214707109616308}
   m_Layer: 8
   m_Name: Caatinga Cacto 1.013
   m_TagString: Untagged
@@ -2980,7 +3356,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 3785681777516943384, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &5272047172732190364
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2997,6 +3376,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -81.568}
   m_TimeToStationary: 0.5
+--- !u!65 &813214707109616308
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2762036919248323303}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 167.246}
+  m_Center: {x: 0, y: 0, z: -81.568}
 --- !u!1 &2970343234586022953
 GameObject:
   m_ObjectHideFlags: 0
@@ -3093,6 +3493,7 @@ GameObject:
   - component: {fileID: 395787562978090592}
   - component: {fileID: 2612941614411030965}
   - component: {fileID: 2067189249585028291}
+  - component: {fileID: 3552247382323588811}
   m_Layer: 8
   m_Name: Caatinga Arvore 1.002
   m_TagString: Untagged
@@ -3185,7 +3586,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -295855599453590448, guid: 1128228d79164114fa744a46d27493ae,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &2067189249585028291
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3202,6 +3606,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 5, y: 0, z: -147.69301}
   m_TimeToStationary: 0.5
+--- !u!65 &3552247382323588811
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3143592900734391835}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 30, y: 30, z: 295.598}
+  m_Center: {x: 5, y: 0, z: -147.693}
 --- !u!1 &3163197442953282924
 GameObject:
   m_ObjectHideFlags: 0
@@ -3215,6 +3640,7 @@ GameObject:
   - component: {fileID: 2250811214597859198}
   - component: {fileID: 4959312957140054547}
   - component: {fileID: 1762438809315380581}
+  - component: {fileID: 3845447637139405966}
   m_Layer: 8
   m_Name: Caatinga Cacto 1.005
   m_TagString: Untagged
@@ -3308,7 +3734,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 3785681777516943384, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &1762438809315380581
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3325,6 +3754,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -81.568}
   m_TimeToStationary: 0.5
+--- !u!65 &3845447637139405966
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3163197442953282924}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 167.246}
+  m_Center: {x: 0, y: 0, z: -81.568}
 --- !u!1 &3167651711863999537
 GameObject:
   m_ObjectHideFlags: 0
@@ -3382,6 +3832,7 @@ GameObject:
   - component: {fileID: 582170163377529184}
   - component: {fileID: 5660717581518383364}
   - component: {fileID: 2759960069418861895}
+  - component: {fileID: 1810615853696020466}
   m_Layer: 8
   m_Name: Caatinga Cacto 2.003
   m_TagString: Untagged
@@ -3476,7 +3927,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -6573972315983291418, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &2759960069418861895
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3493,6 +3947,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.112, y: 1.7080001, z: 0.143}
   m_TimeToStationary: 0.5
+--- !u!65 &1810615853696020466
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3418317900586005206}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 86.133026, y: 80.9476, z: 62.36471}
+  m_Center: {x: 0.11234088, y: 1.7078152, z: 0.14271446}
 --- !u!1 &3556930601863980302
 GameObject:
   m_ObjectHideFlags: 0
@@ -3506,6 +3981,7 @@ GameObject:
   - component: {fileID: 7433102999746511433}
   - component: {fileID: 1014800592679547003}
   - component: {fileID: 8504656295940986132}
+  - component: {fileID: 6990212854474238255}
   m_Layer: 8
   m_Name: Caatinga Cacto 2.007
   m_TagString: Untagged
@@ -3600,7 +4076,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -6573972315983291418, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &8504656295940986132
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3617,6 +4096,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.112, y: 1.7080001, z: 0.143}
   m_TimeToStationary: 0.5
+--- !u!65 &6990212854474238255
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3556930601863980302}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 86.133026, y: 80.9476, z: 62.36471}
+  m_Center: {x: 0.11240192, y: 1.7078152, z: 0.14271446}
 --- !u!1 &3836761279178323605
 GameObject:
   m_ObjectHideFlags: 0
@@ -3630,6 +4130,7 @@ GameObject:
   - component: {fileID: 5521389803257783252}
   - component: {fileID: 7577060083785312543}
   - component: {fileID: 8947152599467318768}
+  - component: {fileID: 334670635165152544}
   m_Layer: 8
   m_Name: Caatinga Arvore 1.003
   m_TagString: Untagged
@@ -3722,7 +4223,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -295855599453590448, guid: 1128228d79164114fa744a46d27493ae,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &8947152599467318768
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3739,6 +4243,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 5, y: 0, z: -147.69301}
   m_TimeToStationary: 0.5
+--- !u!65 &334670635165152544
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3836761279178323605}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 30, y: 30, z: 295.598}
+  m_Center: {x: 5, y: 0, z: -147.693}
 --- !u!1 &3950404514195033648
 GameObject:
   m_ObjectHideFlags: 0
@@ -3752,6 +4277,7 @@ GameObject:
   - component: {fileID: 2618855592197308734}
   - component: {fileID: 8291311201163319444}
   - component: {fileID: 6298512707620866701}
+  - component: {fileID: 8526441734141246553}
   m_Layer: 8
   m_Name: Caatinga Cacto 2.006
   m_TagString: Untagged
@@ -3846,7 +4372,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -6573972315983291418, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &6298512707620866701
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3863,6 +4392,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.112, y: 1.7080001, z: 0.143}
   m_TimeToStationary: 0.5
+--- !u!65 &8526441734141246553
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3950404514195033648}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 86.133026, y: 80.9476, z: 62.36471}
+  m_Center: {x: 0.11234088, y: 1.7078152, z: 0.14271446}
 --- !u!1 &3987994128392859364
 GameObject:
   m_ObjectHideFlags: 0
@@ -3876,6 +4426,7 @@ GameObject:
   - component: {fileID: 7470750104339375219}
   - component: {fileID: 541179797275560774}
   - component: {fileID: 317219643274362518}
+  - component: {fileID: 1630798886297309819}
   m_Layer: 8
   m_Name: Caatinga Cacto 2.014
   m_TagString: Untagged
@@ -3970,7 +4521,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -6573972315983291418, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &317219643274362518
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3987,6 +4541,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.112, y: 1.7080001, z: 0.143}
   m_TimeToStationary: 0.5
+--- !u!65 &1630798886297309819
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3987994128392859364}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 86.133026, y: 80.9476, z: 62.36471}
+  m_Center: {x: 0.11234088, y: 1.7078152, z: 0.14271446}
 --- !u!1 &4153059544517006713
 GameObject:
   m_ObjectHideFlags: 0
@@ -4000,6 +4575,7 @@ GameObject:
   - component: {fileID: 2955846569763516968}
   - component: {fileID: 2049567318671966462}
   - component: {fileID: 504805294371721607}
+  - component: {fileID: 2669778936729455743}
   m_Layer: 8
   m_Name: Caatinga Arvore 2.003
   m_TagString: Untagged
@@ -4092,7 +4668,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8629254945320541750, guid: 1128228d79164114fa744a46d27493ae,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &504805294371721607
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4109,6 +4688,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 5, y: -2.5, z: -124.84501}
   m_TimeToStationary: 0.5
+--- !u!65 &2669778936729455743
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4153059544517006713}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 30, y: 30, z: 249.88}
+  m_Center: {x: 5, y: -2.5, z: -124.845}
 --- !u!1 &4258354371258325793
 GameObject:
   m_ObjectHideFlags: 0
@@ -4122,6 +4722,7 @@ GameObject:
   - component: {fileID: 9097652788079210086}
   - component: {fileID: 2283250633837882227}
   - component: {fileID: 5186580348003866463}
+  - component: {fileID: 6085994545945750960}
   m_Layer: 8
   m_Name: Caatinga Cacto 1.004
   m_TagString: Untagged
@@ -4215,7 +4816,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 3785681777516943384, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &5186580348003866463
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4232,6 +4836,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -81.568}
   m_TimeToStationary: 0.5
+--- !u!65 &6085994545945750960
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4258354371258325793}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 167.246}
+  m_Center: {x: 0, y: 0, z: -81.568}
 --- !u!1 &4349112538495625010
 GameObject:
   m_ObjectHideFlags: 0
@@ -4328,6 +4953,7 @@ GameObject:
   - component: {fileID: 7401209804830620631}
   - component: {fileID: 5786687226286019612}
   - component: {fileID: 5835129193617284446}
+  - component: {fileID: 7512722464992568980}
   m_Layer: 8
   m_Name: Caatinga Arvore 2.009
   m_TagString: Untagged
@@ -4420,7 +5046,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8629254945320541750, guid: 1128228d79164114fa744a46d27493ae,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &5835129193617284446
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4437,6 +5066,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 5, y: -2.5, z: -124.84501}
   m_TimeToStationary: 0.5
+--- !u!65 &7512722464992568980
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4409181291233807999}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 30, y: 30, z: 249.88}
+  m_Center: {x: 5, y: -2.5, z: -124.845}
 --- !u!1 &4552642403943418230
 GameObject:
   m_ObjectHideFlags: 0
@@ -4450,6 +5100,7 @@ GameObject:
   - component: {fileID: 2573434431447208874}
   - component: {fileID: 7160327342604748568}
   - component: {fileID: 7295476220442428726}
+  - component: {fileID: 6836672727559931438}
   m_Layer: 8
   m_Name: Caatinga Arvore 2.008
   m_TagString: Untagged
@@ -4542,7 +5193,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8629254945320541750, guid: 1128228d79164114fa744a46d27493ae,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &7295476220442428726
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4559,6 +5213,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 5, y: -2.5, z: -124.84501}
   m_TimeToStationary: 0.5
+--- !u!65 &6836672727559931438
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4552642403943418230}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 30, y: 30, z: 249.88}
+  m_Center: {x: 5, y: -2.5, z: -124.845}
 --- !u!1 &4617774021414374867
 GameObject:
   m_ObjectHideFlags: 0
@@ -4572,6 +5247,7 @@ GameObject:
   - component: {fileID: 4232476066881421817}
   - component: {fileID: 5928745464737436050}
   - component: {fileID: 4735038056269770048}
+  - component: {fileID: 305553479461549647}
   m_Layer: 8
   m_Name: Caatinga Cacto 2.005
   m_TagString: Untagged
@@ -4666,7 +5342,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -6573972315983291418, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &4735038056269770048
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4683,6 +5362,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.112, y: 1.7080001, z: 0.143}
   m_TimeToStationary: 0.5
+--- !u!65 &305553479461549647
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4617774021414374867}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 86.133026, y: 80.9476, z: 62.36471}
+  m_Center: {x: 0.11234088, y: 1.7078152, z: 0.14271446}
 --- !u!1 &4705505231214524931
 GameObject:
   m_ObjectHideFlags: 0
@@ -4796,6 +5496,7 @@ GameObject:
   - component: {fileID: 5365619157253688584}
   - component: {fileID: 9048352794079247053}
   - component: {fileID: 8293614310336745056}
+  - component: {fileID: 1808769307235368748}
   m_Layer: 8
   m_Name: Caatinga Cacto 1.016
   m_TagString: Untagged
@@ -4889,7 +5590,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 3785681777516943384, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &8293614310336745056
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4906,6 +5610,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -81.568}
   m_TimeToStationary: 0.5
+--- !u!65 &1808769307235368748
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4712598608426623756}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 167.246}
+  m_Center: {x: 0, y: 0, z: -81.568}
 --- !u!1 &4813095398752034848
 GameObject:
   m_ObjectHideFlags: 0
@@ -5119,6 +5844,7 @@ GameObject:
   - component: {fileID: 304569676580767365}
   - component: {fileID: 2239991441387167178}
   - component: {fileID: 5171897320518345893}
+  - component: {fileID: 5610989230323444884}
   m_Layer: 8
   m_Name: Caatinga Arvore 1.005
   m_TagString: Untagged
@@ -5211,7 +5937,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -295855599453590448, guid: 1128228d79164114fa744a46d27493ae,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &5171897320518345893
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5228,6 +5957,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 5, y: 0, z: -147.69301}
   m_TimeToStationary: 0.5
+--- !u!65 &5610989230323444884
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5082018957016360174}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 30, y: 30, z: 295.598}
+  m_Center: {x: 5, y: 0, z: -147.693}
 --- !u!1 &5260710573772314910
 GameObject:
   m_ObjectHideFlags: 0
@@ -5324,6 +6074,7 @@ GameObject:
   - component: {fileID: 7925548008998768629}
   - component: {fileID: 6841202174367238222}
   - component: {fileID: 1957986153150307391}
+  - component: {fileID: 488582089722523217}
   m_Layer: 8
   m_Name: Caatinga Cacto 1.010
   m_TagString: Untagged
@@ -5417,7 +6168,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 3785681777516943384, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &1957986153150307391
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5434,6 +6188,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -81.568}
   m_TimeToStationary: 0.5
+--- !u!65 &488582089722523217
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5352205404381197828}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 167.246}
+  m_Center: {x: 0, y: 0, z: -81.568}
 --- !u!1 &5368653175917349248
 GameObject:
   m_ObjectHideFlags: 0
@@ -5447,6 +6222,7 @@ GameObject:
   - component: {fileID: 1067926826970250801}
   - component: {fileID: 2690001932962886055}
   - component: {fileID: 7304622403133705139}
+  - component: {fileID: 3758600007271369138}
   m_Layer: 8
   m_Name: Caatinga Arvore 1.004
   m_TagString: Untagged
@@ -5539,7 +6315,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -295855599453590448, guid: 1128228d79164114fa744a46d27493ae,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &7304622403133705139
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5556,6 +6335,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 5, y: 0, z: -147.69301}
   m_TimeToStationary: 0.5
+--- !u!65 &3758600007271369138
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5368653175917349248}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 30, y: 30, z: 295.598}
+  m_Center: {x: 5, y: 0, z: -147.693}
 --- !u!1 &5421226572058735555
 GameObject:
   m_ObjectHideFlags: 0
@@ -5786,6 +6586,7 @@ GameObject:
   - component: {fileID: 822357033310284789}
   - component: {fileID: 1385658708146579182}
   - component: {fileID: 2370063433734103176}
+  - component: {fileID: 5164388857096771261}
   m_Layer: 8
   m_Name: Caatinga Arvore 1.008
   m_TagString: Untagged
@@ -5878,7 +6679,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8629254945320541750, guid: 1128228d79164114fa744a46d27493ae,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &2370063433734103176
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5895,6 +6699,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 5, y: 0, z: -147.69301}
   m_TimeToStationary: 0.5
+--- !u!65 &5164388857096771261
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5712756201799286798}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 30, y: 30, z: 295.598}
+  m_Center: {x: 5, y: 0, z: -147.693}
 --- !u!1 &5947948090945713690
 GameObject:
   m_ObjectHideFlags: 0
@@ -5908,6 +6733,7 @@ GameObject:
   - component: {fileID: 841060871511269127}
   - component: {fileID: 5361315185864550456}
   - component: {fileID: 7348109702628069768}
+  - component: {fileID: 2640023467076668755}
   m_Layer: 8
   m_Name: Caatinga Cacto 2.004
   m_TagString: Untagged
@@ -6002,7 +6828,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -6573972315983291418, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &7348109702628069768
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6019,6 +6848,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.112, y: 1.7080001, z: 0.143}
   m_TimeToStationary: 0.5
+--- !u!65 &2640023467076668755
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5947948090945713690}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 86.133026, y: 80.9476, z: 62.36471}
+  m_Center: {x: 0.11234088, y: 1.7078152, z: 0.14271446}
 --- !u!1 &6067759987029370778
 GameObject:
   m_ObjectHideFlags: 0
@@ -6032,6 +6882,7 @@ GameObject:
   - component: {fileID: 6497285208541865107}
   - component: {fileID: 868380379143249119}
   - component: {fileID: 1266742983872476053}
+  - component: {fileID: 8773185773865916847}
   m_Layer: 8
   m_Name: Caatinga Cacto 2.008
   m_TagString: Untagged
@@ -6126,7 +6977,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -6573972315983291418, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &1266742983872476053
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6143,6 +6997,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.112, y: 1.7080001, z: 0.143}
   m_TimeToStationary: 0.5
+--- !u!65 &8773185773865916847
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6067759987029370778}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 86.133026, y: 80.9476, z: 62.36471}
+  m_Center: {x: 0.11234088, y: 1.7078152, z: 0.14271446}
 --- !u!1 &6117544651855803450
 GameObject:
   m_ObjectHideFlags: 0
@@ -6156,6 +7031,7 @@ GameObject:
   - component: {fileID: 6272962379724014652}
   - component: {fileID: 4683651577687626216}
   - component: {fileID: 6682755766895522425}
+  - component: {fileID: 4461098760851726343}
   m_Layer: 8
   m_Name: Caatinga Arvore 1.001
   m_TagString: Untagged
@@ -6248,7 +7124,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -295855599453590448, guid: 1128228d79164114fa744a46d27493ae,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &6682755766895522425
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6265,6 +7144,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 5, y: 0, z: -147.69301}
   m_TimeToStationary: 0.5
+--- !u!65 &4461098760851726343
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6117544651855803450}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 30, y: 30, z: 295.598}
+  m_Center: {x: 5, y: 0, z: -147.693}
 --- !u!1 &6161576774086884028
 GameObject:
   m_ObjectHideFlags: 0
@@ -6361,6 +7261,7 @@ GameObject:
   - component: {fileID: 8344550073475954638}
   - component: {fileID: 4468510155815110694}
   - component: {fileID: 6747818635698199857}
+  - component: {fileID: 5056958476995329260}
   m_Layer: 8
   m_Name: Caatinga Arvore 2.010
   m_TagString: Untagged
@@ -6453,7 +7354,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8629254945320541750, guid: 1128228d79164114fa744a46d27493ae,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &6747818635698199857
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6470,6 +7374,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 5, y: -2.5, z: -124.84501}
   m_TimeToStationary: 0.5
+--- !u!65 &5056958476995329260
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6302380903742980492}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 30, y: 30, z: 249.88}
+  m_Center: {x: 5, y: -2.5, z: -124.845}
 --- !u!1 &6474827136933483959
 GameObject:
   m_ObjectHideFlags: 0
@@ -6749,6 +7674,7 @@ GameObject:
   - component: {fileID: 6802908780096142176}
   - component: {fileID: 8392416706687002307}
   - component: {fileID: 4150894696376898515}
+  - component: {fileID: 5686179842453890104}
   m_Layer: 8
   m_Name: Caatinga Cacto 2.002
   m_TagString: Untagged
@@ -6843,7 +7769,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -6573972315983291418, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &4150894696376898515
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6860,6 +7789,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.112, y: 1.7080001, z: 0.143}
   m_TimeToStationary: 0.5
+--- !u!65 &5686179842453890104
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6714422938249212904}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 86.133026, y: 80.9476, z: 62.36471}
+  m_Center: {x: 0.11234851, y: 1.7078152, z: 0.14271446}
 --- !u!1 &6770143649846549076
 GameObject:
   m_ObjectHideFlags: 0
@@ -6873,6 +7823,7 @@ GameObject:
   - component: {fileID: 3814304225263512575}
   - component: {fileID: 8060345145213694026}
   - component: {fileID: 8550271604005954049}
+  - component: {fileID: 9023368582030936002}
   m_Layer: 8
   m_Name: Caatinga Cacto 1.014
   m_TagString: Untagged
@@ -6966,7 +7917,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 3785681777516943384, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &8550271604005954049
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6983,6 +7937,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -81.568}
   m_TimeToStationary: 0.5
+--- !u!65 &9023368582030936002
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6770143649846549076}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 167.246}
+  m_Center: {x: 0, y: 0, z: -81.568}
 --- !u!1 &6849531453845106229
 GameObject:
   m_ObjectHideFlags: 0
@@ -6996,6 +7971,7 @@ GameObject:
   - component: {fileID: 6946192330469496116}
   - component: {fileID: 8711136927534389077}
   - component: {fileID: 394748899340525414}
+  - component: {fileID: 7514453089326229074}
   m_Layer: 8
   m_Name: Caatinga Cacto 1.019
   m_TagString: Untagged
@@ -7089,7 +8065,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 3785681777516943384, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &394748899340525414
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -7106,6 +8085,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -81.568}
   m_TimeToStationary: 0.5
+--- !u!65 &7514453089326229074
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6849531453845106229}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 167.246}
+  m_Center: {x: 0, y: 0, z: -81.568}
 --- !u!1 &7109323031649422291
 GameObject:
   m_ObjectHideFlags: 0
@@ -7119,6 +8119,7 @@ GameObject:
   - component: {fileID: 4939120709488558247}
   - component: {fileID: 248148914979622219}
   - component: {fileID: 438878788829351923}
+  - component: {fileID: 4361061412686058207}
   m_Layer: 8
   m_Name: Caatinga Cacto 1.002
   m_TagString: Untagged
@@ -7212,7 +8213,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 3785681777516943384, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &438878788829351923
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -7229,6 +8233,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -81.568}
   m_TimeToStationary: 0.5
+--- !u!65 &4361061412686058207
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7109323031649422291}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 167.246}
+  m_Center: {x: 0, y: 0, z: -81.568}
 --- !u!1 &7182794904529270076
 GameObject:
   m_ObjectHideFlags: 0
@@ -7608,6 +8633,7 @@ GameObject:
   - component: {fileID: 1370176439920815998}
   - component: {fileID: 3491572033387427578}
   - component: {fileID: 7561895702671277932}
+  - component: {fileID: 5423224019402896220}
   m_Layer: 8
   m_Name: Caatinga Cacto 1.012
   m_TagString: Untagged
@@ -7701,7 +8727,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 3785681777516943384, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &7561895702671277932
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -7718,6 +8747,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -81.568}
   m_TimeToStationary: 0.5
+--- !u!65 &5423224019402896220
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7557082055545528281}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 167.246}
+  m_Center: {x: 0, y: 0, z: -81.568}
 --- !u!1 &7712964441712180607
 GameObject:
   m_ObjectHideFlags: 0
@@ -7731,6 +8781,7 @@ GameObject:
   - component: {fileID: 7794004775872254177}
   - component: {fileID: 3471670935392708807}
   - component: {fileID: 6042143298730345619}
+  - component: {fileID: 5376576275172413747}
   m_Layer: 8
   m_Name: Caatinga Cacto 1.007
   m_TagString: Untagged
@@ -7824,7 +8875,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 3785681777516943384, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &6042143298730345619
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -7841,6 +8895,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -81.568}
   m_TimeToStationary: 0.5
+--- !u!65 &5376576275172413747
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7712964441712180607}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 167.246}
+  m_Center: {x: 0, y: 0, z: -81.568}
 --- !u!1 &7822278641331265589
 GameObject:
   m_ObjectHideFlags: 0
@@ -7854,6 +8929,7 @@ GameObject:
   - component: {fileID: 2344353921531629665}
   - component: {fileID: 164638167032331849}
   - component: {fileID: 3343537531327573}
+  - component: {fileID: 7261818108358292752}
   m_Layer: 8
   m_Name: Caatinga Cacto 1.003
   m_TagString: Untagged
@@ -7947,7 +9023,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 3785681777516943384, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &3343537531327573
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -7964,6 +9043,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -81.568}
   m_TimeToStationary: 0.5
+--- !u!65 &7261818108358292752
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822278641331265589}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 167.246}
+  m_Center: {x: 0, y: 0, z: -81.568}
 --- !u!1 &7951846253016263419
 GameObject:
   m_ObjectHideFlags: 0
@@ -7977,6 +9077,7 @@ GameObject:
   - component: {fileID: 5735989854931583311}
   - component: {fileID: 8735994060532415746}
   - component: {fileID: 887378459675429309}
+  - component: {fileID: 5396952771715533344}
   m_Layer: 8
   m_Name: Caatinga Cacto 2.011
   m_TagString: Untagged
@@ -8071,7 +9172,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -6573972315983291418, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &887378459675429309
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -8088,6 +9192,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.112, y: 1.7080001, z: 0.143}
   m_TimeToStationary: 0.5
+--- !u!65 &5396952771715533344
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7951846253016263419}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 86.133026, y: 80.9476, z: 62.36471}
+  m_Center: {x: 0.11234088, y: 1.7078152, z: 0.14271446}
 --- !u!1 &7985426363546436019
 GameObject:
   m_ObjectHideFlags: 0
@@ -8101,6 +9226,7 @@ GameObject:
   - component: {fileID: 590814199392932596}
   - component: {fileID: 6182354793354340873}
   - component: {fileID: 5336659110040248744}
+  - component: {fileID: 39787478680349906}
   m_Layer: 8
   m_Name: Caatinga Arvore 2.002
   m_TagString: Untagged
@@ -8193,7 +9319,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8629254945320541750, guid: 1128228d79164114fa744a46d27493ae,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &5336659110040248744
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -8210,6 +9339,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 5, y: -2.5, z: -124.84501}
   m_TimeToStationary: 0.5
+--- !u!65 &39787478680349906
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7985426363546436019}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 30, y: 30, z: 249.88}
+  m_Center: {x: 5, y: -2.5, z: -124.845}
 --- !u!1 &8039796718671613539
 GameObject:
   m_ObjectHideFlags: 0
@@ -8306,6 +9456,7 @@ GameObject:
   - component: {fileID: 1631972487704926567}
   - component: {fileID: 2614694323891717205}
   - component: {fileID: 6495687329928752372}
+  - component: {fileID: 5656013789496839762}
   m_Layer: 8
   m_Name: Caatinga Cacto 2.010
   m_TagString: Untagged
@@ -8400,7 +9551,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -6573972315983291418, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &6495687329928752372
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -8417,6 +9571,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.112, y: 1.7080001, z: 0.143}
   m_TimeToStationary: 0.5
+--- !u!65 &5656013789496839762
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8046595242697589031}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 86.133026, y: 80.9476, z: 62.36471}
+  m_Center: {x: 0.11240192, y: 1.7078152, z: 0.14271446}
 --- !u!1 &8110061126664987712
 GameObject:
   m_ObjectHideFlags: 0
@@ -8513,6 +9688,7 @@ GameObject:
   - component: {fileID: 3035547946525843049}
   - component: {fileID: 2016449939617712786}
   - component: {fileID: 9203819157212275914}
+  - component: {fileID: 250978835368728238}
   m_Layer: 8
   m_Name: Caatinga Cacto 2.013
   m_TagString: Untagged
@@ -8607,7 +9783,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -6573972315983291418, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &9203819157212275914
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -8624,6 +9803,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.112, y: 1.7080001, z: 0.143}
   m_TimeToStationary: 0.5
+--- !u!65 &250978835368728238
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8356370550443889480}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 86.133026, y: 80.9476, z: 62.36471}
+  m_Center: {x: 0.11234088, y: 1.7078152, z: 0.14271446}
 --- !u!1 &8362541125191813558
 GameObject:
   m_ObjectHideFlags: 0
@@ -8637,6 +9837,7 @@ GameObject:
   - component: {fileID: 4160495512512496128}
   - component: {fileID: 3897187136536556536}
   - component: {fileID: 2410104594081285495}
+  - component: {fileID: 2629919031689579183}
   m_Layer: 8
   m_Name: Caatinga Cacto 2.012
   m_TagString: Untagged
@@ -8731,7 +9932,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -6573972315983291418, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &2410104594081285495
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -8748,6 +9952,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.112, y: 1.7080001, z: 0.143}
   m_TimeToStationary: 0.5
+--- !u!65 &2629919031689579183
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8362541125191813558}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 86.133026, y: 80.9476, z: 62.36471}
+  m_Center: {x: 0.11234088, y: 1.7078152, z: 0.14271446}
 --- !u!1 &8536803648604028117
 GameObject:
   m_ObjectHideFlags: 0
@@ -8761,6 +9986,7 @@ GameObject:
   - component: {fileID: 7937999426014561190}
   - component: {fileID: 8345068956967756564}
   - component: {fileID: 3727981661636776243}
+  - component: {fileID: 2496902087554275362}
   m_Layer: 8
   m_Name: Caatinga Cacto 1.015
   m_TagString: Untagged
@@ -8854,7 +10080,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 3785681777516943384, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &3727981661636776243
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -8871,6 +10100,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -81.568}
   m_TimeToStationary: 0.5
+--- !u!65 &2496902087554275362
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8536803648604028117}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 167.246}
+  m_Center: {x: 0, y: 0, z: -81.568}
 --- !u!1 &8578700774243592225
 GameObject:
   m_ObjectHideFlags: 0
@@ -8884,6 +10134,7 @@ GameObject:
   - component: {fileID: 5053401324460797859}
   - component: {fileID: 6534085334838001376}
   - component: {fileID: 9204026856552507786}
+  - component: {fileID: 6826006562880582183}
   m_Layer: 8
   m_Name: Caatinga Arvore 2.006
   m_TagString: Untagged
@@ -8976,7 +10227,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8629254945320541750, guid: 1128228d79164114fa744a46d27493ae,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &9204026856552507786
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -8993,6 +10247,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 5, y: -2.5, z: -124.84501}
   m_TimeToStationary: 0.5
+--- !u!65 &6826006562880582183
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8578700774243592225}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 30, y: 30, z: 249.88}
+  m_Center: {x: 5, y: -2.5, z: -124.845}
 --- !u!1 &8641458973844905901
 GameObject:
   m_ObjectHideFlags: 0
@@ -9274,6 +10549,7 @@ GameObject:
   - component: {fileID: 2795826455182101079}
   - component: {fileID: 7383501323783778938}
   - component: {fileID: 7090017623815894303}
+  - component: {fileID: 1328324255604008504}
   m_Layer: 8
   m_Name: Caatinga Cacto 1.017
   m_TagString: Untagged
@@ -9367,7 +10643,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 7
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 3785681777516943384, guid: b8d587135262d884eacc0b4e6618e4be,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &7090017623815894303
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -9384,6 +10663,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -81.568}
   m_TimeToStationary: 0.5
+--- !u!65 &1328324255604008504
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8894227905240448853}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 167.246}
+  m_Center: {x: 0, y: 0, z: -81.568}
 --- !u!1 &8965285605500844671
 GameObject:
   m_ObjectHideFlags: 0

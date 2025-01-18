@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 3844527553970727638}
   - component: {fileID: 5446321687963307462}
   - component: {fileID: 5700638202882404309}
+  - component: {fileID: 655151551422970845}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 2.004
   m_TagString: Untagged
@@ -306,7 +307,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -3972014619172430485, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &5700638202882404309
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -323,6 +327,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -105.79401}
   m_TimeToStationary: 0.5
+--- !u!65 &655151551422970845
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80728437495898224}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 35, y: 35, z: 212.204}
+  m_Center: {x: 0, y: 0, z: -105.794}
 --- !u!1 &93066573878616655
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,6 +561,7 @@ GameObject:
   - component: {fileID: 9014401002490216036}
   - component: {fileID: 8312055925468193602}
   - component: {fileID: 2188853408592745880}
+  - component: {fileID: 4014426718323643081}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 3.003
   m_TagString: Untagged
@@ -629,7 +655,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7933650868614867357, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &2188853408592745880
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -646,6 +675,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.50100005, z: -124.496}
   m_TimeToStationary: 0.5
+--- !u!65 &4014426718323643081
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185367919479098729}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 249.274}
+  m_Center: {x: 0, y: 0.50148416, z: -124.496}
 --- !u!1 &222034191067352325
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,6 +792,7 @@ GameObject:
   - component: {fileID: 5189760532755113485}
   - component: {fileID: 2800139797127399191}
   - component: {fileID: 2437746697444962556}
+  - component: {fileID: 7393250939970826918}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 2.018
   m_TagString: Untagged
@@ -835,7 +886,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -3972014619172430485, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &2437746697444962556
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -852,6 +906,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -105.79401}
   m_TimeToStationary: 0.5
+--- !u!65 &7393250939970826918
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226684429393808494}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 35, y: 35, z: 212.204}
+  m_Center: {x: 0, y: 0, z: -105.794}
 --- !u!1 &248347047036043442
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,6 +940,7 @@ GameObject:
   - component: {fileID: 4669309935481018033}
   - component: {fileID: 8670208392586538237}
   - component: {fileID: 5155153102555107761}
+  - component: {fileID: 1361236575875974793}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 1.008
   m_TagString: Untagged
@@ -958,7 +1034,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8914986821310679255, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &5155153102555107761
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -975,6 +1054,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -99.123}
   m_TimeToStationary: 0.5
+--- !u!65 &1361236575875974793
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248347047036043442}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 198.352}
+  m_Center: {x: 0, y: 0, z: -99.123}
 --- !u!1 &306005536871391521
 GameObject:
   m_ObjectHideFlags: 0
@@ -1154,6 +1254,7 @@ GameObject:
   - component: {fileID: 2588716174864199478}
   - component: {fileID: 1016685820598984628}
   - component: {fileID: 4147546151197275900}
+  - component: {fileID: 5996900724582488425}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 3.020
   m_TagString: Untagged
@@ -1247,7 +1348,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7933650868614867357, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &4147546151197275900
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1264,6 +1368,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.50100005, z: -124.496}
   m_TimeToStationary: 0.5
+--- !u!65 &5996900724582488425
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313845228331486013}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 249.274}
+  m_Center: {x: 0, y: 0.5014937, z: -124.496}
 --- !u!1 &355866418881542823
 GameObject:
   m_ObjectHideFlags: 0
@@ -1858,6 +1983,7 @@ GameObject:
   - component: {fileID: 8966979352921228393}
   - component: {fileID: 4872664739354556501}
   - component: {fileID: 6213360659758641386}
+  - component: {fileID: 3359670336608627348}
   m_Layer: 8
   m_Name: MataAtlantica Arbusto 2.002
   m_TagString: Untagged
@@ -1951,7 +2077,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 5570417238042446460, guid: a3f104f5259357841b3acc5508c36596,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &6213360659758641386
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1968,6 +2097,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -2.5740001, y: -11.512, z: -41.848003}
   m_TimeToStationary: 0.5
+--- !u!65 &3359670336608627348
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640051116508649137}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 110.60618, y: 253.76472, z: 93.06464}
+  m_Center: {x: -2.5744762, y: -11.51205, z: -41.848156}
 --- !u!1 &713409613561006543
 GameObject:
   m_ObjectHideFlags: 0
@@ -2247,6 +2397,7 @@ GameObject:
   - component: {fileID: 2266429881563926120}
   - component: {fileID: 788776041802581273}
   - component: {fileID: 8645613886723968650}
+  - component: {fileID: 5408683822661237616}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 3.015
   m_TagString: Untagged
@@ -2340,7 +2491,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7933650868614867357, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &8645613886723968650
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2357,6 +2511,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.50200003, z: -124.496}
   m_TimeToStationary: 0.5
+--- !u!65 &5408683822661237616
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802528885612853637}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 249.274}
+  m_Center: {x: 0, y: 0.50150144, z: -124.496}
 --- !u!1 &822627887425373611
 GameObject:
   m_ObjectHideFlags: 0
@@ -2561,6 +2736,7 @@ GameObject:
   - component: {fileID: 5027775206723114145}
   - component: {fileID: 6103382404311043486}
   - component: {fileID: 9005205136510515854}
+  - component: {fileID: 9049600382582948137}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 3.007
   m_TagString: Untagged
@@ -2654,7 +2830,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7933650868614867357, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &9005205136510515854
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2671,6 +2850,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.50100005, z: -124.496}
   m_TimeToStationary: 0.5
+--- !u!65 &9049600382582948137
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837060511234925984}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 249.274}
+  m_Center: {x: 0, y: 0.50149053, z: -124.496}
 --- !u!1 &883186310952687946
 GameObject:
   m_ObjectHideFlags: 0
@@ -3531,6 +3731,7 @@ GameObject:
   - component: {fileID: 1401078073080738237}
   - component: {fileID: 6476764394681796990}
   - component: {fileID: 5085419068909100902}
+  - component: {fileID: 7404134302779814371}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 3.021
   m_TagString: Untagged
@@ -3624,7 +3825,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7933650868614867357, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &5085419068909100902
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3641,6 +3845,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.50200003, z: -124.496}
   m_TimeToStationary: 0.5
+--- !u!65 &7404134302779814371
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297300112918566912}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 249.274}
+  m_Center: {x: 0, y: 0.501502, z: -124.496}
 --- !u!1 &1352057519666997235
 GameObject:
   m_ObjectHideFlags: 0
@@ -3654,6 +3879,7 @@ GameObject:
   - component: {fileID: 1022555855805859956}
   - component: {fileID: 8880064353035368960}
   - component: {fileID: 414328001703094399}
+  - component: {fileID: 535340474545615997}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 1.005
   m_TagString: Untagged
@@ -3747,7 +3973,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8914986821310679255, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &414328001703094399
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3764,6 +3993,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -99.123}
   m_TimeToStationary: 0.5
+--- !u!65 &535340474545615997
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1352057519666997235}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 198.352}
+  m_Center: {x: 0, y: 0, z: -99.123}
 --- !u!1 &1377489183238822880
 GameObject:
   m_ObjectHideFlags: 0
@@ -4126,6 +4376,7 @@ GameObject:
   - component: {fileID: 116587152616850572}
   - component: {fileID: 4337755560416219357}
   - component: {fileID: 1755471425077407951}
+  - component: {fileID: 6085508293285771339}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 3.001
   m_TagString: Untagged
@@ -4219,7 +4470,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7933650868614867357, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &1755471425077407951
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4236,6 +4490,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.50200003, z: -124.496}
   m_TimeToStationary: 0.5
+--- !u!65 &6085508293285771339
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535521309306321538}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 249.274}
+  m_Center: {x: 0, y: 0.5015055, z: -124.496}
 --- !u!1 &1558693413627735131
 GameObject:
   m_ObjectHideFlags: 0
@@ -4368,6 +4643,7 @@ GameObject:
   - component: {fileID: 7469404549194701198}
   - component: {fileID: 108836413037457459}
   - component: {fileID: 4895234118655826462}
+  - component: {fileID: 2109764754786628275}
   m_Layer: 8
   m_Name: MataAtlantica Arbusto 1.006
   m_TagString: Untagged
@@ -4460,7 +4736,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -1454124391313001663, guid: a3f104f5259357841b3acc5508c36596,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &4895234118655826462
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4477,6 +4756,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.024, y: 0.09900001, z: -42.940002}
   m_TimeToStationary: 0.5
+--- !u!65 &2109764754786628275
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906176777659051434}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 105.84218, y: 175.58452, z: 76.03616}
+  m_Center: {x: 0.023576181, y: 0.09866021, z: -42.94006}
 --- !u!1 &1927471506946185948
 GameObject:
   m_ObjectHideFlags: 0
@@ -4490,6 +4790,7 @@ GameObject:
   - component: {fileID: 4724992784834605859}
   - component: {fileID: 2994121513841082142}
   - component: {fileID: 2431545746059054490}
+  - component: {fileID: 8099924184018429947}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 1.009
   m_TagString: Untagged
@@ -4583,7 +4884,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8914986821310679255, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &2431545746059054490
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4600,6 +4904,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -99.123}
   m_TimeToStationary: 0.5
+--- !u!65 &8099924184018429947
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927471506946185948}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 198.352}
+  m_Center: {x: 0, y: 0, z: -99.123}
 --- !u!1 &1935002554593345509
 GameObject:
   m_ObjectHideFlags: 0
@@ -5037,6 +5362,7 @@ GameObject:
   - component: {fileID: 6935790626578971513}
   - component: {fileID: 5561165027497718287}
   - component: {fileID: 7289803730807091343}
+  - component: {fileID: 7837697710274980892}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 3.019
   m_TagString: Untagged
@@ -5130,7 +5456,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7933650868614867357, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &7289803730807091343
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5147,6 +5476,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.50200003, z: -124.496}
   m_TimeToStationary: 0.5
+--- !u!65 &7837697710274980892
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146697614378715956}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 249.274}
+  m_Center: {x: 0, y: 0.50150365, z: -124.496}
 --- !u!1 &2169638351649556961
 GameObject:
   m_ObjectHideFlags: 0
@@ -5160,6 +5510,7 @@ GameObject:
   - component: {fileID: 8426014219578478148}
   - component: {fileID: 5271879542070633036}
   - component: {fileID: 143137275769143275}
+  - component: {fileID: 9168676892672566167}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 2.013
   m_TagString: Untagged
@@ -5253,7 +5604,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -3972014619172430485, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &143137275769143275
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5270,6 +5624,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -105.79401}
   m_TimeToStationary: 0.5
+--- !u!65 &9168676892672566167
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2169638351649556961}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 35, y: 35, z: 212.204}
+  m_Center: {x: 0, y: 0, z: -105.794}
 --- !u!1 &2179057720993601848
 GameObject:
   m_ObjectHideFlags: 0
@@ -5283,6 +5658,7 @@ GameObject:
   - component: {fileID: 5338404895320247375}
   - component: {fileID: 8889457575591837377}
   - component: {fileID: 3445277169010501667}
+  - component: {fileID: 9205631117011500153}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 1.021
   m_TagString: Untagged
@@ -5376,7 +5752,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8914986821310679255, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &3445277169010501667
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5393,6 +5772,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -99.123}
   m_TimeToStationary: 0.5
+--- !u!65 &9205631117011500153
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2179057720993601848}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 198.352}
+  m_Center: {x: 0, y: 0, z: -99.123}
 --- !u!1 &2190611973532847540
 GameObject:
   m_ObjectHideFlags: 0
@@ -5506,6 +5906,7 @@ GameObject:
   - component: {fileID: 7055462807120145387}
   - component: {fileID: 3026905970993640297}
   - component: {fileID: 5330784109277547530}
+  - component: {fileID: 5235887598985446556}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 2.006
   m_TagString: Untagged
@@ -5599,7 +6000,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -3972014619172430485, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &5330784109277547530
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5616,6 +6020,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -105.79401}
   m_TimeToStationary: 0.5
+--- !u!65 &5235887598985446556
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2226955868446512200}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 35, y: 35, z: 212.204}
+  m_Center: {x: 0, y: 0, z: -105.794}
 --- !u!1 &2234642392807768676
 GameObject:
   m_ObjectHideFlags: 0
@@ -5712,6 +6137,7 @@ GameObject:
   - component: {fileID: 3155588580110313773}
   - component: {fileID: 2697368727969150800}
   - component: {fileID: 183848081132175245}
+  - component: {fileID: 3280677098132736068}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 1.012
   m_TagString: Untagged
@@ -5805,7 +6231,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8914986821310679255, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &183848081132175245
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5822,6 +6251,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -99.123}
   m_TimeToStationary: 0.5
+--- !u!65 &3280677098132736068
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2240502541613171110}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 198.352}
+  m_Center: {x: 0, y: 0, z: -99.123}
 --- !u!1 &2294464950553278268
 GameObject:
   m_ObjectHideFlags: 0
@@ -5935,6 +6385,7 @@ GameObject:
   - component: {fileID: 6604766062093540775}
   - component: {fileID: 8289089264332484647}
   - component: {fileID: 6955973788594225551}
+  - component: {fileID: 9124665984997576254}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 3.004
   m_TagString: Untagged
@@ -6028,7 +6479,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7933650868614867357, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &6955973788594225551
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6045,6 +6499,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.50100005, z: -124.496}
   m_TimeToStationary: 0.5
+--- !u!65 &9124665984997576254
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2387120700882557342}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 249.274}
+  m_Center: {x: 0, y: 0.5014875, z: -124.496}
 --- !u!1 &2431290315766644551
 GameObject:
   m_ObjectHideFlags: 0
@@ -6256,6 +6731,7 @@ GameObject:
   - component: {fileID: 5293269786974175312}
   - component: {fileID: 1586557161655476741}
   - component: {fileID: 5381893723153034641}
+  - component: {fileID: 2495323091913834622}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 3.017
   m_TagString: Untagged
@@ -6349,7 +6825,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7933650868614867357, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &5381893723153034641
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6366,6 +6845,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.50100005, z: -124.496}
   m_TimeToStationary: 0.5
+--- !u!65 &2495323091913834622
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2504211270815712031}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 249.274}
+  m_Center: {x: 0, y: 0.5014946, z: -124.496}
 --- !u!1 &2555810131996180736
 GameObject:
   m_ObjectHideFlags: 0
@@ -6379,6 +6879,7 @@ GameObject:
   - component: {fileID: 4853729165517318013}
   - component: {fileID: 5182600377104005914}
   - component: {fileID: 232217029495366553}
+  - component: {fileID: 8045381270183554278}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 2.016
   m_TagString: Untagged
@@ -6472,7 +6973,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -3972014619172430485, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &232217029495366553
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6489,6 +6993,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -105.79401}
   m_TimeToStationary: 0.5
+--- !u!65 &8045381270183554278
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2555810131996180736}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 35, y: 35, z: 212.204}
+  m_Center: {x: 0, y: 0, z: -105.794}
 --- !u!1 &2573925811539256458
 GameObject:
   m_ObjectHideFlags: 0
@@ -6668,6 +7193,7 @@ GameObject:
   - component: {fileID: 1296535933106727354}
   - component: {fileID: 4922443774238191425}
   - component: {fileID: 8659057650667331009}
+  - component: {fileID: 2692791615133277203}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 1.007
   m_TagString: Untagged
@@ -6761,7 +7287,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8914986821310679255, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &8659057650667331009
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6778,6 +7307,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -99.123}
   m_TimeToStationary: 0.5
+--- !u!65 &2692791615133277203
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2750907575046746034}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 198.352}
+  m_Center: {x: 0, y: 0, z: -99.123}
 --- !u!1 &2792144653126160448
 GameObject:
   m_ObjectHideFlags: 0
@@ -7040,6 +7590,7 @@ GameObject:
   - component: {fileID: 9024283487343994137}
   - component: {fileID: 1496472258712113467}
   - component: {fileID: 724199984033425544}
+  - component: {fileID: 4729086068582330648}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 2.017
   m_TagString: Untagged
@@ -7133,7 +7684,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -3972014619172430485, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &724199984033425544
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -7150,6 +7704,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -105.79401}
   m_TimeToStationary: 0.5
+--- !u!65 &4729086068582330648
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040102179490790142}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 35, y: 35, z: 212.204}
+  m_Center: {x: 0, y: 0, z: -105.794}
 --- !u!1 &3060073150351639238
 GameObject:
   m_ObjectHideFlags: 0
@@ -7329,6 +7904,7 @@ GameObject:
   - component: {fileID: 8873843444237009029}
   - component: {fileID: 3988772596661739725}
   - component: {fileID: 4295100928973244362}
+  - component: {fileID: 345734068260637356}
   m_Layer: 8
   m_Name: MataAtlantica Arbusto 1.004
   m_TagString: Untagged
@@ -7421,7 +7997,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -1454124391313001663, guid: a3f104f5259357841b3acc5508c36596,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &4295100928973244362
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -7438,6 +8017,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.024, y: 0.09900001, z: -42.940002}
   m_TimeToStationary: 0.5
+--- !u!65 &345734068260637356
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3132856028513584680}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 105.84215, y: 175.58449, z: 76.03617}
+  m_Center: {x: 0.023578133, y: 0.09866255, z: -42.94006}
 --- !u!1 &3212230310985174417
 GameObject:
   m_ObjectHideFlags: 0
@@ -7634,6 +8234,7 @@ GameObject:
   - component: {fileID: 7356938470375450064}
   - component: {fileID: 6196569147913027909}
   - component: {fileID: 1364337209026380633}
+  - component: {fileID: 3649553050195328595}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 1.001
   m_TagString: Untagged
@@ -7727,7 +8328,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8914986821310679255, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &1364337209026380633
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -7744,6 +8348,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -99.123}
   m_TimeToStationary: 0.5
+--- !u!65 &3649553050195328595
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3452702379187819714}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 198.352}
+  m_Center: {x: 0, y: 0, z: -99.123}
 --- !u!1 &3516680580092557204
 GameObject:
   m_ObjectHideFlags: 0
@@ -7757,6 +8382,7 @@ GameObject:
   - component: {fileID: 4962889257462608436}
   - component: {fileID: 7550496062235699093}
   - component: {fileID: 2088946048519647086}
+  - component: {fileID: 291374570540065797}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 2.021
   m_TagString: Untagged
@@ -7850,7 +8476,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -3972014619172430485, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &2088946048519647086
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -7867,6 +8496,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -105.79401}
   m_TimeToStationary: 0.5
+--- !u!65 &291374570540065797
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3516680580092557204}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 35, y: 35, z: 212.204}
+  m_Center: {x: 0, y: 0, z: -105.794}
 --- !u!1 &3555338335863691393
 GameObject:
   m_ObjectHideFlags: 0
@@ -8046,6 +8696,7 @@ GameObject:
   - component: {fileID: 8997374899198028117}
   - component: {fileID: 3564455874343061121}
   - component: {fileID: 471141850461220511}
+  - component: {fileID: 1960231858171887685}
   m_Layer: 8
   m_Name: MataAtlantica Arbusto 2.004
   m_TagString: Untagged
@@ -8139,7 +8790,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 5570417238042446460, guid: a3f104f5259357841b3acc5508c36596,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &471141850461220511
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -8156,6 +8810,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -2.5740001, y: -11.512, z: -41.848003}
   m_TimeToStationary: 0.5
+--- !u!65 &1960231858171887685
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3608179063696868679}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 110.60621, y: 253.76477, z: 93.064644}
+  m_Center: {x: -2.5744746, y: -11.512053, z: -41.848156}
 --- !u!1 &3637443221597449098
 GameObject:
   m_ObjectHideFlags: 0
@@ -8252,6 +8927,7 @@ GameObject:
   - component: {fileID: 3205004280380645538}
   - component: {fileID: 6025752091109596088}
   - component: {fileID: 274569304669159082}
+  - component: {fileID: 5610412130615439636}
   m_Layer: 8
   m_Name: MataAtlantica Arbusto 2.001
   m_TagString: Untagged
@@ -8345,7 +9021,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 5570417238042446460, guid: a3f104f5259357841b3acc5508c36596,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &274569304669159082
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -8362,6 +9041,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -2.5740001, y: -11.512, z: -41.848003}
   m_TimeToStationary: 0.5
+--- !u!65 &5610412130615439636
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3776934579327349902}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 110.60618, y: 253.76477, z: 93.06464}
+  m_Center: {x: -2.5744781, y: -11.512053, z: -41.848156}
 --- !u!1 &3837323469042230269
 GameObject:
   m_ObjectHideFlags: 0
@@ -9156,6 +9856,7 @@ GameObject:
   - component: {fileID: 3928839964199715191}
   - component: {fileID: 741976093741633364}
   - component: {fileID: 3407674528731304688}
+  - component: {fileID: 7677344173586741763}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 2.005
   m_TagString: Untagged
@@ -9249,7 +9950,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -3972014619172430485, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &3407674528731304688
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -9266,6 +9970,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -105.79401}
   m_TimeToStationary: 0.5
+--- !u!65 &7677344173586741763
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4509855706801193922}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 35, y: 35, z: 212.204}
+  m_Center: {x: 0, y: 0, z: -105.794}
 --- !u!1 &4515988265919706992
 GameObject:
   m_ObjectHideFlags: 0
@@ -9279,6 +10004,7 @@ GameObject:
   - component: {fileID: 7928142815733922543}
   - component: {fileID: 7498211147496719715}
   - component: {fileID: 5545945732634213116}
+  - component: {fileID: 5014047111146307859}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 2.020
   m_TagString: Untagged
@@ -9372,7 +10098,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -3972014619172430485, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &5545945732634213116
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -9389,6 +10118,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -105.79401}
   m_TimeToStationary: 0.5
+--- !u!65 &5014047111146307859
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4515988265919706992}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 35, y: 35, z: 212.204}
+  m_Center: {x: 0, y: 0, z: -105.794}
 --- !u!1 &4527513596018572403
 GameObject:
   m_ObjectHideFlags: 0
@@ -9402,6 +10152,7 @@ GameObject:
   - component: {fileID: 7916155123540251203}
   - component: {fileID: 600858039953843511}
   - component: {fileID: 7790697221200686038}
+  - component: {fileID: 7976174466533021103}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 3.005
   m_TagString: Untagged
@@ -9495,7 +10246,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7933650868614867357, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &7790697221200686038
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -9512,6 +10266,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.50100005, z: -124.496}
   m_TimeToStationary: 0.5
+--- !u!65 &7976174466533021103
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4527513596018572403}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 249.274}
+  m_Center: {x: 0, y: 0.501445, z: -124.496}
 --- !u!1 &4538454862778457465
 GameObject:
   m_ObjectHideFlags: 0
@@ -9791,6 +10566,7 @@ GameObject:
   - component: {fileID: 2683629298906336028}
   - component: {fileID: 3477981225793242112}
   - component: {fileID: 843122042483497759}
+  - component: {fileID: 1245513439034937019}
   m_Layer: 8
   m_Name: MataAtlantica Arbusto 1.003
   m_TagString: Untagged
@@ -9883,7 +10659,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -1454124391313001663, guid: a3f104f5259357841b3acc5508c36596,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &843122042483497759
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -9900,6 +10679,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.024, y: 0.09900001, z: -42.940002}
   m_TimeToStationary: 0.5
+--- !u!65 &1245513439034937019
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4748197995341487816}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 105.84218, y: 175.58455, z: 76.03618}
+  m_Center: {x: 0.02357436, y: 0.098658875, z: -42.94007}
 --- !u!1 &4779358720782510573
 GameObject:
   m_ObjectHideFlags: 0
@@ -9913,6 +10713,7 @@ GameObject:
   - component: {fileID: 8374144421253159947}
   - component: {fileID: 1250755943472867459}
   - component: {fileID: 4698457910441272188}
+  - component: {fileID: 250005686204949914}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 1.002
   m_TagString: Untagged
@@ -10006,7 +10807,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8914986821310679255, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &4698457910441272188
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -10023,6 +10827,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -99.123}
   m_TimeToStationary: 0.5
+--- !u!65 &250005686204949914
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4779358720782510573}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 198.352}
+  m_Center: {x: 0, y: 0, z: -99.123}
 --- !u!1 &4827268547203443883
 GameObject:
   m_ObjectHideFlags: 0
@@ -10119,6 +10944,7 @@ GameObject:
   - component: {fileID: 472723059597087323}
   - component: {fileID: 5450891120911109885}
   - component: {fileID: 256139007261601091}
+  - component: {fileID: 716407531894892545}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 3.011
   m_TagString: Untagged
@@ -10212,7 +11038,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7933650868614867357, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &256139007261601091
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -10229,6 +11058,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.50200003, z: -124.496}
   m_TimeToStationary: 0.5
+--- !u!65 &716407531894892545
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4842998089692724310}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 249.274}
+  m_Center: {x: 0, y: 0.50150687, z: -124.496}
 --- !u!1 &4845443917617123441
 GameObject:
   m_ObjectHideFlags: 0
@@ -10242,6 +11092,7 @@ GameObject:
   - component: {fileID: 5424281582216296017}
   - component: {fileID: 3801042994655964160}
   - component: {fileID: 1391172337991256115}
+  - component: {fileID: 3530171732097465987}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 3.009
   m_TagString: Untagged
@@ -10335,7 +11186,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7933650868614867357, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &1391172337991256115
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -10352,6 +11206,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.50100005, z: -124.496}
   m_TimeToStationary: 0.5
+--- !u!65 &3530171732097465987
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4845443917617123441}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 249.274}
+  m_Center: {x: 0, y: 0.50149906, z: -124.496}
 --- !u!1 &4909828601300447674
 GameObject:
   m_ObjectHideFlags: 0
@@ -10448,6 +11323,7 @@ GameObject:
   - component: {fileID: 7764420300806846198}
   - component: {fileID: 4263638479087298254}
   - component: {fileID: 6017352451626844180}
+  - component: {fileID: 8642448052111711702}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 3.014
   m_TagString: Untagged
@@ -10541,7 +11417,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7933650868614867357, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &6017352451626844180
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -10558,6 +11437,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.50100005, z: -124.496}
   m_TimeToStationary: 0.5
+--- !u!65 &8642448052111711702
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4935537009150851821}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 249.274}
+  m_Center: {x: 0, y: 0.5014981, z: -124.496}
 --- !u!1 &4957479857198757609
 GameObject:
   m_ObjectHideFlags: 0
@@ -10654,6 +11554,7 @@ GameObject:
   - component: {fileID: 939672981898941439}
   - component: {fileID: 3638339306012919369}
   - component: {fileID: 6758139178487913026}
+  - component: {fileID: 5299788168717512043}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 3.012
   m_TagString: Untagged
@@ -10747,7 +11648,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7933650868614867357, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &6758139178487913026
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -10764,6 +11668,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.50100005, z: -124.496}
   m_TimeToStationary: 0.5
+--- !u!65 &5299788168717512043
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4987836657130426965}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 249.274}
+  m_Center: {x: 0, y: 0.50149554, z: -124.496}
 --- !u!1 &5141947799236015618
 GameObject:
   m_ObjectHideFlags: 0
@@ -11043,6 +11968,7 @@ GameObject:
   - component: {fileID: 808209741693169746}
   - component: {fileID: 421126904929265529}
   - component: {fileID: 3855241100585160235}
+  - component: {fileID: 6240673175698543724}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 3.010
   m_TagString: Untagged
@@ -11136,7 +12062,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7933650868614867357, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &3855241100585160235
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -11153,6 +12082,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.50200003, z: -124.496}
   m_TimeToStationary: 0.5
+--- !u!65 &6240673175698543724
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5199723480006437436}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 249.274}
+  m_Center: {x: 0, y: 0.5015027, z: -124.496}
 --- !u!1 &5216057471874556168
 GameObject:
   m_ObjectHideFlags: 0
@@ -11266,6 +12216,7 @@ GameObject:
   - component: {fileID: 3778901533862546759}
   - component: {fileID: 4984606199733676410}
   - component: {fileID: 9023141125090484426}
+  - component: {fileID: 2571022978955308344}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 2.022
   m_TagString: Untagged
@@ -11359,7 +12310,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -3972014619172430485, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &9023141125090484426
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -11376,6 +12330,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -105.79401}
   m_TimeToStationary: 0.5
+--- !u!65 &2571022978955308344
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5224789177316893386}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 35, y: 35, z: 212.204}
+  m_Center: {x: 0, y: 0, z: -105.794}
 --- !u!1 &5278392509517804653
 GameObject:
   m_ObjectHideFlags: 0
@@ -11389,6 +12364,7 @@ GameObject:
   - component: {fileID: 4734629421767031798}
   - component: {fileID: 3427903229775893276}
   - component: {fileID: 8056012315540668139}
+  - component: {fileID: 193097577185204905}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 1.017
   m_TagString: Untagged
@@ -11482,7 +12458,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8914986821310679255, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &8056012315540668139
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -11499,6 +12478,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -99.123}
   m_TimeToStationary: 0.5
+--- !u!65 &193097577185204905
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5278392509517804653}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 198.352}
+  m_Center: {x: 0, y: 0, z: -99.123}
 --- !u!1 &5288989227565819368
 GameObject:
   m_ObjectHideFlags: 0
@@ -11512,6 +12512,7 @@ GameObject:
   - component: {fileID: 1499424891032417156}
   - component: {fileID: 3206930125347097202}
   - component: {fileID: 2983187847385906674}
+  - component: {fileID: 2300699680871654376}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 1.019
   m_TagString: Untagged
@@ -11605,7 +12606,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8914986821310679255, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &2983187847385906674
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -11622,6 +12626,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -99.123}
   m_TimeToStationary: 0.5
+--- !u!65 &2300699680871654376
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5288989227565819368}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 198.352}
+  m_Center: {x: 0, y: 0, z: -99.123}
 --- !u!1 &5291060835557183061
 GameObject:
   m_ObjectHideFlags: 0
@@ -12126,6 +13151,7 @@ GameObject:
   - component: {fileID: 7514549718970210362}
   - component: {fileID: 9128589813540940086}
   - component: {fileID: 5855867675629397346}
+  - component: {fileID: 8354902979965522488}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 3.022
   m_TagString: Untagged
@@ -12219,7 +13245,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7933650868614867357, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &5855867675629397346
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -12236,6 +13265,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.50200003, z: -124.496}
   m_TimeToStationary: 0.5
+--- !u!65 &8354902979965522488
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5668744926539693913}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 249.274}
+  m_Center: {x: 0, y: 0.5015032, z: -124.496}
 --- !u!1 &5798575361217481034
 GameObject:
   m_ObjectHideFlags: 0
@@ -12332,6 +13382,7 @@ GameObject:
   - component: {fileID: 2619139512638504988}
   - component: {fileID: 6076329039349255527}
   - component: {fileID: 148395358120835591}
+  - component: {fileID: 4183004168673300717}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 2.015
   m_TagString: Untagged
@@ -12425,7 +13476,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -3972014619172430485, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &148395358120835591
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -12442,6 +13496,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -105.79401}
   m_TimeToStationary: 0.5
+--- !u!65 &4183004168673300717
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5822413296510704450}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 35, y: 35, z: 212.204}
+  m_Center: {x: 0, y: 0, z: -105.794}
 --- !u!1 &6040566728739187974
 GameObject:
   m_ObjectHideFlags: 0
@@ -12821,6 +13896,7 @@ GameObject:
   - component: {fileID: 7255088284510801034}
   - component: {fileID: 6740806794594158135}
   - component: {fileID: 4099701363540654593}
+  - component: {fileID: 994780906937518126}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 3.013
   m_TagString: Untagged
@@ -12914,7 +13990,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7933650868614867357, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &4099701363540654593
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -12931,6 +14010,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.50200003, z: -124.496}
   m_TimeToStationary: 0.5
+--- !u!65 &994780906937518126
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6215301658617797997}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 249.274}
+  m_Center: {x: 0, y: 0.5015092, z: -124.496}
 --- !u!1 &6272402087809543796
 GameObject:
   m_ObjectHideFlags: 0
@@ -12944,6 +14044,7 @@ GameObject:
   - component: {fileID: 7552239933126603655}
   - component: {fileID: 1125940494689166674}
   - component: {fileID: 3513656603807022736}
+  - component: {fileID: 597450863266840940}
   m_Layer: 8
   m_Name: MataAtlantica Arbusto 1.001
   m_TagString: Untagged
@@ -13036,7 +14137,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -1454124391313001663, guid: a3f104f5259357841b3acc5508c36596,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &3513656603807022736
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -13053,6 +14157,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.024, y: 0.09900001, z: -42.940002}
   m_TimeToStationary: 0.5
+--- !u!65 &597450863266840940
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6272402087809543796}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 105.84215, y: 175.58452, z: 76.03616}
+  m_Center: {x: 0.023577424, y: 0.09866065, z: -42.94006}
 --- !u!1 &6306248207748175288
 GameObject:
   m_ObjectHideFlags: 0
@@ -13249,6 +14374,7 @@ GameObject:
   - component: {fileID: 338781071967593355}
   - component: {fileID: 545870408328176700}
   - component: {fileID: 308227468586821360}
+  - component: {fileID: 595344452870642682}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 2.014
   m_TagString: Untagged
@@ -13342,7 +14468,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -3972014619172430485, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &308227468586821360
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -13359,6 +14488,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -105.79401}
   m_TimeToStationary: 0.5
+--- !u!65 &595344452870642682
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6329593455981159560}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 35, y: 35, z: 212.204}
+  m_Center: {x: 0, y: 0, z: -105.794}
 --- !u!1 &6334680427900755685
 GameObject:
   m_ObjectHideFlags: 0
@@ -13721,6 +14871,7 @@ GameObject:
   - component: {fileID: 6209478823333145813}
   - component: {fileID: 1968178300429511559}
   - component: {fileID: 5794295635344134251}
+  - component: {fileID: 8115843763254643883}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 1.013
   m_TagString: Untagged
@@ -13814,7 +14965,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8914986821310679255, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &5794295635344134251
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -13831,6 +14985,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -99.123}
   m_TimeToStationary: 0.5
+--- !u!65 &8115843763254643883
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6424792046567188293}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 198.352}
+  m_Center: {x: 0, y: 0, z: -99.123}
 --- !u!1 &6432477744923392005
 GameObject:
   m_ObjectHideFlags: 0
@@ -13927,6 +15102,7 @@ GameObject:
   - component: {fileID: 73339511422847676}
   - component: {fileID: 3693756526034239171}
   - component: {fileID: 6064264949923512577}
+  - component: {fileID: 2051817274513932402}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 2.001
   m_TagString: Untagged
@@ -14020,7 +15196,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -3972014619172430485, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &6064264949923512577
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -14037,6 +15216,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -105.79401}
   m_TimeToStationary: 0.5
+--- !u!65 &2051817274513932402
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6706031070069403732}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 35, y: 35, z: 212.204}
+  m_Center: {x: 0, y: 0, z: -105.794}
 --- !u!1 &6844861598292374352
 GameObject:
   m_ObjectHideFlags: 0
@@ -14050,6 +15250,7 @@ GameObject:
   - component: {fileID: 2446564383526505046}
   - component: {fileID: 3386805230602603557}
   - component: {fileID: 6589242085256708185}
+  - component: {fileID: 3944205842799367549}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 3.016
   m_TagString: Untagged
@@ -14143,7 +15344,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7933650868614867357, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &6589242085256708185
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -14160,6 +15364,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.50100005, z: -124.496}
   m_TimeToStationary: 0.5
+--- !u!65 &3944205842799367549
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6844861598292374352}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 249.274}
+  m_Center: {x: 0, y: 0.50149757, z: -124.496}
 --- !u!1 &6891437215676207474
 GameObject:
   m_ObjectHideFlags: 0
@@ -14256,6 +15481,7 @@ GameObject:
   - component: {fileID: 4785176162280702019}
   - component: {fileID: 5405076041875082174}
   - component: {fileID: 2839698551882684670}
+  - component: {fileID: 2792214447213209733}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 1.014
   m_TagString: Untagged
@@ -14349,7 +15575,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8914986821310679255, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &2839698551882684670
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -14366,6 +15595,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -99.123}
   m_TimeToStationary: 0.5
+--- !u!65 &2792214447213209733
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6945569599527506885}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 198.352}
+  m_Center: {x: 0, y: 0, z: -99.123}
 --- !u!1 &6998706768612348382
 GameObject:
   m_ObjectHideFlags: 0
@@ -14479,6 +15729,7 @@ GameObject:
   - component: {fileID: 308449411461116053}
   - component: {fileID: 6565766747138378815}
   - component: {fileID: 2507656946322299739}
+  - component: {fileID: 320410148491416283}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 3.006
   m_TagString: Untagged
@@ -14572,7 +15823,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7933650868614867357, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &2507656946322299739
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -14589,6 +15843,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.50200003, z: -124.496}
   m_TimeToStationary: 0.5
+--- !u!65 &320410148491416283
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7020949812189456786}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 249.274}
+  m_Center: {x: 0, y: 0.5015073, z: -124.496}
 --- !u!1 &7025892544951312641
 GameObject:
   m_ObjectHideFlags: 0
@@ -14951,6 +16226,7 @@ GameObject:
   - component: {fileID: 5627227474137787414}
   - component: {fileID: 6834601214929787846}
   - component: {fileID: 5678000254295894325}
+  - component: {fileID: 1797882741201162506}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 2.003
   m_TagString: Untagged
@@ -15044,7 +16320,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -3972014619172430485, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &5678000254295894325
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -15061,6 +16340,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -105.79401}
   m_TimeToStationary: 0.5
+--- !u!65 &1797882741201162506
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7372678857681380319}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 35, y: 35, z: 212.204}
+  m_Center: {x: 0, y: 0, z: -105.794}
 --- !u!1 &7406078964675673699
 GameObject:
   m_ObjectHideFlags: 0
@@ -15240,6 +16540,7 @@ GameObject:
   - component: {fileID: 5845786968059602163}
   - component: {fileID: 5896367992219342535}
   - component: {fileID: 4339233014108057534}
+  - component: {fileID: 7378257784860044393}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 2.008
   m_TagString: Untagged
@@ -15333,7 +16634,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -3972014619172430485, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &4339233014108057534
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -15350,6 +16654,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -105.79401}
   m_TimeToStationary: 0.5
+--- !u!65 &7378257784860044393
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7458420319718395405}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 35, y: 35, z: 212.204}
+  m_Center: {x: 0, y: 0, z: -105.794}
 --- !u!1 &7478794019171116340
 GameObject:
   m_ObjectHideFlags: 0
@@ -15529,6 +16854,7 @@ GameObject:
   - component: {fileID: 6433190496575735952}
   - component: {fileID: 2955493469189495902}
   - component: {fileID: 5963187154931886403}
+  - component: {fileID: 4866635931201315436}
   m_Layer: 8
   m_Name: MataAtlantica Arbusto 2.003
   m_TagString: Untagged
@@ -15622,7 +16948,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 5570417238042446460, guid: a3f104f5259357841b3acc5508c36596,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &5963187154931886403
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -15639,6 +16968,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -2.5740001, y: -11.512, z: -41.848003}
   m_TimeToStationary: 0.5
+--- !u!65 &4866635931201315436
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7614457275475462971}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 110.6062, y: 253.76477, z: 93.064644}
+  m_Center: {x: -2.5744753, y: -11.512053, z: -41.848156}
 --- !u!1 &7749750004975505121
 GameObject:
   m_ObjectHideFlags: 0
@@ -15735,6 +17085,7 @@ GameObject:
   - component: {fileID: 8928562386762562326}
   - component: {fileID: 168571061500708075}
   - component: {fileID: 3103180304305724171}
+  - component: {fileID: 8422441892136429499}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 2.007
   m_TagString: Untagged
@@ -15828,7 +17179,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -3972014619172430485, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &3103180304305724171
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -15845,6 +17199,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -105.79401}
   m_TimeToStationary: 0.5
+--- !u!65 &8422441892136429499
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7789499011673868344}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 35, y: 35, z: 212.204}
+  m_Center: {x: 0, y: 0, z: -105.794}
 --- !u!1 &7812559877939794662
 GameObject:
   m_ObjectHideFlags: 0
@@ -15858,6 +17233,7 @@ GameObject:
   - component: {fileID: 6077652902143803283}
   - component: {fileID: 8887292047978406489}
   - component: {fileID: 8489749927923840383}
+  - component: {fileID: 5667524693361871738}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 3.018
   m_TagString: Untagged
@@ -15951,7 +17327,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7933650868614867357, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &8489749927923840383
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -15968,6 +17347,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.50200003, z: -124.496}
   m_TimeToStationary: 0.5
+--- !u!65 &5667524693361871738
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7812559877939794662}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 249.274}
+  m_Center: {x: 0, y: 0.5015034, z: -124.496}
 --- !u!1 &7855135301396106174
 GameObject:
   m_ObjectHideFlags: 0
@@ -15981,6 +17381,7 @@ GameObject:
   - component: {fileID: 1251098999875056334}
   - component: {fileID: 6076709052807607990}
   - component: {fileID: 6771932187682753388}
+  - component: {fileID: 2039741624003763575}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 2.010
   m_TagString: Untagged
@@ -16074,7 +17475,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -3972014619172430485, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &6771932187682753388
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -16091,6 +17495,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -105.79401}
   m_TimeToStationary: 0.5
+--- !u!65 &2039741624003763575
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7855135301396106174}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 35, y: 35, z: 212.204}
+  m_Center: {x: 0, y: 0, z: -105.794}
 --- !u!1 &7954770394135421433
 GameObject:
   m_ObjectHideFlags: 0
@@ -16104,6 +17529,7 @@ GameObject:
   - component: {fileID: 6358256334782205394}
   - component: {fileID: 4209581560991979042}
   - component: {fileID: 2014866839593340086}
+  - component: {fileID: 2215512845641059657}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 1.004
   m_TagString: Untagged
@@ -16197,7 +17623,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8914986821310679255, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &2014866839593340086
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -16214,6 +17643,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -99.123}
   m_TimeToStationary: 0.5
+--- !u!65 &2215512845641059657
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7954770394135421433}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 198.352}
+  m_Center: {x: 0, y: 0, z: -99.123}
 --- !u!1 &8088255157593331866
 GameObject:
   m_ObjectHideFlags: 0
@@ -16227,6 +17677,7 @@ GameObject:
   - component: {fileID: 6623644886954411688}
   - component: {fileID: 33473890044796851}
   - component: {fileID: 953718549044014332}
+  - component: {fileID: 8626782449169177001}
   m_Layer: 8
   m_Name: MataAtlantica Arbusto 1.002
   m_TagString: Untagged
@@ -16319,7 +17770,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -1454124391313001663, guid: a3f104f5259357841b3acc5508c36596,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &953718549044014332
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -16336,6 +17790,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.024, y: 0.09900001, z: -42.940002}
   m_TimeToStationary: 0.5
+--- !u!65 &8626782449169177001
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8088255157593331866}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 105.84214, y: 175.58449, z: 76.036156}
+  m_Center: {x: 0.02357672, y: 0.09866001, z: -42.94006}
 --- !u!1 &8240011669370520026
 GameObject:
   m_ObjectHideFlags: 0
@@ -16349,6 +17824,7 @@ GameObject:
   - component: {fileID: 2415146533440168842}
   - component: {fileID: 9019920446004258311}
   - component: {fileID: 5265378548301781081}
+  - component: {fileID: 4939996240797804018}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 1.023
   m_TagString: Untagged
@@ -16442,7 +17918,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8914986821310679255, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &5265378548301781081
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -16459,6 +17938,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -99.123}
   m_TimeToStationary: 0.5
+--- !u!65 &4939996240797804018
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8240011669370520026}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 198.352}
+  m_Center: {x: 0, y: 0, z: -99.123}
 --- !u!1 &8313480464063217641
 GameObject:
   m_ObjectHideFlags: 0
@@ -16472,6 +17972,7 @@ GameObject:
   - component: {fileID: 8723208631589922817}
   - component: {fileID: 3602067614128419511}
   - component: {fileID: 7950834667242900115}
+  - component: {fileID: 8495634861149605513}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 3.008
   m_TagString: Untagged
@@ -16565,7 +18066,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7933650868614867357, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &7950834667242900115
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -16582,6 +18086,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.50100005, z: -124.496}
   m_TimeToStationary: 0.5
+--- !u!65 &8495634861149605513
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8313480464063217641}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 249.274}
+  m_Center: {x: 0, y: 0.50149995, z: -124.496}
 --- !u!1 &8317689145667799773
 GameObject:
   m_ObjectHideFlags: 0
@@ -16595,6 +18120,7 @@ GameObject:
   - component: {fileID: 8647477710365664324}
   - component: {fileID: 2793682693990871299}
   - component: {fileID: 3543823125651746454}
+  - component: {fileID: 7097205971967752946}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 1.010
   m_TagString: Untagged
@@ -16688,7 +18214,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8914986821310679255, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &3543823125651746454
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -16705,6 +18234,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -99.123}
   m_TimeToStationary: 0.5
+--- !u!65 &7097205971967752946
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8317689145667799773}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 198.352}
+  m_Center: {x: 0, y: 0, z: -99.123}
 --- !u!1 &8341136319962375771
 GameObject:
   m_ObjectHideFlags: 0
@@ -16801,6 +18351,7 @@ GameObject:
   - component: {fileID: 6690083186480369254}
   - component: {fileID: 6966616787774152067}
   - component: {fileID: 401702297791377677}
+  - component: {fileID: 911852230981263470}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 1.016
   m_TagString: Untagged
@@ -16894,7 +18445,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8914986821310679255, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &401702297791377677
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -16911,6 +18465,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -99.123}
   m_TimeToStationary: 0.5
+--- !u!65 &911852230981263470
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8363837819033937520}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 198.352}
+  m_Center: {x: 0, y: 0, z: -99.123}
 --- !u!1 &8396181175471861660
 GameObject:
   m_ObjectHideFlags: 0
@@ -16924,6 +18499,7 @@ GameObject:
   - component: {fileID: 7609600401686257865}
   - component: {fileID: 7361763651635098285}
   - component: {fileID: 2141286098105921528}
+  - component: {fileID: 5377943266879799945}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 1.003
   m_TagString: Untagged
@@ -17017,7 +18593,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -8914986821310679255, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &2141286098105921528
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -17034,6 +18613,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -99.123}
   m_TimeToStationary: 0.5
+--- !u!65 &5377943266879799945
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8396181175471861660}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40, y: 40, z: 198.352}
+  m_Center: {x: 0, y: 0, z: -99.123}
 --- !u!1 &8421950246936846216
 GameObject:
   m_ObjectHideFlags: 0
@@ -17545,6 +19145,7 @@ GameObject:
   - component: {fileID: 8530605689505040884}
   - component: {fileID: 4246693844477847373}
   - component: {fileID: 7606211560460940822}
+  - component: {fileID: 3557483000364698190}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 3.002
   m_TagString: Untagged
@@ -17638,7 +19239,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: 7933650868614867357, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &7606211560460940822
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -17655,6 +19259,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.50200003, z: -124.496}
   m_TimeToStationary: 0.5
+--- !u!65 &3557483000364698190
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8792929195997773306}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 60, y: 60, z: 249.274}
+  m_Center: {x: 0, y: 0.5015025, z: -124.496}
 --- !u!1 &8831576099569451626
 GameObject:
   m_ObjectHideFlags: 0
@@ -17951,6 +19576,7 @@ GameObject:
   - component: {fileID: 1964891012435545144}
   - component: {fileID: 5920797884162098687}
   - component: {fileID: 5241258225215067581}
+  - component: {fileID: 8317519410633361877}
   m_Layer: 8
   m_Name: MataAtlantica Arbusto 1.005
   m_TagString: Untagged
@@ -18043,7 +19669,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 3
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -1454124391313001663, guid: a3f104f5259357841b3acc5508c36596,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &5241258225215067581
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -18060,6 +19689,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.024, y: 0.09900001, z: -42.940002}
   m_TimeToStationary: 0.5
+--- !u!65 &8317519410633361877
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8914794035466324353}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 105.84215, y: 175.58452, z: 76.03616}
+  m_Center: {x: 0.023575446, y: 0.098659314, z: -42.94006}
 --- !u!1 &9031031507962330947
 GameObject:
   m_ObjectHideFlags: 0
@@ -18073,6 +19723,7 @@ GameObject:
   - component: {fileID: 5850365684087679795}
   - component: {fileID: 5574958439912486466}
   - component: {fileID: 972976714220408402}
+  - component: {fileID: 8640024370466029019}
   m_Layer: 8
   m_Name: MataAtlantica Arvore 2.009
   m_TagString: Untagged
@@ -18166,7 +19817,10 @@ MonoBehaviour:
   isBurning: 0
   minTime: 5
   maxTime: 10
-  burnedTree_Pref: {fileID: 0}
+  burnedTree_Pref: {fileID: -3972014619172430485, guid: cbebc07e88809fb449f92cf70390e14a,
+    type: 3}
+  fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
+    type: 3}
 --- !u!208 &972976714220408402
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -18183,6 +19837,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -105.79401}
   m_TimeToStationary: 0.5
+--- !u!65 &8640024370466029019
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9031031507962330947}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 35, y: 35, z: 212.204}
+  m_Center: {x: 0, y: 0, z: -105.794}
 --- !u!1 &9088693229734804692
 GameObject:
   m_ObjectHideFlags: 0

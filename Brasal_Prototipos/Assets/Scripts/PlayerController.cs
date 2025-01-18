@@ -198,6 +198,8 @@ public class PlayerController : MonoBehaviour
             Vector3 itemPos;
             itemPos = hit.point;
 
+            Debug.Log(itemPos);
+
             switch (itemName)
             {
                 case "drone":
@@ -210,7 +212,7 @@ public class PlayerController : MonoBehaviour
                     itemName = itens.none.ToString();
                     break;
                 case "sprinkler":
-                    Instantiate(sprinkler_Pref, new Vector3(itemPos.x, sprinkler_Pref.transform.position.y, itemPos.z), quaternion.identity);
+                    Instantiate(sprinkler_Pref, new Vector3(itemPos.x, itemPos.y, itemPos.z), quaternion.identity);
                     itemName = itens.none.ToString();
                     break;
                 case "waterBomber":

@@ -34,6 +34,7 @@ public class DroneController : MonoBehaviour
         if (transform.position.x != targetPos.x && transform.position.z != targetPos.z)
         {
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(targetPos.x, transform.position.y, targetPos.z), spd * Time.deltaTime);
+            transform.LookAt(new Vector3(targetPos.x, transform.position.y, targetPos.z));
         }
         else
             modeName = "SearchingFire";
@@ -55,6 +56,7 @@ public class DroneController : MonoBehaviour
         if (transform.position.x != targetPos.x && transform.position.z != targetPos.z)
         {
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(targetPos.x, transform.position.y, targetPos.z), spd * Time.deltaTime);
+            transform.LookAt(new Vector3(targetPos.x, transform.position.y, targetPos.z));
         }
         else
         {
