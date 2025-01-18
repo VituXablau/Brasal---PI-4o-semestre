@@ -3,7 +3,52 @@ guid: bce1fb655bc738d4abbb99eaebe33ca8
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: agua_mataatlantica_mat
+    second: {fileID: 2100000, guid: ac9e119c95fbfb249b4176b81637b38d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: geral_rocha_mat
+    second: {fileID: 2100000, guid: b8d04401ca76d2644b0ecd5e574cb6e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mataatlantica_arbusto_1_mat
+    second: {fileID: 2100000, guid: a8706ed956a181544a45fd78d6111f18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mataatlantica_arbusto_2_mat
+    second: {fileID: 2100000, guid: de5466871c750fd4381cb6d41843d2e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mataatlantica_arvore_1_mat
+    second: {fileID: 2100000, guid: fc5c4615e342e06449cdafa8467fc9a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mataatlantica_arvore_2_mat
+    second: {fileID: 2100000, guid: f826f9ac0dc84b947a3b7907d890ecb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: terreno_mataatlantica_1_mat
+    second: {fileID: 2100000, guid: 1a643e7236de1fd4db8fe770f1cc2dde, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: terreno_mataatlantica_2_mat
+    second: {fileID: 2100000, guid: f88a337d07b3ac144b92d120c8aafd2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: terreno_mataatlantica_3_mat
+    second: {fileID: 2100000, guid: 948b181bbf327d1418d66f4ca79cb9d4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

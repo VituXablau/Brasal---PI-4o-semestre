@@ -3,7 +3,47 @@ guid: a99dcf8ed0479094aa30d1b72fa5cf40
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: caatinga_arvore_mat
+    second: {fileID: 2100000, guid: 3f1931cb42b8657488ca5df18752026a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: caatinga_cacto_1_mat
+    second: {fileID: 2100000, guid: 4763dd7e69278284dabb11a9f2cdf674, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: caatinga_cacto_2_mat
+    second: {fileID: 2100000, guid: 76e06989056a3f94997bbacedd3a9cde, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: caatinga_cacto_3_mat
+    second: {fileID: 2100000, guid: f489a34f6acf6e743a8d89e3dc487a91, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: caatinga_terreno_1_mat
+    second: {fileID: 2100000, guid: fad82f42f0e6c3c42adee817f2d04e7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: caatinga_terreno_2_mat
+    second: {fileID: 2100000, guid: 458dc687adccfd0488739a61c74812ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: caatinga_terreno_3_mat
+    second: {fileID: 2100000, guid: 670dc978e2bff4a40a0716add4d395ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: geral_rocha_mat
+    second: {fileID: 2100000, guid: b8637cb7a5f7c3c47ab64a07a4cf7d0b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

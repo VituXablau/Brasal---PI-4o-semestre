@@ -3,7 +3,42 @@ guid: 4118d40eb2553a440840c16c94a47ec5
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cerrado_arbusto_mat
+    second: {fileID: 2100000, guid: e31c5898df1fb1a4dbef283785ebf94d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cerrado_arvore_1_mat
+    second: {fileID: 2100000, guid: e338a08e0479626448d70ae52b110239, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cerrado_arvore_2_mat
+    second: {fileID: 2100000, guid: 35c9d85683a7abb438e3cc95af2affda, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cerrado_terreno_1_mat
+    second: {fileID: 2100000, guid: 85194643963f3044f85c63eb9c62bb99, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cerrado_terreno_2_mat
+    second: {fileID: 2100000, guid: 01b30aa8d782ed7408312fbaeaa42ead, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cerrado_terreno_3_mat
+    second: {fileID: 2100000, guid: df5d5fb885c102b4da9687b17e3e9f72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: geral_rocha_mat
+    second: {fileID: 2100000, guid: 1305c82d395b1a3488d9e83e0c6e9eb7, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

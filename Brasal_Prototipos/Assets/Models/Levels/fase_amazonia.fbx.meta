@@ -3,7 +3,62 @@ guid: 285ce75b36d4c3a4d8bae6c824a28ad9
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: amazonia_arbusto_mat
+    second: {fileID: 2100000, guid: 1b7595c11173cea4db29a81ede10cca5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: amazonia_arvore_1_mat
+    second: {fileID: 2100000, guid: 0b24458ab2cced14c87beeaf60ef645e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: amazonia_arvore_2_mat
+    second: {fileID: 2100000, guid: 5971ff00175e53e4ba59e1403624fb61, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: amazonia_terreno_1_mat
+    second: {fileID: 2100000, guid: 1866adc3a7a62494d9e11e2d096d19af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: amazonia_terreno_2_mat
+    second: {fileID: 2100000, guid: 63631c56c15231748b25e4e07e61d127, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: amazonia_terreno_3_mat
+    second: {fileID: 2100000, guid: 25cd28b5c86bf0b4b91740c14f30e112, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: amazonia_toco_1_mat
+    second: {fileID: 2100000, guid: ac6dcc4074ce27141b34efcd877fe6e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: amazonia_toco_2_mat
+    second: {fileID: 2100000, guid: 2ee60282316bb8f438f3d02c6acf9aba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: amazonia_toco_3_mat
+    second: {fileID: 2100000, guid: 736a63dc3ae1ae046972662eccf00f47, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: geral_rocha_mat
+    second: {fileID: 2100000, guid: fe169fc3510922c43b1c62db73237641, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mataatlantica_arvore_1_mat
+    second: {fileID: 2100000, guid: ab9397ad17e84b147b5021f9a365fd41, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
