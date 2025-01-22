@@ -38,13 +38,30 @@ public class PlayerController : MonoBehaviour
         InteractOrMove();
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
-            SetItens(itens.drone);
+        {
+            if (GameManager.droneCooldown >= 15)
+                SetItens(itens.drone);
+        }
+
         if (Input.GetKeyDown(KeyCode.Alpha2))
-            SetItens(itens.satellite);
+        {
+            if (GameManager.satelliteCooldown >= 15)
+                SetItens(itens.satellite);
+        }
+
         if (Input.GetKeyDown(KeyCode.Alpha3))
-            SetItens(itens.sprinkler);
+        {
+            if (GameManager.sprinklerCooldown >= 15)
+                SetItens(itens.sprinkler);
+        }
+
+
         if (Input.GetKeyDown(KeyCode.Alpha4))
-            SetItens(itens.waterBomber);
+        {
+            if (GameManager.planeCooldown >= 15)
+                SetItens(itens.waterBomber);
+        }
+
 
         if (Input.GetMouseButton(1))
         {
@@ -206,18 +223,25 @@ public class PlayerController : MonoBehaviour
                     GameObject drone_Obj = Instantiate(drone_Pref, new Vector3(transform.position.x, drone_Pref.transform.position.y, transform.position.z), quaternion.identity);
                     drone_Obj.GetComponent<DroneController>().targetPos = itemPos;
                     itemName = itens.none.ToString();
+                    GameManager.droneCooldown = 0;
+
                     break;
                 case "satellite":
                     satellite_Obj.GetComponent<SatelliteController>().ActivateSatellite();
                     itemName = itens.none.ToString();
+                    GameManager.satelliteCooldown = 0;
                     break;
+
                 case "sprinkler":
                     Instantiate(sprinkler_Pref, new Vector3(itemPos.x, itemPos.y, itemPos.z), quaternion.identity);
                     itemName = itens.none.ToString();
+                    GameManager.sprinklerCooldown = 0;
                     break;
+
                 case "waterBomber":
                     Instantiate(waterBomber_Pref, new Vector3(itemPos.x, waterBomber_Pref.transform.position.y, itemPos.z), quaternion.identity);
                     itemName = itens.none.ToString();
+                    GameManager.planeCooldown = 0;
                     break;
             }
         }

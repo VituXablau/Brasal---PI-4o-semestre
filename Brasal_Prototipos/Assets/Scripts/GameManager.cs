@@ -2,6 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,8 +23,11 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI percentage_text, numAnimals_text, timer_text, congratulations_text;
     private float percentage;
-
     private bool endGame = false;
+    
+    public Image droneIcon, satelliteIcon, sprinklerIcon, planeIcon;
+
+    public static float droneCooldown, satelliteCooldown, sprinklerCooldown, planeCooldown;
 
     private void Awake()
     {
@@ -41,12 +45,27 @@ public class GameManager : MonoBehaviour
         totalAnimalsObj = animalsObj.Length;
 
         CheckPercentage();
+
+        droneCooldown = 0;
+        satelliteCooldown = 0;
+        sprinklerCooldown = 0;
+        planeCooldown = 0;
+
+         droneIcon.fillAmount = 0;
+
+        satelliteIcon.fillAmount = 0;
+
+        sprinklerIcon.fillAmount = 0;
+
+        planeIcon.fillAmount = 0;
     }
 
     private void Update()
     {
         if (endGame && Input.GetKey(KeyCode.R))
             SceneManager.LoadScene(0);
+
+        DisplayItems();
     }
 
     public void CheckPercentage()
@@ -60,7 +79,18 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 0;
         }
 
-        percentage_text.text = "Preservação = " + percentage + "%";
+        percentage_text.text = "Preservação: " + percentage + "%";
+    }
+
+    void DisplayItems()
+    {
+        droneIcon.fillAmount = droneCooldown / 15;
+
+        satelliteIcon.fillAmount = satelliteCooldown / 15;
+
+        sprinklerIcon.fillAmount = sprinklerCooldown / 15;
+
+        planeIcon.fillAmount = planeCooldown / 15;
     }
 
     IEnumerator Timer()
@@ -76,6 +106,19 @@ public class GameManager : MonoBehaviour
                 levelCurTime_Min--;
                 levelCurTime_Sec = 59;
             }
+
+            if (droneCooldown == 0)
+                StartCoroutine(DroneCounter());
+
+            if (satelliteCooldown == 0)
+                StartCoroutine(SatelliteCounter());
+
+            if (sprinklerCooldown == 0)
+                StartCoroutine(SprinklerCounter());
+
+            if (planeCooldown == 0)
+                StartCoroutine(PlaneCounter());
+
 
             string message;
 
@@ -109,12 +152,28 @@ public class GameManager : MonoBehaviour
     {
         savedAnimalsObj++;
 
-        numAnimals_text.text = "Animais salvos: " + savedAnimalsObj;
-
-        if (savedAnimalsObj == totalAnimalsObj)
+        switch (savedAnimalsObj)
         {
-            numAnimals_text.text = "Todos os animais foram salvos";
+            case 0:
+                numAnimals_text.text = "Animais: [ ] [ ] [ ]";
+                break;
+            case 1:
+                numAnimals_text.text = "Animais: [x] [ ] [ ]";
+                break;
+            case 2:
+                numAnimals_text.text = "Animais: [x] [x] [ ]";
+                break;
+            case 3:
+                numAnimals_text.text = "Animais: [x] [x] [x]";
+                break;
         }
+
+
+
+        // if (savedAnimalsObj == totalAnimalsObj)
+        // {
+        //     numAnimals_text.text = "Todos os animais foram salvos";
+        // }
     }
 
     IEnumerator PrepareNextToBurn(float waitTime)
@@ -137,6 +196,46 @@ public class GameManager : MonoBehaviour
                     tree.isNextToBurn = true;
                 }
             }
+        }
+    }
+
+    IEnumerator DroneCounter()
+    {
+        while (droneCooldown < 15)
+        {
+            yield return new WaitForSeconds(1);
+            droneCooldown++;
+        }
+    
+    }
+
+    IEnumerator SatelliteCounter()
+    {
+        while (satelliteCooldown < 15)
+        {
+            yield return new WaitForSeconds(1);
+            satelliteCooldown++;
+
+        }
+    }
+
+    IEnumerator SprinklerCounter()
+    {
+        while (sprinklerCooldown < 15)
+        {
+            yield return new WaitForSeconds(1);
+            sprinklerCooldown++;
+
+        }
+    }
+
+    IEnumerator PlaneCounter()
+    {
+        while (planeCooldown < 15)
+        {
+            yield return new WaitForSeconds(1);
+            planeCooldown++;
+
         }
     }
 }
