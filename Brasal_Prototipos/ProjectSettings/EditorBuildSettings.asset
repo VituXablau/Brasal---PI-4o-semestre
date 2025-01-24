@@ -9,6 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 1ee6f15e05bc7fb4d83b279560f90e55
   - enabled: 1
-    path: Assets/Scenes/Teste2-Floresta.unity
+    path: Assets/Scenes/MataAtlantica.unity
     guid: 705cee6799d2eec459f91221dbf9708c
+  - enabled: 1
+    path: Assets/Scenes/Pantanal.unity
+    guid: 227b5004f47f7ac41a65026c74ac6eab
+  - enabled: 1
+    path: Assets/Scenes/Amazonia.unity
+    guid: 7134689321fbeb640864494ae40d5163
+  - enabled: 1
+    path: Assets/Scenes/Cerrado.unity
+    guid: 18c0f779eea2d9d48826759e8ed4f617
+  - enabled: 1
+    path: Assets/Scenes/Caatinga.unity
+    guid: 6f2ca96bd6d43b6459c251b5214f3fd6
   m_configObjects: {}

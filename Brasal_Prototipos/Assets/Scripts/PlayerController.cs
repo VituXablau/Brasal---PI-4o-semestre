@@ -2,6 +2,7 @@ using System.Collections;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -26,40 +27,76 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private GameObject drone_Pref, satellite_Obj, sprinkler_Pref, waterBomber_Pref;
 
+    Vector3 ScreenPosition, WorldPosition;
+
+    private bool isSelecting;
+
+    [SerializeField] GameObject itemPreview;
+
+    [SerializeField] Sprite item1, item2, item3, item4;
+
     private void Start()
     {
         cam = Camera.main;
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
+
+        itemPreview.SetActive(false);
     }
 
     void Update()
     {
         InteractOrMove();
+        ItemCursor();
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             if (GameManager.droneCooldown >= 15)
+            {
                 SetItens(itens.drone);
+                isSelecting = true;
+                itemPreview.SetActive(true);
+                itemPreview.GetComponent<SpriteRenderer>().sprite = item1;
+            }
+
+
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             if (GameManager.satelliteCooldown >= 15)
+            {
                 SetItens(itens.satellite);
+                isSelecting = true;
+                itemPreview.SetActive(true);
+                itemPreview.GetComponent<SpriteRenderer>().sprite = item2;
+            }
+
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             if (GameManager.sprinklerCooldown >= 15)
+            {
                 SetItens(itens.sprinkler);
+                isSelecting = true;
+                itemPreview.SetActive(true);
+                itemPreview.GetComponent<SpriteRenderer>().sprite = item3;
+            }
+
         }
 
 
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             if (GameManager.planeCooldown >= 15)
+            {
                 SetItens(itens.waterBomber);
+                isSelecting = true;
+                itemPreview.SetActive(true);
+                itemPreview.GetComponent<SpriteRenderer>().sprite = item4;
+            }
+
         }
 
 
@@ -70,6 +107,18 @@ public class PlayerController : MonoBehaviour
 
         if (HasAgentStopped())
             animator.SetBool("Walking", false);
+
+
+    }
+
+    void ItemCursor()
+    {
+        ScreenPosition = Input.mousePosition;
+        //ScreenPosition.z = Camera.main.nearClipPlane + 1;
+        ScreenPosition.z = -18;
+        WorldPosition = Camera.main.ScreenToWorldPoint(ScreenPosition);
+
+        itemPreview.transform.position = WorldPosition;
     }
 
     #region Sistema de movimentacao e interacao com o fogo
@@ -224,24 +273,28 @@ public class PlayerController : MonoBehaviour
                     drone_Obj.GetComponent<DroneController>().targetPos = itemPos;
                     itemName = itens.none.ToString();
                     GameManager.droneCooldown = 0;
+                    itemPreview.SetActive(false);
 
                     break;
                 case "satellite":
                     satellite_Obj.GetComponent<SatelliteController>().ActivateSatellite();
                     itemName = itens.none.ToString();
                     GameManager.satelliteCooldown = 0;
+                           itemPreview.SetActive(false);
                     break;
 
                 case "sprinkler":
                     Instantiate(sprinkler_Pref, new Vector3(itemPos.x, itemPos.y, itemPos.z), quaternion.identity);
                     itemName = itens.none.ToString();
                     GameManager.sprinklerCooldown = 0;
+                           itemPreview.SetActive(false);
                     break;
 
                 case "waterBomber":
                     Instantiate(waterBomber_Pref, new Vector3(itemPos.x, waterBomber_Pref.transform.position.y, itemPos.z), quaternion.identity);
                     itemName = itens.none.ToString();
                     GameManager.planeCooldown = 0;
+                           itemPreview.SetActive(false);
                     break;
             }
         }

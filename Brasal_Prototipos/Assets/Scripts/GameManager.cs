@@ -21,13 +21,21 @@ public class GameManager : MonoBehaviour
     private int levelCurTime_Min = 2, levelCurTime_Sec;
     private Coroutine timer;
 
-    [SerializeField] private TextMeshProUGUI percentage_text, numAnimals_text, timer_text, congratulations_text;
+    [SerializeField] private TextMeshProUGUI percentage_text, numAnimals_text, timer_text, congratulations_text, stats_text, proceed_text, medals_text;
     private float percentage;
-    private bool endGame = false;
-    
-    public Image droneIcon, satelliteIcon, sprinklerIcon, planeIcon;
+    private bool endGame = false, gameOver = false, winMedal, floraMedal, faunaMedal;
+
+    [SerializeField] private Image droneIcon, satelliteIcon, sprinklerIcon, planeIcon, medal1, medal2, medal3;
 
     public static float droneCooldown, satelliteCooldown, sprinklerCooldown, planeCooldown;
+
+    [SerializeField] GameObject endScreen, Medal_Console, HUDobj;
+
+    string currentScene;
+
+    [SerializeField] Sprite sp_medal1, sp_medal2, sp_medal3;
+
+
 
     private void Awake()
     {
@@ -51,13 +59,20 @@ public class GameManager : MonoBehaviour
         sprinklerCooldown = 0;
         planeCooldown = 0;
 
-         droneIcon.fillAmount = 0;
+        droneIcon.fillAmount = 0;
 
         satelliteIcon.fillAmount = 0;
 
         sprinklerIcon.fillAmount = 0;
 
         planeIcon.fillAmount = 0;
+
+        currentScene = SceneManager.GetActiveScene().name;
+
+        Medal_Console.SetActive(false);
+        endScreen.SetActive(false);
+
+        Time.timeScale = 1;
     }
 
     private void Update()
@@ -68,6 +83,28 @@ public class GameManager : MonoBehaviour
         DisplayItems();
     }
 
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(currentScene);
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void Proceed()
+    {
+        if (gameOver)
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+        else
+        {
+            Debug.Log("comiig sun");
+        }
+    }
+
     public void CheckPercentage()
     {
         percentage = (100 * cur_treesObjLength) / init_treesObjLength;
@@ -76,7 +113,11 @@ public class GameManager : MonoBehaviour
         {
             congratulations_text.text = "Você perdeu!";
             endGame = true;
+            gameOver = true;
+            proceed_text.text = "Menu";
             Time.timeScale = 0;
+            HUDobj.SetActive(false);
+            endScreen.SetActive(true);
         }
 
         percentage_text.text = "Preservação: " + percentage + "%";
@@ -120,22 +161,62 @@ public class GameManager : MonoBehaviour
                 StartCoroutine(PlaneCounter());
 
 
-            string message;
+            //string message;
 
             if (levelCurTime_Min == 0 && levelCurTime_Sec == 0 && percentage >= 50)
             {
-                message = "Você conseguiu a medalha de conclusão";
+                // message = "Você conseguiu a medalha de conclusão";
+
+                // if (percentage >= 75)
+                //     message += " + a de preservação";
+
+                // if (savedAnimalsObj == totalAnimalsObj)
+                //     message += " + a dos animais";
+
+                // message += "! Meus parabéns";
+
+                winMedal = true;
+                endGame = true;
+                congratulations_text.text = "Você Ganhou!";
+                proceed_text.text = "Prosseguir";
+
+
+                if (!faunaMedal)
+                    stats_text.text = "" + percentage + "% de preservação\n" + savedAnimalsObj + " animais foram salvos!";
+                else
+                    stats_text.text = "" + percentage + "% de preservação\n Todos animais foram salvos!";
 
                 if (percentage >= 75)
-                    message += " + a de preservação";
+                    floraMedal = true;
 
                 if (savedAnimalsObj == totalAnimalsObj)
-                    message += " + a dos animais";
+                    faunaMedal = true;
 
-                message += "! Meus parabéns";
+                if ((!faunaMedal) && (!floraMedal))
+                    medals_text.text = "Você conseguiu: Medalha de conclusão!";
 
-                endGame = true;
-                congratulations_text.text = message;
+                if ((faunaMedal) && (!floraMedal))
+                    medals_text.text = "Você conseguiu: Medalha de conclusão! Medalha de Fauna!";
+
+                if ((!faunaMedal) && (floraMedal))
+                    medals_text.text = "Você conseguiu: Medalha de conclusão! Medalha de Preservação!";
+
+                if ((faunaMedal) && (floraMedal))
+                    medals_text.text = "Você conseguiu: Medalha de conclusão! Medalha de Preservação! Medalha de Fauna!";
+
+
+                medal1.GetComponent<Image>().sprite = sp_medal1;
+
+                if (floraMedal)
+                    medal2.GetComponent<Image>().sprite = sp_medal2;
+                if (faunaMedal)
+                    medal3.GetComponent<Image>().sprite = sp_medal3;
+
+
+                Medal_Console.SetActive(true);
+                endScreen.SetActive(true);
+                   HUDobj.SetActive(false);
+
                 StopCoroutine(timer);
 
                 Time.timeScale = 0;
@@ -146,6 +227,11 @@ public class GameManager : MonoBehaviour
             else
                 timer_text.text = levelCurTime_Min + ":" + levelCurTime_Sec;
         }
+    }
+
+    void EndgameWindow()
+    {
+
     }
 
     public void UpdateAnimals()
@@ -206,7 +292,7 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(1);
             droneCooldown++;
         }
-    
+
     }
 
     IEnumerator SatelliteCounter()
