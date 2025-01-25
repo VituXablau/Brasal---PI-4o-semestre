@@ -21,11 +21,11 @@ public class HubManager : MonoBehaviour
 
     void Start()
     {
-        DataManager.medals_MataAtlantica[0] = true;
+        GameManager.medals_MataAtlantica[0] = true;
 
         /////////
 
-        if (!DataManager.medals_MataAtlantica[0])
+        if (!GameManager.medals_MataAtlantica[0])
         {
             for (int i = 1; i < levelButtons.Length; i++)
             {
@@ -44,9 +44,9 @@ public class HubManager : MonoBehaviour
             case "mataAtlantica":
                 info_title.text = "Mata Atlântica";
 
-                if (DataManager.medals_MataAtlantica[0])
+                if (GameManager.medals_MataAtlantica[0])
                 {
-                    info_desc.text = "" + DataManager.maxPercentage[0] + "% de preservação \n" + DataManager.maxAnimals[0] + "animais salvos";
+                    info_desc.text = "" + GameManager.maxPercentage[0] + "% de preservação \n" + GameManager.maxAnimals[0] + " animais salvos";
                     medals[0].GetComponent<Image>().sprite = winMedal;
                 }
                 else
@@ -55,7 +55,7 @@ public class HubManager : MonoBehaviour
                     medals[0].GetComponent<Image>().sprite = blankMedal;
                 }
 
-                if (DataManager.medals_MataAtlantica[1])
+                if (GameManager.medals_MataAtlantica[1])
                 {
                     medals[1].GetComponent<Image>().sprite = floraMedal;
                 }
@@ -64,7 +64,7 @@ public class HubManager : MonoBehaviour
                     medals[1].GetComponent<Image>().sprite = blankMedal;
                 }
 
-                if (DataManager.medals_MataAtlantica[2])
+                if (GameManager.medals_MataAtlantica[2])
                 {
                     medals[2].GetComponent<Image>().sprite = faunaMedal;
                 }
@@ -77,11 +77,11 @@ public class HubManager : MonoBehaviour
                 break;
 
             case "pantanal":
-                info_title.text = "Pantanal ";
+                info_title.text = "Pantanal";
 
-                if (DataManager.medals_Pantanal[0])
+                if (GameManager.medals_Pantanal[0])
                 {
-                    info_desc.text = "" + DataManager.maxPercentage[0] + "% de preservação \n" + DataManager.maxAnimals[0] + "animais salvos";
+                    info_desc.text = "" + GameManager.maxPercentage[1] + "% de preservação \n" + GameManager.maxAnimals[1] + " animais salvos";
                     medals[0].GetComponent<Image>().sprite = winMedal;
                 }
                 else
@@ -90,7 +90,7 @@ public class HubManager : MonoBehaviour
                     medals[0].GetComponent<Image>().sprite = blankMedal;
                 }
 
-                if (DataManager.medals_Pantanal[1])
+                if (GameManager.medals_Pantanal[1])
                 {
                     medals[1].GetComponent<Image>().sprite = floraMedal;
                 }
@@ -99,7 +99,7 @@ public class HubManager : MonoBehaviour
                     medals[1].GetComponent<Image>().sprite = blankMedal;
                 }
 
-                if (DataManager.medals_Pantanal[2])
+                if (GameManager.medals_Pantanal[2])
                 {
                     medals[2].GetComponent<Image>().sprite = faunaMedal;
                 }
@@ -112,9 +112,9 @@ public class HubManager : MonoBehaviour
             case "amazonia":
                 info_title.text = "Floresta Amazônica";
 
-                if (DataManager.medals_Amazonia[0])
+                if (GameManager.medals_Amazonia[0])
                 {
-                    info_desc.text = "" + DataManager.maxPercentage[0] + "% de preservação \n" + DataManager.maxAnimals[0] + "animais salvos";
+                    info_desc.text = "" + GameManager.maxPercentage[2] + "% de preservação \n" + GameManager.maxAnimals[2] + " animais salvos";
                     medals[0].GetComponent<Image>().sprite = winMedal;
                 }
                 else
@@ -123,7 +123,7 @@ public class HubManager : MonoBehaviour
                     medals[0].GetComponent<Image>().sprite = blankMedal;
                 }
 
-                if (DataManager.medals_Amazonia[1])
+                if (GameManager.medals_Amazonia[1])
                 {
                     medals[1].GetComponent<Image>().sprite = floraMedal;
                 }
@@ -132,7 +132,7 @@ public class HubManager : MonoBehaviour
                     medals[1].GetComponent<Image>().sprite = blankMedal;
                 }
 
-                if (DataManager.medals_Amazonia[2])
+                if (GameManager.medals_Amazonia[2])
                 {
                     medals[2].GetComponent<Image>().sprite = faunaMedal;
                 }
@@ -145,9 +145,9 @@ public class HubManager : MonoBehaviour
             case "cerrado":
                 info_title.text = "Cerrado";
 
-                if (DataManager.medals_Cerrado[0])
+                if (GameManager.medals_Cerrado[0])
                 {
-                    info_desc.text = "" + DataManager.maxPercentage[0] + "% de preservação \n" + DataManager.maxAnimals[0] + "animais salvos";
+                    info_desc.text = "" + GameManager.maxPercentage[3] + "% de preservação \n" + GameManager.maxAnimals[3] + " animais salvos";
                     medals[0].GetComponent<Image>().sprite = winMedal;
                 }
                 else
@@ -156,7 +156,7 @@ public class HubManager : MonoBehaviour
                     medals[0].GetComponent<Image>().sprite = blankMedal;
                 }
 
-                if (DataManager.medals_Cerrado[1])
+                if (GameManager.medals_Cerrado[1])
                 {
                     medals[1].GetComponent<Image>().sprite = floraMedal;
                 }
@@ -165,7 +165,7 @@ public class HubManager : MonoBehaviour
                     medals[1].GetComponent<Image>().sprite = blankMedal;
                 }
 
-                if (DataManager.medals_Cerrado[2])
+                if (GameManager.medals_Cerrado[2])
                 {
                     medals[2].GetComponent<Image>().sprite = faunaMedal;
                 }
@@ -178,9 +178,9 @@ public class HubManager : MonoBehaviour
             case "caatinga":
                 info_title.text = "Caatinga";
 
-                if (DataManager.medals_Caatinga[0])
+                if (GameManager.medals_Caatinga[0])
                 {
-                    info_desc.text = "" + DataManager.maxPercentage[0] + "% de preservação \n" + DataManager.maxAnimals[0] + "animais salvos";
+                    info_desc.text = "" + GameManager.maxPercentage[4] + "% de preservação \n" + GameManager.maxAnimals[4] + " animais salvos";
                     medals[0].GetComponent<Image>().sprite = winMedal;
                 }
                 else
@@ -189,7 +189,7 @@ public class HubManager : MonoBehaviour
                     medals[0].GetComponent<Image>().sprite = blankMedal;
                 }
 
-                if (DataManager.medals_Caatinga[1])
+                if (GameManager.medals_Caatinga[1])
                 {
                     medals[1].GetComponent<Image>().sprite = floraMedal;
                 }
@@ -198,7 +198,7 @@ public class HubManager : MonoBehaviour
                     medals[1].GetComponent<Image>().sprite = blankMedal;
                 }
 
-                if (DataManager.medals_Caatinga[2])
+                if (GameManager.medals_Caatinga[2])
                 {
                     medals[2].GetComponent<Image>().sprite = faunaMedal;
                 }
@@ -212,72 +212,56 @@ public class HubManager : MonoBehaviour
 
     public void MataAtlantica()
     {
-        anim.SetInteger("estado", 1);
+        anim.SetTrigger("MA");
         selectedLevel = "mataAtlantica";
-        //Info();
+
+        StartCoroutine(HideButtons());
         StartCoroutine(ShowInfo());
         info_Window.SetActive(true);
-
-        for (int i = 0; i < levelButtons.Length; i++)
-        {
-            levelButtons[i].GetComponent<Animator>().SetInteger("estado", 0);
-        }
     }
 
     public void Pantanal()
     {
-        anim.SetInteger("estado", 2);
+        anim.SetTrigger("PA");
         selectedLevel = "pantanal";
-        //Info();
+
+        StartCoroutine(HideButtons());
         StartCoroutine(ShowInfo());
         info_Window.SetActive(true);
 
-        for (int i = 0; i < levelButtons.Length; i++)
-        {
-            levelButtons[i].GetComponent<Animator>().SetInteger("estado", 0);
-        }
     }
 
     public void FlorestaAmazonica()
     {
-        anim.SetInteger("estado", 3);
+        anim.SetTrigger("AM");
         selectedLevel = "amazonia";
-        //Info();
+
+        StartCoroutine(HideButtons());
         StartCoroutine(ShowInfo());
         info_Window.SetActive(true);
 
-        for (int i = 0; i < levelButtons.Length; i++)
-        {
-            levelButtons[i].GetComponent<Animator>().SetInteger("estado", 0);
-        }
     }
 
     public void Cerrado()
     {
-        anim.SetInteger("estado", 4);
+        anim.SetTrigger("CE");
         selectedLevel = "cerrado";
-        //Info();
+
+        StartCoroutine(HideButtons());
         StartCoroutine(ShowInfo());
         info_Window.SetActive(true);
 
-        for (int i = 0; i < levelButtons.Length; i++)
-        {
-            levelButtons[i].GetComponent<Animator>().SetInteger("estado", 0);
-        }
     }
 
     public void Caatinga()
     {
-        anim.SetInteger("estado", 5);
+        anim.SetTrigger("CA");
         selectedLevel = "caatinga";
-        //Info();
+
+        StartCoroutine(HideButtons());
         StartCoroutine(ShowInfo());
         info_Window.SetActive(true);
 
-        for (int i = 0; i < levelButtons.Length; i++)
-        {
-            levelButtons[i].GetComponent<Animator>().SetInteger("estado", 0);
-        }
     }
 
     public void EnterLevel()
@@ -310,7 +294,29 @@ public class HubManager : MonoBehaviour
 
     public void ReturnMap()
     {
-        anim.SetInteger("estado", 0);
+        switch (selectedLevel)
+        {
+            case "mataAtlantica":
+                anim.SetTrigger("MA-m");
+                break;
+
+            case "pantanal":
+                anim.SetTrigger("PA-m");
+                break;
+
+            case "amazonia":
+                anim.SetTrigger("AM-m");
+                break;
+
+            case "cerrado":
+                anim.SetTrigger("CE-m");
+                break;
+
+            case "caatinga":
+                anim.SetTrigger("CA-m");
+                break;
+        }
+
         info_Window.GetComponent<Animator>().SetInteger("estado", 0);
         StartCoroutine(ShowButtons());
 
@@ -319,7 +325,7 @@ public class HubManager : MonoBehaviour
     IEnumerator ShowInfo()
     {
         yield return new WaitForSeconds(0.5f);
-        Info();
+
         info_Window.GetComponent<Animator>().SetInteger("estado", 1);
     }
 
@@ -330,6 +336,16 @@ public class HubManager : MonoBehaviour
         for (int i = 0; i < levelButtons.Length; i++)
         {
             levelButtons[i].GetComponent<Animator>().SetInteger("estado", 1);
+        }
+    }
+
+    IEnumerator HideButtons()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        for (int i = 0; i < levelButtons.Length; i++)
+        {
+            levelButtons[i].GetComponent<Animator>().SetInteger("estado", 0);
         }
     }
 

@@ -23,17 +23,31 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI percentage_text, numAnimals_text, timer_text, congratulations_text, stats_text, proceed_text, medals_text;
     private float percentage;
-    private bool endGame = false, gameOver = false, winMedal, floraMedal, faunaMedal;
+    private bool endGame = false, gameOver = false, winMedal, floraMedal, faunaMedal, pause;
 
     [SerializeField] private Image droneIcon, satelliteIcon, sprinklerIcon, planeIcon, medal1, medal2, medal3;
 
     public static float droneCooldown, satelliteCooldown, sprinklerCooldown, planeCooldown;
 
-    [SerializeField] GameObject endScreen, Medal_Console, HUDobj;
+    [SerializeField] GameObject endScreen, pauseScreen, Medal_Console, HUDobj, notPanel, pausenotPanel;
+    [SerializeField] GameObject[] earnedMedals;
 
     string currentScene;
 
     [SerializeField] Sprite sp_medal1, sp_medal2, sp_medal3;
+
+
+     public static bool[]
+    medals_MataAtlantica = new bool[3],
+    medals_Pantanal = new bool[3],
+    medals_Amazonia = new bool[3],
+    medals_Cerrado = new bool[3],
+    medals_Caatinga = new bool[3];
+
+
+    public static float[] maxPercentage = {0, 0, 0, 0, 0};
+    public static int[] maxAnimals = {0, 0, 0, 0, 0};
+
 
 
 
@@ -73,6 +87,13 @@ public class GameManager : MonoBehaviour
         endScreen.SetActive(false);
 
         Time.timeScale = 1;
+
+        for (int i = 0; i < earnedMedals.Length; i++)
+        {
+            earnedMedals[i].SetActive(false);
+        }
+
+        pauseScreen.SetActive(false);
     }
 
     private void Update()
@@ -81,16 +102,97 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(0);
 
         DisplayItems();
+        Pause();
     }
 
     public void RestartLevel()
     {
+        Time.timeScale = 1f;
+
+        if (pause)
+        {
+            pausenotPanel.GetComponent<Animator>().SetInteger("estado", 0);
+        }
+        else
+        {
+            notPanel.GetComponent<Animator>().SetInteger("estado", 0);
+            Medal_Console.GetComponent<Animator>().SetInteger("estado", 0);
+
+            for (int i = 0; i < earnedMedals.Length; i++)
+            {
+                earnedMedals[i].SetActive(false);
+            }
+        }
+
+        StartCoroutine(GoToRestart());
+
+    }
+
+    IEnumerator GoToRestart()
+    {
+        yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene(currentScene);
+
+    }
+
+    IEnumerator GoToMenu()
+    {
+        yield return new WaitForSeconds(0.5f);
+        //SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Hub");
+    }
+
+    void Pause()
+    {
+        if ((!pause) & (!endGame))
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Time.timeScale = 0;
+                pauseScreen.SetActive(true);
+                pausenotPanel.GetComponent<Animator>().SetInteger("estado", 1);
+
+                pause = true;
+            }
+        }
+
+    }
+
+    public void Unpause()
+    {
+        Time.timeScale = 1;
+        pausenotPanel.GetComponent<Animator>().SetInteger("estado", 0);
+        pause = false;
+        StartCoroutine(DeactivatePause());
+    }
+
+    IEnumerator DeactivatePause()
+    {
+        yield return new WaitForSeconds(0.2f);
+           pauseScreen.SetActive(false);
+
     }
 
     public void Menu()
     {
-        SceneManager.LoadScene("MainMenu");
+        Time.timeScale = 1f;
+        if (pause)
+        {
+            pausenotPanel.GetComponent<Animator>().SetInteger("estado", 0);
+        }
+        else
+        {
+            notPanel.GetComponent<Animator>().SetInteger("estado", 0);
+            Medal_Console.GetComponent<Animator>().SetInteger("estado", 0);
+
+            for (int i = 0; i < earnedMedals.Length; i++)
+            {
+                earnedMedals[i].SetActive(false);
+            }
+        }
+
+        StartCoroutine(GoToMenu());
+
     }
 
     public void Proceed()
@@ -115,7 +217,7 @@ public class GameManager : MonoBehaviour
             endGame = true;
             gameOver = true;
             proceed_text.text = "Menu";
-            Time.timeScale = 0;
+            Time.timeScale = 0f;
             HUDobj.SetActive(false);
             endScreen.SetActive(true);
         }
@@ -205,19 +307,157 @@ public class GameManager : MonoBehaviour
                     medals_text.text = "Você conseguiu: Medalha de conclusão! Medalha de Preservação! Medalha de Fauna!";
 
 
-                medal1.GetComponent<Image>().sprite = sp_medal1;
+                // medal1.GetComponent<Image>().sprite = sp_medal1;
 
-                if (floraMedal)
-                    medal2.GetComponent<Image>().sprite = sp_medal2;
-                if (faunaMedal)
-                    medal3.GetComponent<Image>().sprite = sp_medal3;
+                // if (floraMedal)
+                //     medal2.GetComponent<Image>().sprite = sp_medal2;
+                // if (faunaMedal)
+                //     medal3.GetComponent<Image>().sprite = sp_medal3;
 
 
                 Medal_Console.SetActive(true);
                 endScreen.SetActive(true);
-                   HUDobj.SetActive(false);
-
+                HUDobj.SetActive(false);
+                StartCoroutine(MedalAnimations());
                 StopCoroutine(timer);
+
+                earnedMedals[0].SetActive(true);
+                if (floraMedal)
+                    earnedMedals[1].SetActive(true);
+                if (faunaMedal)
+                    earnedMedals[2].SetActive(true);
+                
+                switch (currentScene)
+                {
+                    case "MataAtlantica":
+
+                    medals_MataAtlantica[0] = true;
+                    
+                    if (floraMedal)
+                    {
+                           medals_MataAtlantica[1] = true;
+                    }
+                    if (faunaMedal)
+                    {
+                           medals_MataAtlantica[2] = true;
+                    }
+
+                    if (percentage > maxPercentage[0])
+                    {
+                        maxPercentage[0] = percentage;
+                    }
+
+                     if (savedAnimalsObj > maxAnimals[0])
+                    {
+                        maxAnimals[0] = savedAnimalsObj;
+                    }
+
+                  
+
+                    
+                    break;
+                     case "Pantanal":
+
+                      medals_Pantanal[0] = true;
+                    
+                    if (floraMedal)
+                    {
+                           medals_Pantanal[1] = true;
+                    }
+                    if (faunaMedal)
+                    {
+                           medals_Pantanal[2] = true;
+                    }
+
+                    if (percentage > maxPercentage[1])
+                    {
+                            maxPercentage[1] = percentage;
+                    }
+
+                     if (savedAnimalsObj > maxAnimals[1])
+                    {
+                        maxAnimals[1] = savedAnimalsObj;
+                    }
+
+                    break;
+                    
+                     case "Amazonia":
+
+                      medals_Amazonia[0] = true;
+                    
+                    if (floraMedal)
+                    {
+                           medals_Amazonia[1] = true;
+                    }
+                    if (faunaMedal)
+                    {
+                           medals_Amazonia[2] = true;
+                    }
+
+                    if (percentage > maxPercentage[2])
+                    {
+                        maxPercentage[2] = percentage;
+                    }
+
+                     if (savedAnimalsObj > maxAnimals[2])
+                    {
+                        maxAnimals[2] = savedAnimalsObj;
+                    }
+
+                    break;
+
+                     case "Cerrado":
+
+                      medals_Cerrado[0] = true;
+                    
+                    if (floraMedal)
+                    {
+                           medals_Cerrado[1] = true;
+                    }
+                    if (faunaMedal)
+                    {
+                           medals_Cerrado[2] = true;
+                    }
+
+                    if (percentage > maxPercentage[3])
+                    {
+                        maxPercentage[3] = percentage;
+                    }
+
+                     if (savedAnimalsObj > maxAnimals[3])
+                    {
+                        maxAnimals[3] = savedAnimalsObj;
+                    }
+
+                    break;
+
+                     case "Caatinga":
+
+                     
+                      medals_Caatinga[0] = true;
+                    
+                    if (floraMedal)
+                    {
+                           medals_Caatinga[1] = true;
+                    }
+                    if (faunaMedal)
+                    {
+                           medals_Caatinga[2] = true;
+                    }
+
+                    if (percentage > maxPercentage[4])
+                    {
+                        maxPercentage[4] = percentage;
+                    }
+
+                     if (savedAnimalsObj > maxAnimals[4])
+                    {
+                        maxAnimals[4] = savedAnimalsObj;
+                    }
+
+                    break;
+                }
+
 
                 Time.timeScale = 0;
             }
@@ -323,5 +563,36 @@ public class GameManager : MonoBehaviour
             planeCooldown++;
 
         }
+    }
+
+    IEnumerator MedalAnimations()
+    {
+
+        yield return new WaitForSeconds(2);
+        earnedMedals[0].SetActive(true);
+
+
+        // if (floraMedal)
+        // {
+        //     yield return new WaitForSeconds(2);
+        //     earnedMedals[1].SetActive(true);
+
+        //     if (faunaMedal)
+        //     {
+        //         yield return new WaitForSeconds(2);
+        //         earnedMedals[2].SetActive(true);
+        //     }
+        // }
+        // else
+        // {
+        //     if (faunaMedal)
+        //     {
+        //         yield return new WaitForSeconds(2);
+        //         earnedMedals[2].SetActive(true);
+        //     }
+        // }
+
+
+
     }
 }

@@ -11,6 +11,11 @@ public static class DataManager
     medals_Cerrado = new bool[3],
     medals_Caatinga = new bool[3];
 
-    public static int[] maxPercentage = new int[5], maxAnimals = new int[5];
+    public static bool introCutscene;
+
+    public static float[] maxPercentage = {0, 0, 0, 0, 0};
+    public static int[] maxAnimals = {0, 0, 0, 0, 0};
+
+    
 
 }
