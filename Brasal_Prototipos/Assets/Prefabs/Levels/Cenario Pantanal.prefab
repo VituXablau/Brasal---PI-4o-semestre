@@ -150,6 +150,7 @@ GameObject:
   - component: {fileID: 8071903122642109346}
   - component: {fileID: 4797326440891034851}
   - component: {fileID: 6193207812488349374}
+  - component: {fileID: 2545572075091571033}
   m_Layer: 3
   m_Name: Rocha 3.006
   m_TagString: Untagged
@@ -238,6 +239,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.567, y: -1.141, z: -4.8690004}
   m_TimeToStationary: 0.5
+--- !u!65 &2545572075091571033
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302394940991218705}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 56.89673, y: 61.311855, z: 35.594345}
+  m_Center: {x: 1.5673039, y: -1.1407806, z: -4.8688045}
 --- !u!1 &386409181995039308
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,6 +438,7 @@ GameObject:
   - component: {fileID: 8544302879193808782}
   - component: {fileID: 6261508421642008227}
   - component: {fileID: 7194909103107796367}
+  - component: {fileID: 7669506072006018774}
   m_Layer: 3
   m_Name: Pantanal Vitoria Regia 2.002
   m_TagString: Untagged
@@ -505,6 +528,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -1.5230001, y: 1.0370001, z: -13.104001}
   m_TimeToStationary: 0.5
+--- !u!65 &7669506072006018774
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452090741256875026}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 323.266, y: 322.294, z: 39.006}
+  m_Center: {x: -1.523, y: 1.037, z: -13.104}
 --- !u!1 &466100270496240024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,6 +1106,7 @@ GameObject:
   - component: {fileID: 6048439801151708710}
   - component: {fileID: 8953879140169914200}
   - component: {fileID: 3946678987359848752}
+  - component: {fileID: 4779266211189845969}
   m_Layer: 3
   m_Name: Rocha 3.005
   m_TagString: Untagged
@@ -1150,6 +1195,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.567, y: -1.141, z: -4.8690004}
   m_TimeToStationary: 0.5
+--- !u!65 &4779266211189845969
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811623306276092783}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 56.896717, y: 61.311855, z: 35.594334}
+  m_Center: {x: 1.5673037, y: -1.1406584, z: -4.8688035}
 --- !u!1 &834426210112352701
 GameObject:
   m_ObjectHideFlags: 0
@@ -2252,6 +2318,7 @@ GameObject:
   - component: {fileID: 6123963956822378589}
   - component: {fileID: 1006134678291640848}
   - component: {fileID: 1012614703856555337}
+  - component: {fileID: 8614001947071481063}
   m_Layer: 3
   m_Name: Rocha 2.003
   m_TagString: Untagged
@@ -2340,6 +2407,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -18.232}
   m_TimeToStationary: 0.5
+--- !u!65 &8614001947071481063
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425241133045888235}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 166.4843, y: 192.60373, z: 119.49976}
+  m_Center: {x: 0.0000002634291, y: 0.0000072057182, z: -18.231836}
 --- !u!1 &1613386220545908609
 GameObject:
   m_ObjectHideFlags: 0
@@ -2435,6 +2523,7 @@ GameObject:
   - component: {fileID: 8610704991648660863}
   - component: {fileID: 3767226803881271038}
   - component: {fileID: 300072718577322547}
+  - component: {fileID: 8012083450919712990}
   m_Layer: 3
   m_Name: Pantanal Vitoria Regia 1.003
   m_TagString: Untagged
@@ -2524,6 +2613,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -5.032}
   m_TimeToStationary: 0.5
+--- !u!65 &8012083450919712990
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823614027940669206}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 125.186, y: 125.186, z: 15.532}
+  m_Center: {x: 0, y: 0, z: -5.032}
 --- !u!1 &1854297891517187525
 GameObject:
   m_ObjectHideFlags: 0
@@ -2767,6 +2877,7 @@ GameObject:
   - component: {fileID: 8710190894523010347}
   - component: {fileID: 8603389905572523071}
   - component: {fileID: 3443447687230623274}
+  - component: {fileID: 6943195772404942393}
   m_Layer: 3
   m_Name: Rocha 2.001
   m_TagString: Untagged
@@ -2855,6 +2966,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -18.232}
   m_TimeToStationary: 0.5
+--- !u!65 &6943195772404942393
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119240171456072054}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 166.48431, y: 192.60368, z: 119.499725}
+  m_Center: {x: 0, y: 0.0000076293927, z: -18.231833}
 --- !u!1 &2128776387428256856
 GameObject:
   m_ObjectHideFlags: 0
@@ -3089,6 +3221,7 @@ GameObject:
   - component: {fileID: 5928480170360572909}
   - component: {fileID: 603027754735111222}
   - component: {fileID: 2711045977878229961}
+  - component: {fileID: 4621656302991036468}
   m_Layer: 3
   m_Name: Rocha 3.002
   m_TagString: Untagged
@@ -3177,6 +3310,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.567, y: -1.141, z: -4.8690004}
   m_TimeToStationary: 0.5
+--- !u!65 &4621656302991036468
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2340926899720362722}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 56.89672, y: 61.31187, z: 35.594345}
+  m_Center: {x: 1.5673038, y: -1.1407804, z: -4.8688045}
 --- !u!1 &2362669242516822055
 GameObject:
   m_ObjectHideFlags: 0
@@ -3420,6 +3574,7 @@ GameObject:
   - component: {fileID: 5960355870388041328}
   - component: {fileID: 1689136549632039772}
   - component: {fileID: 8659497048014014700}
+  - component: {fileID: 8693102321440771152}
   m_Layer: 3
   m_Name: Rocha 1.002
   m_TagString: Untagged
@@ -3508,6 +3663,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.85300004, y: 0.83900005, z: -12.549001}
   m_TimeToStationary: 0.5
+--- !u!65 &8693102321440771152
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2629390632773394635}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 121.139206, y: 148.89172, z: 87.60388}
+  m_Center: {x: -0.8532017, y: 0.8387293, z: -12.549321}
 --- !u!1 &2635763381828531360
 GameObject:
   m_ObjectHideFlags: 0
@@ -3787,6 +3963,7 @@ GameObject:
   - component: {fileID: 2011501553280096264}
   - component: {fileID: 2701251593863545703}
   - component: {fileID: 883325112788898394}
+  - component: {fileID: 3006591042424180606}
   m_Layer: 3
   m_Name: Pantanal Vitoria Regia 1.005
   m_TagString: Untagged
@@ -3876,6 +4053,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -5.032}
   m_TimeToStationary: 0.5
+--- !u!65 &3006591042424180606
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2879369529843418224}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 125.186, y: 125.186, z: 15.532}
+  m_Center: {x: 0, y: 0, z: -5.032}
 --- !u!1 &2947925113155082372
 GameObject:
   m_ObjectHideFlags: 0
@@ -3888,6 +4086,7 @@ GameObject:
   - component: {fileID: 4533004989074201764}
   - component: {fileID: 99739123372133646}
   - component: {fileID: 3970903845694415929}
+  - component: {fileID: 1244450433003105269}
   m_Layer: 3
   m_Name: Pantanal Vitoria Regia 3.003
   m_TagString: Untagged
@@ -3978,6 +4177,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -8.01}
   m_TimeToStationary: 0.5
+--- !u!65 &1244450433003105269
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2947925113155082372}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 199.816, y: 199.816, z: 24.724}
+  m_Center: {x: 0, y: 0, z: -8.01}
 --- !u!1 &2980091156700076510
 GameObject:
   m_ObjectHideFlags: 0
@@ -4719,6 +4939,7 @@ GameObject:
   - component: {fileID: 6295045547083950722}
   - component: {fileID: 4074699427108897917}
   - component: {fileID: 8884489272246038010}
+  - component: {fileID: 2467942633278219832}
   m_Layer: 3
   m_Name: Rocha 2.002
   m_TagString: Untagged
@@ -4807,6 +5028,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -18.232}
   m_TimeToStationary: 0.5
+--- !u!65 &2467942633278219832
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3796749484469482551}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 166.48438, y: 192.60379, z: 119.49977}
+  m_Center: {x: 0.00006289726, y: 0.000068476504, z: -18.231836}
 --- !u!1 &3808631985494809270
 GameObject:
   m_ObjectHideFlags: 0
@@ -4902,6 +5144,7 @@ GameObject:
   - component: {fileID: 171738914943866911}
   - component: {fileID: 7106916999070957264}
   - component: {fileID: 6531199644131067859}
+  - component: {fileID: 3722286149885265633}
   m_Layer: 3
   m_Name: Rocha 1.004
   m_TagString: Untagged
@@ -4990,6 +5233,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.85300004, y: 0.83900005, z: -12.549001}
   m_TimeToStationary: 0.5
+--- !u!65 &3722286149885265633
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3938607139975800806}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 121.139145, y: 148.89166, z: 87.60384}
+  m_Center: {x: -0.8532023, y: 0.83885217, z: -12.549318}
 --- !u!1 &3951455098373967749
 GameObject:
   m_ObjectHideFlags: 0
@@ -5002,6 +5266,7 @@ GameObject:
   - component: {fileID: 5424128082729427338}
   - component: {fileID: 870977840456234050}
   - component: {fileID: 5395476908787269582}
+  - component: {fileID: 1810163910023117291}
   m_Layer: 3
   m_Name: Pantanal Vitoria Regia 1.001
   m_TagString: Untagged
@@ -5091,6 +5356,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -5.032}
   m_TimeToStationary: 0.5
+--- !u!65 &1810163910023117291
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3951455098373967749}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 125.186, y: 125.186, z: 15.532}
+  m_Center: {x: 0, y: 0, z: -5.032}
 --- !u!1 &4105627917179452747
 GameObject:
   m_ObjectHideFlags: 0
@@ -5417,6 +5703,7 @@ GameObject:
   - component: {fileID: 6588225797265211813}
   - component: {fileID: 6427925594073674782}
   - component: {fileID: 5080412716680520430}
+  - component: {fileID: 6400133411909439137}
   m_Layer: 3
   m_Name: Pantanal Vitoria Regia 1.004
   m_TagString: Untagged
@@ -5506,6 +5793,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -5.032}
   m_TimeToStationary: 0.5
+--- !u!65 &6400133411909439137
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4529606620001114035}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 125.186, y: 125.186, z: 15.532}
+  m_Center: {x: 0, y: 0, z: -5.032}
 --- !u!1 &4617111262070323486
 GameObject:
   m_ObjectHideFlags: 0
@@ -5518,6 +5826,7 @@ GameObject:
   - component: {fileID: 2447421237831385423}
   - component: {fileID: 8348570881708040308}
   - component: {fileID: 7810755036373737768}
+  - component: {fileID: 3180335639605497910}
   m_Layer: 3
   m_Name: Pantanal Vitoria Regia 1.002
   m_TagString: Untagged
@@ -5607,6 +5916,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -5.032}
   m_TimeToStationary: 0.5
+--- !u!65 &3180335639605497910
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4617111262070323486}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 125.186, y: 125.186, z: 15.532}
+  m_Center: {x: 0, y: 0, z: -5.032}
 --- !u!1 &4657093047843225923
 GameObject:
   m_ObjectHideFlags: 0
@@ -6644,6 +6974,7 @@ GameObject:
   - component: {fileID: 3008578370352563249}
   - component: {fileID: 8597192402901596503}
   - component: {fileID: 7295829727089677985}
+  - component: {fileID: 5625838792943596650}
   m_Layer: 3
   m_Name: Pantanal Vitoria Regia 3.001
   m_TagString: Untagged
@@ -6734,6 +7065,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -8.01}
   m_TimeToStationary: 0.5
+--- !u!65 &5625838792943596650
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6013418888639251587}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 199.816, y: 199.816, z: 24.724}
+  m_Center: {x: 0, y: 0, z: -8.01}
 --- !u!1 &6050958391836711290
 GameObject:
   m_ObjectHideFlags: 0
@@ -6746,6 +7098,7 @@ GameObject:
   - component: {fileID: 4210287632315481909}
   - component: {fileID: 4060471729538101231}
   - component: {fileID: 470679465687936073}
+  - component: {fileID: 8666416449300523859}
   m_Layer: 3
   m_Name: Pantanal Vitoria Regia 2.001
   m_TagString: Untagged
@@ -6835,6 +7188,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -1.5230001, y: 1.0370001, z: -13.104001}
   m_TimeToStationary: 0.5
+--- !u!65 &8666416449300523859
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6050958391836711290}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 323.266, y: 322.294, z: 39.006}
+  m_Center: {x: -1.523, y: 1.037, z: -13.104}
 --- !u!1 &6073469153999617030
 GameObject:
   m_ObjectHideFlags: 0
@@ -6995,6 +7369,7 @@ GameObject:
   - component: {fileID: 1430718968466446847}
   - component: {fileID: 4848318068083332552}
   - component: {fileID: 3086029125539805031}
+  - component: {fileID: 1582933872911116278}
   m_Layer: 3
   m_Name: Rocha 1.001
   m_TagString: Untagged
@@ -7083,6 +7458,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.85300004, y: 0.83900005, z: -12.549001}
   m_TimeToStationary: 0.5
+--- !u!65 &1582933872911116278
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6082523675615405808}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 121.13914, y: 148.89163, z: 87.60381}
+  m_Center: {x: -0.8532028, y: 0.83885175, z: -12.549315}
 --- !u!1 &6183206512030652991
 GameObject:
   m_ObjectHideFlags: 0
@@ -7095,6 +7491,7 @@ GameObject:
   - component: {fileID: 3914995464859522742}
   - component: {fileID: 1979252340399506279}
   - component: {fileID: 5640427436643741574}
+  - component: {fileID: 270421875303818489}
   m_Layer: 3
   m_Name: Pantanal Vitoria Regia 3.002
   m_TagString: Untagged
@@ -7185,6 +7582,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -8.01}
   m_TimeToStationary: 0.5
+--- !u!65 &270421875303818489
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6183206512030652991}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 199.816, y: 199.816, z: 24.724}
+  m_Center: {x: 0, y: 0, z: -8.01}
 --- !u!1 &6225584092966583041
 GameObject:
   m_ObjectHideFlags: 0
@@ -7280,6 +7698,7 @@ GameObject:
   - component: {fileID: 1870053670394451395}
   - component: {fileID: 6449421552877560007}
   - component: {fileID: 6730907387190329912}
+  - component: {fileID: 7146228472315106511}
   m_Layer: 3
   m_Name: Rocha 3.004
   m_TagString: Untagged
@@ -7368,6 +7787,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.567, y: -1.141, z: -4.8690004}
   m_TimeToStationary: 0.5
+--- !u!65 &7146228472315106511
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6279005421662269341}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 56.896736, y: 61.311867, z: 35.594353}
+  m_Center: {x: 1.5673041, y: -1.140781, z: -4.868805}
 --- !u!1 &6346108171132683669
 GameObject:
   m_ObjectHideFlags: 0
@@ -7877,6 +8317,7 @@ GameObject:
   - component: {fileID: 1535435894809963159}
   - component: {fileID: 3623592240147775651}
   - component: {fileID: 9134607885789357220}
+  - component: {fileID: 1861336467022031673}
   m_Layer: 11
   m_Name: Pantanal Terreno
   m_TagString: Untagged
@@ -7951,6 +8392,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1861336467022031673
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6935521590422200945}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 64600329285460606, guid: 83910b3f46a683a47b4b09b6abca31d0, type: 3}
 --- !u!1 &7006737408365400645
 GameObject:
   m_ObjectHideFlags: 0
@@ -10100,6 +10563,7 @@ GameObject:
   - component: {fileID: 3128880003006980276}
   - component: {fileID: 1448070681259283042}
   - component: {fileID: 947782475864894067}
+  - component: {fileID: 8208367699911262322}
   m_Layer: 3
   m_Name: Rocha 1.003
   m_TagString: Untagged
@@ -10188,6 +10652,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.85300004, y: 0.83900005, z: -12.549001}
   m_TimeToStationary: 0.5
+--- !u!65 &8208367699911262322
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8620142211336202424}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 121.139175, y: 148.8917, z: 87.60385}
+  m_Center: {x: -0.8532033, y: 0.838851, z: -12.549318}
 --- !u!1 &8633115427713852249
 GameObject:
   m_ObjectHideFlags: 0
@@ -10366,6 +10851,7 @@ GameObject:
   - component: {fileID: 1460298279890441134}
   - component: {fileID: 301731318759518569}
   - component: {fileID: 2024783135401557766}
+  - component: {fileID: 2734215978749249575}
   m_Layer: 3
   m_Name: Rocha 3.003
   m_TagString: Untagged
@@ -10454,6 +10940,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.567, y: -1.141, z: -4.8690004}
   m_TimeToStationary: 0.5
+--- !u!65 &2734215978749249575
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8835987024520989115}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 56.896732, y: 61.311863, z: 35.594345}
+  m_Center: {x: 1.5673039, y: -1.1407804, z: -4.8688045}
 --- !u!1 &8965321150094742394
 GameObject:
   m_ObjectHideFlags: 0
@@ -10466,6 +10973,7 @@ GameObject:
   - component: {fileID: 6530209397229589683}
   - component: {fileID: 2896877506181653812}
   - component: {fileID: 8956245599213881053}
+  - component: {fileID: 1765159211805595938}
   m_Layer: 3
   m_Name: Rocha 3.001
   m_TagString: Untagged
@@ -10554,6 +11062,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.567, y: -1.141, z: -4.8690004}
   m_TimeToStationary: 0.5
+--- !u!65 &1765159211805595938
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8965321150094742394}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 56.89672, y: 61.311844, z: 35.594334}
+  m_Center: {x: 1.5673037, y: -1.1407802, z: -4.8688035}
 --- !u!1 &9000330227918645792
 GameObject:
   m_ObjectHideFlags: 0
@@ -10649,6 +11178,7 @@ GameObject:
   - component: {fileID: 8564477610615421003}
   - component: {fileID: 4235283360838589224}
   - component: {fileID: 6486579449600165967}
+  - component: {fileID: 1357657812187110892}
   m_Layer: 3
   m_Name: Pantanal Vitoria Regia 2.003
   m_TagString: Untagged
@@ -10738,6 +11268,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -1.5230001, y: 1.0370001, z: -13.104001}
   m_TimeToStationary: 0.5
+--- !u!65 &1357657812187110892
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9019133035151517469}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 323.266, y: 322.294, z: 39.006}
+  m_Center: {x: -1.523, y: 1.037, z: -13.104}
 --- !u!1 &9048082607623193636
 GameObject:
   m_ObjectHideFlags: 0

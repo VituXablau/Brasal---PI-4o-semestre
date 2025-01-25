@@ -326,6 +326,7 @@ GameObject:
   - component: {fileID: 4416654233481048006}
   - component: {fileID: 7162691808134469460}
   - component: {fileID: 2199722847804920463}
+  - component: {fileID: 8432921966010349520}
   m_Layer: 3
   m_Name: Rocha 1.001
   m_TagString: Untagged
@@ -414,6 +415,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.85300004, y: 0.83900005, z: -12.549001}
   m_TimeToStationary: 0.5
+--- !u!65 &8432921966010349520
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177132412848749523}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 121.13913, y: 148.89165, z: 87.603836}
+  m_Center: {x: -0.85320264, y: 0.83885205, z: -12.549318}
 --- !u!1 &270164620726089811
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,6 +755,7 @@ GameObject:
   - component: {fileID: 779596968340843411}
   - component: {fileID: 6344792679132218044}
   - component: {fileID: 5944949977841663153}
+  - component: {fileID: 8457380273502746785}
   m_Layer: 11
   m_Name: Amazonia Terreno
   m_TagString: Untagged
@@ -807,6 +830,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8457380273502746785
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348519235407666736}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2234251373122288494, guid: 285ce75b36d4c3a4d8bae6c824a28ad9, type: 3}
 --- !u!1 &379440735850618342
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,6 +947,7 @@ GameObject:
   - component: {fileID: 8521410966329498183}
   - component: {fileID: 1364652774580320651}
   - component: {fileID: 4154591933935371274}
+  - component: {fileID: 4566682746802623214}
   m_Layer: 3
   m_Name: Amazonia Toco 1.005
   m_TagString: Untagged
@@ -993,6 +1039,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.15, z: -31.975002}
   m_TimeToStationary: 0.5
+--- !u!65 &4566682746802623214
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390994038141547452}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 80.205086, y: 80.20472, z: 65.59785}
+  m_Center: {x: -0.00003623215, y: 0.14963913, z: -31.975397}
 --- !u!1 &580807381018039468
 GameObject:
   m_ObjectHideFlags: 0
@@ -1384,6 +1451,7 @@ GameObject:
   - component: {fileID: 6439088248200211617}
   - component: {fileID: 9154641803160311942}
   - component: {fileID: 5462439045886176802}
+  - component: {fileID: 6234173280996866755}
   m_Layer: 3
   m_Name: Amazonia Toco 1.006
   m_TagString: Untagged
@@ -1475,6 +1543,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.15, z: -31.975002}
   m_TimeToStationary: 0.5
+--- !u!65 &6234173280996866755
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813872666147951651}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 80.20508, y: 80.20472, z: 65.597855}
+  m_Center: {x: -0.000036142534, y: 0.14963534, z: -31.9754}
 --- !u!1 &890507505285672415
 GameObject:
   m_ObjectHideFlags: 0
@@ -1487,6 +1576,7 @@ GameObject:
   - component: {fileID: 1451384965941865569}
   - component: {fileID: 3252698251173279006}
   - component: {fileID: 6409300691548240862}
+  - component: {fileID: 8731211139070667157}
   m_Layer: 3
   m_Name: Amazonia Toco 1.012
   m_TagString: Untagged
@@ -1578,6 +1668,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.15, z: -31.975002}
   m_TimeToStationary: 0.5
+--- !u!65 &8731211139070667157
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890507505285672415}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 80.20507, y: 80.20471, z: 65.59786}
+  m_Center: {x: -0.000034754656, y: 0.1496403, z: -31.9754}
 --- !u!1 &1087460286133714763
 GameObject:
   m_ObjectHideFlags: 0
@@ -1590,6 +1701,7 @@ GameObject:
   - component: {fileID: 4906020386449682978}
   - component: {fileID: 5808271742235283412}
   - component: {fileID: 3161282624358383607}
+  - component: {fileID: 7515431152029769176}
   m_Layer: 3
   m_Name: Amazonia Toco 1.019
   m_TagString: Untagged
@@ -1681,6 +1793,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.15, z: -31.975002}
   m_TimeToStationary: 0.5
+--- !u!65 &7515431152029769176
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087460286133714763}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 80.20507, y: 80.20471, z: 65.59786}
+  m_Center: {x: 0.000024921359, y: 0.14963882, z: -31.975405}
 --- !u!1 &1441847201921232130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1693,6 +1826,7 @@ GameObject:
   - component: {fileID: 719716438576632201}
   - component: {fileID: 5306830205809539352}
   - component: {fileID: 8833810092120206203}
+  - component: {fileID: 1011982055790434501}
   m_Layer: 3
   m_Name: Rocha 2.001
   m_TagString: Untagged
@@ -1781,6 +1915,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -18.232}
   m_TimeToStationary: 0.5
+--- !u!65 &1011982055790434501
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441847201921232130}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 166.4843, y: 192.60371, z: 119.49976}
+  m_Center: {x: 0.0000001451591, y: 0.000007899716, z: -18.231836}
 --- !u!1 &1528183069489328079
 GameObject:
   m_ObjectHideFlags: 0
@@ -1876,6 +2031,7 @@ GameObject:
   - component: {fileID: 7398170312175602355}
   - component: {fileID: 4013798854855831108}
   - component: {fileID: 7329950388014202332}
+  - component: {fileID: 4129051556111951502}
   m_Layer: 3
   m_Name: Rocha 3.002
   m_TagString: Untagged
@@ -1964,6 +2120,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.567, y: -1.141, z: -4.8690004}
   m_TimeToStationary: 0.5
+--- !u!65 &4129051556111951502
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546524586145897342}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 56.896717, y: 61.31186, z: 35.59434}
+  m_Center: {x: 1.5673035, y: -1.1407804, z: -4.8688025}
 --- !u!1 &1777864858647275151
 GameObject:
   m_ObjectHideFlags: 0
@@ -2272,6 +2449,7 @@ GameObject:
   - component: {fileID: 7875662227216674508}
   - component: {fileID: 8018241876801102324}
   - component: {fileID: 1681486603600845632}
+  - component: {fileID: 4314156282832668046}
   m_Layer: 3
   m_Name: Rocha 3.007
   m_TagString: Untagged
@@ -2360,6 +2538,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.567, y: -1.141, z: -4.8690004}
   m_TimeToStationary: 0.5
+--- !u!65 &4314156282832668046
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997665123272043054}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 56.896717, y: 61.311855, z: 35.59434}
+  m_Center: {x: 1.5673035, y: -1.1407802, z: -4.8688045}
 --- !u!1 &2164248326390143355
 GameObject:
   m_ObjectHideFlags: 0
@@ -2372,6 +2571,7 @@ GameObject:
   - component: {fileID: 7186867663742833437}
   - component: {fileID: 6604580419268472606}
   - component: {fileID: 1213618890844467215}
+  - component: {fileID: 6221779917592079401}
   m_Layer: 3
   m_Name: Rocha 3.006
   m_TagString: Untagged
@@ -2460,6 +2660,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.567, y: -1.141, z: -4.8690004}
   m_TimeToStationary: 0.5
+--- !u!65 &6221779917592079401
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2164248326390143355}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 56.896717, y: 61.311855, z: 35.59434}
+  m_Center: {x: 1.5673035, y: -1.1407726, z: -4.8688045}
 --- !u!1 &2181357840548081921
 GameObject:
   m_ObjectHideFlags: 0
@@ -2620,6 +2841,7 @@ GameObject:
   - component: {fileID: 543398926560249883}
   - component: {fileID: 2022185196622305877}
   - component: {fileID: 4121669359721162844}
+  - component: {fileID: 3312691972516845478}
   m_Layer: 3
   m_Name: Amazonia Toco 2.006
   m_TagString: Untagged
@@ -2711,6 +2933,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: -108.302, z: -14.373001}
   m_TimeToStationary: 0.5
+--- !u!65 &3312691972516845478
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2447450462927548531}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 70.24835, y: 221.5895, z: 98.90011}
+  m_Center: {x: -0.0000033222793, y: -108.30236, z: -14.373125}
 --- !u!1 &2465289246606258627
 GameObject:
   m_ObjectHideFlags: 0
@@ -3102,6 +3345,7 @@ GameObject:
   - component: {fileID: 6205060238218471187}
   - component: {fileID: 951835958765259531}
   - component: {fileID: 6801108558559740371}
+  - component: {fileID: 5805462399781993609}
   m_Layer: 3
   m_Name: Rocha 3.005
   m_TagString: Untagged
@@ -3190,6 +3434,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.567, y: -1.141, z: -4.8690004}
   m_TimeToStationary: 0.5
+--- !u!65 &5805462399781993609
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2658593246576729942}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 56.896717, y: 61.311855, z: 35.59434}
+  m_Center: {x: 1.5673035, y: -1.1407802, z: -4.8688045}
 --- !u!1 &2664017809962015356
 GameObject:
   m_ObjectHideFlags: 0
@@ -3516,6 +3781,7 @@ GameObject:
   - component: {fileID: 7460559562804867290}
   - component: {fileID: 6696915742446574424}
   - component: {fileID: 7044619143108544843}
+  - component: {fileID: 4544176047848056379}
   m_Layer: 3
   m_Name: Amazonia Toco 1.001
   m_TagString: Untagged
@@ -3607,6 +3873,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.15, z: -31.975002}
   m_TimeToStationary: 0.5
+--- !u!65 &4544176047848056379
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2993654578562520849}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 80.20508, y: 80.2047, z: 65.59784}
+  m_Center: {x: -0.000036239624, y: 0.1496391, z: -31.975393}
 --- !u!1 &3040694424007343949
 GameObject:
   m_ObjectHideFlags: 0
@@ -3702,6 +3989,7 @@ GameObject:
   - component: {fileID: 4535965707734108587}
   - component: {fileID: 2134908754110612892}
   - component: {fileID: 8439567629749502994}
+  - component: {fileID: 3873503877438639513}
   m_Layer: 3
   m_Name: Amazonia Toco 1.008
   m_TagString: Untagged
@@ -3793,6 +4081,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.15, z: -31.975002}
   m_TimeToStationary: 0.5
+--- !u!65 &3873503877438639513
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3059886581552038982}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 80.20508, y: 80.20472, z: 65.597855}
+  m_Center: {x: -0.000036409725, y: 0.14963914, z: -31.9754}
 --- !u!1 &3146128508147570383
 GameObject:
   m_ObjectHideFlags: 0
@@ -3805,6 +4114,7 @@ GameObject:
   - component: {fileID: 481564345327180236}
   - component: {fileID: 7488490864576190012}
   - component: {fileID: 1075545307462386922}
+  - component: {fileID: 5864474056960353965}
   m_Layer: 3
   m_Name: Amazonia Toco 1.014
   m_TagString: Untagged
@@ -3896,6 +4206,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.15, z: -31.975002}
   m_TimeToStationary: 0.5
+--- !u!65 &5864474056960353965
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3146128508147570383}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 80.20508, y: 80.20475, z: 65.59787}
+  m_Center: {x: -0.000035414, y: 0.14963867, z: -31.975409}
 --- !u!1 &3440029813346346566
 GameObject:
   m_ObjectHideFlags: 0
@@ -4204,6 +4535,7 @@ GameObject:
   - component: {fileID: 6984394474417832394}
   - component: {fileID: 8943869519187990285}
   - component: {fileID: 7254151630927765303}
+  - component: {fileID: 2842735193976399241}
   m_Layer: 3
   m_Name: Rocha 2.005
   m_TagString: Untagged
@@ -4292,6 +4624,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -18.232}
   m_TimeToStationary: 0.5
+--- !u!65 &2842735193976399241
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3635378599786600237}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 166.4843, y: 192.6037, z: 119.49976}
+  m_Center: {x: 0.00012234198, y: 0.0000083382965, z: -18.231836}
 --- !u!1 &3725394399232552261
 GameObject:
   m_ObjectHideFlags: 0
@@ -4304,6 +4657,7 @@ GameObject:
   - component: {fileID: 6779860110533836315}
   - component: {fileID: 7249230498367208452}
   - component: {fileID: 564057371040566455}
+  - component: {fileID: 4286481483638573863}
   m_Layer: 3
   m_Name: Amazonia Toco 2.002
   m_TagString: Untagged
@@ -4395,6 +4749,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: -108.302, z: -14.373001}
   m_TimeToStationary: 0.5
+--- !u!65 &4286481483638573863
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3725394399232552261}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 70.24838, y: 221.58946, z: 98.90011}
+  m_Center: {x: 0.000016781469, y: -108.302345, z: -14.373122}
 --- !u!1 &3745999436274447702
 GameObject:
   m_ObjectHideFlags: 0
@@ -4407,6 +4782,7 @@ GameObject:
   - component: {fileID: 5483042347951126566}
   - component: {fileID: 4869714013488916864}
   - component: {fileID: 6500595411107110845}
+  - component: {fileID: 5355719485126363188}
   m_Layer: 3
   m_Name: Amazonia Toco 1.015
   m_TagString: Untagged
@@ -4498,6 +4874,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.15, z: -31.975002}
   m_TimeToStationary: 0.5
+--- !u!65 &5355719485126363188
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3745999436274447702}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 80.20508, y: 80.20472, z: 65.59785}
+  m_Center: {x: -0.000035763154, y: 0.14951825, z: -31.975395}
 --- !u!1 &4087069212785274592
 GameObject:
   m_ObjectHideFlags: 0
@@ -4972,6 +5369,7 @@ GameObject:
   - component: {fileID: 5951355227858171800}
   - component: {fileID: 2079094856816981061}
   - component: {fileID: 6027173110327633241}
+  - component: {fileID: 4546599534825326300}
   m_Layer: 3
   m_Name: Amazonia Toco 1.020
   m_TagString: Untagged
@@ -5063,6 +5461,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.15, z: -31.975002}
   m_TimeToStationary: 0.5
+--- !u!65 &4546599534825326300
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4210656572657948782}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 80.20508, y: 80.20472, z: 65.597855}
+  m_Center: {x: -0.000036142534, y: 0.14963916, z: -31.9754}
 --- !u!1 &4246215425844014861
 GameObject:
   m_ObjectHideFlags: 0
@@ -5075,6 +5494,7 @@ GameObject:
   - component: {fileID: 2842385928204804629}
   - component: {fileID: 1731326664800730003}
   - component: {fileID: 803979908649427917}
+  - component: {fileID: 2267664180254396737}
   m_Layer: 3
   m_Name: Rocha 2.004
   m_TagString: Untagged
@@ -5163,6 +5583,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -18.232}
   m_TimeToStationary: 0.5
+--- !u!65 &2267664180254396737
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4246215425844014861}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 166.48431, y: 192.60373, z: 119.49974}
+  m_Center: {x: -0.00000020375711, y: -0.000113897564, z: -18.231829}
 --- !u!1 &4264209537491672980
 GameObject:
   m_ObjectHideFlags: 0
@@ -5258,6 +5699,7 @@ GameObject:
   - component: {fileID: 2165953285956269425}
   - component: {fileID: 7164206003837409691}
   - component: {fileID: 4756436002275368091}
+  - component: {fileID: 4083150867795770290}
   m_Layer: 3
   m_Name: Amazonia Toco 1.002
   m_TagString: Untagged
@@ -5349,6 +5791,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.15, z: -31.975002}
   m_TimeToStationary: 0.5
+--- !u!65 &4083150867795770290
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4575894011785785071}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 80.2051, y: 80.204735, z: 65.59786}
+  m_Center: {x: -0.000038168197, y: 0.14963992, z: -31.9754}
 --- !u!1 &4638777172157090179
 GameObject:
   m_ObjectHideFlags: 0
@@ -5592,6 +6055,7 @@ GameObject:
   - component: {fileID: 4409101901705392083}
   - component: {fileID: 211859793951052078}
   - component: {fileID: 1088216503926808994}
+  - component: {fileID: 7973689377965650423}
   m_Layer: 3
   m_Name: Amazonia Toco 1.011
   m_TagString: Untagged
@@ -5683,6 +6147,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.15, z: -31.975002}
   m_TimeToStationary: 0.5
+--- !u!65 &7973689377965650423
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4972491134062874836}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 80.20507, y: 80.20472, z: 65.59785}
+  m_Center: {x: -0.000036269284, y: 0.14963913, z: -31.975397}
 --- !u!1 &5034979106529391749
 GameObject:
   m_ObjectHideFlags: 0
@@ -6139,6 +6624,7 @@ GameObject:
   - component: {fileID: 3930429511972693640}
   - component: {fileID: 4148953231034268884}
   - component: {fileID: 3343783692887727791}
+  - component: {fileID: 2520172463885255684}
   m_Layer: 3
   m_Name: Rocha 2.002
   m_TagString: Untagged
@@ -6227,6 +6713,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -18.232}
   m_TimeToStationary: 0.5
+--- !u!65 &2520172463885255684
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5691267661737610998}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 166.4843, y: 192.60371, z: 119.49976}
+  m_Center: {x: -0.00000050107593, y: 0.0000070876904, z: -18.231836}
 --- !u!1 &5785600767037982060
 GameObject:
   m_ObjectHideFlags: 0
@@ -6239,6 +6746,7 @@ GameObject:
   - component: {fileID: 100787180917361037}
   - component: {fileID: 4975040203556048393}
   - component: {fileID: 9034902239295322103}
+  - component: {fileID: 5538055353085283685}
   m_Layer: 3
   m_Name: Amazonia Toco 1.013
   m_TagString: Untagged
@@ -6330,6 +6838,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.15, z: -31.975002}
   m_TimeToStationary: 0.5
+--- !u!65 &5538055353085283685
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5785600767037982060}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 80.20508, y: 80.20474, z: 65.59787}
+  m_Center: {x: -0.000035860925, y: 0.14960839, z: -31.975409}
 --- !u!1 &5796076544206245371
 GameObject:
   m_ObjectHideFlags: 0
@@ -6721,6 +7250,7 @@ GameObject:
   - component: {fileID: 3531124021417212016}
   - component: {fileID: 3502255690844800180}
   - component: {fileID: 308817824623948973}
+  - component: {fileID: 8119255867063211901}
   m_Layer: 3
   m_Name: Amazonia Toco 1.004
   m_TagString: Untagged
@@ -6812,6 +7342,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.15, z: -31.975002}
   m_TimeToStationary: 0.5
+--- !u!65 &8119255867063211901
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5866512117486273883}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 80.205086, y: 80.20475, z: 65.59788}
+  m_Center: {x: -0.000033920107, y: 0.14963894, z: -31.975409}
 --- !u!1 &6040475018959742909
 GameObject:
   m_ObjectHideFlags: 0
@@ -6824,6 +7375,7 @@ GameObject:
   - component: {fileID: 2103095682930681078}
   - component: {fileID: 7300105884363012223}
   - component: {fileID: 3201539413240491085}
+  - component: {fileID: 6074163485633360415}
   m_Layer: 3
   m_Name: Amazonia Toco 2.004
   m_TagString: Untagged
@@ -6915,6 +7467,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: -108.302, z: -14.373001}
   m_TimeToStationary: 0.5
+--- !u!65 &6074163485633360415
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6040475018959742909}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 70.24836, y: 221.5895, z: 98.90012}
+  m_Center: {x: 0.0000018334555, y: -108.30236, z: -14.373129}
 --- !u!1 &6130417250843590378
 GameObject:
   m_ObjectHideFlags: 0
@@ -7075,6 +7648,7 @@ GameObject:
   - component: {fileID: 6492121537311160243}
   - component: {fileID: 2633548379334793623}
   - component: {fileID: 6825484597836050399}
+  - component: {fileID: 3773225073545531614}
   m_Layer: 3
   m_Name: Amazonia Toco 1.016
   m_TagString: Untagged
@@ -7166,6 +7740,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.15, z: -31.975002}
   m_TimeToStationary: 0.5
+--- !u!65 &3773225073545531614
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6158873308124014114}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 80.20507, y: 80.20471, z: 65.597855}
+  m_Center: {x: -0.00003640152, y: 0.14963964, z: -31.9754}
 --- !u!1 &6236633745384637998
 GameObject:
   m_ObjectHideFlags: 0
@@ -7474,6 +8069,7 @@ GameObject:
   - component: {fileID: 1181043868925324420}
   - component: {fileID: 3005978765796149900}
   - component: {fileID: 6197078800596607581}
+  - component: {fileID: 9218208332130743141}
   m_Layer: 3
   m_Name: Rocha 3.009
   m_TagString: Untagged
@@ -7562,6 +8158,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.567, y: -1.141, z: -4.8690004}
   m_TimeToStationary: 0.5
+--- !u!65 &9218208332130743141
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6324000580685697429}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 56.896713, y: 61.311855, z: 35.594345}
+  m_Center: {x: 1.5673034, y: -1.1407806, z: -4.8688045}
 --- !u!1 &6339541882756620381
 GameObject:
   m_ObjectHideFlags: 0
@@ -7574,6 +8191,7 @@ GameObject:
   - component: {fileID: 7577156879099204856}
   - component: {fileID: 3270284548094338333}
   - component: {fileID: 1236654090113881822}
+  - component: {fileID: 497085322240313617}
   m_Layer: 3
   m_Name: Rocha 1.002
   m_TagString: Untagged
@@ -7662,6 +8280,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.85300004, y: 0.83900005, z: -12.549001}
   m_TimeToStationary: 0.5
+--- !u!65 &497085322240313617
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6339541882756620381}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 121.13914, y: 148.89163, z: 87.60381}
+  m_Center: {x: -0.8532028, y: 0.83885175, z: -12.549315}
 --- !u!1 &6391523309244086847
 GameObject:
   m_ObjectHideFlags: 0
@@ -7674,6 +8313,7 @@ GameObject:
   - component: {fileID: 4269257749626304663}
   - component: {fileID: 3836701765697576051}
   - component: {fileID: 6764742635091816766}
+  - component: {fileID: 7529407148231793513}
   m_Layer: 3
   m_Name: Amazonia Toco 2.005
   m_TagString: Untagged
@@ -7765,6 +8405,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: -108.302, z: -14.373001}
   m_TimeToStationary: 0.5
+--- !u!65 &7529407148231793513
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6391523309244086847}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 70.24835, y: 221.5895, z: 98.90012}
+  m_Center: {x: -0.000036678408, y: -108.30236, z: -14.373129}
 --- !u!1 &6412845871154166054
 GameObject:
   m_ObjectHideFlags: 0
@@ -7777,6 +8438,7 @@ GameObject:
   - component: {fileID: 1399318431375137713}
   - component: {fileID: 5706114919848324607}
   - component: {fileID: 4988627294340921618}
+  - component: {fileID: 1566448120994107455}
   m_Layer: 3
   m_Name: Amazonia Toco 1.007
   m_TagString: Untagged
@@ -7868,6 +8530,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.15, z: -31.975002}
   m_TimeToStationary: 0.5
+--- !u!65 &1566448120994107455
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6412845871154166054}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 80.20509, y: 80.20474, z: 65.59788}
+  m_Center: {x: -0.000034787983, y: 0.14963795, z: -31.975409}
 --- !u!1 &6554078097024140006
 GameObject:
   m_ObjectHideFlags: 0
@@ -8062,6 +8745,7 @@ GameObject:
   - component: {fileID: 3867452749682839575}
   - component: {fileID: 1274601908706824744}
   - component: {fileID: 2656778026800942510}
+  - component: {fileID: 3366242008454069515}
   m_Layer: 3
   m_Name: Rocha 3.001
   m_TagString: Untagged
@@ -8150,6 +8834,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.567, y: -1.141, z: -4.8690004}
   m_TimeToStationary: 0.5
+--- !u!65 &3366242008454069515
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6976501119820447078}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 56.896717, y: 61.311855, z: 35.59434}
+  m_Center: {x: 1.5673035, y: -1.1407878, z: -4.8688045}
 --- !u!1 &7015672561591274749
 GameObject:
   m_ObjectHideFlags: 0
@@ -8393,6 +9098,7 @@ GameObject:
   - component: {fileID: 4041923226258938123}
   - component: {fileID: 9194812751044920416}
   - component: {fileID: 2021084005055516538}
+  - component: {fileID: 7613941013242347929}
   m_Layer: 3
   m_Name: Rocha 3.003
   m_TagString: Untagged
@@ -8481,6 +9187,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.567, y: -1.141, z: -4.8690004}
   m_TimeToStationary: 0.5
+--- !u!65 &7613941013242347929
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7120087643165449455}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 56.896717, y: 61.311855, z: 35.59434}
+  m_Center: {x: 1.5673035, y: -1.1409023, z: -4.8688045}
 --- !u!1 &7227761541716791697
 GameObject:
   m_ObjectHideFlags: 0
@@ -8793,6 +9520,7 @@ GameObject:
   - component: {fileID: 3816135779262445409}
   - component: {fileID: 8670022716989334719}
   - component: {fileID: 2972681863587864465}
+  - component: {fileID: 1012078655685905585}
   m_Layer: 3
   m_Name: Amazonia Toco 1.010
   m_TagString: Untagged
@@ -8884,6 +9612,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.15, z: -31.975002}
   m_TimeToStationary: 0.5
+--- !u!65 &1012078655685905585
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7490815060878367392}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 80.20507, y: 80.20473, z: 65.59787}
+  m_Center: {x: -0.000036715253, y: 0.14963908, z: -31.975409}
 --- !u!1 &7498834525557738736
 GameObject:
   m_ObjectHideFlags: 0
@@ -8896,6 +9645,7 @@ GameObject:
   - component: {fileID: 1466862058697012082}
   - component: {fileID: 8603460188342816696}
   - component: {fileID: 237591469775590038}
+  - component: {fileID: 4223934004533074868}
   m_Layer: 3
   m_Name: Amazonia Toco 1.018
   m_TagString: Untagged
@@ -8987,6 +9737,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.15, z: -31.975002}
   m_TimeToStationary: 0.5
+--- !u!65 &4223934004533074868
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7498834525557738736}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 80.205086, y: 80.20472, z: 65.59785}
+  m_Center: {x: -0.00003623215, y: 0.14963913, z: -31.975397}
 --- !u!1 &7572364666711905011
 GameObject:
   m_ObjectHideFlags: 0
@@ -8999,6 +9770,7 @@ GameObject:
   - component: {fileID: 3676458003436566794}
   - component: {fileID: 2599248975095426977}
   - component: {fileID: 8933366116505757050}
+  - component: {fileID: 1235470815131928968}
   m_Layer: 3
   m_Name: Amazonia Toco 1.003
   m_TagString: Untagged
@@ -9090,6 +9862,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.15, z: -31.975002}
   m_TimeToStationary: 0.5
+--- !u!65 &1235470815131928968
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7572364666711905011}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 80.20508, y: 80.20472, z: 65.59786}
+  m_Center: {x: -0.000036515783, y: 0.14964098, z: -31.9754}
 --- !u!1 &7709655758557976412
 GameObject:
   m_ObjectHideFlags: 0
@@ -9546,6 +10339,7 @@ GameObject:
   - component: {fileID: 6520993582217148106}
   - component: {fileID: 5463679184129730265}
   - component: {fileID: 804953571669128011}
+  - component: {fileID: 6230456093061889500}
   m_Layer: 3
   m_Name: Amazonia Toco 1.017
   m_TagString: Untagged
@@ -9637,6 +10431,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.15, z: -31.975002}
   m_TimeToStationary: 0.5
+--- !u!65 &6230456093061889500
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7805242765102609420}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 80.20508, y: 80.2047, z: 65.597855}
+  m_Center: {x: -0.00003623895, y: 0.14963941, z: -31.975397}
 --- !u!1 &7857993598701294687
 GameObject:
   m_ObjectHideFlags: 0
@@ -9649,6 +10464,7 @@ GameObject:
   - component: {fileID: 4926093190519790544}
   - component: {fileID: 6246350993769124643}
   - component: {fileID: 9008966122593614623}
+  - component: {fileID: 3500357302245747508}
   m_Layer: 3
   m_Name: Rocha 3.008
   m_TagString: Untagged
@@ -9737,6 +10553,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.567, y: -1.141, z: -4.8690004}
   m_TimeToStationary: 0.5
+--- !u!65 &3500357302245747508
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7857993598701294687}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 56.896717, y: 61.311855, z: 35.59434}
+  m_Center: {x: 1.5673035, y: -1.1407802, z: -4.8688045}
 --- !u!1 &7887025062905179787
 GameObject:
   m_ObjectHideFlags: 0
@@ -9749,6 +10586,7 @@ GameObject:
   - component: {fileID: 7496770402002354122}
   - component: {fileID: 5573501323680005925}
   - component: {fileID: 4482474300864362435}
+  - component: {fileID: 629427759625244025}
   m_Layer: 3
   m_Name: Rocha 3.004
   m_TagString: Untagged
@@ -9837,6 +10675,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.567, y: -1.141, z: -4.8690004}
   m_TimeToStationary: 0.5
+--- !u!65 &629427759625244025
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7887025062905179787}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 56.896717, y: 61.311855, z: 35.59434}
+  m_Center: {x: 1.5673035, y: -1.1407802, z: -4.8688045}
 --- !u!1 &7893403923579697013
 GameObject:
   m_ObjectHideFlags: 0
@@ -9849,6 +10708,7 @@ GameObject:
   - component: {fileID: 9129867963735343606}
   - component: {fileID: 2315421539017242369}
   - component: {fileID: 2472025775944197718}
+  - component: {fileID: 3929269481489319075}
   m_Layer: 3
   m_Name: Rocha 2.003
   m_TagString: Untagged
@@ -9937,6 +10797,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -18.232}
   m_TimeToStationary: 0.5
+--- !u!65 &3929269481489319075
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7893403923579697013}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 166.48433, y: 192.60373, z: 119.49978}
+  m_Center: {x: -0.0000013105374, y: 0.000008364571, z: -18.231836}
 --- !u!1 &7901616664264456420
 GameObject:
   m_ObjectHideFlags: 0
@@ -10097,6 +10978,7 @@ GameObject:
   - component: {fileID: 3927363377597661892}
   - component: {fileID: 2105390403355370432}
   - component: {fileID: 8165640112855700199}
+  - component: {fileID: 3910216125001980587}
   m_Layer: 3
   m_Name: Amazonia Toco 2.007
   m_TagString: Untagged
@@ -10188,6 +11070,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: -108.302, z: -14.373001}
   m_TimeToStationary: 0.5
+--- !u!65 &3910216125001980587
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7940599737118206338}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 70.24836, y: 221.58946, z: 98.900116}
+  m_Center: {x: -0.000006388714, y: -108.302345, z: -14.373117}
 --- !u!1 &8046466978486492396
 GameObject:
   m_ObjectHideFlags: 0
@@ -10431,6 +11334,7 @@ GameObject:
   - component: {fileID: 1392229669003364746}
   - component: {fileID: 8748872983493860444}
   - component: {fileID: 8968113957849729788}
+  - component: {fileID: 5799951029515298741}
   m_Layer: 3
   m_Name: Amazonia Toco 2.008
   m_TagString: Untagged
@@ -10522,6 +11426,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: -108.302, z: -14.373001}
   m_TimeToStationary: 0.5
+--- !u!65 &5799951029515298741
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8191675308456893916}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 70.248405, y: 221.5896, z: 98.9002}
+  m_Center: {x: -0.000017759648, y: -108.30228, z: -14.373152}
 --- !u!1 &8259731750395560938
 GameObject:
   m_ObjectHideFlags: 0
@@ -11209,6 +12134,7 @@ GameObject:
   - component: {fileID: 2732050900705890607}
   - component: {fileID: 3149134150741959355}
   - component: {fileID: 3537145894880480599}
+  - component: {fileID: 3339510720496188381}
   m_Layer: 3
   m_Name: Amazonia Toco 2.003
   m_TagString: Untagged
@@ -11300,6 +12226,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: -108.302, z: -14.373001}
   m_TimeToStationary: 0.5
+--- !u!65 &3339510720496188381
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8536832128791069568}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 70.24835, y: 221.58946, z: 98.90009}
+  m_Center: {x: 0.00005802167, y: -108.302345, z: -14.373124}
 --- !u!1 &8757915697320340365
 GameObject:
   m_ObjectHideFlags: 0
@@ -11312,6 +12259,7 @@ GameObject:
   - component: {fileID: 5003316535539881474}
   - component: {fileID: 1625512280087990855}
   - component: {fileID: 5706603760372261696}
+  - component: {fileID: 5545014329423756126}
   m_Layer: 3
   m_Name: Rocha 1.003
   m_TagString: Untagged
@@ -11400,6 +12348,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.85300004, y: 0.83900005, z: -12.549001}
   m_TimeToStationary: 0.5
+--- !u!65 &5545014329423756126
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8757915697320340365}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 121.13914, y: 148.89163, z: 87.60381}
+  m_Center: {x: -0.8532028, y: 0.83885175, z: -12.549315}
 --- !u!1 &8825140304108543727
 GameObject:
   m_ObjectHideFlags: 0
@@ -11560,6 +12529,7 @@ GameObject:
   - component: {fileID: 1504468208854385172}
   - component: {fileID: 2425248952367707138}
   - component: {fileID: 738186811493499215}
+  - component: {fileID: 6166460236210341899}
   m_Layer: 3
   m_Name: Rocha 1.004
   m_TagString: Untagged
@@ -11648,6 +12618,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.85300004, y: 0.83900005, z: -12.549001}
   m_TimeToStationary: 0.5
+--- !u!65 &6166460236210341899
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8925116695863913294}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 121.13913, y: 148.89166, z: 87.60384}
+  m_Center: {x: -0.8532028, y: 0.83885247, z: -12.549318}
 --- !u!1 &9048634695257681906
 GameObject:
   m_ObjectHideFlags: 0
@@ -11891,6 +12882,7 @@ GameObject:
   - component: {fileID: 7495059890211610592}
   - component: {fileID: 6923849667120629183}
   - component: {fileID: 8678754230939801676}
+  - component: {fileID: 447977886640414226}
   m_Layer: 3
   m_Name: Amazonia Toco 1.009
   m_TagString: Untagged
@@ -11982,6 +12974,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.15, z: -31.975002}
   m_TimeToStationary: 0.5
+--- !u!65 &447977886640414226
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9071245406371151335}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 80.20507, y: 80.20471, z: 65.597855}
+  m_Center: {x: -0.000036247617, y: 0.1496388, z: -31.9754}
 --- !u!1 &9117896544583739157
 GameObject:
   m_ObjectHideFlags: 0
@@ -12142,6 +13155,7 @@ GameObject:
   - component: {fileID: 8544929377720274886}
   - component: {fileID: 903745724648532951}
   - component: {fileID: 2289384318358722025}
+  - component: {fileID: 2926148470274048273}
   m_Layer: 3
   m_Name: Amazonia Toco 2.001
   m_TagString: Untagged
@@ -12233,3 +13247,24 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: -108.302, z: -14.373001}
   m_TimeToStationary: 0.5
+--- !u!65 &2926148470274048273
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9198218400126679435}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 70.248344, y: 221.5895, z: 98.9001}
+  m_Center: {x: 0.000000097023936, y: -108.3023, z: -14.373123}

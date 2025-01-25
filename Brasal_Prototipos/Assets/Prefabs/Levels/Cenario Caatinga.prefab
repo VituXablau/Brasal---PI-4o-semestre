@@ -1229,6 +1229,7 @@ GameObject:
   - component: {fileID: 3421260942399971139}
   - component: {fileID: 7346698900652813699}
   - component: {fileID: 4377429359055966492}
+  - component: {fileID: 781465119960969062}
   m_Layer: 3
   m_Name: Rocha 3.006
   m_TagString: Untagged
@@ -1317,6 +1318,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.567, y: -1.141, z: -4.8690004}
   m_TimeToStationary: 0.5
+--- !u!65 &781465119960969062
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910891379994273130}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 56.89672, y: 61.31186, z: 35.594345}
+  m_Center: {x: 1.5673035, y: -1.1407804, z: -4.8688045}
 --- !u!1 &1231950970873899548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1477,6 +1499,7 @@ GameObject:
   - component: {fileID: 5171311277156135238}
   - component: {fileID: 387453887236486017}
   - component: {fileID: 1526984563479307647}
+  - component: {fileID: 5917491526194939896}
   m_Layer: 3
   m_Name: Rocha 2.001
   m_TagString: Untagged
@@ -1565,6 +1588,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -18.232}
   m_TimeToStationary: 0.5
+--- !u!65 &5917491526194939896
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274374986690451388}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 166.48431, y: 192.60373, z: 119.49977}
+  m_Center: {x: -6.9084834e-14, y: 0.000037060272, z: -18.231836}
 --- !u!1 &1437688498122017807
 GameObject:
   m_ObjectHideFlags: 0
@@ -1956,6 +2000,7 @@ GameObject:
   - component: {fileID: 9124635650429183828}
   - component: {fileID: 8813786671600633349}
   - component: {fileID: 3547726099393759139}
+  - component: {fileID: 6626759712209097658}
   m_Layer: 3
   m_Name: Rocha 3.003
   m_TagString: Untagged
@@ -2044,6 +2089,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.567, y: -1.141, z: -4.8690004}
   m_TimeToStationary: 0.5
+--- !u!65 &6626759712209097658
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596905297692512893}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 56.896713, y: 61.31185, z: 35.594345}
+  m_Center: {x: 1.5673033, y: -1.1407801, z: -4.8688045}
 --- !u!1 &1632298153430281682
 GameObject:
   m_ObjectHideFlags: 0
@@ -2353,6 +2419,7 @@ GameObject:
   - component: {fileID: 2029844169977997175}
   - component: {fileID: 7717125734904933753}
   - component: {fileID: 4882031912974398776}
+  - component: {fileID: 8693118165761306180}
   m_Layer: 3
   m_Name: Rocha 3.005
   m_TagString: Untagged
@@ -2441,6 +2508,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.567, y: -1.141, z: -4.8690004}
   m_TimeToStationary: 0.5
+--- !u!65 &8693118165761306180
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724863198024402146}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 56.89672, y: 61.311863, z: 35.594345}
+  m_Center: {x: 1.5673037, y: -1.1407807, z: -4.8688045}
 --- !u!1 &2131487635993965956
 GameObject:
   m_ObjectHideFlags: 0
@@ -2747,6 +2835,7 @@ GameObject:
   - component: {fileID: 7520483506893985688}
   - component: {fileID: 7360710666406758371}
   - component: {fileID: 3252451673611006203}
+  - component: {fileID: 4587337090456431819}
   m_Layer: 3
   m_Name: Rocha 3.008
   m_TagString: Untagged
@@ -2835,6 +2924,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.567, y: -1.141, z: -4.8690004}
   m_TimeToStationary: 0.5
+--- !u!65 &4587337090456431819
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2261002783945477553}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 56.89672, y: 61.311863, z: 35.59434}
+  m_Center: {x: 1.5673037, y: -1.1408416, z: -4.8688045}
 --- !u!1 &2281273386112331804
 GameObject:
   m_ObjectHideFlags: 0
@@ -5395,6 +5505,7 @@ GameObject:
   - component: {fileID: 1427172625056034088}
   - component: {fileID: 8418085312134652910}
   - component: {fileID: 8050331788902891502}
+  - component: {fileID: 4003567275684237879}
   m_Layer: 3
   m_Name: Rocha 3.001
   m_TagString: Untagged
@@ -5483,6 +5594,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.567, y: -1.141, z: -4.8690004}
   m_TimeToStationary: 0.5
+--- !u!65 &4003567275684237879
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4705505231214524931}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 56.89672, y: 61.311863, z: 35.594345}
+  m_Center: {x: 1.5673037, y: -1.1407654, z: -4.8688045}
 --- !u!1 &4712598608426623756
 GameObject:
   m_ObjectHideFlags: 0
@@ -5643,6 +5775,7 @@ GameObject:
   - component: {fileID: 7234523475041592265}
   - component: {fileID: 8352997393768801724}
   - component: {fileID: 8390075585711171173}
+  - component: {fileID: 7181346543864251694}
   m_Layer: 3
   m_Name: Rocha 2.002
   m_TagString: Untagged
@@ -5731,6 +5864,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: -18.232}
   m_TimeToStationary: 0.5
+--- !u!65 &7181346543864251694
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4813095398752034848}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 166.48431, y: 192.60373, z: 119.49977}
+  m_Center: {x: -6.9084834e-14, y: 0.0000065426925, z: -18.231836}
 --- !u!1 &5075862818494076082
 GameObject:
   m_ObjectHideFlags: 0
@@ -5743,6 +5897,7 @@ GameObject:
   - component: {fileID: 9160746054663638802}
   - component: {fileID: 4717515544146970783}
   - component: {fileID: 7242115809797835624}
+  - component: {fileID: 6640069828523079839}
   m_Layer: 3
   m_Name: Rocha 3.004
   m_TagString: Untagged
@@ -5831,6 +5986,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.567, y: -1.141, z: -4.8690004}
   m_TimeToStationary: 0.5
+--- !u!65 &6640069828523079839
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5075862818494076082}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 56.89672, y: 61.311863, z: 35.594345}
+  m_Center: {x: 1.5673037, y: -1.1407807, z: -4.8688045}
 --- !u!1 &5082018957016360174
 GameObject:
   m_ObjectHideFlags: 0
@@ -7407,6 +7583,7 @@ GameObject:
   - component: {fileID: 4365695386078231962}
   - component: {fileID: 2064512430194432916}
   - component: {fileID: 8647638359392012850}
+  - component: {fileID: 2940089911080736631}
   m_Layer: 3
   m_Name: Rocha 1.001
   m_TagString: Untagged
@@ -7495,6 +7672,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.85300004, y: 0.83900005, z: -12.549001}
   m_TimeToStationary: 0.5
+--- !u!65 &2940089911080736631
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6474827136933483959}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 121.13914, y: 148.89166, z: 87.60384}
+  m_Center: {x: -0.8532028, y: 0.83885115, z: -12.549318}
 --- !u!1 &6619912647457656080
 GameObject:
   m_ObjectHideFlags: 0
@@ -8349,6 +8547,7 @@ GameObject:
   - component: {fileID: 1443137047482571217}
   - component: {fileID: 6395517188954847368}
   - component: {fileID: 3949219624863587402}
+  - component: {fileID: 40039252501469387}
   m_Layer: 3
   m_Name: Rocha 1.002
   m_TagString: Untagged
@@ -8437,6 +8636,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.85300004, y: 0.83900005, z: -12.549001}
   m_TimeToStationary: 0.5
+--- !u!65 &40039252501469387
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7308333856651349865}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 121.13914, y: 148.89166, z: 87.60384}
+  m_Center: {x: -0.8532028, y: 0.83885115, z: -12.549318}
 --- !u!1 &7347360844853803457
 GameObject:
   m_ObjectHideFlags: 0
@@ -8449,6 +8669,7 @@ GameObject:
   - component: {fileID: 7944925342316504697}
   - component: {fileID: 6488640582897076561}
   - component: {fileID: 2640129226696327304}
+  - component: {fileID: 2066127965439852990}
   m_Layer: 3
   m_Name: Rocha 3.002
   m_TagString: Untagged
@@ -8537,6 +8758,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.567, y: -1.141, z: -4.8690004}
   m_TimeToStationary: 0.5
+--- !u!65 &2066127965439852990
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7347360844853803457}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 56.896717, y: 61.311867, z: 35.59435}
+  m_Center: {x: 1.5673033, y: -1.1407802, z: -4.8688045}
 --- !u!1 &7511357827416974218
 GameObject:
   m_ObjectHideFlags: 0
@@ -10280,6 +10522,7 @@ GameObject:
   - component: {fileID: 3952307567365113291}
   - component: {fileID: 3192626867352066963}
   - component: {fileID: 401349778473525403}
+  - component: {fileID: 440005981857540370}
   m_Layer: 3
   m_Name: Rocha 3.007
   m_TagString: Untagged
@@ -10368,6 +10611,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 1.567, y: -1.141, z: -4.8690004}
   m_TimeToStationary: 0.5
+--- !u!65 &440005981857540370
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8641458973844905901}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 56.896744, y: 61.31188, z: 35.594353}
+  m_Center: {x: 1.5673038, y: -1.1407813, z: -4.8688045}
 --- !u!1 &8666223199129080670
 GameObject:
   m_ObjectHideFlags: 0
@@ -10462,6 +10726,7 @@ GameObject:
   - component: {fileID: 4684973623712358536}
   - component: {fileID: 963509207254417241}
   - component: {fileID: 514972427756018621}
+  - component: {fileID: 5945551685984572976}
   m_Layer: 11
   m_Name: Caatinga Terreno
   m_TagString: Untagged
@@ -10536,6 +10801,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5945551685984572976
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8757088083808085451}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4492376986453149328, guid: a99dcf8ed0479094aa30d1b72fa5cf40, type: 3}
 --- !u!1 &8894227905240448853
 GameObject:
   m_ObjectHideFlags: 0
@@ -10696,6 +10983,7 @@ GameObject:
   - component: {fileID: 3017719359646211973}
   - component: {fileID: 2437731890701692392}
   - component: {fileID: 798263334951408278}
+  - component: {fileID: 3171226727504120304}
   m_Layer: 3
   m_Name: Rocha 1.003
   m_TagString: Untagged
@@ -10784,6 +11072,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: -0.85300004, y: 0.83900005, z: -12.549001}
   m_TimeToStationary: 0.5
+--- !u!65 &3171226727504120304
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8965285605500844671}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 121.139145, y: 148.8917, z: 87.60385}
+  m_Center: {x: -0.85320234, y: 0.8388509, z: -12.549318}
 --- !u!1 &9055203936501225006
 GameObject:
   m_ObjectHideFlags: 0
