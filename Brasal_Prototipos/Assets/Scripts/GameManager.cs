@@ -363,7 +363,8 @@ public class GameManager : MonoBehaviour
             endGame = true;
             gameOver = true;
             proceed_text.text = "Menu";
-            Time.timeScale = 0f;
+            StopCoroutine(PrepareNextToBurn(spawnFireTime));
+            StopCoroutine(Timer());
             HUDobj.SetActive(false);
             endScreen.SetActive(true);
         }
@@ -427,6 +428,9 @@ public class GameManager : MonoBehaviour
                 endGame = true;
                 congratulations_text.text = "Você Ganhou!";
                 proceed_text.text = "Prosseguir";
+
+                StopCoroutine(PrepareNextToBurn(spawnFireTime));
+                StopCoroutine(Timer());
 
 
                 if (!faunaMedal)
@@ -621,7 +625,7 @@ public class GameManager : MonoBehaviour
                 }
 
 
-                Time.timeScale = 0;
+            
             }
 
             if (levelCurTime_Sec < 10)

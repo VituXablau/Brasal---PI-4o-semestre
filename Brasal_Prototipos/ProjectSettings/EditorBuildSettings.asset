@@ -18,6 +18,33 @@ EditorBuildSettings:
     path: Assets/Scenes/preMA.unity
     guid: fb5e0cbcc018e304e83fcf2a0e9d533b
   - enabled: 1
+    path: Assets/Scenes/postMA.unity
+    guid: a72517f0c7eac0642a11b0ea4bb2e0d8
+  - enabled: 1
+    path: Assets/Scenes/prePA.unity
+    guid: dd83af624220b2f4cb1478b43a9c159a
+  - enabled: 1
+    path: Assets/Scenes/postPA.unity
+    guid: 505b77df8fe44674c9590f3315683570
+  - enabled: 1
+    path: Assets/Scenes/preAM.unity
+    guid: cb2573392124c6a48bb8684497fdb02e
+  - enabled: 1
+    path: Assets/Scenes/postAM.unity
+    guid: 344d968e9a7ef8545a775f34630bb8cf
+  - enabled: 1
+    path: Assets/Scenes/preCE.unity
+    guid: c2e20d29aac81104da9576a29b0ea66d
+  - enabled: 1
+    path: Assets/Scenes/postCE.unity
+    guid: 3f92ed19ce1e1ec47935438a243f51f7
+  - enabled: 1
+    path: Assets/Scenes/preCA.unity
+    guid: 5b4ab1e98386ebc4a83fac1960f047d1
+  - enabled: 1
+    path: Assets/Scenes/postCA.unity
+    guid: 22703047e4e7ea447bae0274dc5b0efa
+  - enabled: 1
     path: Assets/Scenes/MataAtlanticaTutorial.unity
     guid: 974e1375f0a8fe84682eabb9212f996f
   - enabled: 1
