@@ -10,32 +10,82 @@ public class HubManager : MonoBehaviour
 
     [SerializeField] GameObject[] levelButtons;
     [SerializeField] Image[] medals;
-    [SerializeField] GameObject info_Window, cam;
+    [SerializeField] GameObject info_Window, cam, transitionScreen, endButton, cutscenesButton;
     [SerializeField] Sprite winMedal, floraMedal, faunaMedal, blankMedal;
 
-    string selectedLevel;
+    string selectedLevel, nextScene;
 
     Animator anim;
 
     [SerializeField] TextMeshProUGUI info_title, info_desc;
 
+    public static bool beatEverything, beatEverything100;
+
     void Start()
     {
-        GameManager.medals_MataAtlantica[0] = true;
 
-        /////////
-
-        if (!GameManager.medals_MataAtlantica[0])
-        {
-            for (int i = 1; i < levelButtons.Length; i++)
-            {
-                levelButtons[i].SetActive(false);
-            }
-        }
+        // if (!GameManager.medals_MataAtlantica[0])
+        // {
+        //     for (int i = 1; i < levelButtons.Length; i++)
+        //     {
+        //         levelButtons[i].SetActive(false);
+        //     }
+        // }
 
         anim = cam.GetComponent<Animator>();
         info_Window.SetActive(false);
+        StartCoroutine(Transition());
+
+        if (GameManager.medals_MataAtlantica[0] && GameManager.medals_MataAtlantica[1] && GameManager.medals_MataAtlantica[2] &&
+      GameManager.medals_Pantanal[0] && GameManager.medals_Pantanal[1] && GameManager.medals_Pantanal[2] &&
+      GameManager.medals_Amazonia[0] && GameManager.medals_Amazonia[1] && GameManager.medals_Amazonia[2] &&
+      GameManager.medals_Cerrado[0] && GameManager.medals_Cerrado[1] && GameManager.medals_Cerrado[2] &&
+      GameManager.medals_Caatinga[0] && GameManager.medals_Caatinga[1] && GameManager.medals_Caatinga[2])
+        {
+            beatEverything100 = true;
+        }
+        else if (GameManager.medals_MataAtlantica[0] && GameManager.medals_Pantanal[0] && GameManager.medals_Amazonia[0] &&
+        GameManager.medals_Cerrado[0] && GameManager.medals_Caatinga[0])
+        {
+            beatEverything = true;
+        }
+
+
+        if (beatEverything || beatEverything100)
+        {
+            endButton.SetActive(true);
+        }
+        else
+        {
+            endButton.SetActive(false);
+        }
+
+        if (beatEverything || beatEverything100)
+        {
+            cutscenesButton.SetActive(true);
+        }
+        else
+        {
+            cutscenesButton.SetActive(false);
+        }
+
+
+
+
+
+
     }
+
+    IEnumerator Transition()
+    {
+        transitionScreen.SetActive(true);
+        transitionScreen.GetComponent<Animator>().SetTrigger("disappear");
+
+        yield return new WaitForSeconds(0.5f);
+
+        transitionScreen.SetActive(false);
+    }
+
 
     void Info()
     {
@@ -271,23 +321,60 @@ public class HubManager : MonoBehaviour
         switch (selectedLevel)
         {
             case "mataAtlantica":
-                SceneManager.LoadScene("MataAtlantica");
+                nextScene = "MataAtlantica";
+                StartCoroutine(ChangeScene());
                 break;
 
             case "pantanal":
-                SceneManager.LoadScene("Pantanal");
+                if (MenuManager.firstTimePA)
+                {
+                    nextScene = "prePA";
+                }
+                else
+                {
+                    nextScene = "Pantanal";
+                }
+
+
+                StartCoroutine(ChangeScene());
                 break;
 
             case "amazonia":
-                SceneManager.LoadScene("Amazonia");
+                if (MenuManager.firstTimeAM)
+                {
+                    nextScene = "preAM";
+                }
+                else
+                {
+                    nextScene = "Amazonia";
+                }
+
+                StartCoroutine(ChangeScene());
                 break;
 
             case "cerrado":
-                SceneManager.LoadScene("Cerrado");
+                if (MenuManager.firstTimeAM)
+                {
+                    nextScene = "preCE";
+                }
+                else
+                {
+                    nextScene = "Cerrado";
+                }
+                StartCoroutine(ChangeScene());
                 break;
 
             case "caatinga":
-                SceneManager.LoadScene("Caatinga");
+                nextScene = "Caatinga";
+                if (MenuManager.firstTimeAM)
+                {
+                    nextScene = "preCA";
+                }
+                else
+                {
+                    nextScene = "Caatinga";
+                }
+                StartCoroutine(ChangeScene());
                 break;
         }
     }
@@ -322,6 +409,32 @@ public class HubManager : MonoBehaviour
 
     }
 
+    public void Ending()
+    {
+        if (beatEverything100)
+        {
+            nextScene = "GoodEnding";
+        }
+        else
+        {
+            nextScene = "NormalEnding";
+        }
+        StartCoroutine(ChangeScene());
+    }
+
+    public void CutscenesRoom()
+    {
+        nextScene = "CutscenesRoom";
+        
+        StartCoroutine(ChangeScene());
+    }
+
+    public void Menu()
+    {
+        nextScene = "Menu";
+        StartCoroutine(ChangeScene());
+    }
+
     IEnumerator ShowInfo()
     {
         yield return new WaitForSeconds(0.5f);
@@ -348,6 +461,20 @@ public class HubManager : MonoBehaviour
             levelButtons[i].GetComponent<Animator>().SetInteger("estado", 0);
         }
     }
+
+    IEnumerator ChangeScene()
+    {
+        transitionScreen.SetActive(true);
+        transitionScreen.GetComponent<Animator>().SetTrigger("appear");
+
+        yield return new WaitForSeconds(0.5f);
+
+        SceneManager.LoadScene(nextScene);
+
+    }
+
+
+
 
     void Update()
     {

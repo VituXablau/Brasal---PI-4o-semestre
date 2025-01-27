@@ -23,30 +23,30 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI percentage_text, numAnimals_text, timer_text, congratulations_text, stats_text, proceed_text, medals_text;
     private float percentage;
-    private bool endGame = false, gameOver = false, winMedal, floraMedal, faunaMedal, pause;
+    private bool endGame = false, gameOver = false, winMedal, floraMedal, faunaMedal, pause, tutorial;
 
     [SerializeField] private Image droneIcon, satelliteIcon, sprinklerIcon, planeIcon, medal1, medal2, medal3;
 
     public static float droneCooldown, satelliteCooldown, sprinklerCooldown, planeCooldown;
 
-    [SerializeField] GameObject endScreen, pauseScreen, Medal_Console, HUDobj, notPanel, pausenotPanel;
-    [SerializeField] GameObject[] earnedMedals;
+    [SerializeField] GameObject endScreen, pauseScreen, Medal_Console, HUDobj, notPanel, pausenotPanel, player, continueButton, fakePlayer, esc, transitionScreen;
+    [SerializeField] GameObject[] earnedMedals, fakeAnimals;
 
-    string currentScene;
+    string currentScene, nextScene;
 
     [SerializeField] Sprite sp_medal1, sp_medal2, sp_medal3;
 
 
-     public static bool[]
-    medals_MataAtlantica = new bool[3],
-    medals_Pantanal = new bool[3],
-    medals_Amazonia = new bool[3],
-    medals_Cerrado = new bool[3],
-    medals_Caatinga = new bool[3];
+    public static bool[]
+   medals_MataAtlantica = new bool[3],
+   medals_Pantanal = new bool[3],
+   medals_Amazonia = new bool[3],
+   medals_Cerrado = new bool[3],
+   medals_Caatinga = new bool[3];
 
 
-    public static float[] maxPercentage = {0, 0, 0, 0, 0};
-    public static int[] maxAnimals = {0, 0, 0, 0, 0};
+    public static float[] maxPercentage = { 0, 0, 0, 0, 0 };
+    public static int[] maxAnimals = { 0, 0, 0, 0, 0 };
 
 
 
@@ -54,13 +54,41 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+
+        currentScene = SceneManager.GetActiveScene().name;
+
     }
 
     void Start()
     {
-        StartCoroutine(PrepareNextToBurn(spawnFireTime));
-        timer = StartCoroutine(Timer());
+        transitionScreen.SetActive(true);
 
+        StartCoroutine(Beginning());
+
+        if (currentScene == "MataAtlanticaTutorial")
+        {
+            tutorial = true;
+
+            for (int i = 0; i < animalsObj.Length; i++)
+            {
+                animalsObj[i].SetActive(false);
+            }
+
+            player.SetActive(false);
+            Medal_Console.SetActive(false);
+            endScreen.SetActive(false);
+            pauseScreen.SetActive(false);
+
+        }
+        else
+        {
+            StartCoroutine(PrepareNextToBurn(spawnFireTime));
+            timer = StartCoroutine(Timer());
+
+
+        }
+
+        Time.timeScale = 1;
         init_treesObjLength = treesObj.Length;
         cur_treesObjLength = init_treesObjLength;
 
@@ -81,18 +109,14 @@ public class GameManager : MonoBehaviour
 
         planeIcon.fillAmount = 0;
 
-        currentScene = SceneManager.GetActiveScene().name;
 
-        Medal_Console.SetActive(false);
-        endScreen.SetActive(false);
-
-        Time.timeScale = 1;
 
         for (int i = 0; i < earnedMedals.Length; i++)
         {
             earnedMedals[i].SetActive(false);
         }
-
+        Medal_Console.SetActive(false);
+        endScreen.SetActive(false);
         pauseScreen.SetActive(false);
     }
 
@@ -103,6 +127,14 @@ public class GameManager : MonoBehaviour
 
         DisplayItems();
         Pause();
+    }
+
+    IEnumerator Beginning()
+    {
+        yield return new WaitForSeconds(1f);
+        transitionScreen.GetComponent<Animator>().SetTrigger("disappear");
+        yield return new WaitForSeconds(0.3f);
+        transitionScreen.SetActive(false);
     }
 
     public void RestartLevel()
@@ -130,6 +162,8 @@ public class GameManager : MonoBehaviour
 
     IEnumerator GoToRestart()
     {
+        transitionScreen.SetActive(true);
+        transitionScreen.GetComponent<Animator>().SetTrigger("appear");
         yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene(currentScene);
 
@@ -137,23 +171,28 @@ public class GameManager : MonoBehaviour
 
     IEnumerator GoToMenu()
     {
+        transitionScreen.SetActive(true);
+        transitionScreen.GetComponent<Animator>().SetTrigger("appear");
         yield return new WaitForSeconds(0.5f);
-        //SceneManager.LoadScene("MainMenu");
-        SceneManager.LoadScene("Hub");
+        SceneManager.LoadScene("Menu");
     }
 
     void Pause()
     {
         if ((!pause) & (!endGame))
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (!tutorial)
             {
-                Time.timeScale = 0;
-                pauseScreen.SetActive(true);
-                pausenotPanel.GetComponent<Animator>().SetInteger("estado", 1);
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    Time.timeScale = 0;
+                    pauseScreen.SetActive(true);
+                    pausenotPanel.GetComponent<Animator>().SetInteger("estado", 1);
 
-                pause = true;
+                    pause = true;
+                }
             }
+
         }
 
     }
@@ -166,10 +205,35 @@ public class GameManager : MonoBehaviour
         StartCoroutine(DeactivatePause());
     }
 
+    public void EndTutorial()
+    {
+        StartCoroutine(PrepareNextToBurn(spawnFireTime));
+        timer = StartCoroutine(Timer());
+        for (int i = 0; i < animalsObj.Length; i++)
+        {
+            animalsObj[i].SetActive(true);
+        }
+
+        player.SetActive(true);
+
+        for (int i = 0; i < fakeAnimals.Length; i++)
+        {
+            fakeAnimals[i].SetActive(false);
+        }
+
+        fakePlayer.SetActive(false);
+
+        continueButton.GetComponent<Animator>().SetTrigger("disappear");
+
+        esc.GetComponent<Animator>().SetTrigger("appear");
+
+        tutorial = false;
+    }
+
     IEnumerator DeactivatePause()
     {
         yield return new WaitForSeconds(0.2f);
-           pauseScreen.SetActive(false);
+        pauseScreen.SetActive(false);
 
     }
 
@@ -199,12 +263,94 @@ public class GameManager : MonoBehaviour
     {
         if (gameOver)
         {
-            SceneManager.LoadScene("MainMenu");
+            StartCoroutine(GoToMenu());
         }
         else
         {
-            Debug.Log("comiig sun");
+            switch (currentScene)
+            {
+                case "MataAtlanticaTutorial":
+                    if (MenuManager.firstTimePlaying)
+                    {
+                        nextScene = "postMA";
+                        StartCoroutine(Proceeding());
+                    }
+                    else
+                    {
+                        nextScene = "CutscenesRoom";
+                        StartCoroutine(Proceeding());
+                    }
+                    break;
+
+                case "MataAtlantica":
+
+                    nextScene = "Hub";
+                    StartCoroutine(Proceeding());
+
+                    break;
+
+                case "Pantanal":
+                    if (MenuManager.firstTimePA)
+                    {
+                        nextScene = "postPA";
+                        StartCoroutine(Proceeding());
+                    }
+                    else
+                    {
+                        nextScene = "Hub";
+                        StartCoroutine(Proceeding());
+                    }
+                    break;
+
+
+                case "Amazonia":
+                    if (MenuManager.firstTimeAM)
+                    {
+                        nextScene = "postAM";
+                        StartCoroutine(Proceeding());
+                    }
+                    else
+                    {
+                        nextScene = "Hub";
+                        StartCoroutine(Proceeding());
+                    }
+                    break;
+
+                case "Cerrado":
+                    if (MenuManager.firstTimeCE)
+                    {
+                        nextScene = "postCE";
+                        StartCoroutine(Proceeding());
+                    }
+                    else
+                    {
+                        nextScene = "Hub";
+                        StartCoroutine(Proceeding());
+                    }
+                    break;
+
+                case "Caatinga":
+                    if (MenuManager.firstTimeCA)
+                    {
+                        nextScene = "postCA";
+                        StartCoroutine(Proceeding());
+                    }
+                    else
+                    {
+                        nextScene = "Hub";
+                        StartCoroutine(Proceeding());
+                    }
+                    break;
+            }
         }
+    }
+
+    IEnumerator Proceeding()
+    {
+        transitionScreen.SetActive(true);
+        transitionScreen.GetComponent<Animator>().SetTrigger("appear");
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(nextScene);
     }
 
     public void CheckPercentage()
@@ -306,15 +452,6 @@ public class GameManager : MonoBehaviour
                 if ((faunaMedal) && (floraMedal))
                     medals_text.text = "Você conseguiu: Medalha de conclusão! Medalha de Preservação! Medalha de Fauna!";
 
-
-                // medal1.GetComponent<Image>().sprite = sp_medal1;
-
-                // if (floraMedal)
-                //     medal2.GetComponent<Image>().sprite = sp_medal2;
-                // if (faunaMedal)
-                //     medal3.GetComponent<Image>().sprite = sp_medal3;
-
-
                 Medal_Console.SetActive(true);
                 endScreen.SetActive(true);
                 HUDobj.SetActive(false);
@@ -326,136 +463,161 @@ public class GameManager : MonoBehaviour
                     earnedMedals[1].SetActive(true);
                 if (faunaMedal)
                     earnedMedals[2].SetActive(true);
-                
+
                 switch (currentScene)
                 {
                     case "MataAtlantica":
 
-                    medals_MataAtlantica[0] = true;
-                    
-                    if (floraMedal)
-                    {
-                           medals_MataAtlantica[1] = true;
-                    }
-                    if (faunaMedal)
-                    {
-                           medals_MataAtlantica[2] = true;
-                    }
+                        medals_MataAtlantica[0] = true;
 
-                    if (percentage > maxPercentage[0])
-                    {
-                        maxPercentage[0] = percentage;
-                    }
+                        if (floraMedal)
+                        {
+                            medals_MataAtlantica[1] = true;
+                        }
+                        if (faunaMedal)
+                        {
+                            medals_MataAtlantica[2] = true;
+                        }
 
-                     if (savedAnimalsObj > maxAnimals[0])
-                    {
-                        maxAnimals[0] = savedAnimalsObj;
-                    }
+                        if (percentage > maxPercentage[0])
+                        {
+                            maxPercentage[0] = percentage;
+                        }
 
-                  
+                        if (savedAnimalsObj > maxAnimals[0])
+                        {
+                            maxAnimals[0] = savedAnimalsObj;
+                        }
 
-                    
-                    break;
-                     case "Pantanal":
 
-                      medals_Pantanal[0] = true;
-                    
-                    if (floraMedal)
-                    {
-                           medals_Pantanal[1] = true;
-                    }
-                    if (faunaMedal)
-                    {
-                           medals_Pantanal[2] = true;
-                    }
 
-                    if (percentage > maxPercentage[1])
-                    {
+
+                        break;
+                    case "MataAtlanticaTutorial":
+
+                        medals_MataAtlantica[0] = true;
+
+                        if (floraMedal)
+                        {
+                            medals_MataAtlantica[1] = true;
+                        }
+                        if (faunaMedal)
+                        {
+                            medals_MataAtlantica[2] = true;
+                        }
+
+                        if (percentage > maxPercentage[0])
+                        {
+                            maxPercentage[0] = percentage;
+                        }
+
+                        if (savedAnimalsObj > maxAnimals[0])
+                        {
+                            maxAnimals[0] = savedAnimalsObj;
+                        }
+
+
+                        break;
+                    case "Pantanal":
+
+                        medals_Pantanal[0] = true;
+
+                        if (floraMedal)
+                        {
+                            medals_Pantanal[1] = true;
+                        }
+                        if (faunaMedal)
+                        {
+                            medals_Pantanal[2] = true;
+                        }
+
+                        if (percentage > maxPercentage[1])
+                        {
                             maxPercentage[1] = percentage;
-                    }
+                        }
 
-                     if (savedAnimalsObj > maxAnimals[1])
-                    {
-                        maxAnimals[1] = savedAnimalsObj;
-                    }
+                        if (savedAnimalsObj > maxAnimals[1])
+                        {
+                            maxAnimals[1] = savedAnimalsObj;
+                        }
 
-                    break;
-                    
-                     case "Amazonia":
+                        break;
 
-                      medals_Amazonia[0] = true;
-                    
-                    if (floraMedal)
-                    {
-                           medals_Amazonia[1] = true;
-                    }
-                    if (faunaMedal)
-                    {
-                           medals_Amazonia[2] = true;
-                    }
+                    case "Amazonia":
 
-                    if (percentage > maxPercentage[2])
-                    {
-                        maxPercentage[2] = percentage;
-                    }
+                        medals_Amazonia[0] = true;
 
-                     if (savedAnimalsObj > maxAnimals[2])
-                    {
-                        maxAnimals[2] = savedAnimalsObj;
-                    }
+                        if (floraMedal)
+                        {
+                            medals_Amazonia[1] = true;
+                        }
+                        if (faunaMedal)
+                        {
+                            medals_Amazonia[2] = true;
+                        }
 
-                    break;
+                        if (percentage > maxPercentage[2])
+                        {
+                            maxPercentage[2] = percentage;
+                        }
 
-                     case "Cerrado":
+                        if (savedAnimalsObj > maxAnimals[2])
+                        {
+                            maxAnimals[2] = savedAnimalsObj;
+                        }
 
-                      medals_Cerrado[0] = true;
-                    
-                    if (floraMedal)
-                    {
-                           medals_Cerrado[1] = true;
-                    }
-                    if (faunaMedal)
-                    {
-                           medals_Cerrado[2] = true;
-                    }
+                        break;
 
-                    if (percentage > maxPercentage[3])
-                    {
-                        maxPercentage[3] = percentage;
-                    }
+                    case "Cerrado":
 
-                     if (savedAnimalsObj > maxAnimals[3])
-                    {
-                        maxAnimals[3] = savedAnimalsObj;
-                    }
+                        medals_Cerrado[0] = true;
 
-                    break;
+                        if (floraMedal)
+                        {
+                            medals_Cerrado[1] = true;
+                        }
+                        if (faunaMedal)
+                        {
+                            medals_Cerrado[2] = true;
+                        }
 
-                     case "Caatinga":
+                        if (percentage > maxPercentage[3])
+                        {
+                            maxPercentage[3] = percentage;
+                        }
 
-                     
-                      medals_Caatinga[0] = true;
-                    
-                    if (floraMedal)
-                    {
-                           medals_Caatinga[1] = true;
-                    }
-                    if (faunaMedal)
-                    {
-                           medals_Caatinga[2] = true;
-                    }
+                        if (savedAnimalsObj > maxAnimals[3])
+                        {
+                            maxAnimals[3] = savedAnimalsObj;
+                        }
 
-                    if (percentage > maxPercentage[4])
-                    {
-                        maxPercentage[4] = percentage;
-                    }
+                        break;
 
-                     if (savedAnimalsObj > maxAnimals[4])
-                    {
-                        maxAnimals[4] = savedAnimalsObj;
-                    }
+                    case "Caatinga":
 
-                    break;
+
+                        medals_Caatinga[0] = true;
+
+                        if (floraMedal)
+                        {
+                            medals_Caatinga[1] = true;
+                        }
+                        if (faunaMedal)
+                        {
+                            medals_Caatinga[2] = true;
+                        }
+
+                        if (percentage > maxPercentage[4])
+                        {
+                            maxPercentage[4] = percentage;
+                        }
+
+                        if (savedAnimalsObj > maxAnimals[4])
+                        {
+                            maxAnimals[4] = savedAnimalsObj;
+                        }
+
+                        break;
                 }
 
 
