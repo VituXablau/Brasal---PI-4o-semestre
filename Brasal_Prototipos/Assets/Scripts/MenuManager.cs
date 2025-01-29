@@ -52,6 +52,17 @@ public class MenuManager : MonoBehaviour
         game_logo.GetComponent<Animator>().SetTrigger("disappear");
     }
 
+    public void Options()
+    {
+        buttons.GetComponent<Animator>().SetTrigger("disappear");
+        game_logo.GetComponent<Animator>().SetTrigger("disappear");
+        transitionScreen.SetActive(true);
+        transitionScreen.GetComponent<Animator>().SetTrigger("appear");
+        nextScene = "Options";
+
+        StartCoroutine(ChangeScene());
+    }
+
     public void Exit()
     {
         buttons.GetComponent<Animator>().SetTrigger("disappear");

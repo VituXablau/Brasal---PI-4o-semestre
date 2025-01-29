@@ -681,7 +681,7 @@ public class GameManager : MonoBehaviour
                         if (percentage > maxPercentage[4])
                         {
                             maxPercentage[4] = percentage;
-                            query = "UPDATE medalhas SET maxpercentage = @num WHERE fase = 'ccaatinga'";
+                            query = "UPDATE medalhas SET maxpercentage = @num WHERE fase = 'caatinga'";
                             num = 4;
                             UpdateDatabasePorcentagem();
                         }

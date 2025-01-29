@@ -40,7 +40,7 @@ public class DatabaseConnection : MonoBehaviour
             GameManager.medals_MataAtlantica[2] = reader.GetBoolean(2);
             GameManager.maxPercentage[0] = reader.GetFloat(3);
             GameManager.maxAnimals[0] = reader.GetInt32(4);
-            Debug.Log("Valores Mata Atlântica:" + " " + GameManager.medals_MataAtlantica[0] + " " + GameManager.medals_MataAtlantica[1] + " " + GameManager.medals_MataAtlantica[2] + " " + GameManager.maxPercentage[0] + GameManager.maxAnimals[0]); //lembrar de tirar depois, é só para observação
+            Debug.Log("Valores Mata Atlï¿½ntica:" + " " + GameManager.medals_MataAtlantica[0] + " " + GameManager.medals_MataAtlantica[1] + " " + GameManager.medals_MataAtlantica[2] + " " + GameManager.maxPercentage[0] + GameManager.maxAnimals[0]); //lembrar de tirar depois, ï¿½ sï¿½ para observaï¿½ï¿½o
         }
     }
     private void DatabaseCerrado()
@@ -100,8 +100,8 @@ public class DatabaseConnection : MonoBehaviour
             GameManager.medals_Amazonia[0] = reader.GetBoolean(0);
             GameManager.medals_Amazonia[1] = reader.GetBoolean(1);
             GameManager.medals_Amazonia[2] = reader.GetBoolean(2);
-            GameManager.maxPercentage[3] = reader.GetFloat(3);
-            GameManager.maxAnimals[4] = reader.GetInt32(4);
+            GameManager.maxPercentage[2] = reader.GetFloat(3);
+            GameManager.maxAnimals[2] = reader.GetInt32(4);
         }
     }
     public void NewGame()

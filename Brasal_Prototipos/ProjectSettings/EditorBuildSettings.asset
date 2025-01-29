@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 0596cc38183e30a4396eb807b26aa621
   - enabled: 1
+    path: Assets/Scenes/Options.unity
+    guid: a2f82e3b1548b85479fe9897fa1de0f7
+  - enabled: 1
     path: Assets/Scenes/Hub.unity
     guid: c271b59d993f30b4fbf8aaa95fe87a9c
   - enabled: 1
@@ -17,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/preMA.unity
     guid: fb5e0cbcc018e304e83fcf2a0e9d533b
+  - enabled: 1
+    path: Assets/Scenes/MataAtlanticaTutorial.unity
+    guid: 8116701b14486b74492e949fce1cb4ab
   - enabled: 1
     path: Assets/Scenes/postMA.unity
     guid: a72517f0c7eac0642a11b0ea4bb2e0d8
@@ -44,9 +50,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/postCA.unity
     guid: 22703047e4e7ea447bae0274dc5b0efa
-  - enabled: 1
-    path: Assets/Scenes/MATuto.unity
-    guid: 974e1375f0a8fe84682eabb9212f996f
   - enabled: 1
     path: Assets/Scenes/MataAtlantica.unity
     guid: addbc12769ae79e40aacc1305bbf8f4c
