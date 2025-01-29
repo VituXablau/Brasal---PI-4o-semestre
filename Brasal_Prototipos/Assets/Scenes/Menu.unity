@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -201,7 +201,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 42.08734, y: 24.640001}
+  m_Size: {x: 42.08468, y: 23.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -285,7 +285,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 42.08734, y: 24.640001}
+  m_Size: {x: 42.08468, y: 23.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -565,7 +565,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8.43, y: 8.16}
+  m_Size: {x: 4.65, y: 4.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -935,12 +935,18 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8.43, y: 8.16}
+  m_Size: {x: 4.65, y: 4.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &443302030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 910868710797081400, guid: 200ef4b3de0cf4f4da1cd4b4d24f91ee,
+    type: 3}
+  m_PrefabInstance: {fileID: 7970405843618652328}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &473720825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,7 +1025,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 42.08734, y: 24.640001}
+  m_Size: {x: 42.08468, y: 23.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1630,7 +1636,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8.43, y: 8.16}
+  m_Size: {x: 6.39, y: 6.75}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1888,7 +1894,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 42.08734, y: 24.640001}
+  m_Size: {x: 42.08468, y: 23.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2079,7 +2085,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 42.08734, y: 24.640001}
+  m_Size: {x: 42.08468, y: 23.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2163,7 +2169,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 42.08734, y: 24.640001}
+  m_Size: {x: 42.08468, y: 23.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2247,7 +2253,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 42.08734, y: 24.640001}
+  m_Size: {x: 42.08468, y: 23.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3060,7 +3066,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8.43, y: 8.16}
+  m_Size: {x: 4.65, y: 4.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3185,7 +3191,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 42.08734, y: 24.640001}
+  m_Size: {x: 42.08468, y: 23.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3432,7 +3438,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8.43, y: 8.16}
+  m_Size: {x: 5.21, y: 4.92}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3501,7 +3507,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 42.08734, y: 24.640001}
+  m_Size: {x: 42.08468, y: 23.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3851,7 +3857,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 42.08734, y: 24.640001}
+  m_Size: {x: 42.08468, y: 23.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3935,7 +3941,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 42.08734, y: 24.640001}
+  m_Size: {x: 42.08468, y: 23.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4019,7 +4025,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 42.08734, y: 24.640001}
+  m_Size: {x: 42.08468, y: 23.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4103,7 +4109,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 42.08734, y: 24.640001}
+  m_Size: {x: 42.08468, y: 23.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4397,7 +4403,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 42.08734, y: 24.640001}
+  m_Size: {x: 42.08468, y: 23.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4468,7 +4474,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8.43, y: 8.16}
+  m_Size: {x: 6.39, y: 6.75}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4580,7 +4586,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8.43, y: 8.16}
+  m_Size: {x: 10.74, y: 8.13}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4840,7 +4846,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 42.08734, y: 24.640001}
+  m_Size: {x: 42.08468, y: 23.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4939,7 +4945,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8.43, y: 8.16}
+  m_Size: {x: 5.21, y: 4.92}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -5330,7 +5336,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8.43, y: 8.16}
+  m_Size: {x: 4.65, y: 4.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -5438,12 +5444,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &1874574283 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 910868710797081400, guid: 200ef4b3de0cf4f4da1cd4b4d24f91ee,
-    type: 3}
-  m_PrefabInstance: {fileID: 7970405843618652328}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1874574284 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3605815781300558736, guid: 200ef4b3de0cf4f4da1cd4b4d24f91ee,
@@ -5515,7 +5515,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8.43, y: 8.16}
+  m_Size: {x: 6.39, y: 6.75}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -5705,6 +5705,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1919648765}
   - component: {fileID: 1919648764}
+  - component: {fileID: 1919648766}
   m_Layer: 0
   m_Name: MenuManager
   m_TagString: Untagged
@@ -5727,7 +5728,7 @@ MonoBehaviour:
   credits_window: {fileID: 1821991404}
   buttons: {fileID: 1766520137}
   game_logo: {fileID: 202271975}
-  transitionScreen: {fileID: 1874574283}
+  transitionScreen: {fileID: 443302030}
 --- !u!4 &1919648765
 Transform:
   m_ObjectHideFlags: 0
@@ -5743,6 +5744,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1919648766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919648763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ffe1fe09fde9ff4ea64164eb43f6fbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1930395740
 GameObject:
   m_ObjectHideFlags: 0
@@ -5808,7 +5821,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8.43, y: 8.16}
+  m_Size: {x: 4.65, y: 4.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -5933,7 +5946,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 42.08734, y: 24.640001}
+  m_Size: {x: 42.08468, y: 23.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

@@ -1,11 +1,16 @@
 using System.Collections;
+using System.Data;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections.Generic;
+using Mono.Data.Sqlite;
 
 public class GameManager : MonoBehaviour
 {
+    private readonly string dbfile = "URI=file:Brasal.db.db";
+    private IDbConnection conexao;
     public static GameManager Instance { get; private set; }
 
     public GameObject[] treesObj, animalsObj;
@@ -32,7 +37,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject endScreen, pauseScreen, Medal_Console, HUDobj, notPanel, pausenotPanel, player, continueButton, fakePlayer, esc, transitionScreen;
     [SerializeField] GameObject[] earnedMedals, fakeAnimals;
 
-    string currentScene, nextScene;
+    string currentScene, nextScene, query;
+
+    int num;
 
     [SerializeField] Sprite sp_medal1, sp_medal2, sp_medal3;
 
@@ -44,15 +51,13 @@ public class GameManager : MonoBehaviour
    medals_Cerrado = new bool[3],
    medals_Caatinga = new bool[3];
 
-
     public static float[] maxPercentage = { 0, 0, 0, 0, 0 };
     public static int[] maxAnimals = { 0, 0, 0, 0, 0 };
 
-
-
-
     private void Awake()
     {
+        Conectar();
+
         Instance = this;
 
         currentScene = SceneManager.GetActiveScene().name;
@@ -473,76 +478,108 @@ public class GameManager : MonoBehaviour
                     case "MataAtlantica":
 
                         medals_MataAtlantica[0] = true;
+                        query = "UPDATE medalhas SET medalhaconclusao = true WHERE fase = 'mataatlantica'";
+                        UpdateDatabase();
 
                         if (floraMedal)
                         {
                             medals_MataAtlantica[1] = true;
+                            query = "UPDATE medalhas SET medalhapreservacao = true WHERE fase = 'mataatlantica'";
+                            UpdateDatabase();
                         }
                         if (faunaMedal)
                         {
                             medals_MataAtlantica[2] = true;
+                            query = "UPDATE medalhas SET medalhaprotecao = true WHERE fase = 'mataatlantica'";
+                            UpdateDatabase();
                         }
 
                         if (percentage > maxPercentage[0])
                         {
                             maxPercentage[0] = percentage;
+                            query = "UPDATE medalhas SET maxpercentage = @num WHERE fase = 'mataatlantica'";
+                            num = 0;
+                            UpdateDatabasePorcentagem();
                         }
 
                         if (savedAnimalsObj > maxAnimals[0])
                         {
                             maxAnimals[0] = savedAnimalsObj;
+                            query = "UPDATE medalhas SET maxAnimals = @num WHERE fase = 'mataatlantica'";
+                            num = 0;
+                            UpdateDatabaseAnimal();
                         }
-
-
-
 
                         break;
                     case "MataAtlanticaTutorial":
 
                         medals_MataAtlantica[0] = true;
+                        query = "UPDATE medalhas SET medalhaconclusao = true WHERE fase = 'mataatlantica'";
+                        UpdateDatabase();
 
                         if (floraMedal)
                         {
                             medals_MataAtlantica[1] = true;
+                            query = "UPDATE medalhas SET medalhapreservacao = true WHERE fase = 'mataatlantica'";
+                            UpdateDatabase();
                         }
                         if (faunaMedal)
                         {
                             medals_MataAtlantica[2] = true;
+                            query = "UPDATE medalhas SET medalhaprotecao = true WHERE fase = 'mataatlantica'";
+                            UpdateDatabase();
                         }
 
                         if (percentage > maxPercentage[0])
                         {
                             maxPercentage[0] = percentage;
+                            query = "UPDATE medalhas SET maxpercentage = @num WHERE fase = 'mataatlantica'";
+                            num = 0;
+                            UpdateDatabasePorcentagem();
                         }
 
                         if (savedAnimalsObj > maxAnimals[0])
                         {
                             maxAnimals[0] = savedAnimalsObj;
+                            query = "UPDATE medalhas SET maxAnimals = @num WHERE fase = 'mataatlantica'";
+                            num = 0;
+                            UpdateDatabaseAnimal();
                         }
-
 
                         break;
                     case "Pantanal":
 
                         medals_Pantanal[0] = true;
+                        query = "UPDATE medalhas SET medalhaconclusao = true WHERE fase = 'pantanal'";
+                        UpdateDatabase();
 
                         if (floraMedal)
                         {
                             medals_Pantanal[1] = true;
+                            query = "UPDATE medalhas SET medalhapreservacao = true WHERE fase = 'pantanal'";
+                            UpdateDatabase();
                         }
                         if (faunaMedal)
                         {
                             medals_Pantanal[2] = true;
+                            query = "UPDATE medalhas SET medalhaprotecao = true WHERE fase = 'pantanal'";
+                            UpdateDatabase();
                         }
 
                         if (percentage > maxPercentage[1])
                         {
                             maxPercentage[1] = percentage;
+                            query = "UPDATE medalhas SET maxpercentage = @num WHERE fase = 'pantanal'";
+                            num = 1;
+                            UpdateDatabasePorcentagem();
                         }
 
                         if (savedAnimalsObj > maxAnimals[1])
                         {
                             maxAnimals[1] = savedAnimalsObj;
+                            query = "UPDATE medalhas SET maxAnimals = @num WHERE fase = 'pantanal'";
+                            num = 1;
+                            UpdateDatabaseAnimal();
                         }
 
                         break;
@@ -550,24 +587,36 @@ public class GameManager : MonoBehaviour
                     case "Amazonia":
 
                         medals_Amazonia[0] = true;
+                        query = "UPDATE medalhas SET medalhaconclusao = true WHERE fase = 'amazonia'";
+                        UpdateDatabase();
 
                         if (floraMedal)
                         {
                             medals_Amazonia[1] = true;
+                            query = "UPDATE medalhas SET medalhapreservacao = true WHERE fase = 'amazonia'";
+                            UpdateDatabase();
                         }
                         if (faunaMedal)
                         {
                             medals_Amazonia[2] = true;
+                            query = "UPDATE medalhas SET medalhaprotecao = true WHERE fase = 'amazonia'";
+                            UpdateDatabase();
                         }
 
                         if (percentage > maxPercentage[2])
                         {
                             maxPercentage[2] = percentage;
+                            query = "UPDATE medalhas SET maxpercentage = @num WHERE fase = 'amazonia'";
+                            num = 2;
+                            UpdateDatabasePorcentagem();
                         }
 
                         if (savedAnimalsObj > maxAnimals[2])
                         {
                             maxAnimals[2] = savedAnimalsObj;
+                            query = "UPDATE medalhas SET maxAnimals = @num WHERE fase = 'amazonia'";
+                            num = 2;
+                            UpdateDatabaseAnimal();
                         }
 
                         break;
@@ -575,24 +624,36 @@ public class GameManager : MonoBehaviour
                     case "Cerrado":
 
                         medals_Cerrado[0] = true;
+                        query = "UPDATE medalhas SET medalhaconclusao = true WHERE fase = 'cerrado'";
+                        UpdateDatabase();
 
                         if (floraMedal)
                         {
                             medals_Cerrado[1] = true;
+                            query = "UPDATE medalhas SET medalhapreservacao = true WHERE fase = 'cerrado'";
+                            UpdateDatabase();
                         }
                         if (faunaMedal)
                         {
                             medals_Cerrado[2] = true;
+                            query = "UPDATE medalhas SET medalhaprotecao = true WHERE fase = 'cerrado'";
+                            UpdateDatabase();
                         }
 
                         if (percentage > maxPercentage[3])
                         {
                             maxPercentage[3] = percentage;
+                            query = "UPDATE medalhas SET maxpercentage = @num WHERE fase = 'cerrado'";
+                            num = 3;
+                            UpdateDatabasePorcentagem();
                         }
 
                         if (savedAnimalsObj > maxAnimals[3])
                         {
                             maxAnimals[3] = savedAnimalsObj;
+                            query = "UPDATE medalhas SET maxAnimals = @num WHERE fase = 'cerrado'";
+                            num = 3;
+                            UpdateDatabaseAnimal();
                         }
 
                         break;
@@ -601,30 +662,40 @@ public class GameManager : MonoBehaviour
 
 
                         medals_Caatinga[0] = true;
+                        query = "UPDATE medalhas SET medalhaconclusao = true WHERE fase = 'caatinga'";
+                        UpdateDatabase();
 
                         if (floraMedal)
                         {
                             medals_Caatinga[1] = true;
+                            query = "UPDATE medalhas SET medalhapreservacao = true WHERE fase = 'caatinga'";
+                            UpdateDatabase();
                         }
                         if (faunaMedal)
                         {
                             medals_Caatinga[2] = true;
+                            query = "UPDATE medalhas SET medalhaprotecao = true WHERE fase = 'caatinga'";
+                            UpdateDatabase();
                         }
 
                         if (percentage > maxPercentage[4])
                         {
                             maxPercentage[4] = percentage;
+                            query = "UPDATE medalhas SET maxpercentage = @num WHERE fase = 'ccaatinga'";
+                            num = 4;
+                            UpdateDatabasePorcentagem();
                         }
 
                         if (savedAnimalsObj > maxAnimals[4])
                         {
                             maxAnimals[4] = savedAnimalsObj;
+                            query = "UPDATE medalhas SET maxAnimals = @num WHERE fase = 'caatinga'";
+                            num = 4;
+                            UpdateDatabaseAnimal();
                         }
 
                         break;
                 }
-
-
             
             }
 
@@ -666,6 +737,45 @@ public class GameManager : MonoBehaviour
         // {
         //     numAnimals_text.text = "Todos os animais foram salvos";
         // }
+    }
+    private void Conectar()
+    {
+        conexao = new SqliteConnection(dbfile);
+        try
+        {
+            conexao.Open();
+            Debug.Log("conexao ok");
+        }
+        catch { Debug.Log("erro"); }
+    }
+
+    void UpdateDatabase()
+    {
+        using (var comando = conexao.CreateCommand())
+        {
+            comando.CommandText = query;
+            comando.ExecuteNonQuery();
+        }
+    }
+
+    void UpdateDatabasePorcentagem()
+    {
+        using (var comando = conexao.CreateCommand())
+        {
+            comando.CommandText = query;
+            comando.Parameters.Add(new SqliteParameter("@num", maxPercentage[num]));
+            comando.ExecuteNonQuery();
+        }
+    }
+
+    void UpdateDatabaseAnimal()
+    {
+        using (var comando = conexao.CreateCommand())
+        {
+            comando.CommandText = query;
+            comando.Parameters.Add(new SqliteParameter("@num", maxAnimals[num]));
+            comando.ExecuteNonQuery();
+        }
     }
 
     IEnumerator PrepareNextToBurn(float waitTime)

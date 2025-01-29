@@ -5,10 +5,15 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 using System;
+using UnityEditor.Search;
+using System.Data;
+using Mono.Data.Sqlite;
 
 public class Cutscenes : MonoBehaviour
 {
-
+    private readonly string dbfile = "URI=file:Brasal.db.db";
+    private IDbConnection conexao;
+    string query;
     [SerializeField] SkinnedMeshRenderer cinza_face, amarelo_face, vermelho_face, roxo_face, azul_face;
     [SerializeField] Material neutral, happy, sad, angry;
     [SerializeField] Sprite cinza, amarelo, vermelho, roxo, azul, blank;
@@ -26,6 +31,7 @@ public class Cutscenes : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Conectar();
         transitionScreen.SetActive(true);
         dialogueBox.GetComponent<Animator>().SetTrigger("stayblack");
         currentScene = SceneManager.GetActiveScene().name;
@@ -134,12 +140,16 @@ public class Cutscenes : MonoBehaviour
             case "postMA":
                 StartCoroutine(postMA());
                 MenuManager.firstTimePlaying = false;
+                query = "UPDATE firsttime SET firstTimePlaying = false WHERE id = 1";
+                UpdateDatabase();
                 break;
             case "prePA":
                 StartCoroutine(prePA());
                 break;
             case "postPA":
                 MenuManager.firstTimePA = false;
+                query = "UPDATE firsttime SET firstTimePA = false WHERE id = 1";
+                UpdateDatabase();
                 StartCoroutine(postPA());
                 break;
             case "preAM":
@@ -147,6 +157,8 @@ public class Cutscenes : MonoBehaviour
                 break;
             case "postAM":
                 MenuManager.firstTimeAM = false;
+                query = "UPDATE firsttime SET firstTimeAM = false WHERE id = 1";
+                UpdateDatabase();
                 StartCoroutine(postAM());
                 break;
             case "preCE":
@@ -154,6 +166,8 @@ public class Cutscenes : MonoBehaviour
                 break;
             case "postCE":
                 MenuManager.firstTimeCE = false;
+                query = "UPDATE firsttime SET firstTimeCE = false WHERE id = 1";
+                UpdateDatabase();
                 StartCoroutine(postCE());
                 break;
             case "preCA":
@@ -161,6 +175,8 @@ public class Cutscenes : MonoBehaviour
                 break;
             case "postCA":
                 MenuManager.firstTimeCA = false;
+                query = "UPDATE firsttime SET firstTimeCA = false WHERE id = 1";
+                UpdateDatabase();
                 StartCoroutine(postCA());
                 break;
             case "NormalEnding":
@@ -1610,5 +1626,23 @@ public class Cutscenes : MonoBehaviour
 
         skippable = true;
 
+    }
+    private void Conectar()
+    {
+        conexao = new SqliteConnection(dbfile);
+        try
+        {
+            conexao.Open();
+            Debug.Log("conexao ok");
+        }
+        catch { Debug.Log("erro"); }
+    }
+    void UpdateDatabase()
+    {
+        using (var comando = conexao.CreateCommand())
+        {
+            comando.CommandText = query;
+            comando.ExecuteNonQuery();
+        }
     }
 }
