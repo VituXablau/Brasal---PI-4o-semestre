@@ -98,11 +98,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: personagem_apagandofogo
-      takeName: personagem_apagandofogo
+      name: personagem_parado (1)
+      takeName: personagem_parado
       internalID: -1242003504988958198
       firstFrame: 0
-      lastFrame: 90
+      lastFrame: 120
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
