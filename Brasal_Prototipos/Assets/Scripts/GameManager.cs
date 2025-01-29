@@ -38,8 +38,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject[] earnedMedals, fakeAnimals;
 
     string currentScene, nextScene, query;
-    
-    bool  pausable;
+
+    bool pausable;
     int num;
 
     [SerializeField] Sprite sp_medal1, sp_medal2, sp_medal3;
@@ -133,6 +133,7 @@ public class GameManager : MonoBehaviour
 
         DisplayItems();
         Pause();
+        SkipLevel();
     }
 
     IEnumerator Beginning()
@@ -198,7 +199,7 @@ public class GameManager : MonoBehaviour
                         pausenotPanel.GetComponent<Animator>().SetInteger("estado", 1);
                         pause = true;
                         pausable = false;
-                          StartCoroutine(PauseGame());
+                        StartCoroutine(PauseGame());
                     }
 
                 }
@@ -217,7 +218,7 @@ public class GameManager : MonoBehaviour
     public void Unpause()
     {
         if (pause && pausable)
-        {   
+        {
             pausable = false;
             Time.timeScale = 1;
             pausenotPanel.GetComponent<Animator>().SetInteger("estado", 0);
@@ -724,9 +725,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void EndgameWindow()
+    void SkipLevel()
     {
-
+        if (Input.GetKeyDown(KeyCode.F8))
+            Proceed();
     }
 
     public void UpdateAnimals()

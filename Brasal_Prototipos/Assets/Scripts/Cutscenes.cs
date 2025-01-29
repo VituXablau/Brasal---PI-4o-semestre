@@ -27,12 +27,17 @@ public class Cutscenes : MonoBehaviour
     int id = 1;
 
     // Start is called before the first frame update
+    private void Awake()
+    {
+        currentScene = SceneManager.GetActiveScene().name;
+
+    }
     void Start()
     {
-        Conectar();
+         Conectar();
+
         transitionScreen.SetActive(true);
         dialogueBox.GetComponent<Animator>().SetTrigger("stayblack");
-        currentScene = SceneManager.GetActiveScene().name;
 
         if (currentScene == "Cutscene1")
         {
@@ -51,6 +56,45 @@ public class Cutscenes : MonoBehaviour
             dialogueBox.GetComponent<Animator>().SetTrigger("hidden");
             StartCoroutine(Beginning());
         }
+
+        switch (currentScene)
+        {
+
+            case "postMA":
+                MenuManager.firstTimePlaying = false;
+                query = "UPDATE firsttime SET firstTimePlaying = false WHERE id = 1";
+                UpdateDatabase();
+                break;
+
+            case "postPA":
+                MenuManager.firstTimePA = false;
+                query = "UPDATE firsttime SET firstTimePA = false WHERE id = 1";
+                UpdateDatabase();
+                break;
+
+            case "postAM":
+                MenuManager.firstTimeAM = false;
+                query = "UPDATE firsttime SET firstTimeAM = false WHERE id = 1";
+                UpdateDatabase();
+
+                break;
+
+            case "postCE":
+                MenuManager.firstTimeCE = false;
+                query = "UPDATE firsttime SET firstTimeCE = false WHERE id = 1";
+                UpdateDatabase();
+                break;
+
+            case "postCA":
+                MenuManager.firstTimeCA = false;
+                query = "UPDATE firsttime SET firstTimeCA = false WHERE id = 1";
+                UpdateDatabase();
+                break;
+
+
+
+        }
+
     }
 
     // Update is called once per frame
@@ -137,44 +181,29 @@ public class Cutscenes : MonoBehaviour
                 break;
             case "postMA":
                 StartCoroutine(postMA());
-                MenuManager.firstTimePlaying = false;
-                query = "UPDATE firsttime SET firstTimePlaying = false WHERE id = 1";
-                UpdateDatabase();
                 break;
             case "prePA":
                 StartCoroutine(prePA());
                 break;
             case "postPA":
-                MenuManager.firstTimePA = false;
-                query = "UPDATE firsttime SET firstTimePA = false WHERE id = 1";
-                UpdateDatabase();
                 StartCoroutine(postPA());
                 break;
             case "preAM":
                 StartCoroutine(preAM());
                 break;
             case "postAM":
-                MenuManager.firstTimeAM = false;
-                query = "UPDATE firsttime SET firstTimeAM = false WHERE id = 1";
-                UpdateDatabase();
                 StartCoroutine(postAM());
                 break;
             case "preCE":
                 StartCoroutine(preCE());
                 break;
             case "postCE":
-                MenuManager.firstTimeCE = false;
-                query = "UPDATE firsttime SET firstTimeCE = false WHERE id = 1";
-                UpdateDatabase();
                 StartCoroutine(postCE());
                 break;
             case "preCA":
                 StartCoroutine(preCA());
                 break;
             case "postCA":
-                MenuManager.firstTimeCA = false;
-                query = "UPDATE firsttime SET firstTimeCA = false WHERE id = 1";
-                UpdateDatabase();
                 StartCoroutine(postCA());
                 break;
             case "NormalEnding":
@@ -1504,7 +1533,7 @@ public class Cutscenes : MonoBehaviour
                 characterName.text = "";
                 dialogue.text = "Após sua excelente performance defendendo o seu país de incêndios, a Brigada Brasal foi convidada ao Planalto Central para ser premiada com medalhas de honra.";
                 dialogueBox.GetComponent<Image>().sprite = blank;
-                
+
 
                 break;
 
@@ -1512,28 +1541,28 @@ public class Cutscenes : MonoBehaviour
                 characterName.text = "Amarelo";
                 dialogue.text = "Ótimo trabalho, todos vocês!!!";
                 dialogueBox.GetComponent<Image>().sprite = amarelo;
-                 amarelo_face.material = happy;
+                amarelo_face.material = happy;
                 break;
 
             case 3:
                 characterName.text = "Cinza";
                 dialogue.text = "Não teríamos conseguido sem o senhor!";
                 dialogueBox.GetComponent<Image>().sprite = cinza;
-                   cinza_face.material = happy;
+                cinza_face.material = happy;
                 break;
 
             case 4:
                 characterName.text = "Vermelho";
                 dialogue.text = "De forma alguma!!!";
                 dialogueBox.GetComponent<Image>().sprite = vermelho;
-                   vermelho_face.material = happy;
+                vermelho_face.material = happy;
                 break;
 
             case 5:
                 characterName.text = "Roxo";
                 dialogue.text = "Com uma liderança dessas, é claro que íamos ser excepcionais.";
                 dialogueBox.GetComponent<Image>().sprite = roxo;
-                   roxo_face.material = happy;
+                roxo_face.material = happy;
                 break;
 
             case 6:
