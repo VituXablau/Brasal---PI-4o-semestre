@@ -38,7 +38,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject[] earnedMedals, fakeAnimals;
 
     string currentScene, nextScene, query;
-
+    
+    bool  pausable;
     int num;
 
     [SerializeField] Sprite sp_medal1, sp_medal2, sp_medal3;
@@ -66,8 +67,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        pausable = false;
         transitionScreen.SetActive(true);
-
         StartCoroutine(Beginning());
 
         if (currentScene == "MataAtlanticaTutorial")
@@ -140,6 +141,7 @@ public class GameManager : MonoBehaviour
         transitionScreen.GetComponent<Animator>().SetTrigger("disappear");
         yield return new WaitForSeconds(0.3f);
         transitionScreen.SetActive(false);
+        pausable = true;
     }
 
     public void RestartLevel()
@@ -190,24 +192,38 @@ public class GameManager : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.Escape))
                 {
-                    Time.timeScale = 0;
-                    pauseScreen.SetActive(true);
-                    pausenotPanel.GetComponent<Animator>().SetInteger("estado", 1);
+                    if (pausable)
+                    {
+                        pauseScreen.SetActive(true);
+                        pausenotPanel.GetComponent<Animator>().SetInteger("estado", 1);
+                        pause = true;
+                        pausable = false;
+                          StartCoroutine(PauseGame());
+                    }
 
-                    pause = true;
                 }
             }
 
         }
 
     }
+    IEnumerator PauseGame()
+    {
+        yield return new WaitForSeconds(0.7f);
+        pausable = true;
+        Time.timeScale = 0;
+    }
 
     public void Unpause()
     {
-        Time.timeScale = 1;
-        pausenotPanel.GetComponent<Animator>().SetInteger("estado", 0);
-        pause = false;
-        StartCoroutine(DeactivatePause());
+        if (pause && pausable)
+        {   
+            pausable = false;
+            Time.timeScale = 1;
+            pausenotPanel.GetComponent<Animator>().SetInteger("estado", 0);
+            StartCoroutine(DeactivatePause());
+        }
+
     }
 
     public void EndTutorial()
@@ -239,6 +255,8 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f);
         pauseScreen.SetActive(false);
+        pause = false;
+        pausable = true;
 
     }
 
@@ -696,7 +714,7 @@ public class GameManager : MonoBehaviour
 
                         break;
                 }
-            
+
             }
 
             if (levelCurTime_Sec < 10)

@@ -4,8 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
-using System;
-using UnityEditor.Search;
 using System.Data;
 using Mono.Data.Sqlite;
 
