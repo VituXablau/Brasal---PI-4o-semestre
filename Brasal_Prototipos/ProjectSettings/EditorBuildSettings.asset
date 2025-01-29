@@ -45,7 +45,7 @@ EditorBuildSettings:
     path: Assets/Scenes/postCA.unity
     guid: 22703047e4e7ea447bae0274dc5b0efa
   - enabled: 1
-    path: Assets/Scenes/MataAtlanticaTutorial.unity
+    path: Assets/Scenes/MATuto.unity
     guid: 974e1375f0a8fe84682eabb9212f996f
   - enabled: 1
     path: Assets/Scenes/MataAtlantica.unity

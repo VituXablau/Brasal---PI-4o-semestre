@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
 
     private bool isInteractingWithSomething = false;
 
+    private bool onWater = false;
+
     //Sistema de itens
     private enum itens { none, drone, satellite, sprinkler, waterBomber }
     private string itemName = "none";
@@ -109,6 +111,17 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("Walking", false);
 
 
+        
+        if (onWater)
+        {
+            agent.speed = 2.5f;
+        }
+        else
+        {
+            agent.speed = 3.5f;
+        }
+
+
     }
 
     void ItemCursor()
@@ -195,6 +208,33 @@ public class PlayerController : MonoBehaviour
         {
             agent.SetDestination(this.transform.position);
             animator.SetBool("Walking", false);
+        }
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.layer == 4)
+        {
+            onWater = true;
+        }
+
+       
+    }
+
+      void OnTriggerStay(Collider col)
+    {
+        if (col.gameObject.layer == 4)
+        {
+            onWater = true;
+        }
+      
+    }
+
+     void OnTriggerExit(Collider col)
+    {
+        if (col.gameObject.layer == 4)
+        {
+            onWater = false;
         }
     }
 

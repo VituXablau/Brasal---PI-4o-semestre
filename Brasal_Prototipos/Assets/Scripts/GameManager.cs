@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         transitionScreen.SetActive(true);
-
+        pause = true;
         StartCoroutine(Beginning());
 
         if (currentScene == "MataAtlanticaTutorial")
@@ -135,6 +135,7 @@ public class GameManager : MonoBehaviour
         transitionScreen.GetComponent<Animator>().SetTrigger("disappear");
         yield return new WaitForSeconds(0.3f);
         transitionScreen.SetActive(false);
+        pause = false;
     }
 
     public void RestartLevel()
@@ -185,24 +186,36 @@ public class GameManager : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.Escape))
                 {
-                    Time.timeScale = 0;
+                    StartCoroutine(PauseTime());
                     pauseScreen.SetActive(true);
                     pausenotPanel.GetComponent<Animator>().SetInteger("estado", 1);
 
-                    pause = true;
+
                 }
             }
 
         }
 
     }
+    IEnumerator PauseTime()
+    {
+        yield return new WaitForSeconds(0.7f);
+        Time.timeScale = 0;
+        pause = true;
+    }
+
+
 
     public void Unpause()
     {
-        Time.timeScale = 1;
-        pausenotPanel.GetComponent<Animator>().SetInteger("estado", 0);
-        pause = false;
-        StartCoroutine(DeactivatePause());
+        if (pause)
+        {
+            Time.timeScale = 1;
+            pause = false;
+            pausenotPanel.GetComponent<Animator>().SetInteger("estado", 0);
+            StartCoroutine(DeactivatePause());
+        }
+
     }
 
     public void EndTutorial()
@@ -625,7 +638,7 @@ public class GameManager : MonoBehaviour
                 }
 
 
-            
+
             }
 
             if (levelCurTime_Sec < 10)
