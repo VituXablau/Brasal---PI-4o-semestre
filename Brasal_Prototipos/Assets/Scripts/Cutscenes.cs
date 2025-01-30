@@ -1185,7 +1185,7 @@ public class Cutscenes : MonoBehaviour
         {
             case 1:
                 characterName.text = "Amarelo";
-                dialogue.text = "Bom trabalho Vermelho! Conseguiu descobrir a causa do incêndio que presenciamos?";
+                dialogue.text = "Bom trabalho, Vermelho! Conseguiu descobrir a causa do incêndio que presenciamos?";
                 dialogueBox.GetComponent<Image>().sprite = amarelo;
 
                 break;
