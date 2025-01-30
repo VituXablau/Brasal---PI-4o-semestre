@@ -166,7 +166,7 @@ public class TutorialManager : MonoBehaviour
 
             case 18:
                 characterName.text = "Roxo";
-                dialogue.text = "No topo central da tela, você pode ver o tempo de fase. Ele vai diminuindo enquanto você joga. Seu desempenho será avaliado após chegar a zero. Dê seu melhor nesses três minutos, Cinza~";
+                dialogue.text = "No topo central da tela, você pode ver o tempo de fase. Ele vai diminuindo enquanto você joga. Seu desempenho será avaliado após chegar a zero. Dê seu melhor nesses dois minutos, Cinza~";
                 dialogueBox.GetComponent<Image>().sprite = roxo;
                 arrow.GetComponent<Animator>().SetTrigger("5");
                 break;

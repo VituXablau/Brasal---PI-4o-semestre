@@ -1403,7 +1403,7 @@ public class Cutscenes : MonoBehaviour
         {
             case 1:
                 characterName.text = "Amarelo";
-                dialogue.text = "Bom trabalho, Azul! Sobrevivemos em meio a um calor de 35°, isso sem contar o fogo! Ha, ha!";
+                dialogue.text = "Bom trabalho, Azul! Sobrevivemos em meio a um calor de 35°C, isso sem contar o fogo! Ha, ha!";
                 dialogueBox.GetComponent<Image>().sprite = amarelo;
 
                 break;

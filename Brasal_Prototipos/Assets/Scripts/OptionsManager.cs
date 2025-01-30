@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class OptionsManager : MonoBehaviour
 {
-    [SerializeField] GameObject transitionScreen, confirmationWindow, deleteButton;
+    [SerializeField] GameObject transitionScreen, confirmationWindow, deleteButton, volume;
+
+    public static float Volume = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -15,13 +17,7 @@ public class OptionsManager : MonoBehaviour
         StartCoroutine(Beginning());
 
         if (MenuManager.firstTimePlaying)
-        deleteButton.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+            deleteButton.SetActive(false);
     }
 
     IEnumerator Beginning()
@@ -36,6 +32,11 @@ public class OptionsManager : MonoBehaviour
         StartCoroutine(BackToMenu());
     }
 
+     public void UpdateAudioVolume(float volume)
+    {
+       Volume = volume;
+    }
+
     IEnumerator BackToMenu()
     {
         transitionScreen.SetActive(true);
@@ -47,18 +48,20 @@ public class OptionsManager : MonoBehaviour
     public void OpenWindow()
     {
         confirmationWindow.GetComponent<Animator>().SetTrigger("appear");
-            deleteButton.GetComponent<Animator>().SetTrigger("disappear");
+        deleteButton.GetComponent<Animator>().SetTrigger("disappear");
+        volume.GetComponent<Animator>().SetTrigger("disappear");
     }
 
     public void CloseWindow()
     {
         confirmationWindow.GetComponent<Animator>().SetTrigger("disappear");
-                deleteButton.GetComponent<Animator>().SetTrigger("appear");
-        
+        deleteButton.GetComponent<Animator>().SetTrigger("appear");
+        volume.GetComponent<Animator>().SetTrigger("appear");
+
     }
 
     public void Erase()
     {
-           deleteButton.GetComponent<Animator>().SetTrigger("disappear");
+        deleteButton.GetComponent<Animator>().SetTrigger("disappear");
     }
 }

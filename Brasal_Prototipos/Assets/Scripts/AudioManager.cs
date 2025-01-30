@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class AudioManager : MonoBehaviour
 
     [SerializeField] AudioClip[] music;
 
+    public static AudioMixer audioMixer;
     AudioClip newClip;
 
     bool switched = false;
@@ -43,6 +45,11 @@ public class AudioManager : MonoBehaviour
         musicSource.Play();
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
+
+    // public void UpdateAudioVolume(float volume)
+    // {
+    //     audioMixer.SetFloat("AudioVolume", volume);
+    // }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode sceneMode)
     {
@@ -102,7 +109,10 @@ public class AudioManager : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   
+        
+       musicSource.volume = OptionsManager.Volume;
+        
         if (!switched)
         {
             if (GameManager.endGame && !GameManager.gameOver)
