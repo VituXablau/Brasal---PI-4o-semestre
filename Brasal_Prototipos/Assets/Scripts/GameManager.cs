@@ -147,31 +147,37 @@ public class GameManager : MonoBehaviour
 
     public void RestartLevel()
     {
-        Time.timeScale = 1f;
-
-        if (pause)
+        if (pausable)
         {
-            pausenotPanel.GetComponent<Animator>().SetInteger("estado", 0);
-        }
-        else
-        {
-            notPanel.GetComponent<Animator>().SetInteger("estado", 0);
-            Medal_Console.GetComponent<Animator>().SetInteger("estado", 0);
+            Time.timeScale = 1f;
 
-            for (int i = 0; i < earnedMedals.Length; i++)
+            if (pause)
             {
-                earnedMedals[i].SetActive(false);
+                //pausenotPanel.GetComponent<Animator>().SetInteger("estado", 0);
             }
+            else
+            {
+                notPanel.GetComponent<Animator>().SetInteger("estado", 0);
+                Medal_Console.GetComponent<Animator>().SetInteger("estado", 0);
+
+                for (int i = 0; i < earnedMedals.Length; i++)
+                {
+                    earnedMedals[i].SetActive(false);
+                }
+            }
+
+            transitionScreen.SetActive(true);
+            transitionScreen.GetComponent<Animator>().SetTrigger("appear");
+
+            StartCoroutine(GoToRestart());
         }
 
-        StartCoroutine(GoToRestart());
 
     }
 
     IEnumerator GoToRestart()
     {
-        transitionScreen.SetActive(true);
-        transitionScreen.GetComponent<Animator>().SetTrigger("appear");
+
         yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene(currentScene);
 
@@ -210,7 +216,7 @@ public class GameManager : MonoBehaviour
     }
     IEnumerator PauseGame()
     {
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(0.3f);
         pausable = true;
         Time.timeScale = 0;
     }
@@ -263,23 +269,27 @@ public class GameManager : MonoBehaviour
 
     public void Menu()
     {
-        Time.timeScale = 1f;
-        if (pause)
+        if (pausable)
         {
-            pausenotPanel.GetComponent<Animator>().SetInteger("estado", 0);
-        }
-        else
-        {
-            notPanel.GetComponent<Animator>().SetInteger("estado", 0);
-            Medal_Console.GetComponent<Animator>().SetInteger("estado", 0);
-
-            for (int i = 0; i < earnedMedals.Length; i++)
+            Time.timeScale = 1f;
+            if (pause)
             {
-                earnedMedals[i].SetActive(false);
+                pausenotPanel.GetComponent<Animator>().SetInteger("estado", 0);
             }
+            else
+            {
+                notPanel.GetComponent<Animator>().SetInteger("estado", 0);
+                Medal_Console.GetComponent<Animator>().SetInteger("estado", 0);
+
+                for (int i = 0; i < earnedMedals.Length; i++)
+                {
+                    earnedMedals[i].SetActive(false);
+                }
+            }
+
+            StartCoroutine(GoToMenu());
         }
 
-        StartCoroutine(GoToMenu());
 
     }
 

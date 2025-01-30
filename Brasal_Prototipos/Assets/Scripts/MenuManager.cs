@@ -1,9 +1,6 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Data;
-using Mono.Data.Sqlite;
-
 
 public class MenuManager : MonoBehaviour
 {
@@ -15,35 +12,21 @@ public class MenuManager : MonoBehaviour
     string nextScene;
 
 
-    private readonly string dbfile = "URI=file:Brasal.db.db";
-    private IDbConnection conexao;
-    string query;
-
-    private void Conectar()
-    {
-        conexao = new SqliteConnection(dbfile);
-        try
-        {
-            conexao.Open();
-            Debug.Log("conexao ok");
-        }
-        catch { Debug.Log("erro"); }
-    }
-
-    void UpdateDatabase()
-    {
-        using (var comando = conexao.CreateCommand())
-        {
-            comando.CommandText = query;
-            comando.ExecuteNonQuery();
-        }
-    }
 
     void Start()
     {
-        transitionScreen.SetActive(false);
-        Conectar();
+        transitionScreen.SetActive(true);
+        transitionScreen.GetComponent<Animator>().SetTrigger("disappear");
+        StartCoroutine(Beginning());
 
+
+    }
+
+    IEnumerator Beginning()
+    {
+        yield return new WaitForSeconds(0.3f);
+
+        transitionScreen.SetActive(false);
     }
 
     public void StartGame()
@@ -80,10 +63,6 @@ public class MenuManager : MonoBehaviour
         credits_window.GetComponent<Animator>().SetTrigger("appear");
         buttons.GetComponent<Animator>().SetTrigger("disappear");
         game_logo.GetComponent<Animator>().SetTrigger("disappear");
-
-          MenuManager.firstTimePlaying = false;
-        query = "UPDATE firsttime SET firstTimePlaying = false WHERE id = 1";
-        UpdateDatabase();
 
     }
 
