@@ -1373,7 +1373,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Beatriz Nascimento\nBruno Barros\n\xCDcaro P\xEDres\nVictor Cordeiro\n\nOrientador:
+  m_text: "Beatriz Nascimento\nBruno Barros\n\xCDcaro Pires\nVictor Cordeiro\n\nOrientador:
     Eduardo Souto"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 395f73ec126020f49a411d2c54384088, type: 2}

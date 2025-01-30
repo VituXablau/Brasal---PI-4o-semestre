@@ -34,7 +34,7 @@ public class Cutscenes : MonoBehaviour
     }
     void Start()
     {
-         Conectar();
+        Conectar();
 
         transitionScreen.SetActive(true);
         dialogueBox.GetComponent<Animator>().SetTrigger("stayblack");
@@ -396,7 +396,7 @@ public class Cutscenes : MonoBehaviour
 
             case 17:
                 characterName.text = "Roxo";
-                dialogue.text = "Eu posso não ser tão empolgada quanto o Vermelho, mas pode apostar que eu dou duro no meu trabalho.";
+                dialogue.text = "Eu posso não ser tão empolgada quanto a Vermelho, mas pode apostar que eu dou duro no meu trabalho.";
                 dialogueBox.GetComponent<Image>().sprite = roxo;
                 vermelho_face.material = neutral;
                 amarelo_face.material = neutral;
@@ -526,14 +526,15 @@ public class Cutscenes : MonoBehaviour
 
                 yield return new WaitForSeconds(0.5f);
 
-                if (!HubManager.beatEverything && !HubManager.beatEverything)
+                if (!HubManager.beatEverything)
                 {
                     SceneManager.LoadScene("preMA");
                 }
-                else
+                else if (HubManager.beatEverything)
                 {
                     SceneManager.LoadScene("CutscenesRoom");
                 }
+                
                 break;
         }
 
@@ -598,14 +599,15 @@ public class Cutscenes : MonoBehaviour
 
                 yield return new WaitForSeconds(0.5f);
 
-                if (!HubManager.beatEverything && !HubManager.beatEverything)
+                if (!HubManager.beatEverything)
                 {
                     SceneManager.LoadScene("MataAtlanticaTutorial");
                 }
-                else
+                else if (HubManager.beatEverything)
                 {
                     SceneManager.LoadScene("CutscenesRoom");
                 }
+
                 break;
 
 
@@ -687,11 +689,11 @@ public class Cutscenes : MonoBehaviour
                 transitionScreen.GetComponent<Animator>().SetTrigger("appear");
                 yield return new WaitForSeconds(0.5f);
 
-                if (!HubManager.beatEverything && !HubManager.beatEverything)
+                if (!HubManager.beatEverything)
                 {
                     SceneManager.LoadScene("Hub");
                 }
-                else
+                else if (HubManager.beatEverything)
                 {
                     SceneManager.LoadScene("CutscenesRoom");
                 }
@@ -781,15 +783,15 @@ public class Cutscenes : MonoBehaviour
                 transitionScreen.GetComponent<Animator>().SetTrigger("appear");
                 yield return new WaitForSeconds(0.5f);
 
-
-                if (!HubManager.beatEverything && !HubManager.beatEverything)
+                if (!HubManager.beatEverything)
                 {
                     SceneManager.LoadScene("Pantanal");
                 }
-                else
+                else if (HubManager.beatEverything)
                 {
                     SceneManager.LoadScene("CutscenesRoom");
                 }
+
                 break;
 
         }
@@ -910,14 +912,16 @@ public class Cutscenes : MonoBehaviour
                 transitionScreen.GetComponent<Animator>().SetTrigger("appear");
                 yield return new WaitForSeconds(0.5f);
 
-                if (!HubManager.beatEverything && !HubManager.beatEverything)
+
+                if (!HubManager.beatEverything)
                 {
                     SceneManager.LoadScene("Hub");
                 }
-                else
+                else if (HubManager.beatEverything)
                 {
                     SceneManager.LoadScene("CutscenesRoom");
                 }
+
                 break;
 
 
@@ -981,14 +985,15 @@ public class Cutscenes : MonoBehaviour
                 transitionScreen.GetComponent<Animator>().SetTrigger("appear");
                 yield return new WaitForSeconds(0.5f);
 
-                if (!HubManager.beatEverything && !HubManager.beatEverything)
+                if (!HubManager.beatEverything)
                 {
                     SceneManager.LoadScene("Amazonia");
                 }
-                else
+                else if (HubManager.beatEverything)
                 {
                     SceneManager.LoadScene("CutscenesRoom");
                 }
+
                 break;
 
 
@@ -1046,17 +1051,16 @@ public class Cutscenes : MonoBehaviour
                 yield return new WaitForSeconds(0.5f);
 
 
-                if (!HubManager.beatEverything && !HubManager.beatEverything)
+                if (!HubManager.beatEverything)
                 {
                     SceneManager.LoadScene("Hub");
                 }
-                else
+                else if (HubManager.beatEverything)
                 {
                     SceneManager.LoadScene("CutscenesRoom");
                 }
+
                 break;
-
-
 
 
         }
@@ -1160,14 +1164,16 @@ public class Cutscenes : MonoBehaviour
                 transitionScreen.GetComponent<Animator>().SetTrigger("appear");
                 yield return new WaitForSeconds(0.5f);
 
-                if (!HubManager.beatEverything && !HubManager.beatEverything)
+
+                if (!HubManager.beatEverything)
                 {
                     SceneManager.LoadScene("Cerrado");
                 }
-                else
+                else if (HubManager.beatEverything)
                 {
                     SceneManager.LoadScene("CutscenesRoom");
                 }
+
                 break;
 
 
@@ -1267,14 +1273,15 @@ public class Cutscenes : MonoBehaviour
                 transitionScreen.GetComponent<Animator>().SetTrigger("appear");
                 yield return new WaitForSeconds(0.5f);
 
-                if (!HubManager.beatEverything && !HubManager.beatEverything)
+                if (!HubManager.beatEverything)
                 {
                     SceneManager.LoadScene("Hub");
                 }
-                else
+                else if (HubManager.beatEverything)
                 {
                     SceneManager.LoadScene("CutscenesRoom");
                 }
+
                 break;
 
         }
@@ -1378,11 +1385,11 @@ public class Cutscenes : MonoBehaviour
                 yield return new WaitForSeconds(0.5f);
 
 
-                if (!HubManager.beatEverything && !HubManager.beatEverything)
+                if (!HubManager.beatEverything)
                 {
                     SceneManager.LoadScene("Caatinga");
                 }
-                else
+                else if (HubManager.beatEverything)
                 {
                     SceneManager.LoadScene("CutscenesRoom");
                 }
@@ -1428,11 +1435,12 @@ public class Cutscenes : MonoBehaviour
                 transitionScreen.GetComponent<Animator>().SetTrigger("appear");
                 yield return new WaitForSeconds(0.5f);
 
-                if (!HubManager.beatEverything && !HubManager.beatEverything)
+
+                if (!HubManager.beatEverything)
                 {
                     SceneManager.LoadScene("Hub");
                 }
-                else
+                else if (HubManager.beatEverything)
                 {
                     SceneManager.LoadScene("CutscenesRoom");
                 }
@@ -1476,7 +1484,7 @@ public class Cutscenes : MonoBehaviour
 
             case 4:
                 characterName.text = "Roxo";
-                dialogue.text = "Com uma liderança dessas, é claro que conseguir.";
+                dialogue.text = "Com uma liderança dessas, é claro que conseguiríamos.";
                 dialogueBox.GetComponent<Image>().sprite = roxo;
                 roxo_face.material = angry;
                 break;

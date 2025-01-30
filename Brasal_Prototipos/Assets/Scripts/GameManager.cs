@@ -132,12 +132,8 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (endGame && Input.GetKey(KeyCode.R))
-            SceneManager.LoadScene(0);
-
         DisplayItems();
         Pause();
-        SkipLevel();
     }
 
     IEnumerator Beginning()
@@ -313,7 +309,7 @@ public class GameManager : MonoBehaviour
                         nextScene = "postMA";
                         StartCoroutine(Proceeding());
                     }
-                    else
+                    else if (!MenuManager.firstTimePlaying)
                     {
                         nextScene = "CutscenesRoom";
                         StartCoroutine(Proceeding());

@@ -89,6 +89,7 @@ public class HubManager : MonoBehaviour
 
     void Info()
     {
+
         switch (selectedLevel)
         {
             case "mataAtlantica":
@@ -268,6 +269,9 @@ public class HubManager : MonoBehaviour
         StartCoroutine(HideButtons());
         StartCoroutine(ShowInfo());
         info_Window.SetActive(true);
+
+        endButton.GetComponent<Animator>().SetTrigger("disappear");
+        cutscenesButton.GetComponent<Animator>().SetTrigger("disappear");
     }
 
     public void Pantanal()
@@ -279,6 +283,9 @@ public class HubManager : MonoBehaviour
         StartCoroutine(ShowInfo());
         info_Window.SetActive(true);
 
+
+        endButton.GetComponent<Animator>().SetTrigger("disappear");
+        cutscenesButton.GetComponent<Animator>().SetTrigger("disappear");
     }
 
     public void FlorestaAmazonica()
@@ -289,6 +296,9 @@ public class HubManager : MonoBehaviour
         StartCoroutine(HideButtons());
         StartCoroutine(ShowInfo());
         info_Window.SetActive(true);
+
+        endButton.GetComponent<Animator>().SetTrigger("disappear");
+        cutscenesButton.GetComponent<Animator>().SetTrigger("disappear");
 
     }
 
@@ -301,6 +311,9 @@ public class HubManager : MonoBehaviour
         StartCoroutine(ShowInfo());
         info_Window.SetActive(true);
 
+        endButton.GetComponent<Animator>().SetTrigger("disappear");
+        cutscenesButton.GetComponent<Animator>().SetTrigger("disappear");
+
     }
 
     public void Caatinga()
@@ -311,6 +324,9 @@ public class HubManager : MonoBehaviour
         StartCoroutine(HideButtons());
         StartCoroutine(ShowInfo());
         info_Window.SetActive(true);
+
+        endButton.GetComponent<Animator>().SetTrigger("disappear");
+        cutscenesButton.GetComponent<Animator>().SetTrigger("disappear");
 
     }
 
@@ -381,6 +397,9 @@ public class HubManager : MonoBehaviour
 
     public void ReturnMap()
     {
+        endButton.GetComponent<Animator>().SetTrigger("appear");
+        cutscenesButton.GetComponent<Animator>().SetTrigger("appear");
+
         switch (selectedLevel)
         {
             case "mataAtlantica":
@@ -425,7 +444,7 @@ public class HubManager : MonoBehaviour
     public void CutscenesRoom()
     {
         nextScene = "CutscenesRoom";
-        
+
         StartCoroutine(ChangeScene());
     }
 
