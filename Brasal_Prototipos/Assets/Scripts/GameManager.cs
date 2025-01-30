@@ -483,16 +483,16 @@ public class GameManager : MonoBehaviour
                     faunaMedal = true;
 
                 if ((!faunaMedal) && (!floraMedal))
-                    medals_text.text = "Você conseguiu: Medalha de conclusão!";
+                    medals_text.text = "Você conseguiu: Medalha de Conclusão!";
 
                 if ((faunaMedal) && (!floraMedal))
-                    medals_text.text = "Você conseguiu: Medalha de conclusão! Medalha de Fauna!";
+                    medals_text.text = "Você conseguiu: Medalha de Conclusão! Medalha de Proteção!";
 
                 if ((!faunaMedal) && (floraMedal))
-                    medals_text.text = "Você conseguiu: Medalha de conclusão! Medalha de Preservação!";
+                    medals_text.text = "Você conseguiu: Medalha de Conclusão! Medalha de Preservação!";
 
                 if ((faunaMedal) && (floraMedal))
-                    medals_text.text = "Você conseguiu: Medalha de conclusão! Medalha de Preservação! Medalha de Fauna!";
+                    medals_text.text = "Você conseguiu: Medalha de Conclusão! Medalha de Preservação! Medalha de Proteção!";
 
                 Medal_Console.SetActive(true);
                 endScreen.SetActive(true);
