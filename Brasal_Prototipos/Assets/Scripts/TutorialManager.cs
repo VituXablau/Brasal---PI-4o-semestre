@@ -195,7 +195,7 @@ public class TutorialManager : MonoBehaviour
 
             case 22:
                 characterName.text = "Azul";
-                dialogue.text = "Ao parar na frente de um animal, você fará carinho nele, salvando-o!";
+                dialogue.text = "Ao parar na frente de um animal, você irá acalmá-lo, e ele contará como salvo!";
                 dialogueBox.GetComponent<Image>().sprite = azul;
 
                 break;
