@@ -28,7 +28,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI percentage_text, numAnimals_text, timer_text, congratulations_text, stats_text, proceed_text, medals_text;
     private float percentage;
-    private bool endGame = false, gameOver = false, winMedal, floraMedal, faunaMedal, pause, tutorial;
+    private bool winMedal, floraMedal, faunaMedal, pause, tutorial;
+
+    public static bool endGame = false, gameOver = false;
 
     [SerializeField] private Image droneIcon, satelliteIcon, sprinklerIcon, planeIcon, medal1, medal2, medal3;
 
@@ -66,7 +68,9 @@ public class GameManager : MonoBehaviour
     }
 
     void Start()
-    {
+    {   
+        endGame = false;
+        gameOver = false;
         pausable = false;
         transitionScreen.SetActive(true);
         StartCoroutine(Beginning());
