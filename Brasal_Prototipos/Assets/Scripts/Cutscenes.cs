@@ -1601,7 +1601,7 @@ public class Cutscenes : MonoBehaviour
 
             case 10:
                 characterName.text = "";
-                dialogue.text = "É com felicidade que entregamos esta medalha de serviço.";
+                dialogue.text = "É com felicidade que entregamos estas medalhas de serviço.";
                 dialogueBox.GetComponent<Image>().sprite = blank;
                 break;
 

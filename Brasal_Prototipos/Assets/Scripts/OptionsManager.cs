@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class OptionsManager : MonoBehaviour
 {
-    [SerializeField] GameObject transitionScreen, confirmationWindow, deleteButton, volume;
+    [SerializeField] GameObject transitionScreen, confirmationWindow, deleteButton, volume, soundTest;
 
-    public static float Volume = 1;
+    public AudioClip[] music;
+
+    public static AudioClip currentMusic;
+
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +21,8 @@ public class OptionsManager : MonoBehaviour
 
         if (MenuManager.firstTimePlaying)
             deleteButton.SetActive(false);
+
+        currentMusic = music[0];
     }
 
     IEnumerator Beginning()
@@ -32,10 +37,11 @@ public class OptionsManager : MonoBehaviour
         StartCoroutine(BackToMenu());
     }
 
-     public void UpdateAudioVolume(float volume)
+    public void UpdateAudioVolume(float volume)
     {
-       Volume = volume;
+        AudioManager.Volume = volume;
     }
+
 
     IEnumerator BackToMenu()
     {
@@ -50,6 +56,7 @@ public class OptionsManager : MonoBehaviour
         confirmationWindow.GetComponent<Animator>().SetTrigger("appear");
         deleteButton.GetComponent<Animator>().SetTrigger("disappear");
         volume.GetComponent<Animator>().SetTrigger("disappear");
+        soundTest.GetComponent<Animator>().SetTrigger("disappear");
     }
 
     public void CloseWindow()
@@ -57,6 +64,7 @@ public class OptionsManager : MonoBehaviour
         confirmationWindow.GetComponent<Animator>().SetTrigger("disappear");
         deleteButton.GetComponent<Animator>().SetTrigger("appear");
         volume.GetComponent<Animator>().SetTrigger("appear");
+        soundTest.GetComponent<Animator>().SetTrigger("appear");
 
     }
 
@@ -64,4 +72,38 @@ public class OptionsManager : MonoBehaviour
     {
         deleteButton.GetComponent<Animator>().SetTrigger("disappear");
     }
+
+    public void Sound1()
+    {
+        currentMusic = music[0];
+    }
+
+
+    public void Sound2()
+    {
+        currentMusic = music[1];
+
+        Debug.Log("huh");
+    }
+
+    public void Sound3()
+    {
+        currentMusic = music[2];
+    }
+
+    public void Sound4()
+    {
+        currentMusic = music[3];
+    }
+
+    public void Sound5()
+    {
+        currentMusic = music[4];
+    }
+
+    public void Sound6()
+    {
+        currentMusic = music[5];
+    }
+
 }
