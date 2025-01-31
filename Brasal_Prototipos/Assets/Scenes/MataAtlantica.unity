@@ -3332,6 +3332,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6030015550362166791, guid: 5cfa1d49b115e3a4ba6076427ca2f077,
+        type: 3}
+      propertyPath: near clip plane
+      value: -100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5723,6 +5728,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245922659}
   m_Mesh: {fileID: -7745230080545249767, guid: bce1fb655bc738d4abbb99eaebe33ca8, type: 3}
+--- !u!1 &1298679987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1298679988}
+  m_Layer: 0
+  m_Name: AirplaneSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1298679988
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298679987}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -26.9, y: 10, z: -13.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2071405122}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1333120927
 GameObject:
   m_ObjectHideFlags: 0
@@ -5776,7 +5812,7 @@ PrefabInstance:
     - target: {fileID: 5961581512150370247, guid: fbf6c30b175a4c44581bdb0d02405095,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5620098
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 5961581512150370247, guid: fbf6c30b175a4c44581bdb0d02405095,
         type: 3}
@@ -6434,6 +6470,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1750858342677011409, guid: 501d72c2785f8c847a34e4bdd3f15987,
         type: 3}
+    - target: {fileID: 5851494587582482834, guid: 522c998a5eabf024882c4a5ff3689b9a,
+        type: 3}
+      propertyPath: waterBomber_Pref
+      value: 
+      objectReference: {fileID: 3956968111691860549, guid: 38bcf0d65ca6cb340a71e923b12f0fcd,
+        type: 3}
     - target: {fileID: 8168812606445558717, guid: 522c998a5eabf024882c4a5ff3689b9a,
         type: 3}
       propertyPath: m_Name
@@ -6744,7 +6786,7 @@ PrefabInstance:
     - target: {fileID: 910868710797081400, guid: 200ef4b3de0cf4f4da1cd4b4d24f91ee,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3605815781300558736, guid: 200ef4b3de0cf4f4da1cd4b4d24f91ee,
         type: 3}
@@ -9711,6 +9753,7 @@ Transform:
   - {fileID: 1075741417}
   - {fileID: 1342384840}
   - {fileID: 679771792}
+  - {fileID: 1298679988}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2084321366

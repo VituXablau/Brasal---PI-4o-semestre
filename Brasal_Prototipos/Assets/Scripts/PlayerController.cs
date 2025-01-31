@@ -331,7 +331,7 @@ public class PlayerController : MonoBehaviour
                     break;
 
                 case "waterBomber":
-                    Instantiate(waterBomber_Pref, new Vector3(itemPos.x, waterBomber_Pref.transform.position.y, itemPos.z), quaternion.identity);
+                    Instantiate(waterBomber_Pref, new Vector3(itemPos.x, 3.15f, itemPos.z), quaternion.identity);
                     itemName = itens.none.ToString();
                     GameManager.planeCooldown = 0;
                            itemPreview.SetActive(false);

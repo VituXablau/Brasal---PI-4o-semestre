@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6291574315046270185}
   - component: {fileID: 7124740815315430513}
   - component: {fileID: 3733569176574037325}
+  - component: {fileID: -6198490911841824871}
   m_Layer: 0
   m_Name: Sprinkler
   m_TagString: Untagged
@@ -101,6 +102,27 @@ MonoBehaviour:
   layerFire:
     serializedVersion: 2
     m_Bits: 128
+--- !u!95 &-6198490911841824871
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750858342677011409}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 833a322a78b3e11449e3fda922d5f9b6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &6928225339598680886
 PrefabInstance:
   m_ObjectHideFlags: 0

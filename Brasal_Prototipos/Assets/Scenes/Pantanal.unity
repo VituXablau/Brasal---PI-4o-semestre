@@ -3811,6 +3811,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6030015550362166791, guid: 5cfa1d49b115e3a4ba6076427ca2f077,
+        type: 3}
+      propertyPath: near clip plane
+      value: -100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8553,6 +8558,12 @@ PrefabInstance:
       propertyPath: sprinkler_Pref
       value: 
       objectReference: {fileID: 1750858342677011409, guid: 501d72c2785f8c847a34e4bdd3f15987,
+        type: 3}
+    - target: {fileID: 6004126887849177117, guid: 3415a9a04b12c3b41b01213cc88fbd83,
+        type: 3}
+      propertyPath: waterBomber_Pref
+      value: 
+      objectReference: {fileID: 3956968111691860549, guid: 38bcf0d65ca6cb340a71e923b12f0fcd,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
