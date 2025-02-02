@@ -11,6 +11,9 @@ public class OptionsManager : MonoBehaviour
 
     public static AudioClip currentMusic;
 
+     [SerializeField] int id = 0;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -72,38 +75,85 @@ public class OptionsManager : MonoBehaviour
     {
         deleteButton.GetComponent<Animator>().SetTrigger("disappear");
     }
+    
+    void Update()
+    {   
+        if (id == 3)
+         currentMusic = music[6];
+    }
 
     public void Sound1()
     {
         currentMusic = music[0];
+
+        if (id == 2)
+        {
+            id = 3;
+            MenuManager.sa2 = true;
+            currentMusic = music[6];
+
+        }
+        else
+        {
+            id = 0;
+            currentMusic = music[0];
+        }
+
+        Debug.Log(id);
+
+        
+        if (id == 3)
+        {
+            currentMusic = music[6];
+
+        }
+        
     }
 
 
     public void Sound2()
     {
         currentMusic = music[1];
+        if (id == 1)
+            id = 2;
+        else id = 0;
 
-        Debug.Log("huh");
+        Debug.Log(id);
     }
 
     public void Sound3()
     {
         currentMusic = music[2];
+        id = 0;
+
+        Debug.Log(id);
     }
 
     public void Sound4()
     {
         currentMusic = music[3];
+        id = 0;
+
+        Debug.Log(id);
     }
 
     public void Sound5()
     {
         currentMusic = music[4];
+        id = 0;
+
+        Debug.Log(id);
     }
 
     public void Sound6()
     {
         currentMusic = music[5];
+        if (id == 0)
+            id = 1;
+
+
+        Debug.Log(id);
     }
+
 
 }

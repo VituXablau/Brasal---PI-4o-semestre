@@ -48,9 +48,18 @@ public class AudioManager : MonoBehaviour
         // music[4] = lose;
         // music[5] = finale
 
+        if (MenuManager.sa2)
+        {
+            musicSource.clip = music[7];
+            musicSource.Play();
 
-        musicSource.clip = music[0];
-        musicSource.Play();
+        }
+        else if (!MenuManager.sa2)
+        {
+            musicSource.clip = music[0];
+            musicSource.Play();
+        }
+
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
@@ -75,10 +84,17 @@ public class AudioManager : MonoBehaviour
         switch (scene.name)
         {
             case "Menu":
-                newClip = music[0];
+                if (MenuManager.sa2)
+                    newClip = music[6];
+                else if (!MenuManager.sa2)
+                    newClip = music[0];
+
                 break;
             case "Hub":
-                newClip = music[0];
+                if (MenuManager.sa2)
+                    newClip = music[6];
+                else if (!MenuManager.sa2)
+                    newClip = music[0];
                 break;
             case "Options":
                 newClip = music[0];
@@ -141,9 +157,9 @@ public class AudioManager : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   
+    {
         musicSource.volume = Volume;
-        
+
         if (options)
         {
             if (OptionsManager.currentMusic != musicSource.clip)
@@ -158,7 +174,6 @@ public class AudioManager : MonoBehaviour
                     musicSource.loop = true;
                 }
                 musicSource.Play();
-                Debug.Log("'-'");
             }
         }
 

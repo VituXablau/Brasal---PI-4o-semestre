@@ -1,6 +1,8 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
@@ -11,7 +13,17 @@ public class MenuManager : MonoBehaviour
 
     string nextScene;
 
+    [SerializeField] GameObject sa2_hud;
+    [SerializeField] TextMeshProUGUI[] sa2_text;
 
+    [SerializeField] Image[] sa2_images;
+
+    [SerializeField] Sprite[] sa2_sprites;
+
+    [SerializeField] GameObject[] sa2_objects;
+
+
+    public static bool sa2 = false;
 
     void Start()
     {
@@ -19,6 +31,30 @@ public class MenuManager : MonoBehaviour
         transitionScreen.GetComponent<Animator>().SetTrigger("disappear");
         StartCoroutine(Beginning());
 
+
+        if (sa2)
+        {
+            sa2_hud.SetActive(true);
+            for (int i = 0; i < sa2_text.Length; i++)
+            {
+                sa2_text[i].color = new Color(1, 1, 1, 1);
+            }
+
+            for (int i = 0; i < 5; i++)
+            {
+                sa2_images[i].GetComponent<Image>().sprite = sa2_sprites[0];
+            }
+            sa2_images[5].GetComponent<Image>().sprite = sa2_sprites[1];
+
+            sa2_objects[0].GetComponent<Image>().sprite = sa2_sprites[4];
+            sa2_objects[1].SetActive(false);
+
+
+        }
+        else
+        {
+            sa2_hud.SetActive(false);
+        }
 
     }
 
