@@ -271,12 +271,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 7
+  maxTime: 10
   burnedTree_Pref: {fileID: 6968250953220099797, guid: 659419c50033f0d4d8b08253b79d19e1,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &648020482204771078
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -541,12 +542,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 3
+  maxTime: 5
   burnedTree_Pref: {fileID: -8069283595409817985, guid: 6d2ab8de7559494449cfa669e391f9bb,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &4311900131440881274
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1165,12 +1167,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 3
+  maxTime: 7
   burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &1064162392716503007
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1396,12 +1399,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 7
+  maxTime: 10
   burnedTree_Pref: {fileID: 6968250953220099797, guid: 659419c50033f0d4d8b08253b79d19e1,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &1432473503837183776
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2246,12 +2250,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 3
+  maxTime: 7
   burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &973681014534843561
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2394,12 +2399,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 3
+  maxTime: 7
   burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &6681771197693691528
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2786,12 +2792,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 7
+  maxTime: 10
   burnedTree_Pref: {fileID: 6968250953220099797, guid: 659419c50033f0d4d8b08253b79d19e1,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &4238003494063455046
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3142,12 +3149,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 7
+  maxTime: 10
   burnedTree_Pref: {fileID: 6968250953220099797, guid: 659419c50033f0d4d8b08253b79d19e1,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &2000075203434481151
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3290,12 +3298,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 7
+  maxTime: 15
   burnedTree_Pref: {fileID: -1384943753020533813, guid: 659419c50033f0d4d8b08253b79d19e1,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &354608661294395130
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3643,12 +3652,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 7
+  maxTime: 10
   burnedTree_Pref: {fileID: 6968250953220099797, guid: 659419c50033f0d4d8b08253b79d19e1,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &6243586774608616861
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4332,12 +4342,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 3
+  maxTime: 7
   burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &41744262467393997
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4480,12 +4491,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 3
+  maxTime: 7
   burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &3136232493499525812
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5083,12 +5095,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 7
+  maxTime: 10
   burnedTree_Pref: {fileID: 6968250953220099797, guid: 659419c50033f0d4d8b08253b79d19e1,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &1215642301881289426
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5314,12 +5327,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 7
+  maxTime: 15
   burnedTree_Pref: {fileID: -1384943753020533813, guid: 659419c50033f0d4d8b08253b79d19e1,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &2876106684742625647
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5917,12 +5931,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 7
+  maxTime: 10
   burnedTree_Pref: {fileID: 6968250953220099797, guid: 659419c50033f0d4d8b08253b79d19e1,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &448351170964060399
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6273,12 +6288,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 3
+  maxTime: 7
   burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &7503443442192261894
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6421,12 +6437,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 7
+  maxTime: 15
   burnedTree_Pref: {fileID: -1384943753020533813, guid: 659419c50033f0d4d8b08253b79d19e1,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &5858202064655554307
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6569,12 +6586,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 3
+  maxTime: 7
   burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &7711108483770027818
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6964,12 +6982,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 7
+  maxTime: 10
   burnedTree_Pref: {fileID: 6968250953220099797, guid: 659419c50033f0d4d8b08253b79d19e1,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &8504351883690807183
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -7195,12 +7214,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 7
+  maxTime: 10
   burnedTree_Pref: {fileID: 6968250953220099797, guid: 659419c50033f0d4d8b08253b79d19e1,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &5487365436808403165
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -7593,12 +7613,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 3
+  maxTime: 5
   burnedTree_Pref: {fileID: -8069283595409817985, guid: 6d2ab8de7559494449cfa669e391f9bb,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &9187018775386064355
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -7866,12 +7887,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 3
+  maxTime: 7
   burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &375920814771639138
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -8014,12 +8036,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 7
+  maxTime: 15
   burnedTree_Pref: {fileID: -1384943753020533813, guid: 659419c50033f0d4d8b08253b79d19e1,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &4156375784053240105
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -8656,12 +8679,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 3
+  maxTime: 7
   burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &4455733869925619322
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -8960,12 +8984,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 7
+  maxTime: 10
   burnedTree_Pref: {fileID: 6968250953220099797, guid: 659419c50033f0d4d8b08253b79d19e1,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &4256533749802769926
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -9313,12 +9338,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 7
+  maxTime: 15
   burnedTree_Pref: {fileID: -1384943753020533813, guid: 659419c50033f0d4d8b08253b79d19e1,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &7571238260157084292
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -9988,12 +10014,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 7
+  maxTime: 15
   burnedTree_Pref: {fileID: -1384943753020533813, guid: 659419c50033f0d4d8b08253b79d19e1,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &2040718137997413503
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -10136,12 +10163,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 7
+  maxTime: 15
   burnedTree_Pref: {fileID: -1384943753020533813, guid: 659419c50033f0d4d8b08253b79d19e1,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &534499159711144073
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -10284,12 +10312,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 3
+  maxTime: 7
   burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &1366036129856576522
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -10923,12 +10952,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 7
+  maxTime: 10
   burnedTree_Pref: {fileID: 6968250953220099797, guid: 659419c50033f0d4d8b08253b79d19e1,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &436768874864575265
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -11196,12 +11226,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 3
+  maxTime: 5
   burnedTree_Pref: {fileID: -8069283595409817985, guid: 6d2ab8de7559494449cfa669e391f9bb,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &6054642860498461303
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -11552,12 +11583,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 3
+  maxTime: 5
   burnedTree_Pref: {fileID: -8069283595409817985, guid: 6d2ab8de7559494449cfa669e391f9bb,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &62803344340368307
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -11700,12 +11732,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 3
+  maxTime: 7
   burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &4502992880312129352
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -11931,12 +11964,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 3
+  maxTime: 7
   burnedTree_Pref: {fileID: -5038175748837252276, guid: 6d2ab8de7559494449cfa669e391f9bb,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &3962564639154041706
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -12079,12 +12113,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 3
+  maxTime: 5
   burnedTree_Pref: {fileID: -8069283595409817985, guid: 6d2ab8de7559494449cfa669e391f9bb,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &1760598145771712813
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -12474,12 +12509,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 7
+  maxTime: 15
   burnedTree_Pref: {fileID: -1384943753020533813, guid: 659419c50033f0d4d8b08253b79d19e1,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &7703337647067041404
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -12827,12 +12863,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 7
+  maxTime: 15
   burnedTree_Pref: {fileID: -1384943753020533813, guid: 659419c50033f0d4d8b08253b79d19e1,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &7415500798633804933
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -13100,12 +13137,13 @@ MonoBehaviour:
   isNextToBurn: 0
   burnImmediately: 0
   isBurning: 0
-  minTime: 0
-  maxTime: 0
+  minTime: 3
+  maxTime: 5
   burnedTree_Pref: {fileID: -8069283595409817985, guid: 6d2ab8de7559494449cfa669e391f9bb,
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &4819630774340283404
 NavMeshObstacle:
   m_ObjectHideFlags: 0

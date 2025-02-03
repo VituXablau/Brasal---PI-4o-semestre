@@ -110,6 +110,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &107691410849204442
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -341,6 +342,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &8505023091981757002
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -488,6 +490,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &1381316919317128631
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -636,6 +639,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &56839752319042819
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -867,6 +871,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &2383450664896939317
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1180,6 +1185,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &4359081453111531261
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1450,6 +1456,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &3731029148817196325
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1803,6 +1810,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &5714522050348620512
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1951,6 +1959,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &3573180821972090868
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2222,6 +2231,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &1029877240376353820
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2370,6 +2380,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &7856146157107607637
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2639,6 +2650,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &6488296297215719162
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -2786,6 +2798,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &7624649382286892526
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3092,6 +3105,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &6092360942177483930
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3239,6 +3253,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &6276206958208817655
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3470,6 +3485,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &5272047172732190364
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3700,6 +3716,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &2067189249585028291
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -3848,6 +3865,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &1762438809315380581
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4041,6 +4059,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &2759960069418861895
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4190,6 +4209,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &8504656295940986132
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4337,6 +4357,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &8947152599467318768
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4486,6 +4507,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &6298512707620866701
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4635,6 +4657,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &317219643274362518
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4782,6 +4805,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &504805294371721607
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -4930,6 +4954,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &5186580348003866463
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5160,6 +5185,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &5835129193617284446
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5307,6 +5333,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &7295476220442428726
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5456,6 +5483,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &4735038056269770048
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -5726,6 +5754,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &8293614310336745056
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6117,6 +6146,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &5171897320518345893
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6348,6 +6378,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &1957986153150307391
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6495,6 +6526,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &7304622403133705139
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -6859,6 +6891,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &2370063433734103176
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -7008,6 +7041,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &7348109702628069768
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -7157,6 +7191,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &1266742983872476053
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -7304,6 +7339,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &6682755766895522425
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -7534,6 +7570,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &6747818635698199857
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -7971,6 +8008,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &4150894696376898515
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -8119,6 +8157,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &8550271604005954049
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -8267,6 +8306,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &394748899340525414
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -8415,6 +8455,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &438878788829351923
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -8973,6 +9014,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &7561895702671277932
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -9121,6 +9163,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &6042143298730345619
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -9269,6 +9312,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &3343537531327573
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -9418,6 +9462,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &887378459675429309
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -9565,6 +9610,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &5336659110040248744
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -9797,6 +9843,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &6495687329928752372
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -10029,6 +10076,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &9203819157212275914
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -10178,6 +10226,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &2410104594081285495
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -10326,6 +10375,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &3727981661636776243
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -10473,6 +10523,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &9204026856552507786
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -10934,6 +10985,7 @@ MonoBehaviour:
     type: 3}
   fireEffect_Pref: {fileID: 2737788473113884972, guid: 120ee76a8cc2a7b448e8aeea010aec3d,
     type: 3}
+  satelliteMaterial: {fileID: 2100000, guid: b7da5f6d5a7fe4e458d25436053917ab, type: 2}
 --- !u!208 &7090017623815894303
 NavMeshObstacle:
   m_ObjectHideFlags: 0

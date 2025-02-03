@@ -18,10 +18,22 @@ public class TreeController : MonoBehaviour
     [SerializeField] private GameObject burnedTree_Pref, fireEffect_Pref;
     private GameObject fireEffect_Obj, objChild;
 
+    private MeshRenderer treeRenderer, objChildRenderer;
+
+    [SerializeField] private Material satelliteMaterial;
+    private Material treeMaterial, objChildMaterial;
+
     void Start()
     {
         if (gameObject.transform.childCount > 0)
+        {
             objChild = gameObject.transform.GetChild(0).gameObject;
+            objChildRenderer = objChild.GetComponent<MeshRenderer>();
+            objChildMaterial = objChildRenderer.material;
+        }
+
+        treeRenderer = GetComponent<MeshRenderer>();
+        treeMaterial = treeRenderer.material;
     }
 
     void Update()
@@ -49,6 +61,10 @@ public class TreeController : MonoBehaviour
     {
         gameObject.layer = 7;
         fireEffect_Obj = Instantiate(fireEffect_Pref, transform.position, Quaternion.identity);
+
+        if (gameObject.transform.childCount > 0)
+            objChildRenderer.material = objChildMaterial;
+        treeRenderer.material = treeMaterial;
 
         isNextToBurn = false;
         burnImmediately = false;
@@ -120,7 +136,8 @@ public class TreeController : MonoBehaviour
 
     public void ShowNextToBurn()
     {
-        //animator.SetBool("Satellite", true);
-        //animator_children.SetBool("Satellite", true);
+        if (gameObject.transform.childCount > 0)
+            objChildRenderer.material = satelliteMaterial;
+        treeRenderer.material = satelliteMaterial;
     }
 }
