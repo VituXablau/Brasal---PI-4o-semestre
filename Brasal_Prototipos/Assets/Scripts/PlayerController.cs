@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("Walking", false);
 
 
-        
+
         if (onWater)
         {
             agent.speed = 2.5f;
@@ -149,7 +149,7 @@ public class PlayerController : MonoBehaviour
                 RaycastHit hit;
 
                 //Verificando se a layer que o raio colidiu
-                if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y + 0.75f, transform.position.z), dir, out hit, 2.5f))
+                if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), dir, out hit, 2.5f))
                 {
                     //Layer do fogo
                     if (hit.collider.gameObject.layer == 7)
@@ -218,19 +218,19 @@ public class PlayerController : MonoBehaviour
             onWater = true;
         }
 
-       
+
     }
 
-      void OnTriggerStay(Collider col)
+    void OnTriggerStay(Collider col)
     {
         if (col.gameObject.layer == 4)
         {
             onWater = true;
         }
-      
+
     }
 
-     void OnTriggerExit(Collider col)
+    void OnTriggerExit(Collider col)
     {
         if (col.gameObject.layer == 4)
         {
@@ -320,21 +320,21 @@ public class PlayerController : MonoBehaviour
                     satellite_Obj.GetComponent<SatelliteController>().ActivateSatellite();
                     itemName = itens.none.ToString();
                     GameManager.satelliteCooldown = 0;
-                           itemPreview.SetActive(false);
+                    itemPreview.SetActive(false);
                     break;
 
                 case "sprinkler":
                     Instantiate(sprinkler_Pref, new Vector3(itemPos.x, itemPos.y, itemPos.z), quaternion.identity);
                     itemName = itens.none.ToString();
                     GameManager.sprinklerCooldown = 0;
-                           itemPreview.SetActive(false);
+                    itemPreview.SetActive(false);
                     break;
 
                 case "waterBomber":
                     Instantiate(waterBomber_Pref, new Vector3(itemPos.x, 3.15f, itemPos.z), quaternion.identity);
                     itemName = itens.none.ToString();
                     GameManager.planeCooldown = 0;
-                           itemPreview.SetActive(false);
+                    itemPreview.SetActive(false);
                     break;
             }
         }

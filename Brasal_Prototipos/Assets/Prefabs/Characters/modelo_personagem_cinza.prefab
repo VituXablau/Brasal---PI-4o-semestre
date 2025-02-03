@@ -120,7 +120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e40d9466328472a4390783da11e4783a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
   layerFire:
     serializedVersion: 2
     m_Bits: 128
@@ -131,6 +130,11 @@ MonoBehaviour:
     type: 3}
   waterBomber_Pref: {fileID: 5445170896778144976, guid: 66b035e1252578747ad40657b7339340,
     type: 3}
+  itemPreview: {fileID: 0}
+  item1: {fileID: 0}
+  item2: {fileID: 0}
+  item3: {fileID: 0}
+  item4: {fileID: 0}
 --- !u!95 &8027440426825708760
 Animator:
   serializedVersion: 5
