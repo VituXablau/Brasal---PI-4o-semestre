@@ -42,7 +42,7 @@ public class DroneController : MonoBehaviour
 
     void SearchingFire()
     {
-        Collider[] hitTrees = Physics.OverlapSphere(transform.position, 2.5f, layerFire);
+        Collider[] hitTrees = Physics.OverlapSphere(transform.position, 5f, layerFire);
 
         if (hitTrees.Length > 0)
         {

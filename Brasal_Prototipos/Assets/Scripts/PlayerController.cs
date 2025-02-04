@@ -324,7 +324,13 @@ public class PlayerController : MonoBehaviour
                     break;
 
                 case "sprinkler":
-                    Instantiate(sprinkler_Pref, new Vector3(itemPos.x, itemPos.y, itemPos.z), quaternion.identity);
+                    if (hit.collider.gameObject.layer == 11)
+                        Instantiate(sprinkler_Pref, new Vector3(itemPos.x, itemPos.y, itemPos.z), quaternion.identity);
+                    else
+                    {
+                        itemPos.y = hit.collider.gameObject.transform.position.y - hit.collider.gameObject.transform.localScale.y;
+                        Instantiate(sprinkler_Pref, new Vector3(itemPos.x, itemPos.y, itemPos.z), quaternion.identity);
+                    }
                     itemName = itens.none.ToString();
                     GameManager.sprinklerCooldown = 0;
                     itemPreview.SetActive(false);
