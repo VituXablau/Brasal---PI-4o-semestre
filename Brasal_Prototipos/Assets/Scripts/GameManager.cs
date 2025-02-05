@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
     }
 
     void Start()
-    {   
+    {
         endGame = false;
         gameOver = false;
         pausable = false;
@@ -389,21 +389,25 @@ public class GameManager : MonoBehaviour
 
     public void CheckPercentage()
     {
-        percentage = (100 * cur_treesObjLength) / init_treesObjLength;
-
-        if (percentage < 50)
+        if (!endGame)
         {
-            congratulations_text.text = "Você perdeu!";
-            endGame = true;
-            gameOver = true;
-            proceed_text.text = "Menu";
-            StopCoroutine(PrepareNextToBurn(spawnFireTime));
-            StopCoroutine(Timer());
-            HUDobj.SetActive(false);
-            endScreen.SetActive(true);
+            percentage = (100 * cur_treesObjLength) / init_treesObjLength;
+
+            if (percentage < 50)
+            {
+                congratulations_text.text = "Você perdeu!";
+                endGame = true;
+                gameOver = true;
+                proceed_text.text = "Menu";
+                StopCoroutine(PrepareNextToBurn(spawnFireTime));
+                StopCoroutine(Timer());
+                HUDobj.SetActive(false);
+                endScreen.SetActive(true);
+            }
+
+            percentage_text.text = "Preservação: " + percentage + "%";
         }
 
-        percentage_text.text = "Preservação: " + percentage + "%";
     }
 
     void DisplayItems()

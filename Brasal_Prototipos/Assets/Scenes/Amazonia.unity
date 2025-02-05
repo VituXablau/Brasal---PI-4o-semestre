@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2560,7 +2560,7 @@ MonoBehaviour:
   - {fileID: 1767349385}
   cur_treesObjLength: 0
   savedAnimalsObj: 0
-  spawnFireTime: 16
+  spawnFireTime: 10
   percentage_text: {fileID: 86984517}
   numAnimals_text: {fileID: 1549814135}
   timer_text: {fileID: 736331961}

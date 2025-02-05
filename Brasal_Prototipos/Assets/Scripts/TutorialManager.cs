@@ -178,14 +178,26 @@ public class TutorialManager : MonoBehaviour
                 arrow.GetComponent<Animator>().SetTrigger("6");
                 break;
 
-            case 20:
+               case 20:
+                characterName.text = "Roxo";
+                dialogue.text = "Caso consiga preservar pelo menos 50% da floresta, você ganhará uma medalha de conclusão.";
+                dialogueBox.GetComponent<Image>().sprite = roxo;
+                break;   
+
+                 case 21:
+                characterName.text = "Roxo";
+                dialogue.text = "E se conseguir preservar pelo menos 75%, ganhará uma Medalha de Preservação!";
+                dialogueBox.GetComponent<Image>().sprite = roxo;
+                break;   
+
+            case 22:
                 characterName.text = "Vermelho";
                 dialogue.text = "Sempre almeje 100%!! Mesmo que não seja possível! Mentalidade positiva!";
                 dialogueBox.GetComponent<Image>().sprite = vermelho;
 
                 break;
 
-            case 21:
+            case 23:
                 characterName.text = "Azul";
                 dialogue.text = "Já falamos da biodiversidade da Mata Atlântica. Os animais aqui são a alma da floresta! Tente salvá-los também.";
                 arrow.GetComponent<Animator>().SetTrigger("7");
@@ -193,28 +205,28 @@ public class TutorialManager : MonoBehaviour
 
                 break;
 
-            case 22:
+            case 24:
                 characterName.text = "Azul";
                 dialogue.text = "Ao parar na frente de um animal, você irá acalmá-lo, e ele contará como salvo!";
                 dialogueBox.GetComponent<Image>().sprite = azul;
 
                 break;
 
-            case 23:
+            case 25:
                 characterName.text = "Azul";
-                dialogue.text = "Cada animal que você salvar será marcado com um [x] nesta parte da interface! Tente salvar todos!";
+                dialogue.text = "Cada animal que você salvar será marcado com um [x] nesta parte da interface! Tente salvar todos para ganhar uma Medalha de Proteção!";
                 dialogueBox.GetComponent<Image>().sprite = azul;
 
                 break;
 
-            case 24:
+            case 26:
                 characterName.text = "Amarelo";
                 dialogue.text = "Não deixe essas árvores pegarem fogo por muito tempo. Dê seu melhor, Cinza!";
                 dialogueBox.GetComponent<Image>().sprite = amarelo;
 
                 break;
 
-            case 25:
+            case 27:
                 characterName.text = "";
                 dialogue.text = "";
                 dialogueBox.GetComponent<Animator>().SetTrigger("disappear");

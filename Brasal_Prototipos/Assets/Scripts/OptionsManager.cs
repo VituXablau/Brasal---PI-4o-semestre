@@ -11,7 +11,7 @@ public class OptionsManager : MonoBehaviour
 
     public static AudioClip currentMusic;
 
-     [SerializeField] int id = 0;
+    [SerializeField] int id = 0;
 
 
 
@@ -25,7 +25,10 @@ public class OptionsManager : MonoBehaviour
         if (MenuManager.firstTimePlaying)
             deleteButton.SetActive(false);
 
-        currentMusic = music[0];
+        if (!MenuManager.sa2)
+            currentMusic = music[0];
+        else if (MenuManager.sa2)
+            currentMusic = music[6];
     }
 
     IEnumerator Beginning()
@@ -75,11 +78,11 @@ public class OptionsManager : MonoBehaviour
     {
         deleteButton.GetComponent<Animator>().SetTrigger("disappear");
     }
-    
+
     void Update()
-    {   
+    {
         if (id == 3)
-         currentMusic = music[6];
+            currentMusic = music[6];
     }
 
     public void Sound1()
@@ -101,13 +104,13 @@ public class OptionsManager : MonoBehaviour
 
         Debug.Log(id);
 
-        
+
         if (id == 3)
         {
             currentMusic = music[6];
 
         }
-        
+
     }
 
 

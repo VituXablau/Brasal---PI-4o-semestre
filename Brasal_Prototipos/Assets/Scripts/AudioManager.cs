@@ -97,6 +97,9 @@ public class AudioManager : MonoBehaviour
                     newClip = music[0];
                 break;
             case "Options":
+               if (MenuManager.sa2)
+                    newClip = music[6];
+                else if (!MenuManager.sa2)
                 newClip = music[0];
                 break;
             case "MataAtlanticaTutorial":
