@@ -100,7 +100,7 @@ public class Cutscenes : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
         {
             if ((currentScene == "Cutscene1") && (introQuote))
             {
@@ -523,6 +523,7 @@ public class Cutscenes : MonoBehaviour
                 dialogueBox.GetComponent<Image>().sprite = blank;
                 dialogueBox.GetComponent<Animator>().SetTrigger("disappear");
                 transitionScreen.GetComponent<Animator>().SetTrigger("appear");
+                skippable = false;
 
                 yield return new WaitForSeconds(0.5f);
 
@@ -534,7 +535,7 @@ public class Cutscenes : MonoBehaviour
                 {
                     SceneManager.LoadScene("CutscenesRoom");
                 }
-                
+
                 break;
         }
 
@@ -596,6 +597,8 @@ public class Cutscenes : MonoBehaviour
                 dialogueBox.GetComponent<Image>().sprite = blank;
                 dialogueBox.GetComponent<Animator>().SetTrigger("disappear");
                 transitionScreen.GetComponent<Animator>().SetTrigger("appear");
+                skippable = false;
+
 
                 yield return new WaitForSeconds(0.5f);
 
@@ -687,6 +690,9 @@ public class Cutscenes : MonoBehaviour
                 dialogueBox.GetComponent<Image>().sprite = blank;
                 dialogueBox.GetComponent<Animator>().SetTrigger("disappear");
                 transitionScreen.GetComponent<Animator>().SetTrigger("appear");
+
+                skippable = false;
+
                 yield return new WaitForSeconds(0.5f);
 
                 if (!HubManager.beatEverything)
@@ -781,6 +787,8 @@ public class Cutscenes : MonoBehaviour
                 dialogueBox.GetComponent<Image>().sprite = blank;
                 dialogueBox.GetComponent<Animator>().SetTrigger("disappear");
                 transitionScreen.GetComponent<Animator>().SetTrigger("appear");
+                skippable = false;
+
                 yield return new WaitForSeconds(0.5f);
 
                 if (!HubManager.beatEverything)
@@ -910,6 +918,8 @@ public class Cutscenes : MonoBehaviour
                 dialogueBox.GetComponent<Image>().sprite = blank;
                 dialogueBox.GetComponent<Animator>().SetTrigger("disappear");
                 transitionScreen.GetComponent<Animator>().SetTrigger("appear");
+                skippable = false;
+
                 yield return new WaitForSeconds(0.5f);
 
 
@@ -983,6 +993,8 @@ public class Cutscenes : MonoBehaviour
                 dialogueBox.GetComponent<Image>().sprite = blank;
                 dialogueBox.GetComponent<Animator>().SetTrigger("disappear");
                 transitionScreen.GetComponent<Animator>().SetTrigger("appear");
+                skippable = false;
+
                 yield return new WaitForSeconds(0.5f);
 
                 if (!HubManager.beatEverything)
@@ -1048,6 +1060,8 @@ public class Cutscenes : MonoBehaviour
                 dialogueBox.GetComponent<Image>().sprite = blank;
                 dialogueBox.GetComponent<Animator>().SetTrigger("disappear");
                 transitionScreen.GetComponent<Animator>().SetTrigger("appear");
+                skippable = false;
+
                 yield return new WaitForSeconds(0.5f);
 
 
@@ -1162,6 +1176,8 @@ public class Cutscenes : MonoBehaviour
                 dialogueBox.GetComponent<Image>().sprite = blank;
                 dialogueBox.GetComponent<Animator>().SetTrigger("disappear");
                 transitionScreen.GetComponent<Animator>().SetTrigger("appear");
+                skippable = false;
+
                 yield return new WaitForSeconds(0.5f);
 
 
@@ -1271,6 +1287,8 @@ public class Cutscenes : MonoBehaviour
                 dialogueBox.GetComponent<Image>().sprite = blank;
                 dialogueBox.GetComponent<Animator>().SetTrigger("disappear");
                 transitionScreen.GetComponent<Animator>().SetTrigger("appear");
+                skippable = false;
+
                 yield return new WaitForSeconds(0.5f);
 
                 if (!HubManager.beatEverything)
@@ -1382,6 +1400,8 @@ public class Cutscenes : MonoBehaviour
                 dialogueBox.GetComponent<Image>().sprite = blank;
                 dialogueBox.GetComponent<Animator>().SetTrigger("disappear");
                 transitionScreen.GetComponent<Animator>().SetTrigger("appear");
+                skippable = false;
+
                 yield return new WaitForSeconds(0.5f);
 
 
@@ -1433,6 +1453,8 @@ public class Cutscenes : MonoBehaviour
                 dialogueBox.GetComponent<Image>().sprite = blank;
                 dialogueBox.GetComponent<Animator>().SetTrigger("disappear");
                 transitionScreen.GetComponent<Animator>().SetTrigger("appear");
+                skippable = false;
+
                 yield return new WaitForSeconds(0.5f);
 
 
@@ -1520,6 +1542,8 @@ public class Cutscenes : MonoBehaviour
                 dialogueBox.GetComponent<Image>().sprite = blank;
                 dialogueBox.GetComponent<Animator>().SetTrigger("disappear");
                 transitionScreen.GetComponent<Animator>().SetTrigger("appear");
+                skippable = false;
+
                 yield return new WaitForSeconds(0.5f);
                 SceneManager.LoadScene("Menu");
                 break;
@@ -1613,6 +1637,8 @@ public class Cutscenes : MonoBehaviour
                 dialogueBox.GetComponent<Image>().sprite = blank;
                 dialogueBox.GetComponent<Animator>().SetTrigger("disappear");
                 transitionScreen.GetComponent<Animator>().SetTrigger("appear");
+                skippable = false;
+
                 yield return new WaitForSeconds(0.5f);
                 SceneManager.LoadScene("Menu");
                 break;
