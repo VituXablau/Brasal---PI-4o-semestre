@@ -104,8 +104,6 @@ public class HubManager : MonoBehaviour
                 {
                     medals[2].GetComponent<Image>().sprite = blankMedal;
                 }
-
-
                 break;
 
             case "pantanal":
