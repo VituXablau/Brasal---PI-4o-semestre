@@ -7,7 +7,6 @@ using UnityEngine.UI;
 
 public class HubManager : MonoBehaviour
 {
-
     [SerializeField] GameObject[] levelButtons;
     [SerializeField] Image[] medals;
     [SerializeField] GameObject info_Window, cam, transitionScreen, endButton, cutscenesButton;
@@ -23,15 +22,6 @@ public class HubManager : MonoBehaviour
 
     void Start()
     {
-
-        // if (!GameManager.medals_MataAtlantica[0])
-        // {
-        //     for (int i = 1; i < levelButtons.Length; i++)
-        //     {
-        //         levelButtons[i].SetActive(false);
-        //     }
-        // }
-
         anim = cam.GetComponent<Animator>();
         info_Window.SetActive(false);
         StartCoroutine(Transition());
@@ -50,7 +40,6 @@ public class HubManager : MonoBehaviour
             beatEverything = true;
         }
 
-
         if (beatEverything || beatEverything100)
         {
             endButton.SetActive(true);
@@ -68,12 +57,6 @@ public class HubManager : MonoBehaviour
         {
             cutscenesButton.SetActive(false);
         }
-
-
-
-
-
-
     }
 
     IEnumerator Transition()
@@ -86,10 +69,8 @@ public class HubManager : MonoBehaviour
         transitionScreen.SetActive(false);
     }
 
-
     void Info()
     {
-
         switch (selectedLevel)
         {
             case "mataAtlantica":
@@ -299,7 +280,6 @@ public class HubManager : MonoBehaviour
 
         endButton.GetComponent<Animator>().SetTrigger("disappear");
         cutscenesButton.GetComponent<Animator>().SetTrigger("disappear");
-
     }
 
     public void Cerrado()
@@ -313,7 +293,6 @@ public class HubManager : MonoBehaviour
 
         endButton.GetComponent<Animator>().SetTrigger("disappear");
         cutscenesButton.GetComponent<Animator>().SetTrigger("disappear");
-
     }
 
     public void Caatinga()
@@ -327,7 +306,6 @@ public class HubManager : MonoBehaviour
 
         endButton.GetComponent<Animator>().SetTrigger("disappear");
         cutscenesButton.GetComponent<Animator>().SetTrigger("disappear");
-
     }
 
     public void EnterLevel()
@@ -425,7 +403,6 @@ public class HubManager : MonoBehaviour
 
         info_Window.GetComponent<Animator>().SetInteger("estado", 0);
         StartCoroutine(ShowButtons());
-
     }
 
     public void Ending()
@@ -489,11 +466,7 @@ public class HubManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
 
         SceneManager.LoadScene(nextScene);
-
     }
-
-
-
 
     void Update()
     {
