@@ -262,7 +262,6 @@ public class HubManager : MonoBehaviour
         StartCoroutine(ShowInfo());
         info_Window.SetActive(true);
 
-
         endButton.GetComponent<Animator>().SetTrigger("disappear");
         cutscenesButton.GetComponent<Animator>().SetTrigger("disappear");
     }
