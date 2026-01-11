@@ -6,7 +6,7 @@ public class WaterBomberController : MonoBehaviour
 
     private void Start()
     {
-        Destroy(gameObject, 5);
+        Destroy(gameObject, 4);
     }
 
     private void Update()
@@ -23,7 +23,8 @@ public class WaterBomberController : MonoBehaviour
         {
             foreach (Collider tree in hitTrees)
             {
-                tree.GetComponent<TreeController>().StopBurn();
+                tree.GetComponent<TreeController>().StartCoroutine(tree.GetComponent<TreeController>().StopBurn(1));
+                //tree.GetComponent<TreeController>().StopBurn();
             }
         }
     }

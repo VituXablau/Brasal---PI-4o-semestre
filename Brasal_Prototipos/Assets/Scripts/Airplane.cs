@@ -28,7 +28,7 @@ public class Airplane : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(1 * spd * Time.fixedDeltaTime, 0, 0);
+        transform.Translate(1 * spd * Time.deltaTime, 0, 0);
 
         float dist = Signalizer.signalizerLocation.x - this.transform.position.x;
         distance = Mathf.Sqrt(Mathf.Pow(dist, 2));

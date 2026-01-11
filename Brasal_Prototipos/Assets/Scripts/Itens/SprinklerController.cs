@@ -6,6 +6,8 @@ public class SprinklerController : MonoBehaviour
 
     [SerializeField] private LayerMask layerFire;
 
+    [SerializeField] GameObject waterParticles;
+
     void Update()
     {
         SearchingFire();
@@ -23,7 +25,9 @@ public class SprinklerController : MonoBehaviour
     {
         foreach (Collider tree in trees)
         {
-            tree.gameObject.GetComponent<TreeController>().StopBurn();
+            waterParticles.SetActive(true);
+            tree.GetComponent<TreeController>().StartCoroutine(tree.GetComponent<TreeController>().StopBurn(0));
+            //tree.gameObject.GetComponent<TreeController>().StopBurn();
         }
 
         Destroy(gameObject, 5);

@@ -60,7 +60,7 @@ public class TreeController : MonoBehaviour
     IEnumerator Burn()
     {
         gameObject.layer = 7;
-        fireEffect_Obj = Instantiate(fireEffect_Pref, transform.position, Quaternion.identity);
+        fireEffect_Obj = Instantiate(fireEffect_Pref, transform.position, fireEffect_Pref.transform.rotation);
 
         if (gameObject.transform.childCount > 0)
             objChildRenderer.material = objChildMaterial;
@@ -98,15 +98,17 @@ public class TreeController : MonoBehaviour
     }
 
     //Método que faz a árvore parar de queimar
-    public void StopBurn()
+    public IEnumerator StopBurn(float waitSeconds)
     {
-        gameObject.layer = 8;
-        Destroy(fireEffect_Obj);
-
         isBurning = false;
 
         StopCoroutine(burning);
         StopCoroutine(spreadFire);
+
+        yield return new WaitForSeconds(waitSeconds);
+
+        gameObject.layer = 8;
+        Destroy(fireEffect_Obj);
     }
 
     //Método que destrói a árvore depois que ela queima

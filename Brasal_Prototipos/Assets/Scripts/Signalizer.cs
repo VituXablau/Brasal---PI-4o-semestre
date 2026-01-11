@@ -21,11 +21,4 @@ public class Signalizer : MonoBehaviour
         Destroy(gameObject, 5f);        
 
     }
-    
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

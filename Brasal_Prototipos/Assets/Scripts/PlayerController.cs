@@ -22,6 +22,10 @@ public class PlayerController : MonoBehaviour
 
     private bool onWater = false;
 
+    // >>> CORREÇÃO
+    private bool cancelExtinguish = false;
+    // <<<
+
     //Sistema de itens
     private enum itens { none, drone, satellite, sprinkler, waterBomber }
     private string itemName = "none";
@@ -36,6 +40,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject itemPreview;
 
     [SerializeField] Sprite item1, item2, item3, item4;
+
+    [SerializeField] GameObject waterParticles, heartParticles;
 
     private void Start()
     {
@@ -60,8 +66,6 @@ public class PlayerController : MonoBehaviour
                 itemPreview.SetActive(true);
                 itemPreview.GetComponent<SpriteRenderer>().sprite = item1;
             }
-
-
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
@@ -73,7 +77,6 @@ public class PlayerController : MonoBehaviour
                 itemPreview.SetActive(true);
                 itemPreview.GetComponent<SpriteRenderer>().sprite = item2;
             }
-
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
@@ -85,9 +88,7 @@ public class PlayerController : MonoBehaviour
                 itemPreview.SetActive(true);
                 itemPreview.GetComponent<SpriteRenderer>().sprite = item3;
             }
-
         }
-
 
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
@@ -98,9 +99,7 @@ public class PlayerController : MonoBehaviour
                 itemPreview.SetActive(true);
                 itemPreview.GetComponent<SpriteRenderer>().sprite = item4;
             }
-
         }
-
 
         if (Input.GetMouseButton(1))
         {
@@ -110,8 +109,6 @@ public class PlayerController : MonoBehaviour
         if (HasAgentStopped())
             animator.SetBool("Walking", false);
 
-
-
         if (onWater)
         {
             agent.speed = 2.5f;
@@ -120,14 +117,11 @@ public class PlayerController : MonoBehaviour
         {
             agent.speed = 3.5f;
         }
-
-
     }
 
     void ItemCursor()
     {
         ScreenPosition = Input.mousePosition;
-        //ScreenPosition.z = Camera.main.nearClipPlane + 1;
         ScreenPosition.z = -18;
         WorldPosition = Camera.main.ScreenToWorldPoint(ScreenPosition);
 
@@ -135,7 +129,7 @@ public class PlayerController : MonoBehaviour
     }
 
     #region Sistema de movimentacao e interacao com o fogo
-    //Método que recebe o input de movimentação/interação do personagem
+
     void InteractOrMove()
     {
         if (Input.GetMouseButton(0))
@@ -148,48 +142,39 @@ public class PlayerController : MonoBehaviour
                 Vector3 dir = transform.forward;
                 RaycastHit hit;
 
-                //Verificando se a layer que o raio colidiu
                 if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), dir, out hit, 2.5f))
                 {
-                    //Layer do fogo
                     if (hit.collider.gameObject.layer == 7)
                     {
                         Move();
-
                         ExtinguishFire(hit.collider.gameObject);
                     }
-                    //Layer do animal assustado
-                    else if (hit.collider.gameObject.layer == 10)
+                    else if (hit.collider.gameObject.layer == 10 && interactWithAnimal == null)
                     {
                         Move();
-
                         interactWithAnimal = StartCoroutine(InteractWithAnimal(hit.collider.gameObject));
-
                         ExtinguishFire(null);
                     }
-                    //Qualquer outra layer
+
                     else
                     {
                         Move();
-
                         ExtinguishFire(null);
                     }
                 }
-                //Não colidiu com nada
                 else
                 {
                     Move();
-
                     ExtinguishFire(null);
                 }
             }
         }
 
-        if (Input.GetMouseButtonUp(0) && putOutFire != null)
-            StopCoroutine(putOutFire);
+        // CORREÇÃO
+        if (Input.GetMouseButtonUp(0))
+            cancelExtinguish = true;
     }
 
-    //Método que movimenta o personagem
     void Move()
     {
         if (!isInteractingWithSomething)
@@ -217,8 +202,6 @@ public class PlayerController : MonoBehaviour
         {
             onWater = true;
         }
-
-
     }
 
     void OnTriggerStay(Collider col)
@@ -227,7 +210,6 @@ public class PlayerController : MonoBehaviour
         {
             onWater = true;
         }
-
     }
 
     void OnTriggerExit(Collider col)
@@ -243,19 +225,19 @@ public class PlayerController : MonoBehaviour
         return !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance;
     }
 
-    //Método que apaga o fogo que o personagem está vendo
     void ExtinguishFire(GameObject objectBurning)
     {
-        //Iniciando a coroutine que apaga o fogo
         if (objectBurning != null && !isExtinguishing)
         {
+            // CORREÇÃO
+            isExtinguishing = true;
+            cancelExtinguish = false;
             putOutFire = StartCoroutine(PutOutFire(2.5f, objectBurning));
         }
-        //Parando a coroutine antes dela ser finalizada, caso o objeto não esteja mais ao alcance do jogador
         else if (objectBurning == null && isExtinguishing)
         {
-            StopCoroutine(putOutFire);
-            isExtinguishing = false;
+            // CORREÇÃO
+            cancelExtinguish = true;
             isInteractingWithSomething = false;
             animator.SetBool("Extinguish", false);
         }
@@ -263,16 +245,26 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator PutOutFire(float waitSeconds, GameObject objectBurning)
     {
-        isExtinguishing = true;
         isInteractingWithSomething = true;
+
+        objectBurning.GetComponent<TreeController>().StartCoroutine(objectBurning.GetComponent<TreeController>().StopBurn(waitSeconds));
         animator.SetBool("Extinguish", true);
+        waterParticles.SetActive(true);
 
-        yield return new WaitForSeconds(waitSeconds);
+        float timer = 0f;
+        while (timer < waitSeconds)
+        {
+            if (cancelExtinguish)
+                break;
 
-        objectBurning.GetComponent<TreeController>().StopBurn();
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
         isExtinguishing = false;
         isInteractingWithSomething = false;
         animator.SetBool("Extinguish", false);
+        waterParticles.SetActive(false);
     }
 
     IEnumerator InteractWithAnimal(GameObject animal)
@@ -285,7 +277,9 @@ public class PlayerController : MonoBehaviour
         isInteractingWithSomething = false;
         interactWithAnimal = null;
         animal.GetComponent<AnimalsController>().RunAway();
+        Instantiate(heartParticles, animal.transform.position, heartParticles.transform.rotation, animal.transform);
     }
+
     #endregion
 
     #region Sistema dos itens
@@ -304,8 +298,6 @@ public class PlayerController : MonoBehaviour
             Vector3 itemPos;
             itemPos = hit.point;
 
-            Debug.Log(itemPos);
-
             switch (itemName)
             {
                 case "drone":
@@ -314,8 +306,8 @@ public class PlayerController : MonoBehaviour
                     itemName = itens.none.ToString();
                     GameManager.droneCooldown = 0;
                     itemPreview.SetActive(false);
-
                     break;
+
                 case "satellite":
                     satellite_Obj.GetComponent<SatelliteController>().ActivateSatellite();
                     itemName = itens.none.ToString();

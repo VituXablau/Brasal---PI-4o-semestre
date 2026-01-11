@@ -13,6 +13,11 @@ public class DroneController : MonoBehaviour
 
     [SerializeField] private LayerMask layerFire;
 
+    [SerializeField] GameObject waterParticles;
+
+    // Controle visual das esferas
+    public float searchSphereRadius = 5f, workSphereRadius = 1f; // Raio da esfera em SearchingFire e Raio da esfera em Working
+
     void Update()
     {
         switch (modeName)
@@ -42,7 +47,7 @@ public class DroneController : MonoBehaviour
 
     void SearchingFire()
     {
-        Collider[] hitTrees = Physics.OverlapSphere(transform.position, 5f, layerFire);
+        Collider[] hitTrees = Physics.OverlapSphere(transform.position, searchSphereRadius, layerFire);
 
         if (hitTrees.Length > 0)
         {
@@ -60,7 +65,7 @@ public class DroneController : MonoBehaviour
         }
         else
         {
-            Collider[] hitTrees = Physics.OverlapSphere(transform.position, 1f, layerFire);
+            Collider[] hitTrees = Physics.OverlapSphere(transform.position, workSphereRadius, layerFire);
 
             if (hitTrees.Length > 0)
             {
@@ -72,13 +77,38 @@ public class DroneController : MonoBehaviour
 
     private IEnumerator PutOutFire(float waitSeconds, GameObject objectBurning)
     {
+        waterParticles.SetActive(true);
+
         yield return new WaitForSeconds(waitSeconds);
 
         if (objectBurning != null)
-            objectBurning.GetComponent<TreeController>().StopBurn();
+            objectBurning.GetComponent<TreeController>().StartCoroutine(objectBurning.GetComponent<TreeController>().StopBurn(1));
+        //objectBurning.GetComponent<TreeController>().StopBurn();
+
+        waterParticles.SetActive(false);
 
         yield return new WaitForSeconds(1);
 
         Destroy(gameObject);
+    }
+
+    // Adicione este método para visualizar as esferas de overlap
+    private void OnDrawGizmos()
+    {
+        // Esfera de busca (SearchingFire) - Cor Amarela
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, searchSphereRadius);
+
+        // Esfera de trabalho (Working) - Cor Verde
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, workSphereRadius);
+
+        // Linha para mostrar a posição alvo (opcional, mas útil)
+        if (modeName == "Working" || modeName == "MovingToTarget")
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawLine(transform.position, targetPos);
+            Gizmos.DrawWireSphere(targetPos, 0.5f);
+        }
     }
 }
